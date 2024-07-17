@@ -4,8 +4,8 @@ import "./globals.css";
 import { SFProDisplay, CabinetGrotesk } from "@/utils/custom-fonts";
 
 export const metadata: Metadata = {
-  title: "Nasa SpaceApp",
-  description: "Nasa SpaceApp",
+  title: "NASA SpaceApps 2024",
+  description: "HackAthlone - Nasa Space Apps Challenge",
 };
 
 export default function RootLayout({
