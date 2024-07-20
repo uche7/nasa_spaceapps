@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { navigationData } from "./navigation.dto";
+import { navigationData } from "./general.dto";
 import DeeduLogo from "@/assets/images/general/landing-page/deedu-logo.png";
 import MenuIcon from "@/assets/images/general/landing-page/menu-icon.svg";
 
@@ -29,7 +29,7 @@ export default function NavigationBar() {
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
       <div
-        className="absolute right-5 text-[24px]"
+        className="absolute right-5 text-[24px] cursor-pointer"
         onClick={() => setIsSideNavOpen(false)}
       >
         X
