@@ -30,12 +30,18 @@ const HeroPage = () => {
                 scale: 1.1,
                 transition: { duration: 0.5 },
               }}
+              onClick={() =>
+                window.open(
+                  "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
+                  "_blank"
+                )
+              }
               whileTap={{ scale: 0.9 }}
-              title="Meet The Champions"
+              title="Register Here"
               className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
             >
               <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
-                Meet The Champions
+                Register Here
               </p>
             </motion.button>
             <motion.button

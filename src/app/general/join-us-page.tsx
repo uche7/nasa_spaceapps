@@ -8,7 +8,7 @@ const JoinUsPage = () => {
   /** Desktop View */
   const desktopView = () => {
     return (
-      <div className="TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[1.93%] mt-[126.77px] mx-[8.06%] mb-[139.04px]">
+      <div className="TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[1.93%] mt-[126.77px] mx-[8.06%] mb-[179.04px]">
         <div className="w-[49.11%] h-[477.65px]">
           <div>
             <div className="flex flex-row gap-[9.81px]">

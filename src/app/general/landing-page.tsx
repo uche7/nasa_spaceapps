@@ -6,6 +6,13 @@ import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import NavigationBar from "@/app/general/navigation-bar";
 import HeroPage from "./hero-page";
 import JoinUsPage from "./join-us-page";
+import CountDownPage from "./count-down-page";
+import SpaceAgencies from "./space-agencies";
+import { AgenciesSlider } from "./agencies-slider";
+import GlobalCollabrators from "./global-collabrators";
+import { CollabratorsSlider } from "./collabrators-slider";
+import Shannon from "./shannon";
+import { WinnersPage } from "./winners-page";
 
 /** The Landing Page */
 const LandingPage = () => {
@@ -22,6 +29,13 @@ const LandingPage = () => {
         <NavigationBar />
         <HeroPage />
         <JoinUsPage />
+        <CountDownPage />
+        <SpaceAgencies />
+        <AgenciesSlider />
+        <GlobalCollabrators />
+        <CollabratorsSlider />
+        <Shannon />
+        <WinnersPage />
       </div>
     </div>
   );

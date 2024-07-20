@@ -27,7 +27,7 @@ const config: Config = {
         "hackathone-font-yellow": "#eafe07",
         "hackathone-font-black": "#18181B",
         "hackathone-font-light-grey": "#52525B",
-        "hackathone-font-dark-grey": "#636363",
+        "hackathone-font-dark-blue": "#07173F",
       },
       screens: {
         sm: "640px",
