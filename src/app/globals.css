@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "leaflet/dist/leaflet.css";
 @import "react-responsive-carousel/lib/styles/carousel.min.css";
+@import "react-vertical-timeline-component/style.min.css";
 
 .overflow-hidden {
   overflow: hidden;

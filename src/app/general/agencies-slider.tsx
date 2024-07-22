@@ -7,7 +7,7 @@ const sliderItems = [...agenciesSlider, ...agenciesSlider];
 
 export const AgenciesSlider = () => {
   return (
-    <div className="my-24 overflow-hidden">
+    <div className="my-16 overflow-hidden">
       <motion.div
         className="flex flex-row items-center lg:gap-[94px] gap-4"
         initial={{ x: 0 }}

@@ -12,10 +12,14 @@ import { AgenciesSlider } from "./agencies-slider";
 import GlobalCollabrators from "./global-collabrators";
 import { CollabratorsSlider } from "./collabrators-slider";
 import Shannon from "./shannon";
-import { WinnersPage } from "./winners-page";
+import TeamStories from "./team-stories";
+import HackathoneTimeline from "./timeline";
+import Instagram from "./instagram";
+import Footer from "./footer";
 
 /** The Landing Page */
 const LandingPage = () => {
+  const targetDate = "2024-10-04T18:00:00";
   return (
     <div className="relative min-h-screen bg-black text-white">
       <div className="fixed inset-0 z-0">
@@ -29,13 +33,16 @@ const LandingPage = () => {
         <NavigationBar />
         <HeroPage />
         <JoinUsPage />
-        <CountDownPage />
+        <CountDownPage targetDate={targetDate} />
         <SpaceAgencies />
         <AgenciesSlider />
         <GlobalCollabrators />
         <CollabratorsSlider />
         <Shannon />
-        <WinnersPage />
+        <TeamStories />
+        <HackathoneTimeline />
+        <Instagram />
+        <Footer />
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ export default function NavigationBar() {
         {navigationInfo.map((item, index) => (
           <div
             key={index}
-            className="cursor-pointer font-hackathoneSFProDisplay font-[400] hover:text-[#eafe07]"
+            className="cursor-pointer font-hackathoneSFProDisplay font-[400] hover:text-[#E43700]"
             onClick={item.route}
           >
             {item.text}
@@ -70,7 +70,7 @@ export default function NavigationBar() {
         {navigationInfo.map((item, index) => (
           <div
             key={index}
-            className="cursor-pointer font-hackathoneSFProDisplay font-[400] hover:text-[#eafe07]"
+            className="cursor-pointer font-hackathoneSFProDisplay font-[400] hover:text-[#E43700]"
             onClick={item.route}
           >
             {item.text}
