@@ -15,6 +15,9 @@ import Tus1 from "@/assets/images/general/landing-page/mapping-images/tus1.jpg";
 import Tus2 from "@/assets/images/general/landing-page/mapping-images/tus2.jpg";
 import Tus3 from "@/assets/images/general/landing-page/mapping-images/tus3.jpg";
 import Tus4 from "@/assets/images/general/landing-page/mapping-images/tus4.jpg";
+import LightBulb from "@/assets/images/general/landing-page/light-bulb.png";
+import HackathonImage from "@/assets/images/general/landing-page/hackathon.png";
+import Trophy from "@/assets/images/general/landing-page/trophy.png";
 
 export const navigationData = (Router: any) => [
   {
@@ -137,6 +140,102 @@ export const agenciesSlider = [
 export const MapLogos = [
   { src: Tus1 },
   { src: Tus2 },
-  { src: Tus3},
+  { src: Tus3 },
   { src: Tus4 },
+];
+
+export const Stories = [
+  {
+    text: `“I teamed up with people from different backgrounds, 
+    but we all had the same interests, which are sharing experiences 
+    and ideas. It was a good experience to hear different perspectives
+    and ideas regarding our challenge 'Ocean Garden' which we focusing
+    on the seaweed kelp. The discussion around was fun and enjoyable.
+    Furthermore, one of our passionate member even cooked a kelp dish
+    to prove that it is edible and pull more attentions from public crowd.
+    However, without discussion as a team, I found that we were working
+    on collecting resources from internet and designing web application aimless.
+    I hope we could meet up before the event starts so that we could lay out 
+    our strategies and have a more solid approach towards the challenge.”`,
+    author: "Help Kelp, Help Ourselves",
+  },
+
+  {
+    text: `“We were positively challenged by the SpaceApps hackathon and were
+     very warmly supported throughout the whole event! The organizing team did 
+     an incredible job by providing food and shelter to everybody. Everyone was
+     nice and helpful to the maximum with all kinds of technical or comfort requests.
+     The pizzas and coffee again proved to be invaluable resources for brain
+     activity :) Last but not least, the mentors had made an incredible impact
+     on our project and others, too. Fermi Paradox team is grateful for this
+     opportunity, we hope that next year there will be more attendees,
+     more fun and more great ideas!”`,
+    author: "Fermi Paradox",
+  },
+  {
+    text: `“It was a wonderful experience, 3 days of brain storming, networking,
+     and hacking. I would definitely want to be a part of the next one and more to come.
+     The tutors and instructors were very helpful and worked hard too as well.
+     Happy to be a part of it”`,
+    author: "Athermis GO!",
+  },
+  {
+    text: `“Great Event, run very well with lots of opportunities to gain experience
+     and make connections. Great experience for similar events in the future.
+     Provided food and drinks and made sure everyone was satisfied!”`,
+    author: "IdontThink",
+  },
+  {
+    text: `“Great Experience, kudos to the organizers & looking forward to next year's event.”`,
+    author: "Team Antriksh",
+  },
+];
+
+export const events = [
+  {
+    date: "18th July 2024",
+    title: "Registration opens!",
+    content: `Register for a Local Event near you or 
+    our Universal Event (please note you MUST be 
+    registered for a Local Event or Universal Event to participate).`,
+  },
+  {
+    date: "4th October 2024",
+    title: "Hackathon Begins!",
+    content: `Get ready for the NASA Space Apps Challenge!
+     Check your Space Apps Messages, review the Participant
+      Guides and challenges, and connect with your Local
+       Event Lead and teammates. Tune in to the Welcome 
+       to Space Apps kick off video at 5:00 p.m. EST, 
+       featuring messages from the GO Team and special guests`,
+  },
+  {
+    date: "5th October 2024",
+    title: "First day of the hackathon",
+    content: `At 9:00 a.m. (local time) teams may begin 
+    working on their hackathon projects. Project submission
+    opens at 9:00 a.m. Teams will be able to edit and
+    submit their projects until 11:59 p.m. (local time)
+       on October 6. Experts from NASA, Space Agency Partners,
+        and industry will be available in Space Apps Connect
+         to answer questions about the Challenge Statements
+          and data. We know you’ll be working with your team 
+          tirelessly to create your project during the hackathon.
+           Don’t forget to take breaks, stay hydrated,
+            and balance your hard work with fun!`,
+  },
+  {
+    date: "6th October 2024",
+    title: "Hackathon Ends!",
+    content: ` The hackathon ends at 11:59 p.m. (local time). 
+ All projects must be submitted to the NASA Space
+ Apps Challenge website by this deadline. Teams 
+ must submit their projects in accordance with 
+  the time of the Local Event location for which
+   the team is registered. *If your team is registered 
+   for the Universal Event, your project must be submitted 
+   in accordance with the local time of the person who
+    created the team (Team Lead). You did it! Pat yourself
+     on the back for making it through the hackathon. What an achievement!`,
+  },
 ];

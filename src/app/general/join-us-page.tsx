@@ -17,7 +17,7 @@ const JoinUsPage = () => {
                 HackAthlone
               </div>
             </div>
-            <h3 className="mt-[9.81px] font-hackathoneCabinetGrotesk text-hackathone-font-yellow  font-[800] text-[35.99px] leading-[44.62px]">
+            <h3 className="mt-[9.81px] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[35.99px] leading-[44.62px]">
               The Hackathone Challenge will be kicking off soon
             </h3>
             <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[14.72px] leading-[17.57px] mt-[9.81px]">
@@ -39,16 +39,20 @@ const JoinUsPage = () => {
             <div className="pt-[22px] pl-[1.93%] pr-[5.48%]">
               <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[18.62px]">
                 SpaceApps Athlone, also known as{" "}
-                <span className="text-hackathone-font-yellow">HackAthlone</span>
+                <span className="text-hackathone-font-rocket-red">
+                  HackAthlone
+                </span>
                 , is one of the 300+ locations for this year&apos;s NASA
                 SpaceApps Challenge.{" "}
-                <span className="text-hackathone-font-yellow">
+                <span className="text-hackathone-font-rocket-red">
                   Technology University of the Shannon
                 </span>{" "}
                 takes pride in hosting 200 participants on their campus for{" "}
-                <span className="text-hackathone-font-yellow">48 hours </span>to
-                collaborate on{" "}
-                <span className="text-hackathone-font-yellow">
+                <span className="text-hackathone-font-rocket-red">
+                  48 hours{" "}
+                </span>
+                to collaborate on{" "}
+                <span className="text-hackathone-font-rocket-red">
                   30 problem statements
                 </span>{" "}
                 that cater to all STEAM fields.
@@ -79,7 +83,7 @@ const JoinUsPage = () => {
               title="Unfold The Timeline"
               className="bg-hackathone-background-dark-blue mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
             >
-              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
+              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Unfold The Timeline
               </p>
             </motion.button>
@@ -101,7 +105,7 @@ const JoinUsPage = () => {
                 HackAthlone
               </div>
             </div>
-            <h3 className="mt-[9.81px] font-hackathoneCabinetGrotesk text-hackathone-font-yellow  font-[800] text-[35.99px] leading-[44.62px]">
+            <h3 className="mt-[9.81px] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[35.99px] leading-[44.62px]">
               The Hackathone Challenge will be kicking off soon
             </h3>
             <p className="font-hackathoneSFProDisplay font-[400] text-slate-300 text-[14.72px] leading-[14.57px] mt-[9.81px]">
@@ -123,16 +127,20 @@ const JoinUsPage = () => {
             <div className="pt-[22px] pl-[1.93%] pr-[5.48%]">
               <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[18.92px]">
                 SpaceApps Athlone, also known as{" "}
-                <span className="text-hackathone-font-yellow">HackAthlone</span>
+                <span className="text-hackathone-font-rocket-red">
+                  HackAthlone
+                </span>
                 , is one of the 300+ locations for this year&apos;s NASA
                 SpaceApps Challenge.{" "}
-                <span className="text-hackathone-font-yellow">
+                <span className="text-hackathone-font-rocket-red">
                   Technology University of the Shannon
                 </span>{" "}
                 takes pride in hosting 200 participants on their campus for{" "}
-                <span className="text-hackathone-font-yellow">48 hours </span>to
-                collaborate on{" "}
-                <span className="text-hackathone-font-yellow">
+                <span className="text-hackathone-font-rocket-red">
+                  48 hours{" "}
+                </span>
+                to collaborate on{" "}
+                <span className="text-hackathone-font-rocket-red">
                   30 problem statements
                 </span>{" "}
                 that cater to all STEAM fields.
@@ -163,7 +171,7 @@ const JoinUsPage = () => {
               title="Unfold The Timeline"
               className="bg-hackathone-background-dark-blue mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
             >
-              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
+              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Unfold The Timeline
               </p>
             </motion.button>
@@ -184,7 +192,7 @@ const JoinUsPage = () => {
               HackAthlone
             </div>
           </div>
-          <h3 className="mt-[9.81px] font-hackathoneCabinetGrotesk text-hackathone-font-yellow font-[800] text-[30.99px] leading-[44.62px]">
+          <h3 className="mt-[9.81px] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-[800] text-[30.99px] leading-[44.62px]">
             The Hackathone Challenge will be kicking off soon
           </h3>
           <p className="font-hackathoneSFProDisplay font-[400] text-slate-300 text-[14.72px] leading-[14.57px] mt-[9.81px] mb-4">
@@ -202,16 +210,16 @@ const JoinUsPage = () => {
             <div className="pt-[22px] pl-[1.93%] pr-[5.48%]">
               <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[18.92px]">
                 SpaceApps Athlone, also known as{" "}
-                <span className="text-hackathone-font-yellow">HackAthlone</span>
+                <span className="text-hackathone-font-rocket-red">HackAthlone</span>
                 , is one of the 300+ locations for this year&apos;s NASA
                 SpaceApps Challenge.{" "}
-                <span className="text-hackathone-font-yellow">
+                <span className="text-hackathone-font-rocket-red">
                   Technology University of the Shannon
                 </span>{" "}
                 takes pride in hosting 200 participants on their campus for{" "}
-                <span className="text-hackathone-font-yellow">48 hours </span>to
+                <span className="text-hackathone-font-rocket-red">48 hours </span>to
                 collaborate on{" "}
-                <span className="text-hackathone-font-yellow">
+                <span className="text-hackathone-font-rocket-red">
                   30 problem statements
                 </span>{" "}
                 that cater to all STEAM fields.
@@ -242,7 +250,7 @@ const JoinUsPage = () => {
               title="Unfold The Timeline"
               className="bg-hackathone-background-dark-blue mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] h-[44.31px]"
             >
-              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
+              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Unfold The Timeline
               </p>
             </Buttons>

@@ -1,25 +1,5 @@
 import React, { useState } from "react";
-import Image from "next/image";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
-import TusMarker from "@/assets/images/general/landing-page/mapping-images/marker.png";
-import { MapLogos } from "./general.dto";
 import { motion } from "framer-motion";
-import icon from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
-
-let DefaultIcon = L.icon({
-  iconUrl: icon.src,
-  shadowUrl: iconShadow.src,
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-L.Marker.prototype.options.icon = DefaultIcon;
 
 const fadeIn = (
   direction: "left" | "right" | "up" | "down",
@@ -53,18 +33,6 @@ const Shannon = () => {
     setAnimationComplete(true);
   };
 
-  const latitude = 53.45710720439234;
-  const longitude = -7.897407425947888;
-
-  const customIcon = L.icon({
-    iconUrl: TusMarker.src,
-    iconSize: [40, 40],
-    iconAnchor: [32, 32],
-  });
-
-  const [isCarouselPaused, setIsCarouselPaused] = useState(false);
-
-  /** Shared View for all devices */
   const sharedView = () => (
     <>
       <div className="px-4 sm:px-6 lg:px-10">
@@ -73,7 +41,7 @@ const Shannon = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-hackathone-font-yellow font-firaSans tracking-wide mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-hackathone-font-rocket-red font-firaSans tracking-wide mb-4"
         >
           Technology University of the Shannon
         </motion.h1>
@@ -85,81 +53,49 @@ const Shannon = () => {
           onAnimationComplete={handleAnimationComplete}
           className="text-justify my-8 text-base sm:text-lg md:text-xl font-hackathoneCabinetGrotesk font-[400] text-white leading-relaxed"
         >
-          <span className="font-black text-[#eafe07]">
+          <span className="font-black text-hackathone-font-rocket-red">
             NASA Spaceapps Challenge 2023
           </span>{" "}
           is being held at the heart of Ireland, Athlone.{" "}
-          <span className="font-black text-[#eafe07]">
+          <span className="font-black text-hackathone-font-rocket-red">
             Technology University of the Shannon
           </span>{" "}
           is being presented as the host location for this massive in-person
           hackathon. The university needs no introduction for its merits in
           innovation and technology, preaching knowledge and excellence to over{" "}
-          <span className="font-black text-[#eafe07]">7000+</span> students. It
-          is also responsible for supporting the hackathon with technological
-          components, hackshop materials and subject matter experts to provide
-          mentorship for a smooth and exciting event.
+          <span className="font-black text-hackathone-font-rocket-red">
+            7000+
+          </span>{" "}
+          students. It is also responsible for supporting the hackathon with
+          technological components, hackshop materials and subject matter
+          experts to provide mentorship for a smooth and exciting event.
         </motion.p>
       </div>
       <div className="px-4 sm:px-6 lg:px-10">
-        <MapContainer
-          center={[latitude, longitude]}
-          zoom={16}
-          scrollWheelZoom={false}
-          style={{ width: "100%" }}
-          className="rounded-lg lg:h-[500px] h-[300px]"
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          />
-          <Marker position={[latitude, longitude]} icon={customIcon}>
-            <Popup>
-              <div
-                onMouseEnter={() => setIsCarouselPaused(true)}
-                onMouseLeave={() => setIsCarouselPaused(false)}
-              >
-                <Carousel
-                  showStatus={false}
-                  showIndicators={false}
-                  showThumbs={false}
-                  showArrows={false}
-                  autoPlay={!isCarouselPaused}
-                  infiniteLoop
-                >
-                  {MapLogos.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-center p-4"
-                    >
-                      <Image
-                        src={item.src}
-                        alt={`Logo ${index}`}
-                        layout="fill"
-                        objectFit="contain"
-                      />
-                    </div>
-                  ))}
-                </Carousel>
-              </div>
-            </Popup>
-          </Marker>
-        </MapContainer>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.8253383388155
+          !2d-7.907762524009276!3d53.4179497693644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+          .1!3m3!1m2!1s0x485c496f19ccea6b%3A0x1f3a077e5c4fdffd!2sTechnological%20Universi
+          ty%20of%20the%20Shannon%3A%20Midlands!5e0!3m2!1sen!2sng!4v1721568682708!5m2!1sen!2sng"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="rounded-lg lg:h-[400px] h-[300px] w-full"
+        ></iframe>
       </div>
     </>
   );
 
-  /** Desktop View */
   const desktopView = () => (
     <motion.div
       style={{ backgroundSize: "21%" }}
-      className="TabletScreen:hidden MobileScreen:hidden lg:block h-full w-full mt-20 mb-36 py-8"
+      className="TabletScreen:hidden MobileScreen:hidden lg:block h-full mt-20 mb-36 mx-[8.34%] py-8"
     >
       {sharedView()}
     </motion.div>
   );
 
-  /** Tablet View */
   const tabletView = () => (
     <motion.div
       style={{ backgroundSize: "21%" }}
@@ -169,7 +105,6 @@ const Shannon = () => {
     </motion.div>
   );
 
-  /** Mobile View */
   const mobileView = () => (
     <motion.div
       style={{ backgroundSize: "21%" }}

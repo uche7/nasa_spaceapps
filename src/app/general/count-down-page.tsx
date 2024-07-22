@@ -1,133 +1,116 @@
-import React, { useState, useEffect } from "react";
-import { countDownData } from "./general.dto";
+"use client";
 
-const CountDownPage = () => {
-  const createCountDownState = () => {
-    return countDownData.map(() => 0);
-  };
+import React, { useState, useEffect, useCallback } from "react";
 
-  const [counts, setCounts] = useState(createCountDownState);
+interface CountdownTimerProps {
+  targetDate: string;
+}
+
+const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    countDownData.forEach((item, index) => {
-      let start = 0;
-      const end = parseInt(item.counts.replace(/,/g, ""));
-      if (start === end) return;
-
-      const totalDuration = 5000; // 5 seconds
-      const incrementValue = end / (totalDuration / 10); // Calculate the increment value per 10ms interval
-
-      const timer = setInterval(() => {
-        start += incrementValue;
-        setCounts((prevCounts) => {
-          const newCounts = [...prevCounts];
-          newCounts[index] = Math.min(Math.floor(start), end);
-          return newCounts;
-        });
-        if (start >= end) clearInterval(timer);
-      }, 10); // Update every 10ms for smoother animation
-    });
+    setIsClient(true);
   }, []);
 
-  const formatCount = (count: any) => {
-    return count.toLocaleString();
-  };
+  const calculateTimeLeft = useCallback(() => {
+    const difference = +new Date(targetDate) - +new Date();
+    let timeLeft: { [key: string]: number } = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  }, [targetDate]);
+
+  const [timeLeft, setTimeLeft] = useState<{ [key: string]: number }>(
+    calculateTimeLeft()
+  );
+
+  useEffect(() => {
+    if (isClient) {
+      const timer = setTimeout(() => {
+        setTimeLeft(calculateTimeLeft());
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isClient, timeLeft, calculateTimeLeft]);
+
+  const timerComponents = Object.keys(timeLeft).map((interval) =>
+    timeLeft[interval] ? (
+      <span key={interval} className="mx-2 text-hackathone-font-rocket-red lg:font-[800] lg:file:text-[24px] text-center">
+        {timeLeft[interval]} {interval}{" "}
+      </span>
+    ) : null
+  );
+
+  if (!isClient) {
+    return null;
+  }
 
   /** Desktop View */
-  const desktopView = () => {
-    return (
-      <div className="TabletScreen:hidden MobileScreen:hidden mx-[8.94%] mb-[139.04px] flex flex-col items-center justify-center">
-        <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[42px]">
-          DISCOVER
-        </h2>
-        <p className="font-hackathoneSFProDisplay font-[400] text-[18px] mt-[32px] mb-[68px]">
-          GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
-        </p>
-        <div className="bg-hackathone-background-grey flex flex-row items-center justify-center gap-[48px] rounded-xl p-[3%]">
-          {countDownData.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center"
-            >
-              <figure className="font-hackathoneSFProDisplay text-hackathone-font-yellow font-[800] text-[60px]">
-                {formatCount(counts[index])}
-              </figure>
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px]">
-                {item.dec1}
-              </p>
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px]">
-                {item.dec2}
-              </p>
-            </div>
-          ))}
-        </div>
+  const desktopView = () => (
+    <div className="TabletScreen:hidden MobileScreen:hidden mx-[8.94%] mb-[139.04px] flex flex-col items-center justify-center">
+      <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[42px]">
+        DISCOVER
+      </h2>
+      <p className="font-hackathoneSFProDisplay font-[400] text-[18px] mt-[32px] mb-[68px]">
+        GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
+      </p>
+      <div className="bg-hackathone-background-grey flex flex-row items-center justify-center gap-[48px] rounded-xl p-[3%]">
+        {timerComponents.length ? (
+          timerComponents
+        ) : (
+          <span>Time&apos;s up!</span>
+        )}
       </div>
-    );
-  };
+    </div>
+  );
 
   /** Tablet View */
-  const tabletView = () => {
-    return (
-      <div className="DesktopScreen:hidden MobileScreen:hidden mb-[139.04px] flex flex-col items-center justify-center">
-        <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[42px]">
-          DISCOVER
-        </h2>
-        <p className="font-hackathoneSFProDisplay font-[400] text-[18px] mt-[32px] mb-[48px]">
-          GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
-        </p>
-        <div className="bg-hackathone-background-grey flex flex-col items-center justify-center gap-[24px] rounded-xl p-[9%]">
-          {countDownData.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center"
-            >
-              <figure className="font-hackathoneSFProDisplay text-hackathone-font-yellow font-[800] text-[40px]">
-                {formatCount(counts[index])}
-              </figure>
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px]">
-                {item.dec1}
-              </p>
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px]">
-                {item.dec2}
-              </p>
-            </div>
-          ))}
-        </div>
+  const tabletView = () => (
+    <div className="DesktopScreen:hidden MobileScreen:hidden mb-[139.04px] flex flex-col items-center justify-center">
+      <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[42px]">
+        DISCOVER
+      </h2>
+      <p className="font-hackathoneSFProDisplay font-[400] text-[18px] mt-[32px] mb-[48px]">
+        GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
+      </p>
+      <div className="bg-hackathone-background-grey flex flex-row items-center justify-center gap-[24px] rounded-xl p-[5%]">
+        {timerComponents.length ? (
+          timerComponents
+        ) : (
+          <span>Time&apos;s up!</span>
+        )}
       </div>
-    );
-  };
+    </div>
+  );
 
   /** Mobile View */
-  const mobileView = () => {
-    return (
-      <div className="DesktopScreen:hidden TabletScreen:hidden mb-[139.04px] flex flex-col items-center justify-center">
-        <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[32px]">
-          DISCOVER
-        </h2>
-        <p className="font-hackathoneSFProDisplay font-[400] text-[15px] text-wrap mx-4 mt-[32px] mb-[48px]">
-          GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
-        </p>
-        <div className="bg-hackathone-background-grey flex flex-col items-center justify-center gap-[16px] rounded-xl p-[15%]">
-          {countDownData.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center"
-            >
-              <figure className="font-hackathoneSFProDisplay text-hackathone-font-yellow font-[800] text-[40px]">
-                {formatCount(counts[index])}
-              </figure>
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px]">
-                {item.dec1}
-              </p>
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px]">
-                {item.dec2}
-              </p>
-            </div>
-          ))}
-        </div>
+  const mobileView = () => (
+    <div className="DesktopScreen:hidden TabletScreen:hidden mb-[139.04px] flex flex-col items-center justify-center">
+      <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[32px]">
+        DISCOVER
+      </h2>
+      <p className="font-hackathoneSFProDisplay font-[400] text-[15px] text-wrap mx-4 mt-[32px] mb-[48px]">
+        GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
+      </p>
+      <div className="bg-hackathone-background-grey flex flex-row items-center justify-center gap-[16px] m-[24px] rounded-xl p-[3%]">
+        {timerComponents.length ? (
+          timerComponents
+        ) : (
+          <span>Time&apos;s up!</span>
+        )}
       </div>
-    );
-  };
+    </div>
+  );
 
   return (
     <section>

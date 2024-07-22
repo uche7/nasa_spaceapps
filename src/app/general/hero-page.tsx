@@ -11,7 +11,7 @@ const HeroPage = () => {
     return (
       <div className="TabletScreen:hidden MobileScreen:hidden flex items-center justify-between px-[6.94%] mt-[59.62px] mb-[81.79px] ">
         <div className="w-[35.46%]">
-          <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-yellow text-[65.08px] leading-[73.26px]">
+          <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
             <p>Welcome To</p>
             <p>HackAthlone</p>
           </div>
@@ -40,7 +40,7 @@ const HeroPage = () => {
               title="Register Here"
               className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
             >
-              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
+              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Register Here
               </p>
             </motion.button>
@@ -49,12 +49,15 @@ const HeroPage = () => {
                 scale: 1.1,
                 transition: { duration: 0.5 },
               }}
+              onClick={() =>
+                window.open("https://www.hackathlone.com/", "_blank")
+              }
               whileTap={{ scale: 0.9 }}
-              title="Hackathone Diaries"
+              title="Hackathone 2023"
               className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
             >
-              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
-                Hackathone Diaries
+              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                Hackathone 2023
               </p>
             </motion.button>
           </div>
@@ -79,7 +82,7 @@ const HeroPage = () => {
       <div className="DesktopScreen:hidden MobileScreen:hidden flex items-center justify-between mt-[36px] px-[6.94%]">
         <div className="flex justify-center w-full">
           <div>
-            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-yellow text-[65.08px] leading-[73.26px]">
+            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
               <p>Welcome To</p>
               <p>HackAthlone</p>
             </div>
@@ -114,12 +117,18 @@ const HeroPage = () => {
                     scale: 1.1,
                     transition: { duration: 0.5 },
                   }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
+                      "_blank"
+                    )
+                  }
                   whileTap={{ scale: 0.9 }}
-                  title="Meet The Champions"
+                  title=" Register Here"
                   className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
-                    Meet The Champions
+                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                    Register Here
                   </p>
                 </motion.button>
                 <motion.button
@@ -127,12 +136,15 @@ const HeroPage = () => {
                     scale: 1.1,
                     transition: { duration: 0.5 },
                   }}
+                  onClick={() =>
+                    window.open("https://www.hackathlone.com/", "_blank")
+                  }
                   whileTap={{ scale: 0.9 }}
-                  title="Hackathone Diaries"
+                  title="Hackathone 2023"
                   className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
-                    Hackathone Diaries
+                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                    Hackathone 2023
                   </p>
                 </motion.button>
               </div>
@@ -149,7 +161,7 @@ const HeroPage = () => {
       <div className="DesktopScreen:hidden TabletScreen:hidden flex items-center justify-between ">
         <div className="flex justify-center w-full">
           <div>
-            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-yellow text-[45.8px] leading-[56.79px] mt-[24px] px-[5.58%]">
+            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[45.8px] leading-[56.79px] mt-[24px] px-[5.58%]">
               <p>Welcome To</p>
               <p>HackAthlone</p>
               <div>
@@ -167,12 +179,18 @@ const HeroPage = () => {
                     scale: 1.1,
                     transition: { duration: 0.5 },
                   }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
+                      "_blank"
+                    )
+                  }
                   whileTap={{ scale: 0.9 }}
-                  title="Meet The Champions"
+                  title=" Register Here"
                   className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
-                    Meet The Champions
+                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                    Register Here
                   </p>
                 </motion.button>
                 <motion.button
@@ -180,12 +198,15 @@ const HeroPage = () => {
                     scale: 1.1,
                     transition: { duration: 0.5 },
                   }}
+                  onClick={() =>
+                    window.open("https://www.hackathlone.com/", "_blank")
+                  }
                   whileTap={{ scale: 0.9 }}
-                  title="Hackathone Diaries"
+                  title="Hackathone 2023"
                   className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-yellow">
-                    Hackathone Diaries
+                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                    Hackathone 2023
                   </p>
                 </motion.button>
               </div>
