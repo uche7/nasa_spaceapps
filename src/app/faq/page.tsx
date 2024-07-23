@@ -13,6 +13,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 const faq = () => {
   /** Desktop View */
 
@@ -33,7 +34,7 @@ const faq = () => {
       <Typography variant="h4" gutterBottom className="m-4">
         Frequently Asked Questions
       </Typography>
-      <Accordion className="m-8 bg-hackathone-font-martin-red text-white">
+      <Accordion className="m-8 bg-hackathone-font-martin-red text-white"  disableGutters>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -47,11 +48,11 @@ const faq = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="m-8 bg-hackathone-font-martin-red text-white">
+      <Accordion className="m-8 bg-hackathone-font-martin-red text-white"  disableGutters>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          aria-controls="panel1a-content"
+          id="panel1a-header"
         >
           <Typography>How do I register to participate in the 2024 NASA Space Apps Challenge?</Typography>
         </AccordionSummary>
