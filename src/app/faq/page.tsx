@@ -29,11 +29,11 @@ const faq = () => {
       
       <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
       <NavigationBar />
-      <div className="p-4">
-      <Typography variant="h4" gutterBottom>
+      <div className="m-4">
+      <Typography variant="h4" gutterBottom className="m-4">
         Frequently Asked Questions
       </Typography>
-      <Accordion>
+      <Accordion className="m-8 bg-hackathone-font-martin-red text-white">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -47,7 +47,7 @@ const faq = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className="m-8 bg-hackathone-font-martin-red text-white">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
