@@ -13,17 +13,20 @@ const Blogs = () => {
 
   return (
     
-    <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
-    <div className="relative min-h-screen bg-black text-white">
+    <>
+      <div className="relative min-h-screen bg-black text-white">
       <div className="fixed inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas camera={{ position: [0, 0, 1] }}>
           <CloudParticleBg />
         </Canvas>
       </div>
       
-    </div>
-    <CardGrid />
-    </div>
+      
+    
+      <CardGrid />
+      </div>
+      </>
+    
   );
 };
 
