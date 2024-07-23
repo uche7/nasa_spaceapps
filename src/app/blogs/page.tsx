@@ -6,7 +6,8 @@ import { Canvas } from "@react-three/fiber";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import { motion } from "framer-motion";
 import CardGrid from "./CardGrid";
-
+import NavigationBar from "../general/navigation-bar";
+import Footer from "../general/footer";
 const Blogs = () => {
   /** Desktop View */
 
@@ -21,9 +22,11 @@ const Blogs = () => {
         </Canvas>
       </div>
       
-      
-    
+      <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
+      <NavigationBar />
       <CardGrid />
+      <Footer />
+      </div>
       </div>
       </>
     
