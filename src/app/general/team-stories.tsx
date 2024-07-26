@@ -14,7 +14,7 @@ const TeamStories = () => {
 
   return (
     <div className="px-4 sm:px-6 lg:px-10">
-      <motion.h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-yellow font-[800] text-center lg:text-4xl sm:text-3xl text-2xl">
+      <motion.h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-yellow font-extrabold text-center lg:text-4xl sm:text-3xl text-2xl">
         Hackathon Unplugged: Team Stories
       </motion.h1>
       <motion.p className="font-hackathoneSFProDisplay text-center lg:text-xl sm:text-lg text-base mt-2">
@@ -27,13 +27,13 @@ const TeamStories = () => {
               index === currentIndex && (
                 <motion.div
                   key={index}
-                  className="absolute w-full text-center text-lg px-4"
+                  className="absolute w-full text-center px-4"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.8 }}
                 >
-                  <motion.p className="font-hackathoneCabinetGrotesk sm:text-lg text-sm mx-auto max-w-prose">
+                  <motion.p className="font-hackathoneCabinetGrotesk sm:text-lg text-sm mx-auto">
                     {item.text}
                   </motion.p>
                   <motion.p className="font-hackathoneSFProDisplay mt-5 sm:text-base text-xs">
@@ -48,7 +48,9 @@ const TeamStories = () => {
             <button
               key={index}
               className={`h-2 w-2 sm:h-3 sm:w-3 rounded-full ${
-                currentIndex === index ? "bg-black" : "bg-gray-400"
+                currentIndex === index
+                  ? "bg-hackathone-font-rocket-red"
+                  : "bg-gray-400"
               }`}
               onClick={() => setCurrentIndex(index)}
             />
