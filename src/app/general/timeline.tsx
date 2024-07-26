@@ -47,7 +47,7 @@ const TimelineItemComponent = ({
           <Typography className="text-gray-500 text-sm">{date}</Typography>
         </TimelineOppositeContent>
         <TimelineSeparator className="flex flex-col items-center">
-          <TimelineDot className="bg-hackathone-font-rocket-red" />
+          <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
           <TimelineConnector
             className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
             style={{
