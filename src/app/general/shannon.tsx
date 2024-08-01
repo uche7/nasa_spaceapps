@@ -54,7 +54,7 @@ const Shannon = () => {
           className="text-justify my-8 text-base sm:text-lg md:text-xl font-hackathoneCabinetGrotesk font-[400] text-white leading-relaxed"
         >
           <span className="font-black text-hackathone-font-rocket-red">
-            NASA Spaceapps Challenge 2023
+            NASA Spaceapps Challenge 2024
           </span>{" "}
           is being held at the heart of Ireland, Athlone.{" "}
           <span className="font-black text-hackathone-font-rocket-red">

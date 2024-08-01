@@ -17,7 +17,7 @@ const SpaceAgencies = () => {
           <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[223.34%]">
             In{" "}
             <span className="text-hackathone-font-rocket-red font-[500]">
-              2022
+              2024
             </span>
             , NASA collaborated with even more{" "}
             <span className="text-hackathone-font-rocket-red font-[500]">
@@ -59,7 +59,7 @@ const SpaceAgencies = () => {
           <p className="font-hackathoneCabinetGrotesk font-[400] text-[26px] leading-[223.34%]">
             In{" "}
             <span className="text-hackathone-font-rocket-red font-[500]">
-              2022
+              2024
             </span>
             , NASA collaborated with even more{" "}
             <span className="text-hackathone-font-rocket-red font-[500]">
@@ -101,7 +101,7 @@ const SpaceAgencies = () => {
           <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[223.34%]">
             In{" "}
             <span className="text-hackathone-font-rocket-red font-[500]">
-              2022
+              2024
             </span>
             , NASA collaborated with even more{" "}
             <span className="text-hackathone-font-rocket-red font-[500]">

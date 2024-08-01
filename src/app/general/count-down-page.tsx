@@ -45,7 +45,10 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
 
   const timerComponents = Object.keys(timeLeft).map((interval) =>
     timeLeft[interval] ? (
-      <span key={interval} className="mx-2 text-hackathone-font-rocket-red lg:font-[800] lg:file:text-[24px] text-center">
+      <span
+        key={interval}
+        className="mx-2 text-hackathone-font-rocket-red lg:font-[800] lg:file:text-[24px] text-center"
+      >
         {timeLeft[interval]} {interval}{" "}
       </span>
     ) : null
@@ -59,10 +62,10 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   const desktopView = () => (
     <div className="TabletScreen:hidden MobileScreen:hidden mx-[8.94%] mb-[139.04px] flex flex-col items-center justify-center">
       <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[42px]">
-        DISCOVER
+        Joins Us Now
       </h2>
       <p className="font-hackathoneSFProDisplay font-[400] text-[18px] mt-[32px] mb-[68px]">
-        GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
+        HACKATHONE 2024 IS HERE WITHIN!
       </p>
       <div className="bg-hackathone-background-grey flex flex-row items-center justify-center gap-[48px] rounded-xl p-[3%]">
         {timerComponents.length ? (
@@ -78,7 +81,7 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   const tabletView = () => (
     <div className="DesktopScreen:hidden MobileScreen:hidden mb-[139.04px] flex flex-col items-center justify-center">
       <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[42px]">
-        DISCOVER
+        Joins Us Now
       </h2>
       <p className="font-hackathoneSFProDisplay font-[400] text-[18px] mt-[32px] mb-[48px]">
         GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
@@ -97,7 +100,7 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   const mobileView = () => (
     <div className="DesktopScreen:hidden TabletScreen:hidden mb-[139.04px] flex flex-col items-center justify-center">
       <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-yellow text-[32px]">
-        DISCOVER
+        Joins Us Now
       </h2>
       <p className="font-hackathoneSFProDisplay font-[400] text-[15px] text-wrap mx-4 mt-[32px] mb-[48px]">
         GLOBAL NUMBERS FROM OUR PREVIOUS EVENT

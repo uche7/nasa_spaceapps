@@ -267,7 +267,7 @@ const Footer = () => {
             <p className="font-firaSans text-center py-3">
               Copyright ©2024 NASA
             </p>
-            <p className="font-overpass text-center py-3">
+            {/* <p className="font-overpass text-center py-3">
               Developed by{" "}
               <span>
                 <a
@@ -277,7 +277,7 @@ const Footer = () => {
                   Nnajiofor Uchenna
                 </a>
               </span>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
