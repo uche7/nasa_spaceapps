@@ -11,13 +11,19 @@ import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
 import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa.png";
 import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
 import Turkey from "@/assets/images/general/landing-page/space-agencies/turkey.svg";
+import Google from "@/assets/images/general/landing-page/collabrators/google.png";
+import Microsoft from "@/assets/images/general/landing-page/collabrators/microsoft.png";
+import Teams from "@/assets/images/general/landing-page/collabrators/teams.png";
+import Tableau from "@/assets/images/general/landing-page/collabrators/tableau.png";
+import GoDaddy from "@/assets/images/general/landing-page/collabrators/goDaddy.png";
+import Planet from "@/assets/images/general/landing-page/collabrators/planet.png";
+import Azure from "@/assets/images/general/landing-page/collabrators/azure.png";
+import Miro from "@/assets/images/general/landing-page/collabrators/miro.png";
+import Ibm from "@/assets/images/general/landing-page/collabrators/ibm.png";
 import Tus1 from "@/assets/images/general/landing-page/mapping-images/tus1.jpg";
 import Tus2 from "@/assets/images/general/landing-page/mapping-images/tus2.jpg";
 import Tus3 from "@/assets/images/general/landing-page/mapping-images/tus3.jpg";
 import Tus4 from "@/assets/images/general/landing-page/mapping-images/tus4.jpg";
-import LightBulb from "@/assets/images/general/landing-page/light-bulb.png";
-import HackathonImage from "@/assets/images/general/landing-page/hackathon.png";
-import Trophy from "@/assets/images/general/landing-page/trophy.png";
 
 export const navigationData = (Router: any) => [
   {
@@ -134,6 +140,50 @@ export const agenciesSlider = [
   {
     img: Turkey,
     route: () => window.open("https://tua.gov.tr/en", "_blank"),
+  },
+];
+
+export const collabratorsSlider = [
+  {
+    img: Google,
+    route: () => window.open("https://about.google/", "_blank"),
+  },
+  {
+    img: Microsoft,
+    route: () =>
+      window.open("https://www.microsoft.com/en-in/about/", "_blank"),
+  },
+  {
+    img: Teams,
+    route: () =>
+      window.open(
+        "https://www.microsoft.com/en-US/microsoft-teams/group-chat-software",
+        "_blank"
+      ),
+  },
+  {
+    img: Tableau,
+    route: () => window.open("https://www.tableau.com/", "_blank"),
+  },
+  {
+    img: GoDaddy,
+    route: () => window.open("https://www.godaddy.com/en-in", "_blank"),
+  },
+  {
+    img: Planet,
+    route: () => window.open("https://www.planet.com/", "_blank"),
+  },
+  {
+    img: Azure,
+    route: () => window.open("https://azure.microsoft.com/en-in/", "_blank"),
+  },
+  {
+    img: Miro,
+    route: () => window.open("https://miro.com/", "_blank"),
+  },
+  {
+    img: Ibm,
+    route: () => window.open("https://www.ibm.com/in-en", "_blank"),
   },
 ];
 
