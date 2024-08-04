@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import {
-  Timeline,
+  Timeline as MuiTimeline,
   TimelineItem,
   TimelineSeparator,
   TimelineConnector,
@@ -8,101 +8,104 @@ import {
   TimelineDot,
   TimelineOppositeContent,
 } from "@mui/lab";
-import { Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import { events } from "./general.dto";
 
-const TimelineItemComponent = ({
-  date,
-  title,
-  content,
-  isLeftAligned,
-}: {
-  date: string;
-  title: string;
-  content: string;
-  isLeftAligned: boolean;
-}) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const contentRef = useRef<HTMLDivElement>(null);
+const Timeline = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [contentHeight, setContentHeight] = useState(0);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (contentRef.current) {
       setContentHeight(contentRef.current.scrollHeight);
     }
-  }, [isHovered]);
+  }, [hoveredIndex]);
 
   return (
-    <TimelineItem
-      className="relative flex items-start cursor-pointer"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <div
+      id="timeline"
+      className="flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
+        md:my-[124px] min-h-screen py-2 text-hackathone-font-rocket-red"
     >
-      <div
-        className={`flex ${
-          isLeftAligned ? "flex-row-reverse md:flex-row" : "flex-row"
-        } w-full`}
+      <Typography
+        variant="h3"
+        component="h1"
+        className="text-4xl font-bold mb-10"
       >
-        <TimelineOppositeContent className="hidden md:block">
-          <Typography className="text-gray-500 text-sm">{date}</Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator className="flex flex-col items-center">
-          <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
-          <TimelineConnector
-            className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
-            style={{
-              height: isHovered ? contentHeight + 20 : "100px",
-              backgroundColor: "#E43700",
-            }}
-          />
-        </TimelineSeparator>
-        <TimelineContent
-          className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
-          style={{
-            maxHeight: isHovered ? contentHeight + 80 : "90px",
-            backgroundColor: "#1e1e1e",
-            border: isHovered ? "2px solid #E43700" : "2px solid transparent",
-          }}
-        >
-          <Typography className="text-white font-bold text-lg">
-            {title}
-          </Typography>
-          <Typography className="text-gray-300 text-sm mt-2 block md:hidden">
-            {date}
-          </Typography>
-          <Typography
-            ref={contentRef}
-            className={`text-white transition-all duration-500 ease-in-out transform mt-2 ${
-              isHovered
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-2"
-            }`}
-          >
-            {content}
-          </Typography>
-        </TimelineContent>
-      </div>
-    </TimelineItem>
-  );
-};
-
-const HackathoneTimeline = () => {
-  return (
-    <div className="mt-12 font-bold text-4xl text-hackathone-font-rocket-red">
-      <h1 className="text-center md:mb-8">Timeline</h1>
-      <Timeline className="p-4 lg:p-8">
+        Timeline
+      </Typography>
+      <MuiTimeline position="alternate-reverse">
         {events.map((event, index) => (
-          <TimelineItemComponent
+          <TimelineItem
             key={index}
-            date={event.date}
-            title={event.title}
-            content={event.content}
-            isLeftAligned={index % 2 === 0}
-          />
+            className="cursor-pointer"
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <TimelineOppositeContent className="hidden md:block px-4">
+              <Typography
+                variant="body2"
+                color="white"
+                className="text-base font-normal"
+              >
+                {event.date}
+              </Typography>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
+              {index < events.length - 1 && (
+                <TimelineConnector
+                  className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
+                  style={{
+                    height:
+                      hoveredIndex === index ? contentHeight + 20 : "100px",
+                    backgroundColor: "#E43700",
+                  }}
+                />
+              )}
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper
+                elevation={3}
+                className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
+                style={{
+                  maxHeight:
+                    hoveredIndex === index ? contentHeight + 80 : "90px",
+                  backgroundColor: "#1e1e1e",
+                  border:
+                    hoveredIndex === index
+                      ? "2px solid #E43700"
+                      : "2px solid transparent",
+                }}
+              >
+                <Typography
+                  variant="h6"
+                  component="h1"
+                  className="md:text-xl text-[14px] font-bold text-white"
+                >
+                  {event.title}
+                </Typography>
+                {event.content && (
+                  <Typography
+                    ref={contentRef}
+                    className={`text-white transition-all duration-500 ease-in-out transform mt-2
+                         TabletScreen:text-[14px] MobileScreen:text-[12px] ${
+                           hoveredIndex === index
+                             ? "opacity-100 translate-y-0"
+                             : "opacity-0 -translate-y-2"
+                         }`}
+                  >
+                    {event.content}
+                  </Typography>
+                )}
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
         ))}
-      </Timeline>
+      </MuiTimeline>
     </div>
   );
 };
 
-export default HackathoneTimeline;
+export default Timeline;

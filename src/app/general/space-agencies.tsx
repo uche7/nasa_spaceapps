@@ -14,7 +14,7 @@ const SpaceAgencies = () => {
           <Image src={Rocket} width={1000} alt={"Dev Team Icon"}></Image>
         </div>
         <div className="w-[123.45%]">
-          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[223.34%]">
+          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[160%]">
             In{" "}
             <span className="text-hackathone-font-rocket-red font-[500]">
               2024
@@ -98,7 +98,7 @@ const SpaceAgencies = () => {
           <Image src={Rocket} width={1000} alt={"Dev Team Icon"}></Image>
         </div>
         <div className="">
-          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[223.34%]">
+          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[173.34%]">
             In{" "}
             <span className="text-hackathone-font-rocket-red font-[500]">
               2024

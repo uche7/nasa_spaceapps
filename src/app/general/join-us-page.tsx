@@ -12,7 +12,7 @@ const JoinUsPage = () => {
         <div className="w-[49.11%] h-[477.65px]">
           <div>
             <div className="flex flex-row gap-[9.81px]">
-              <div className="bg-hackathone-background-dark-blue w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
+              <div className="bg-hackathone-font-martin-red w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
               <div className="text-slate-300 font-hackathoneSFProDisplay font-[700] text-[14.72px] leading-[17.57px]">
                 HackAthlone
               </div>
@@ -74,7 +74,7 @@ const JoinUsPage = () => {
               assist the students in producing high-quality projects. This
               hackathon will be documented for open-source research purposes.
             </p>
-            <motion.button
+            <motion.a
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.5 },
@@ -82,11 +82,19 @@ const JoinUsPage = () => {
               whileTap={{ scale: 0.9 }}
               title="Unfold The Timeline"
               className="bg-white mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+              href="#timeline"
+              onClick={(event) => {
+                event.preventDefault();
+                const element = document.getElementById("timeline");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
               <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Unfold The Timeline
               </p>
-            </motion.button>
+            </motion.a>
           </div>
         </div>
       </div>
@@ -100,7 +108,7 @@ const JoinUsPage = () => {
         <div className="mb-[24px]">
           <div>
             <div className="flex flex-row gap-[9.81px]">
-              <div className="bg-hackathone-background-dark-blue w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
+              <div className="bg-hackathone-font-martin-red w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
               <div className="text-slate-300 font-hackathoneSFProDisplay font-[700] text-[14.72px] leading-[17.57px]">
                 HackAthlone
               </div>
@@ -162,10 +170,18 @@ const JoinUsPage = () => {
               assist the students in producing high-quality projects. This
               hackathon will be documented for open-source research purposes.
             </p>
-            <motion.button
+            <motion.a
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.5 },
+              }}
+              href="#timeline"
+              onClick={(event) => {
+                event.preventDefault();
+                const element = document.getElementById("timeline");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
               }}
               whileTap={{ scale: 0.9 }}
               title="Unfold The Timeline"
@@ -174,7 +190,7 @@ const JoinUsPage = () => {
               <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Unfold The Timeline
               </p>
-            </motion.button>
+            </motion.a>
           </div>
         </div>
       </div>
@@ -187,7 +203,7 @@ const JoinUsPage = () => {
       <div className="TabletScreen:hidden DesktopScreen:hidden mt-[90.79px] mx-[2.28%] mb-[122.68px]">
         <div className="mb-[22.68px]">
           <div className="flex flex-row gap-[9.81px]">
-            <div className="bg-hackathone-background-dark-blue w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
+            <div className="bg-hackathone-font-martin-red w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
             <div className="text-slate-300 font-hackathoneSFProDisplay font-[700] text-[14.72px] leading-[17.57px]">
               HackAthlone
             </div>
@@ -245,10 +261,18 @@ const JoinUsPage = () => {
               assist the students in producing high-quality projects. This
               hackathon will be documented for open-source research purposes.
             </p>
-            <Buttons
+            <motion.a
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.5 },
+              }}
+              href="#timeline"
+              onClick={(event) => {
+                event.preventDefault();
+                const element = document.getElementById("timeline");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
               }}
               whileTap={{ scale: 0.9 }}
               title="Unfold The Timeline"
@@ -257,7 +281,7 @@ const JoinUsPage = () => {
               <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Unfold The Timeline
               </p>
-            </Buttons>
+            </motion.a>
           </div>
         </div>
       </div>

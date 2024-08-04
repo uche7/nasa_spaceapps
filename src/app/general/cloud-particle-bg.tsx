@@ -49,7 +49,7 @@ const CloudParticleBg: React.FC = () => {
         <PointMaterial
           transparent
           color="#ffa500"
-          size={0.005} // Adjust size for performance
+          size={0.004} // Adjust size for performance
           sizeAttenuation={true}
           depthWrite={false}
         />

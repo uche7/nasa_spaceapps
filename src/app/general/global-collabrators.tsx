@@ -8,7 +8,7 @@ const GlobalCollabrators = () => {
     return (
       <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row items-center justify-center gap-[36px] mx-[8.34%]">
         <div className="w-[123.45%]">
-          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[223.34%]">
+          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[160%]">
             <span className="text-hackathone-font-rocket-red font-[500]">
               This year
             </span>
@@ -102,7 +102,7 @@ const GlobalCollabrators = () => {
     return (
       <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[4.34%]">
         <div>
-          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[223.34%]">
+          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[173.34%]">
             <span className="text-hackathone-font-rocket-red font-[500]">
               This year
             </span>

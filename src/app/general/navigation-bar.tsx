@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { navigationData } from "./general.dto";
-import DeeduLogo from "@/assets/images/general/landing-page/deedu-logo.png";
+import NasaLogo from "@/assets/images/general/landing-page/spaceapps_Logo.png";
 import MenuIcon from "@/assets/images/general/landing-page/menu-icon.svg";
 
 export default function NavigationBar() {
@@ -54,19 +54,15 @@ export default function NavigationBar() {
       className="MobileScreen:hidden TabletScreen:hidden sticky bg-hackathone-background-grey 
         flex items-center justify-between h-[68px] px-[1.7%] mx-[7%] rounded-xl"
     >
-      <div
-        onClick={() =>
-          window.open("https://deeducommunity.netlify.app/", "_blank")
-        }
-      >
+      <div onClick={() => Router.push("/")}>
         <Image
           className="cursor-pointer"
-          src={DeeduLogo}
-          width={100}
+          src={NasaLogo}
+          width={50}
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div className="flex flex-row gap-[16px]">
+      <div className="flex flex-row gap-[42px]">
         {navigationInfo.map((item, index) => (
           <div
             key={index}
@@ -86,15 +82,11 @@ export default function NavigationBar() {
       className="DesktopScreen:hidden MobileScreen:hidden bg-hackathone-background-grey px-[1.7%]
          flex flex-row justify-between py-[6px] mx-[3%] rounded-xl"
     >
-      <div
-        onClick={() =>
-          window.open("https://deeducommunity.netlify.app/", "_blank")
-        }
-      >
+      <div onClick={() => Router.push("/")}>
         <Image
           className="cursor-pointer"
-          src={DeeduLogo}
-          width={100}
+          src={NasaLogo}
+          width={50}
           alt={"Deedu logo"}
         ></Image>
       </div>
@@ -115,15 +107,11 @@ export default function NavigationBar() {
       className="DesktopScreen:hidden TabletScreen:hidden bg-hackathone-background-grey px-[1.2%]
          flex flex-row items-center justify-between py-[6px] mx-[1%] rounded-md"
     >
-      <div
-        onClick={() =>
-          window.open("https://deeducommunity.netlify.app/", "_blank")
-        }
-      >
+      <div onClick={() => Router.push("/")}>
         <Image
           className="cursor-pointer mt-2"
-          src={DeeduLogo}
-          width={70}
+          src={NasaLogo}
+          width={50}
           alt={"Deedu logo"}
         ></Image>
       </div>

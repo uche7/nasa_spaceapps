@@ -1,19 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { agenciesSlider } from "./general.dto";
+import { collabratorsSlider } from "./general.dto";
 
-const sliderItems = [...agenciesSlider, ...agenciesSlider];
+const sliderItems = [...collabratorsSlider, ...collabratorsSlider];
 
 export const CollabratorsSlider = () => {
   return (
-    <div className="my-9 overflow-hidden">
+    <div className="my-3 overflow-hidden">
       <motion.div
         className="flex flex-row items-center lg:gap-[94px] gap-4"
         initial={{ x: 0 }}
         animate={{ x: "-50%" }} // To Move to half the width of the duplicated items
         transition={{
-          duration: 30, // To Adjust duration for scroll speed
+          duration: 30,
           ease: "linear",
           repeat: Infinity,
         }}
