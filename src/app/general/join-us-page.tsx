@@ -21,7 +21,7 @@ const JoinUsPage = () => {
               The Hackathone Challenge will be kicking off soon
             </h3>
             <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[14.72px] leading-[17.57px] mt-[9.81px]">
-              Join us October 6-8, 2024 for the largest annual space & sciences
+              Join us October 4-6, 2024 for the largest annual space & sciences
               hackathon in the world!
             </p>
           </div>
@@ -81,7 +81,7 @@ const JoinUsPage = () => {
               }}
               whileTap={{ scale: 0.9 }}
               title="Unfold The Timeline"
-              className="bg-white mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+              className="bg-hackathone-background-dark-blue mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
               href="#timeline"
               onClick={(event) => {
                 event.preventDefault();
@@ -117,7 +117,7 @@ const JoinUsPage = () => {
               The Hackathone Challenge will be kicking off soon
             </h3>
             <p className="font-hackathoneSFProDisplay font-[400] text-slate-300 text-[14.72px] leading-[14.57px] mt-[9.81px]">
-              Join us October 6-8, 2024 for the largest annual space & sciences
+              Join us October 4-6, 2024 for the largest annual space & sciences
               hackathon in the world!
             </p>
           </div>
@@ -185,7 +185,7 @@ const JoinUsPage = () => {
               }}
               whileTap={{ scale: 0.9 }}
               title="Unfold The Timeline"
-              className="bg-white mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+              className="bg-hackathone-background-dark-blue mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
             >
               <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Unfold The Timeline
@@ -212,7 +212,7 @@ const JoinUsPage = () => {
             The Hackathone Challenge will be kicking off soon
           </h3>
           <p className="font-hackathoneSFProDisplay font-[400] text-slate-300 text-[14.72px] leading-[14.57px] mt-[9.81px] mb-4">
-            Join us October 6-8, 2024 for the largest annual space & sciences
+            Join us October 4-6, 2024 for the largest annual space & sciences
             hackathon in the world!
           </p>
           <Image
@@ -276,7 +276,7 @@ const JoinUsPage = () => {
               }}
               whileTap={{ scale: 0.9 }}
               title="Unfold The Timeline"
-              className="bg-white mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] h-[44.31px]"
+              className="bg-hackathone-background-dark-blue mt-[32.82px] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] h-[44.31px]"
             >
               <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Unfold The Timeline
