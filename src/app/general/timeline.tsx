@@ -60,7 +60,7 @@ const Timeline = () => {
                   style={{
                     height:
                       hoveredIndex === index ? contentHeight + 20 : "100px",
-                    backgroundColor: "#E43700",
+                    backgroundColor: "#52525B",
                   }}
                 />
               )}
@@ -75,7 +75,7 @@ const Timeline = () => {
                   backgroundColor: "#1e1e1e",
                   border:
                     hoveredIndex === index
-                      ? "2px solid #E43700"
+                      ? "2px solid #52525B"
                       : "2px solid transparent",
                 }}
               >

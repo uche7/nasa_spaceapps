@@ -21,7 +21,7 @@ const HeroPage = () => {
                 The Sun Touches Everything
               </span>{" "}
               Join Unique World Robotics for the 2024 NASA Space Apps Challenge
-              on October 5 & 6 as we celebrate this year&apos;s theme with NASA
+              on October 4 to 6 as we celebrate this year&apos;s theme with NASA
               Heliophysics.
             </p>
           </div>
@@ -39,7 +39,7 @@ const HeroPage = () => {
               }
               whileTap={{ scale: 0.9 }}
               title="Register Here"
-              className="bg-white mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+              className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
             >
               <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Register Here
@@ -51,11 +51,14 @@ const HeroPage = () => {
                 transition: { duration: 0.5 },
               }}
               onClick={() =>
-                window.open("https://www.hackathlone.com/", "_blank")
+                window.open(
+                  "https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/",
+                  "_blank"
+                )
               }
               whileTap={{ scale: 0.9 }}
               title="Hackathone 2023"
-              className="bg-white mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+              className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
             >
               <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                 Hackathone 2023
@@ -109,7 +112,7 @@ const HeroPage = () => {
                     The Sun Touches Everything
                   </span>{" "}
                   Join Unique World Robotics for the 2024 NASA Space Apps
-                  Challenge on October 5 & 6 as we celebrate this year&apos;s
+                  Challenge on October 4 to 6 as we celebrate this year&apos;s
                   theme with NASA Heliophysics.
                 </p>
               </div>
@@ -127,7 +130,7 @@ const HeroPage = () => {
                   }
                   whileTap={{ scale: 0.9 }}
                   title=" Register Here"
-                  className="bg-white mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+                  className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
                 >
                   <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                     Register Here
@@ -143,7 +146,7 @@ const HeroPage = () => {
                   }
                   whileTap={{ scale: 0.9 }}
                   title="Hackathone 2023"
-                  className="bg-white  mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+                  className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
                 >
                   <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                     Hackathone 2023
@@ -172,7 +175,7 @@ const HeroPage = () => {
                     The Sun Touches Everything
                   </span>{" "}
                   Join Unique World Robotics for the 2024 NASA Space Apps
-                  Challenge on October 5 & 6 as we celebrate this year&apos;s
+                  Challenge on October 4 to 6 as we celebrate this year&apos;s
                   theme with NASA Heliophysics.
                 </p>
               </div>
@@ -190,7 +193,7 @@ const HeroPage = () => {
                   }
                   whileTap={{ scale: 0.9 }}
                   title=" Register Here"
-                  className="bg-white  mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+                  className="bg-hackathone-background-dark-blue  mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
                 >
                   <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                     Register Here
@@ -206,7 +209,7 @@ const HeroPage = () => {
                   }
                   whileTap={{ scale: 0.9 }}
                   title="Hackathone 2023"
-                  className="bg-white  mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+                  className="bg-hackathone-background-dark-blue  mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
                 >
                   <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
                     Hackathone 2023

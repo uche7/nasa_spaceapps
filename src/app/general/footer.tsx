@@ -12,7 +12,7 @@ const Footer = () => {
               <a className="cursor-pointer" href="/">
                 <img
                   className=""
-                  src="https://www.hackathlone.com/spaceapps_Logo.png"
+                  src="https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/spaceapps_Logo.png"
                   width={180}
                   alt={""}
                 />
@@ -57,7 +57,7 @@ const Footer = () => {
                 <img
                   className="hover:scale-110 transition-transform ease-in-out duration-800"
                   width={40}
-                  src="https://www.hackathlone.com/facebook.png"
+                  src="https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/facebook.png"
                   alt={""}
                 />
               </a>
@@ -66,7 +66,7 @@ const Footer = () => {
                   className="hover:scale-110 transition-transform ease-in-out duration-800"
                   width={40}
                   height={100}
-                  src="https://www.hackathlone.com/instagram.png"
+                  src="https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/instagram.png"
                   alt={""}
                 />
               </a>
@@ -74,7 +74,7 @@ const Footer = () => {
                 <img
                   className="hover:scale-110 transition-transform ease-in-out duration-800"
                   width={40}
-                  src="https://www.hackathlone.com/linkedin.png"
+                  src="https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/linkedin.png"
                   alt={""}
                 />
               </a>
@@ -82,7 +82,7 @@ const Footer = () => {
                 <img
                   className="hover:scale-110 transition-transform ease-in-out duration-800"
                   width={40}
-                  src="https://www.hackathlone.com/twitter.png"
+                  src="https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/twitter.png"
                   alt={""}
                 />
               </a>
