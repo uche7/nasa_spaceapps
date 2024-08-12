@@ -10,6 +10,7 @@ export default function NavigationBar() {
   const Router = useRouter();
   const navigationInfo = useMemo(() => navigationData(Router), [Router]);
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+  const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
@@ -68,8 +69,24 @@ export default function NavigationBar() {
             key={index}
             className="cursor-pointer font-hackathoneSFProDisplay font-[400] hover:text-hackathone-font-rocket-red"
             onClick={item.route}
+            onMouseEnter={() =>
+              index === navigationInfo.length - 1 && setIsTooltipVisible(true)
+            }
+            onMouseLeave={() => setIsTooltipVisible(false)}
           >
             {item.text}
+            {index === navigationInfo.length - 1 && isTooltipVisible && (
+              <motion.div
+                className="absolute left-[90%] transform -translate-x-[50%] bottom-[-25px] z-50"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="bg-gray-800 bg-opacity-90 text-white p-2 rounded-md text-sm whitespace-nowrap text-center shadow-lg border border-white">
+                  Last Year Challenges
+                </div>
+              </motion.div>
+            )}
           </div>
         ))}
       </div>
