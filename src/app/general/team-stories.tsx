@@ -23,7 +23,7 @@ const TeamStories = () => {
         Hackathon Unplugged: Team Stories
       </h1>
       <p className="font-hackathoneSFProDisplay text-center lg:text-xl sm:text-lg text-base mt-2">
-        “Let's hear what the Teams have to say”
+        Let's hear what the Teams have to say
       </p>
       <div className="relative lg:mx-[8.34%] overflow-hidden p-4 rounded-lg shadow-md mt-6">
         <Slider {...settings}>
@@ -32,7 +32,7 @@ const TeamStories = () => {
               <p className="font-hackathoneCabinetGrotesk sm:text-lg text-sm mx-auto max-w-prose">
                 {item.text}
               </p>
-              <p className="font-hackathoneSFProDisplay mt-5 sm:text-base text-xs">
+              <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red mt-5" style={{ textShadow: '0 4px 6px rgba(234, 254, 7, 0.7)' }}>
                 {item.author}
               </p>
             </div>
