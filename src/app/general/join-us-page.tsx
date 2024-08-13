@@ -9,16 +9,16 @@ const JoinUsPage = () => {
   const desktopView = () => {
     return (
       <div className="TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[1.93%] mt-[126.77px] mx-[8.06%] mb-[179.04px]">
-        <div className="w-[49.11%] h-[40rem]">
+        <div className="mt-[4rem] w-[49.11%] h-[40rem] mr-[2rem]">
           <div>
             {/* <div className="flex flex-row gap-[0.5rem]">
               <div className="bg-hackathone-font-martin-red w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
             </div> */}
-            <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[35.99px] leading-[44.62px]">
+            <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[42px] leading-[44.62px]">
               The Hackathone Challenge will be kicking off soon
             </h3>
-            <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18.72px] leading-[24.57px] mt-[9.81px]">
-              Join us on <span className="font-bold text-[20px] text-hackathone-font-rocket-red">
+            <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18.72px] leading-[24.57px] mt-[9.81px]">
+              Join us on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
                 October 4-6, 2024
               </span> for the largest annual space & sciences
               hackathon in the world!
@@ -33,52 +33,44 @@ const JoinUsPage = () => {
             ></Image>
           </div>
         </div>
-        <div className="w-[48.95%] h-[40rem]">
-          <div className="bg-hackathone-background-grey h-[55%] rounded-[13.09px] p-1 border-double border-4 ">
-            <div className="pt-[1rem] pl-[1.93%] pr-[5.48%] text-center">
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[24.57px]">
+        <div className="mt-[4rem] w-[48.95%] h-auto">
+          <div className="h-auto rounded-[13.09px] p-1 border-2 ">
+            <div className="pt-[1rem] pl-[1.5rem] pr-[5.48%]">
+              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px]">
                 SpaceApps Athlone, also known as{" "}
-                <span className="text-hackathone-font-rocket-red">
+                <span className="text-hackathone-font-rocket-red font-[600]">
                   HackAthlone
                 </span>
                 , is one of the 300+ locations for this year&apos;s NASA
                 SpaceApps Challenge.{" "}
-                <span className="text-hackathone-font-rocket-red">
+                <span className="text-hackathone-font-rocket-red font-[600]">
                   Technology University of the Shannon
                 </span>{" "}
                 takes pride in hosting 200 participants on their campus for{" "}
-                <span className="text-hackathone-font-rocket-red">
+                <span className="text-hackathone-font-rocket-red font-[600]">
                   48 hours{" "}
                 </span>
                 to collaborate on{" "}
-                <span className="text-hackathone-font-rocket-red">
+                <span className="text-hackathone-font-rocket-red font-[600]">
                   30 problem statements
                 </span>{" "}
                 that cater to all STEAM fields.
               </p>
             </div>
-            <div className="h-[221.65px] mt-[11.8px] ml-[1.93%] mr-[5.48%] mb-[48.97px] text-center">
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[24.57px]">
-                <br />
+            <div className="mt-[0.5rem] pl-[1.5rem] pr-[5.48%] ">
+              <br />
+              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px] pb-[2rem]">
                 HackAthlone stands as the sole in-person Hackathon location in
                 Ireland for this event, offering exciting prizes, goodies, and
-                all necessary technical components and F&B provisions. It also
-                holds the distinction of being the sole location in Europe that
-                will livestream the event to the public.
+                all necessary technical components and F&B provisions.
               </p>
             </div>
           </div>
-          <div className="bg-hackathone-background-grey rounded-[13.09px] p-2 mt-[16.63px] pb-[36.17px] border-double border-4 text-center">
-            <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[24.57px] p-2 mt-[2.54px] mb-[1.5rem]">
+          <div className="rounded-[13.09px] p-2 mt-[16.63px] pb-[36.17px] border-2">
+            <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px] p-2 ml-[0.5rem] mt-[2.54px] mb-[1rem]">
               Skilled mentors from both academia and industry will join in to
               assist the students in producing high-quality projects. This
               hackathon will be documented for open-source research purposes.
-
-
-              <br /><br />
-              <span className="text-hackathone-font-rocket-red text font-bold text-[20px]">
-                Sign up now and take your first step <br /> toward exploring the mysteries of our Sun at the <br />2024 NASA Space Apps Challenge!
-              </span>
             </p>
             <motion.a
               whileHover={{
@@ -87,7 +79,7 @@ const JoinUsPage = () => {
               }}
               whileTap={{ scale: 0.9 }}
               title="Unfold The Timeline"
-              className="bg-hackathone-background-dark-blue ml-[2.5rem] mx-8 flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[85%] h-[44.31px] border-2 border-[#eafe07]"
+              className="bg-hackathone-font-rocket-red ml-[1rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40%] h-[44.31px]"
               href="#timeline"
               onClick={(event) => {
                 event.preventDefault();
@@ -97,7 +89,7 @@ const JoinUsPage = () => {
                 }
               }}
             >
-              <p className="mr-[7px] font-bold text-[18.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+              <p className="font-[800] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black flex ">
                 Unfold The Timeline
               </p>
             </motion.a>
@@ -115,14 +107,14 @@ const JoinUsPage = () => {
           <div>
             {/* <div className="flex flex-row gap-[9.81px]">
               <div className="bg-hackathone-font-martin-red w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
-              <div className="text-slate-300 font-hackathoneSFProDisplay font-[700] text-[14.72px] leading-[17.57px]">
+              <div className="text-slate-50 font-hackathoneSFProDisplay font-[700] text-[14.72px] leading-[17.57px]">
                 HackAthlone
               </div>
             </div> */}
             <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[35.99px] leading-[44.62px]">
               The Hackathone Challenge will be kicking off soon
             </h3>
-            <p className="font-hackathoneSFProDisplay font-[400] text-slate-300 text-[18px] leading-[24.57px] mt-[9.81px]">
+            <p className="font-hackathoneSFProDisplay font-[400] text-slate-50 text-[18px] leading-[24.57px] mt-[9.81px]">
               Join us on <span className="font-bold text-[20px] text-hackathone-font-rocket-red">October 4-6, 2024</span> for the largest annual space & sciences hackathon in the world!
             </p>
           </div>
@@ -137,8 +129,8 @@ const JoinUsPage = () => {
         </div>
         <div>
           <div className="bg-hackathone-background-grey rounded-[13.09px] p-1 ">
-            <div className="pt-[0.5rem] pl-[1.93%] pr-[5.48%] text-center">
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[18.92px]">
+            <div className="pt-[0.5rem] pl-[1.93%] pr-[5.48%]">
+              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-50 text-[18px] leading-[18.92px]">
                 SpaceApps Athlone, also known as{" "}
                 <span className="text-hackathone-font-rocket-red">
                   HackAthlone
@@ -159,8 +151,8 @@ const JoinUsPage = () => {
                 that cater to all STEAM fields.
               </p>
             </div>
-            <div className="mt-[11.8px] ml-[1.93%] mr-[5.48%] mb-4 text-center">
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[24.57px]">
+            <div className="mt-[11.8px] ml-[1.93%] mr-[5.48%] mb-4">
+              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-50 text-[18px] leading-[24.57px]">
                 HackAthlone stands as the sole in-person Hackathon location in
                 Ireland for this event, offering exciting prizes, goodies, and
                 all necessary technical components and F&B provisions. It also
@@ -169,8 +161,8 @@ const JoinUsPage = () => {
               </p>
             </div>
           </div>
-          <div className="bg-hackathone-background-grey rounded-[13.09px] p-1 mt-[19.63px] pb-[36.17px] border-double border-4 text-center">
-            <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[24.57px] p-2 mt-[6.54px] mb-[0.5rem]">
+          <div className="bg-hackathone-background-grey rounded-[13.09px] p-1 mt-[19.63px] pb-[36.17px] border-double border-4">
+            <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-50 text-[18px] leading-[24.57px] p-2 mt-[6.54px] mb-[0.5rem]">
               Skilled mentors from both academia and industry will join in to
               assist the students in producing high-quality projects. This
               hackathon will be documented for open-source research purposes.
@@ -214,14 +206,14 @@ const JoinUsPage = () => {
         <div className="mb-[22.68px]">
           {/* <div className="flex flex-row gap-[9.81px]">
             <div className="bg-hackathone-font-martin-red w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
-            <div className="text-slate-300 font-hackathoneSFProDisplay font-[700] text-[14.72px] leading-[17.57px]">
+            <div className="text-slate-50 font-hackathoneSFProDisplay font-[700] text-[14.72px] leading-[17.57px]">
               HackAthlone
             </div>
           </div> */}
           <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-[800] text-[30.99px] leading-[44.62px]">
             The Hackathone Challenge will be kicking off soon
           </h3>
-          <p className="font-hackathoneSFProDisplay font-[400] text-slate-300 text-[18.72px] leading-[24.57px] mt-[9.81px] mb-4">
+          <p className="font-hackathoneSFProDisplay font-[400] text-slate-50 text-[18.72px] leading-[24.57px] mt-[9.81px] mb-4">
             Join us on
             <span className="font-bold text-[20px] text-hackathone-font-rocket-red"> October 4-6, 2024</span> for the largest annual space & sciences
             hackathon in the world!
@@ -234,8 +226,8 @@ const JoinUsPage = () => {
         </div>
         <div>
           <div className="bg-hackathone-background-grey rounded-[13.09px] p-1 border-double border-4">
-            <div className="pt-[0.5rem] pl-[1.93%] pr-[5.48%] text-center">
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[24.57px]">
+            <div className="pt-[0.5rem] pl-[1.93%] pr-[5.48%]">
+              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-50 text-[18px] leading-[24.57px]">
                 SpaceApps Athlone, also known as{" "}
                 <span className="text-hackathone-font-rocket-red">
                   HackAthlone
@@ -256,8 +248,8 @@ const JoinUsPage = () => {
                 that cater to all STEAM fields.
               </p>
             </div>
-            <div className="mt-[11.8px] ml-[1.93%] mr-[5.48%] mb-4 text-center">
-              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[24.57px]">
+            <div className="mt-[11.8px] ml-[1.93%] mr-[5.48%] mb-4">
+              <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-50 text-[18px] leading-[24.57px]">
                 HackAthlone stands as the sole in-person Hackathon location in
                 Ireland for this event, offering exciting prizes, goodies, and
                 all necessary technical components and F&B provisions. It also
@@ -266,8 +258,8 @@ const JoinUsPage = () => {
               </p>
             </div>
           </div>
-          <div className="bg-hackathone-background-grey rounded-[13.09px] p-1 mt-[19.63px] pb-[36.17px] border-double border-4 text-center">
-            <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-300 text-[18px] leading-[24.57px] p-2 mt-[6.54px] mb-[1rem]">
+          <div className="bg-hackathone-background-grey rounded-[13.09px] p-1 mt-[19.63px] pb-[36.17px] border-double border-4">
+            <p className="font-hackathoneCabinetGrotesk font-[400] text-slate-50 text-[18px] leading-[24.57px] p-2 mt-[6.54px] mb-[1rem]">
               Skilled mentors from both academia and industry will join in to
               assist the students in producing high-quality projects. This
               hackathon will be documented for open-source research purposes.
