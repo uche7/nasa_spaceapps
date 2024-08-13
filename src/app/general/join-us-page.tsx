@@ -29,8 +29,8 @@ const JoinUsPage = () => {
             <Image
               className="rounded-xl"
               unoptimized
-              src={HackathoneChallenge}
-              alt={"HackathoneChallenge"}
+              src={DevTeamIcon}
+              alt={"DevTeamIcon"}
             ></Image>
           </div>
         </div>
@@ -117,8 +117,8 @@ const JoinUsPage = () => {
             <Image
               className="rounded-xl"
               unoptimized
-              src={HackathoneChallenge}
-              alt={"HackathoneChallenge"}
+              src={DevTeamIcon}
+              alt={"DevTeamIcon"}
             ></Image>
           </div>
         </div>
@@ -206,8 +206,8 @@ const JoinUsPage = () => {
           </p>
           <Image
             className="w-[312.44%] rounded-[13.09px]"
-            src={HackathoneChallenge}
-            alt={"HackathoneChallenge"}
+            src={DevTeamIcon}
+            alt={"DevTeamIcon"}
           ></Image>
         </div>
         <div className="mt-[2rem] ">
