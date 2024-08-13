@@ -227,7 +227,7 @@ export const Stories = [
      and hacking. I would definitely want to be a part of the next one and more to come.
      The tutors and instructors were very helpful and worked hard too as well.
      Happy to be a part of it”`,
-    author: "Athermis GO!",
+    author: "Artemis Go",
   },
   {
     text: `“Great Event, run very well with lots of opportunities to gain experience
