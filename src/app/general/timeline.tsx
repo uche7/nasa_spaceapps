@@ -31,8 +31,7 @@ const Timeline = () => {
       <Typography
         variant="h3"
         component="h1"
-        className="text-4xl font-bold mb-10"
-      >
+        className="text-4xl font-bold mb-10">
         Timeline
       </Typography>
       <MuiTimeline position="alternate-reverse">
@@ -46,8 +45,7 @@ const Timeline = () => {
             <TimelineOppositeContent className="hidden md:block px-4">
               <Typography
                 variant="body2"
-                color="white"
-                className="text-base font-normal"
+                className="text-base font-normal text-hackathone-font-rocket-red"
               >
                 {event.date}
               </Typography>
@@ -82,7 +80,7 @@ const Timeline = () => {
                 <Typography
                   variant="h6"
                   component="h1"
-                  className="md:text-xl text-[14px] font-bold text-white"
+                  className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red"
                 >
                   {event.title}
                 </Typography>
@@ -90,11 +88,10 @@ const Timeline = () => {
                   <Typography
                     ref={contentRef}
                     className={`text-white transition-all duration-500 ease-in-out transform mt-2
-                         TabletScreen:text-[14px] MobileScreen:text-[12px] ${
-                           hoveredIndex === index
-                             ? "opacity-100 translate-y-0"
-                             : "opacity-0 -translate-y-2"
-                         }`}
+                         TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 -translate-y-2"
+                      }`}
                   >
                     {event.content}
                   </Typography>

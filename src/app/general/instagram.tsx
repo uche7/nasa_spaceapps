@@ -19,7 +19,7 @@ const Instagram = () => {
           onAnimationComplete={handleAnimationComplete}
           className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-bold text-5xl tracking-tight mb-1 text-center"
         >
-          Check out our Instagram
+          Discover More on Our Social Media
         </motion.h1>
 
         <a

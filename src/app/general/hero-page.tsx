@@ -16,20 +16,19 @@ const HeroPage = () => {
             <p>HackAthlone</p>
           </div>
           <div>
-            <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[20.63px] text-slate-300">
-              <span className="font-bold text-[22px] text-hackathone-font-rocket-red">
-                The Sun Touches Everything
-              </span>{" "}
-              Join Unique World Robotics for the 2024 NASA Space Apps Challenge
-              on October 4 to 6 as we celebrate this year&apos;s theme with NASA
-              Heliophysics.
+            <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[22.63px] text-slate-300">
+              Join Unique World Robotics for the <span className="font-bold text-[18px] text-hackathone-font-rocket-red">2024 NASA Space Apps Challenge </span>
+              on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">October 4 to 6</span> as we celebrate this year&apos;s
+              theme of <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
+                "The Sun Touches Everything"
+              </span>{" "} with NASA Heliophysics.
             </p>
           </div>
           <div className="flex flex-row gap-[16px]">
             <motion.button
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.5 },
+                transition: { duration: 0.3 },
                 backgroundColor: "rgba(255, 0, 0, 0.8)",
                 borderColor: "white",
               }}
@@ -45,7 +44,7 @@ const HeroPage = () => {
                 )
               }
               title="Register Here"
-              className="bg-[rgba(234,254,7,var(--tw-text-opacity))] mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+              className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >{/* Orignal bg :  bg-hackathone-background-dark-blue */}
               <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                 Register Here
@@ -55,7 +54,7 @@ const HeroPage = () => {
             <motion.button
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.5 },
+                transition: { duration: 0.3 },
                 backgroundColor: "rgba(255, 0, 0, 0.8)",
                 borderColor: "white",
               }}
@@ -71,7 +70,7 @@ const HeroPage = () => {
                 )
               }
               title="Hackathone 2023"
-              className="bg-[rgba(234,254,7,var(--tw-text-opacity))] mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+              className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                 Hackathone 2023
@@ -120,20 +119,19 @@ const HeroPage = () => {
             </div>
             <div className="">
               <div>
-                <p className="mt-[28.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[20.63px] text-slate-300">
-                  <span className="font-bold text-[20px]">
-                    The Sun Touches Everything
-                  </span>{" "}
-                  Join Unique World Robotics for the 2024 NASA Space Apps
-                  Challenge on October 4 to 6 as we celebrate this year&apos;s
-                  theme with NASA Heliophysics.
+                <p className="mt-[28.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[22.63px] text-slate-300">
+                  Join Unique World Robotics for the <span className="font-bold text-[18px] text-hackathone-font-rocket-red">2024 NASA Space Apps Challenge </span>
+                  on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">October 4 to 6</span> as we celebrate this year&apos;s
+                  theme of <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
+                    "The Sun Touches Everything"
+                  </span>{" "} with NASA Heliophysics.
                 </p>
               </div>
               <div className="flex flex-row gap-[16px]">
                 <motion.button
                   whileHover={{
                     scale: 1.07,
-                    transition: { duration: 0.5 },
+                    transition: { duration: 0.3 },
                     backgroundColor: "rgba(255, 0, 0, 0.8)",
                     borderColor: "white",
                   }}
@@ -149,7 +147,7 @@ const HeroPage = () => {
                     )
                   }
                   title=" Register Here"
-                  className="bg-[rgba(234,254,7,var(--tw-text-opacity))] mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+                  className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
                   <p className="mr-[7px] font-bold text-[14.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                     Register Here
@@ -158,7 +156,7 @@ const HeroPage = () => {
                 <motion.button
                   whileHover={{
                     scale: 1.07,
-                    transition: { duration: 0.5 },
+                    transition: { duration: 0.3 },
                     backgroundColor: "rgba(255, 0, 0, 0.8)",
                     borderColor: "white",
                   }}
@@ -171,7 +169,7 @@ const HeroPage = () => {
                     window.open("https://www.hackathlone.com/", "_blank")
                   }
                   title="Hackathone 2023"
-                  className="bg-[rgba(234,254,7,var(--tw-text-opacity))] mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+                  className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
                   <p className="mr-[7px] font-bold text-[14.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                     Hackathone 2023
@@ -195,20 +193,19 @@ const HeroPage = () => {
               <p>Welcome To</p>
               <p>HackAthlone</p>
               <div>
-                <p className="mt-[28.3px] font-hackathoneSFProDisplay font-normal text-[14px] leading-[20.63px] text-slate-300">
-                  <span className="font-bold text-[18px]">
-                    The Sun Touches Everything
-                  </span>{" "}
-                  Join Unique World Robotics for the 2024 NASA Space Apps
-                  Challenge on October 4 to 6 as we celebrate this year&apos;s
-                  theme with NASA Heliophysics.
+                <p className="mt-[28.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-slate-300">
+                  Join Unique World Robotics for the <span className="font-bold text-[16px] text-hackathone-font-rocket-red">2024 NASA Space Apps Challenge </span>
+                  on <span className="font-bold text-[16px] text-hackathone-font-rocket-red">October 4 to 6</span> as we celebrate this year&apos;s
+                  theme of <span className="font-bold text-[16px] text-hackathone-font-rocket-red">
+                    "The Sun Touches Everything"
+                  </span>{" "} with NASA Heliophysics.
                 </p>
               </div>
               <div className="flex flex-row gap-[16px]">
                 <motion.button
                   whileHover={{
                     scale: 1.07,
-                    transition: { duration: 0.5 },
+                    transition: { duration: 0.3 },
                     backgroundColor: "rgba(255, 0, 0, 0.8)",
                     borderColor: "white",
                   }}
@@ -224,16 +221,16 @@ const HeroPage = () => {
                     )
                   }
                   title=" Register Here"
-                  className="bg-[rgba(234,254,7,var(--tw-text-opacity))] mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+                  className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
+                  <p className="mr-[7px] font-bold text-[14px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                     Register Here
                   </p>
                 </motion.button>
                 <motion.button
                   whileHover={{
                     scale: 1.07,
-                    transition: { duration: 0.5 },
+                    transition: { duration: 0.3 },
                     backgroundColor: "rgba(255, 0, 0, 0.8)",
                     borderColor: "white",
                   }}
@@ -246,9 +243,9 @@ const HeroPage = () => {
                     window.open("https://www.hackathlone.com/", "_blank")
                   }
                   title="Hackathone 2023"
-                  className="bg-[rgba(234,254,7,var(--tw-text-opacity))] mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+                  className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
+                  <p className="mr-[7px] font-bold text-[14px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                     Hackathone 2023
                   </p>
                 </motion.button>
