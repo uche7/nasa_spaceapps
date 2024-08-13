@@ -17,7 +17,7 @@ const HeroPage = () => {
           </div>
           <div>
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[20.63px] text-slate-300">
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[22px] text-hackathone-font-rocket-red">
                 The Sun Touches Everything
               </span>{" "}
               Join Unique World Robotics for the 2024 NASA Space Apps Challenge
@@ -30,6 +30,13 @@ const HeroPage = () => {
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.5 },
+                backgroundColor: "rgba(255, 0, 0, 0.8)",
+                borderColor: "white",
+              }}
+              whileTap={{
+                scale: 0.9,
+                borderWidth: "4px",
+                borderColor: "white",
               }}
               onClick={() =>
                 window.open(
@@ -37,18 +44,25 @@ const HeroPage = () => {
                   "_blank"
                 )
               }
-              whileTap={{ scale: 0.9 }}
               title="Register Here"
-              className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
-            >
-              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+              className="bg-yellow-500 mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+            >{/* Orignal bg :  bg-hackathone-background-dark-blue */}
+              <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black hover:text-hackathone-font-rocket-red">
                 Register Here
-              </p>
+              </p> {/*Original: text-[13.13px] leading-[16.28px]  text-hackathone-font-rocket-red */}
             </motion.button>
+
             <motion.button
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.5 },
+                backgroundColor: "rgba(255, 0, 0, 0.8)",
+                borderColor: "white",
+              }}
+              whileTap={{
+                scale: 0.9,
+                borderWidth: "4px",
+                borderColor: "white",
               }}
               onClick={() =>
                 window.open(
@@ -56,11 +70,10 @@ const HeroPage = () => {
                   "_blank"
                 )
               }
-              whileTap={{ scale: 0.9 }}
               title="Hackathone 2023"
-              className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+              className="bg-yellow-500 mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >
-              <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+              <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black hover:text-hackathone-font-rocket-red">
                 Hackathone 2023
               </p>
             </motion.button>
@@ -119,8 +132,15 @@ const HeroPage = () => {
               <div className="flex flex-row gap-[16px]">
                 <motion.button
                   whileHover={{
-                    scale: 1.1,
+                    scale: 1.07,
                     transition: { duration: 0.5 },
+                    backgroundColor: "rgba(255, 0, 0, 0.8)",
+                    borderColor: "white",
+                  }}
+                  whileTap={{
+                    scale: 0.9,
+                    borderWidth: "3px",
+                    borderColor: "white",
                   }}
                   onClick={() =>
                     window.open(
@@ -128,27 +148,32 @@ const HeroPage = () => {
                       "_blank"
                     )
                   }
-                  whileTap={{ scale: 0.9 }}
                   title=" Register Here"
-                  className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+                  className="bg-yellow-500 mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                  <p className="mr-[7px] font-bold text-[14.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black hover:text-hackathone-font-rocket-red">
                     Register Here
                   </p>
                 </motion.button>
                 <motion.button
                   whileHover={{
-                    scale: 1.1,
+                    scale: 1.07,
                     transition: { duration: 0.5 },
+                    backgroundColor: "rgba(255, 0, 0, 0.8)",
+                    borderColor: "white",
+                  }}
+                  whileTap={{
+                    scale: 0.9,
+                    borderWidth: "3px",
+                    borderColor: "white",
                   }}
                   onClick={() =>
                     window.open("https://www.hackathlone.com/", "_blank")
                   }
-                  whileTap={{ scale: 0.9 }}
                   title="Hackathone 2023"
-                  className="bg-hackathone-background-dark-blue mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+                  className="bg-yellow-500 mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                  <p className="mr-[7px] font-bold text-[14.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black hover:text-hackathone-font-rocket-red">
                     Hackathone 2023
                   </p>
                 </motion.button>
@@ -182,8 +207,15 @@ const HeroPage = () => {
               <div className="flex flex-row gap-[16px]">
                 <motion.button
                   whileHover={{
-                    scale: 1.1,
+                    scale: 1.07,
                     transition: { duration: 0.5 },
+                    backgroundColor: "rgba(255, 0, 0, 0.8)",
+                    borderColor: "white",
+                  }}
+                  whileTap={{
+                    scale: 0.9,
+                    borderWidth: "3px",
+                    borderColor: "white",
                   }}
                   onClick={() =>
                     window.open(
@@ -191,27 +223,32 @@ const HeroPage = () => {
                       "_blank"
                     )
                   }
-                  whileTap={{ scale: 0.9 }}
                   title=" Register Here"
-                  className="bg-hackathone-background-dark-blue  mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+                  className="bg-yellow-500 mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black hover:text-hackathone-font-rocket-red">
                     Register Here
                   </p>
                 </motion.button>
                 <motion.button
                   whileHover={{
-                    scale: 1.1,
+                    scale: 1.07,
                     transition: { duration: 0.5 },
+                    backgroundColor: "rgba(255, 0, 0, 0.8)",
+                    borderColor: "white",
+                  }}
+                  whileTap={{
+                    scale: 0.9,
+                    borderWidth: "3px",
+                    borderColor: "white",
                   }}
                   onClick={() =>
                     window.open("https://www.hackathlone.com/", "_blank")
                   }
-                  whileTap={{ scale: 0.9 }}
                   title="Hackathone 2023"
-                  className="bg-hackathone-background-dark-blue  mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px]"
+                  className="bg-yellow-500 mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
-                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red">
+                  <p className="mr-[7px] font-bold text-[13.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black hover:text-hackathone-font-rocket-red">
                     Hackathone 2023
                   </p>
                 </motion.button>
