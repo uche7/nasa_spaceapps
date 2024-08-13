@@ -83,7 +83,7 @@ export default function NavigationBar() {
                 transition={{ duration: 0.5 }}
               >
                 <div className="bg-gray-800 bg-opacity-90 text-white p-2 rounded-md text-sm whitespace-nowrap text-center shadow-lg border border-white">
-                  Last Year Challenges
+                  2023 Challenges
                 </div>
               </motion.div>
             )}
