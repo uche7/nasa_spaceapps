@@ -18,10 +18,7 @@ const HeroPage = () => {
           <div>
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[22.63px] text-slate-300">
               Join NASA space apps atlone  <span className="font-bold text-[18px] text-hackathone-font-rocket-red">at athlone and this year's theme is special it is "The Sun Touches Everything" </span>
-              on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">October 4 to 6</span> as we celebrate this year&apos;s
-              theme of <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
-                "The Sun Touches Everything"
-              </span>{" "} with NASA Heliophysics.
+              on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">October 4 to 6</span> 
             </p>
           </div>
           <div className="flex flex-row gap-[16px]">
