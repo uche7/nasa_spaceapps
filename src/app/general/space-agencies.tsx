@@ -12,7 +12,7 @@ const SpaceAgencies = () => {
           <AgenciesSlider />
         </div>
         <div className="lg:w-1/2 w-full mb-[20%] mt-[3%] ml-[2rem]">
-          <h1 className="font-[700] text-[46px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
+          <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
             SPACE AGENCIES
           </h1>
           <div className="mr-[3rem]">
