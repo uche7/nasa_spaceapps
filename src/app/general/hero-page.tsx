@@ -12,7 +12,7 @@ const HeroPage = () => {
       <div className="TabletScreen:hidden MobileScreen:hidden flex items-center justify-between px-[6.94%] mt-[59.62px] mb-[81.79px] ">
         <div className="w-[35.46%]">
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
-            <p>Welcome To</p>
+            <p className="text-white">Welcome To</p>
             <p>HackAthlone</p>
           </div>
           <div>
