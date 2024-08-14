@@ -8,7 +8,6 @@ import HeroPage from "./hero-page";
 import JoinUsPage from "./join-us-page";
 import CountDownPage from "./count-down-page";
 import SpaceAgencies from "./space-agencies";
-import { AgenciesSlider } from "./agencies-slider";
 import GlobalCollabrators from "./global-collabrators";
 import { CollabratorsSlider } from "./collabrators-slider";
 import Shannon from "./shannon";
@@ -35,7 +34,6 @@ const LandingPage = () => {
         <JoinUsPage />
         <CountDownPage targetDate={targetDate} />
         <SpaceAgencies />
-        <AgenciesSlider />
         <GlobalCollabrators />
         <CollabratorsSlider />
         <Shannon />
