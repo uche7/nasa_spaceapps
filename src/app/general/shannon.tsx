@@ -53,7 +53,7 @@ const Shannon = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="text-justify my-8 text-base sm:text-lg md:text-lg font-hackathoneCabinetGrotesk font-[400] text-white leading-relaxed pr-[20%]"
+          className="text-justify my-8 text-base sm:text-lg md:text-lg md:mb-[1rem] sm:mb-[1rem] font-hackathoneCabinetGrotesk font-[400] text-white leading-relaxed pr-[20%]"
         >
           <span className="font-semibold text-hackathone-font-rocket-red">
             NASA Spaceapps Challenge 2024
@@ -105,7 +105,7 @@ const Shannon = () => {
   const tabletView = () => (
     <motion.div
       style={{ backgroundSize: "21%" }}
-      className="DesktopScreen:hidden MobileScreen:hidden lg:block h-full w-full mt-20 py-8"
+      className="DesktopScreen:hidden MobileScreen:hidden lg:block mt-20 py-8 mx-[2rem]"
     >
       {sharedView()}
     </motion.div>
@@ -114,7 +114,7 @@ const Shannon = () => {
   const mobileView = () => (
     <motion.div
       style={{ backgroundSize: "21%" }}
-      className="DesktopScreen:hidden TabletScreen:hidden lg:block h-full w-full mt-20 py-8"
+      className="DesktopScreen:hidden TabletScreen:hidden lg:block mt-20 py-8 mx-[1.5rem]"
     >
       {sharedView()}
     </motion.div>
