@@ -32,7 +32,7 @@ const TeamStories = () => {
               <p className="font-hackathoneCabinetGrotesk sm:text-lg text-sm mx-auto max-w-prose">
                 {item.text}
               </p>
-              <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red mt-5" style={{ textShadow: '0 4px 6px rgba(234, 254, 7, 0.7)' }}>
+              <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red mt-5">
                 {item.author}
               </p>
             </div>
