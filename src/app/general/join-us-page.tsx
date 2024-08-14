@@ -106,7 +106,7 @@ const JoinUsPage = () => {
       <div className="MobileScreen:hidden DesktopScreen:hidden flex flex-col  mt-[126.77px] mx-[4.06%] mb-[139.04px]">
         <div className="mb-[24px]">
           <div>
-            <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[35.99px] leading-[44.62px]">
+            <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[32.99px] leading-[44.62px]">
               The Hackathone Challenge will be kicking off soon
             </h3>
             <p className="font-hackathoneSFProDisplay font-[500] text-slate-50 text-[18px] leading-[24.57px] mt-[9.81px]">
@@ -122,7 +122,7 @@ const JoinUsPage = () => {
             ></Image>
           </div>
         </div>
-        <div className="mt-[4rem] w-full h-auto flex flex-col TabletScreen:flex-row TabletScreen:justify-between gap-8">
+        <div className="mt-[1.5rem] w-full h-auto flex flex-col TabletScreen:flex-row TabletScreen:justify-between gap-8">
           <div className="TabletScreen:w-[48%] h-auto">
             <div className="h-auto rounded-[13.09px] p-1 border-2">
               <div className="pt-[1rem] pl-[1.5rem] pr-[5.48%]">

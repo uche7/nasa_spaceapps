@@ -11,6 +11,8 @@ import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
 import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa.png";
 import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
 import Turkey from "@/assets/images/general/landing-page/space-agencies/turkey.svg";
+import Cst from "@/assets/images/general/landing-page/space-agencies/cst.png";
+import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png";
 import Microsoft from "@/assets/images/general/landing-page/collabrators/microsoft.png";
 import Teams from "@/assets/images/general/landing-page/collabrators/teams.png";
@@ -140,6 +142,14 @@ export const agenciesSlider = [
   {
     img: Turkey,
     route: () => window.open("https://tua.gov.tr/en", "_blank"),
+  },
+  {
+    img: Cst,
+    route: () => window.open("https://www.cst.gov.sa", "_blank"),
+  },
+  {
+    img: Ssa,
+    route: () => window.open("https://www.aee.gob.es/", "_blank"),
   },
 ];
 
