@@ -8,7 +8,10 @@ const GlobalCollabrators = () => {
     return (
       <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row items-center justify-center gap-[36px] mx-[8.34%]">
         <div className="w-[123.45%]">
-          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[160%]">
+          <h1 className="my-4 text-hackathone-font-rocket-red font-[700] text-[42px]">
+            GLOBAL COLLABORATORS THIS YEAR
+          </h1>
+          <p className="font-hackathoneCabinetGrotesk font-[400] text-[18px] leading-[160%]">
             <span className="text-hackathone-font-rocket-red font-[500]">
               This year
             </span>
@@ -36,9 +39,6 @@ const GlobalCollabrators = () => {
           </p>
         </div>
         <div>
-          <h1 className="flex flex-col items-center justify-center my-4 text-hackathone-font-rocket-red ">
-            GLOBAL COLLABORATORS THIS YEAR
-          </h1>
           <Image
             className="rounded-xl"
             src={CollabratorsIcon}
