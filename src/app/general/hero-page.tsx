@@ -13,7 +13,7 @@ const HeroPage = () => {
         <div className="w-[35.46%]">
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
             <p className="text-white">Welcome To</p>
-            <p>HackAthlone</p>
+            <p>HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
           </div>
           <div>
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[22.63px] text-slate-300">
