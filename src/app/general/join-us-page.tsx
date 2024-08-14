@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import DevTeamIcon from "@/assets/images/general/landing-page/dev-team-icon.jpg";
-import HackathoneChallenge from "@/assets/images/general/landing-page/section2_hackathlone_challenge.jpg";
+import HackathoneChallenge from "@/assets/images/general/landing-page/hackathlone_challenge.jpg";
 import Buttons from "@/library/buttons/buttons";
 
 const JoinUsPage = () => {
@@ -29,8 +29,8 @@ const JoinUsPage = () => {
             <Image
               className="rounded-xl"
               unoptimized
-              src={DevTeamIcon}
-              alt={"DevTeamIcon"}
+              src={HackathoneChallenge}
+              alt={"HackathoneChallenge"}
             ></Image>
           </div>
         </div>
@@ -117,8 +117,8 @@ const JoinUsPage = () => {
             <Image
               className="rounded-xl"
               unoptimized
-              src={DevTeamIcon}
-              alt={"DevTeamIcon"}
+              src={HackathoneChallenge}
+              alt={"HackathoneChallenge"}
             ></Image>
           </div>
         </div>
@@ -206,8 +206,8 @@ const JoinUsPage = () => {
           </p>
           <Image
             className="w-[312.44%] rounded-[13.09px]"
-            src={DevTeamIcon}
-            alt={"DevTeamIcon"}
+            src={HackathoneChallenge}
+            alt={"HackathoneChallenge"}
           ></Image>
         </div>
         <div className="mt-[2rem] ">

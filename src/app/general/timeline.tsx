@@ -45,7 +45,8 @@ const Timeline = () => {
             <TimelineOppositeContent className="hidden md:block px-4">
               <Typography
                 variant="body2"
-                className="text-base font-normal text-hackathone-font-rocket-red"
+                color="white"
+                className="text-base font-normal"
               >
                 {event.date}
               </Typography>
