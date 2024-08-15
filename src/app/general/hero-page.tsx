@@ -189,11 +189,7 @@ const HeroPage = () => {
                         <p>HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
               <div>
                 <p className="mt-[28.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-slate-300">
-                  Join Unique World Robotics for the <span className="font-bold text-[16px] text-hackathone-font-rocket-red">2024 NASA Space Apps Challenge </span>
-                  on <span className="font-bold text-[16px] text-hackathone-font-rocket-red">October 4 to 6</span> as we celebrate this year&apos;s
-                  theme of <span className="font-bold text-[16px] text-hackathone-font-rocket-red">
-                    "The Sun Touches Everything"
-                  </span>{" "} with NASA Heliophysics.
+                                Join NASA space apps athlone from<span className="font-bold font-hackathoneCabinetGrotesk "> October 4 to 6</span>,  <span className="font-bold text-[18px] text-hackathone-font-rocket-red"> this year's theme is "The Sun Touches Everything". </span>
                 </p>
               </div>
               <div className="flex flex-row gap-[16px]">
