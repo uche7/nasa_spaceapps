@@ -15,7 +15,7 @@ const TeamStories = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 5000,
     arrows: false,
     adaptiveHeight: true,
     cssEase: 'ease-out',
@@ -23,33 +23,77 @@ const TeamStories = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0.5rem",
+                bottom: "0px",
+                transform: "translateX(-50%)",
+                marginLeft: "78vw",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          speed: 1500,
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                bottom: "4vh  ",
+                marginLeft: "28vw",
+                padding: "0px",
+                listStyle: "none",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          speed: 1500,
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                bottom: "4vh  ",
+                marginLeft: "22vw",
+                padding: "0px",
+                listStyle: "none",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
+        breakpoint: 300,
+        settings: {
+          dots: false
         }
       }
     ],
     customPaging: (i: any) => (
       <div
         style={{
-          width: "8px",
-          height: "8px",
+          width: "10px",
+          height: "10px",
           backgroundColor: "transparent", // Transparent background
           border: "1px solid #FFF", // White border
           borderRadius: "50%",
@@ -62,10 +106,10 @@ const TeamStories = () => {
         style={{
           position: "absolute",
           height: "20px",
-          top: "5vh",
+          top: "0",
           bottom: "0px",
           transform: "translateX(-50%)",
-          marginLeft: "78.5vw",
+          marginLeft: "90vw",
           padding: "0px",
           listStyle: "none",
         }}
@@ -80,7 +124,7 @@ const TeamStories = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 mx-[8.43%]">
+    <div className="px-4 sm:px-6 lg:px-10 mx-[8.43%] my-[5rem]">
       <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] sm:text-3xl text-[42px]">
         Hackathon Unplugged: Team Stories
       </h1>
@@ -90,8 +134,8 @@ const TeamStories = () => {
       <div className="relative overflow-hidden rounded-lg shadow-md mt-8">
         <Slider {...settings}>
           {Stories.map((item, index) => (
-            <div key={index} className="items-stretch !flex !flex-row h-auto">
-              <div className="lg:w-1/2  w-full items-center justify-center">
+            <div key={index} className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center">
+              <div className="md:w-1/2 w-full justify-content">
                 <Image
                   className="cursor-pointer rounded-2xl max-w-[100%] max-h-[560px]"
                   src={item.img}
@@ -101,11 +145,11 @@ const TeamStories = () => {
                   objectFit="cover"
                 />
               </div>
-              <div className="lg:w-1/2 w-full text-left mt-4 text-left ml-[2.5rem] lg:ml-[2.5rem] md:ml-[2.5rem]">
-                <p className="font-hackathoneCabinetGrotesk sm:text-lg text-sm max-w-prose pt-[3.5rem]">
+              <div className="md:w-1/2 w-full md:mt-4 text-left ml-[1rem] md:ml-[2.5rem] w-auto">
+                <p className="font-hackathoneCabinetGrotesk text-lg max-w-prose lg:pt-[2.5rem] sm:pt-[2rem]">
                   {item.text}
                 </p>
-                <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red pt-[3rem]">
+                <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red pt-[3rem] text-center md:text-left">
                   {item.author}
                 </p>
               </div>
