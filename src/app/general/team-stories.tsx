@@ -124,8 +124,8 @@ const TeamStories = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 mx-[8.43%] my-[5rem]">
-      <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] sm:text-3xl text-[42px]">
+    <div className="px-4 sm:px-6 lg:px-10 mx-[8.43%] my-[6rem]">
+      <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] sm:text-3xl text-[42px] MobileScreen:text-[30.99px]">
         Hackathon Unplugged: Team Stories
       </h1>
       <p className="font-hackathoneSFProDisplay lg:text-xl sm:text-lg text-base mt-4">

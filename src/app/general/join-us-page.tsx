@@ -197,7 +197,7 @@ const JoinUsPage = () => {
       <div className="TabletScreen:hidden DesktopScreen:hidden mt-[90.79px] mx-[1.2rem] mb-[122.68px]">
         <div className="mb-[22.68px]">
           <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-[800] text-[30.99px] leading-[44.62px]">
-            The Hackathone Challenge will be kicking off soon
+            The Hackathon Challenge will be kicking off soon
           </h3>
           <p className="font-hackathoneSFProDisplay font-[500] text-slate-50 text-[16.72px] leading-[24.57px] mt-[9.81px] mb-4">
             Join us on
@@ -234,42 +234,51 @@ const JoinUsPage = () => {
                 that cater to all STEAM fields.
               </p>
             </div>
-            <div className="mt-[0.5rem] pl-[1.5rem] pr-[5.48%] ">
-              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[30.57px]">
+            <div className="pt-[1rem] pl-[1.5rem] pr-[5.48%]">
+              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[30.57px] pb-[1rem]">
                 HackAthlone stands as the sole in-person Hackathon location in
                 Ireland for this event, offering exciting prizes, goodies, and
                 all necessary technical components and F&B provisions.
               </p>
             </div>
           </div>
-          <div className="rounded-[13.09px] p-2 mt-[16.63px] pb-[36.17px] border-2">
+          <div className="rounded-[13.09px] p-2 mt-[16.63px] pb-[28.17px] border-2">
             <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[30.57px] p-2 ml-[0.5rem] mt-[2.54px] mb-[1rem]">
               Skilled mentors from both academia and industry will join in to
               assist the students in producing high-quality projects. This
               hackathon will be documented for open-source research purposes.
 
             </p>
-            <motion.a
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.5 },
-              }}
-              href="#timeline"
-              onClick={(event) => {
-                event.preventDefault();
-                const element = document.getElementById("timeline");
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-              whileTap={{ scale: 0.9 }}
-              title="Unfold The Timeline"
-              className="bg-hackathone-font-rocket-red mx-[3.6rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[55%] h-[355]"
-            >
-              <p className="font-[800] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black flex">
-                Unfold The Timeline
-              </p>
-            </motion.a>
+            <div className="w-full flex justify-center items-center">
+              <motion.a
+                whileHover={{
+                  scale: 1.07,
+                  transition: { duration: 0.3 },
+                  backgroundColor: "rgba(255, 0, 0, 0.8)",
+                  borderColor: "white",
+                }}
+                href="#timeline"
+                onClick={(event) => {
+                  event.preventDefault();
+                  const element = document.getElementById("timeline");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                whileTap={{
+                  scale: 0.9,
+                  borderWidth: "3px",
+                  borderColor: "white",
+                }}
+                title="Unfold The Timeline"
+                className="bg-hackathone-font-rocket-red mx-[3.6rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[55%] h-[355] border-2 border-transparent transition-colors duration-300 ease-in-out"
+              >
+                <p className="font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-150 ease-out hover:text-hackathone-font-rocket-red">
+                  Unfold The Timeline
+                </p>
+              </motion.a>
+            </div>
+
           </div>
         </div>
       </div>

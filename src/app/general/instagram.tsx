@@ -17,7 +17,7 @@ const Instagram = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-bold text-5xl tracking-tight mb-1 text-center"
+          className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-bold text-5xl tracking-tight mb-1 text-center MobileScreen:text-[30.99px] MobileScreen:leading-[44.62px] px-[3rem]"
         >
           Discover More on Our Social Media
         </motion.h1>
