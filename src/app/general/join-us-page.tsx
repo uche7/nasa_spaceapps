@@ -116,7 +116,7 @@ const JoinUsPage = () => {
           <div className="mt-[2rem]">
             <Image
               className="rounded-xl"
-              unoptimized
+            
               src={HackathoneChallenge}
               alt={"HackathoneChallenge"}
             ></Image>
