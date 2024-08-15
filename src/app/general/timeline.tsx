@@ -31,7 +31,7 @@ const Timeline = () => {
   <Typography
     variant="h3"
     component="h1"
-    className="text-4xl font-bold mb-10 text-center MobileScreen:text-left"
+    className="text-4xl font-bold mb-10 r MobileScreen:text-center"
   >
     Timeline
   </Typography>
@@ -47,7 +47,7 @@ const Timeline = () => {
           <Typography
             variant="body2"
             color="white"
-            className="text-base font-normal text-center MobileScreen:text-left"
+            className="text-base font-normal  MobileScreen:text-center"
           >
             {event.date}
           </Typography>
@@ -82,7 +82,7 @@ const Timeline = () => {
             <Typography
               variant="h6"
               component="h1"
-              className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-left"
+              className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red  MobileScreen:text-center"
             >
               {event.title}
             </Typography>
