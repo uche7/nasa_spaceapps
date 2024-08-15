@@ -17,7 +17,7 @@ const HeroPage = () => {
           </div>
           <div>
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[22.63px] text-white">
-              Join NASA Space Apps Athlone from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>,  <span className="text-[18px] text-white text-hackathone-font-rocket-red"> this year's theme is "The Sun Touches Everything". </span>
+              Join NASA Space Apps Athlone from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>,  <span className="text-[18px]  text-hackathone-font-rocket-red"> this year's theme is "The Sun Touches Everything". </span>
             </p>
           </div>
           <div className="flex flex-row gap-[16px]">
