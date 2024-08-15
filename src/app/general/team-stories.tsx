@@ -18,6 +18,33 @@ const TeamStories = () => {
     autoplaySpeed: 8000,
     arrows: false,
     adaptiveHeight: true,
+    cssEase: 'ease-out',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ],
     customPaging: (i: any) => (
       <div
         style={{
@@ -48,6 +75,8 @@ const TeamStories = () => {
         </ul>
       </div>
     ),
+
+
   };
 
   return (
@@ -69,6 +98,7 @@ const TeamStories = () => {
                   width={500}
                   height={450}
                   alt={"Team Image"}
+                  objectFit="cover"
                 />
               </div>
               <div className="lg:w-1/2 w-full text-left mt-4 text-left ml-[2.5rem] lg:ml-[2.5rem] md:ml-[2.5rem]">

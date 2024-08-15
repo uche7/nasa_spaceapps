@@ -29,8 +29,8 @@ import Tus4 from "@/assets/images/general/landing-page/mapping-images/tus4.jpg";
 import Antriksh from "@/assets/images/general/landing-page/team_section/antriksh.jpeg"
 import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis_go.jpg"
 import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.jpg"
-import HelpKelp from "@/assets/images/general/landing-page/team_section/cococrunch.jpg"
-import IDontThink from "@/assets/images/general/landing-page/team_section/cococrunch.jpg"
+import HelpKelp from "@/assets/images/general/landing-page/team_section/help-kelp.jpg"
+import IDontThink from "@/assets/images/general/landing-page/team_section/idontthink.jpg"
 
 
 export const navigationData = (Router: any) => [
