@@ -186,8 +186,7 @@ const HeroPage = () => {
         <div className="flex justify-center w-full">
           <div>
             <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[45.8px] leading-[56.79px] mt-[24px] px-[5.58%]">
-              <p>Welcome To</p>
-              <p>HackAthlone</p>
+                        <p>HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
               <div>
                 <p className="mt-[28.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-slate-300">
                   Join Unique World Robotics for the <span className="font-bold text-[16px] text-hackathone-font-rocket-red">2024 NASA Space Apps Challenge </span>
