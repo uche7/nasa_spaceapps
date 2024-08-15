@@ -43,7 +43,7 @@ const Shannon = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="text-3xl MobileScreen:text-[20px] md:text-3xl lg:text-[42px] font-extrabold text-hackathone-font-rocket-red font-firaSans mb-6 pr-[20%]"
+          className="text-3xl MobileScreen:text-[30.99px] MobileScreen:leading-[44.62px] MobileScreen:pr-[1rem] md:text-3xl lg:text-[42px] font-extrabold text-hackathone-font-rocket-red font-hackathoneCabinetGrotesk mb-6 pr-[20%] MobileScreen:mb-4"
         >
           Technology University of the Shannon
         </motion.h1>
@@ -53,7 +53,7 @@ const Shannon = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="text-justify my-8 text-base sm:text-lg md:text-lg md:mb-[1rem] sm:mb-[1rem] font-hackathoneCabinetGrotesk font-[400] text-white leading-relaxed pr-[20%]"
+          className="MobileScreen:my-4 my-8 text-base sm:text-lg md:text-lg md:mb-[1rem] sm:mb-[1rem] font-hackathoneCabinetGrotesk font-[500] text-white leading-relaxed MobileScreen:leading-[30.57px] pr-[20%]"
         >
           <span className="font-semibold text-hackathone-font-rocket-red">
             NASA Spaceapps Challenge 2024
@@ -71,7 +71,7 @@ const Shannon = () => {
         </motion.p>
       </div>
       <div className="px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-6">
-        <div className="lg:w-1/2 w-full mt-[1.5rem] mr-[1.5rem]">
+        <div className="lg:w-1/2 w-full mt-[1.5rem] mr-[1.5rem] MobileScreen:mt-[0.5rem]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4755.461203507001!2d-7.909200223581451!3d53.419643969237065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485c496e6b7b9b4f%3A0x8f4cd9c287dbe71d!2sTUS%3A%20Midlands%20Engineering%20%26%20Science%20Building!5e0!3m2!1sen!2sie!4v1723633423719!5m2!1sen!2sie"
             style={{ border: 0 }}
@@ -81,10 +81,10 @@ const Shannon = () => {
             className="rounded-2xl lg:h-[400px] h-[300px] w-full"
           ></iframe>
         </div>
-        <div className="lg:w-1/2 w-full flex items-center justify-center mt-[1.5rem] mr-[1rem]">
+        <div className="lg:w-1/2 w-full flex items-center justify-center mt-[1.5rem] mr-[1rem]  MobileScreen:mt-[0.5rem]">
           <Image
             className="rounded-2xl lg:h-[400px] h-[300px] w-full object-cover"
-           
+
             src={MapSection}
             alt={"MapSection"}
           ></Image>
