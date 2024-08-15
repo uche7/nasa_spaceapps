@@ -145,7 +145,7 @@ const TeamStories = () => {
                   objectFit="cover"
                 />
               </div>
-              <div className="md:w-1/2 w-full md:mt-4 text-left ml-[1rem] md:ml-[2.5rem] w-auto">
+              <div className="md:w-1/2 w-full md:mt-4 text-left ml-[1rem] md:ml-[2.5rem] w-auto pt-[2rem]">
                 <p className="font-hackathoneCabinetGrotesk text-lg max-w-prose lg:pt-[2.5rem] sm:pt-[2rem]">
                   {item.text}
                 </p>
