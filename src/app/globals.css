@@ -14,3 +14,8 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.slick-dots li.slick-active div {
+  background-color: rgb(234 254 7) !important;
+  /* White fill for active dot */
+}
