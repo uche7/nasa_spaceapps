@@ -43,7 +43,7 @@ const Shannon = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="text-3xl MobileScreen:text-[20px] md:text-3xl lg:text-5xl font-extrabold text-hackathone-font-rocket-red font-firaSans mb-6 pr-[20%]"
+          className="text-3xl MobileScreen:text-[20px] md:text-3xl lg:text-[42px] font-extrabold text-hackathone-font-rocket-red font-firaSans mb-6 pr-[20%]"
         >
           Technology University of the Shannon
         </motion.h1>
