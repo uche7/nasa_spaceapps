@@ -52,7 +52,7 @@ export default function NavigationBar() {
   /** Desktop View */
   const desktopView = () => (
     <nav
-      className="MobileScreen:hidden TabletScreen:hidden sticky bg-hackathone-background-grey 
+      className="MobileScreen:hidden TabletScreen:hidden sticky bg-transparent border border-white
         flex items-center justify-between h-[68px] px-[1.7%] mx-[7%] rounded-xl"
     >
       <div onClick={() => Router.push("/")}>
@@ -96,7 +96,7 @@ export default function NavigationBar() {
   /** Tablet View */
   const tabletView = () => (
     <nav
-      className="DesktopScreen:hidden MobileScreen:hidden bg-hackathone-background-grey px-[1.7%]
+      className="DesktopScreen:hidden MobileScreen:hidden bg-transparent border border-white px-[1.7%]
          flex flex-row justify-between py-[6px] mx-[3%] rounded-xl"
     >
       <div onClick={() => Router.push("/")}>
@@ -121,7 +121,7 @@ export default function NavigationBar() {
   /** Mobile View */
   const mobileView = () => (
     <nav
-      className="DesktopScreen:hidden TabletScreen:hidden bg-hackathone-background-grey px-[1.2%]
+      className="DesktopScreen:hidden TabletScreen:hidden bg-transparent border border-white px-[1.2%]
          flex flex-row items-center justify-between py-[6px] mx-[1%] rounded-md"
     >
       <div onClick={() => Router.push("/")}>
