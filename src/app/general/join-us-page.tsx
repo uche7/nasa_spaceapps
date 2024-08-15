@@ -16,7 +16,7 @@ const JoinUsPage = () => {
               <div className="bg-hackathone-font-martin-red w-[6.54px] h-[6.54px] p-1 rounded-full mt-1"></div>
             </div> */}
             <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[42px] leading-[44.62px]">
-              The Hackathone Challenge will be kicking off soon
+              The Hackathon Challenge will be kicking off soon
             </h3>
             <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18.72px] leading-[24.57px] mt-[9.81px]">
               Join us on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
@@ -28,7 +28,7 @@ const JoinUsPage = () => {
           <div className="mt-[2rem]">
             <Image
               className="rounded-xl"
-              unoptimized
+
               src={HackathoneChallenge}
               alt={"HackathoneChallenge"}
             ></Image>
@@ -116,7 +116,7 @@ const JoinUsPage = () => {
           <div className="mt-[2rem]">
             <Image
               className="rounded-xl"
-              unoptimized
+
               src={HackathoneChallenge}
               alt={"HackathoneChallenge"}
             ></Image>
