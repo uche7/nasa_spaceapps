@@ -84,7 +84,7 @@ const Shannon = () => {
         <div className="lg:w-1/2 w-full flex items-center justify-center mt-[1.5rem] mr-[1rem]">
           <Image
             className="rounded-2xl lg:h-[400px] h-[300px] w-full object-cover"
-            unoptimized
+           
             src={MapSection}
             alt={"MapSection"}
           ></Image>
