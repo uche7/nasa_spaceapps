@@ -48,7 +48,7 @@ const CloudParticleBg: React.FC = () => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled={false}>
         <PointMaterial
           transparent
-          color="#ffa500"
+          color="#eafe07"
           size={0.002} // Adjust size for performance
           sizeAttenuation={true}
           depthWrite={false}
