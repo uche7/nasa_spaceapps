@@ -96,7 +96,7 @@ const Shannon = () => {
   const desktopView = () => (
     <motion.div
       style={{ backgroundSize: "21%" }}
-      className="TabletScreen:hidden MobileScreen:hidden lg:block h-full mt-20 mb-36 mx-[8.34%] py-8"
+      className="TabletScreen:hidden MobileScreen:hidden lg:block h-full mt-20 mb-36 mx-[8.06%] py-8"
     >
       {sharedView()}
     </motion.div>

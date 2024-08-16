@@ -109,7 +109,7 @@ const TeamStories = () => {
           top: "0",
           bottom: "0px",
           transform: "translateX(-50%)",
-          marginLeft: "90vw",
+          marginLeft: "78vw",
           padding: "0px",
           listStyle: "none",
         }}
@@ -124,7 +124,7 @@ const TeamStories = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 mx-[1.2rem] my-[6rem]">
+    <div className="px-4 sm:px-6 lg:px-10 MobileScreen:mx-[1.2rem] mx-[8.06%] my-[6rem]">
       <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] sm:text-3xl text-[42px] MobileScreen:text-[30.99px]">
         Hackathon Unplugged: Team Stories
       </h1>
@@ -145,8 +145,8 @@ const TeamStories = () => {
                   objectFit="cover"
                 />
               </div>
-              <div className="md:w-1/2 w-full md:mt-4 text-left ml-[1rem] md:ml-[2.5rem] w-auto pt-[2rem] text-center">
-                <p className="font-hackathoneCabinetGrotesk text-lg max-w-prose lg:pt-[2.5rem] sm:pt-[2rem]">
+              <div className="md:w-1/2 w-full md:mt-4 md:text-left md:ml-[2.5rem] xl:ml-[2rem] 2xl:ml-[1rem] ml-[1rem] w-auto pt-[2rem] MobileScreen:pr-[1rem] md:pt-[0px] pr-[1rem] text-center ">
+                <p className="font-hackathoneCabinetGrotesk text-lg max-w-prose md:pt-[2.5rem] sm:pt-[2rem]">
                   {item.text}
                 </p>
                 <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red pt-[3rem] text-center md:text-left">

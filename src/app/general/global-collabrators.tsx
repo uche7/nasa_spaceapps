@@ -6,7 +6,7 @@ const GlobalCollabrators = () => {
   /** Desktop View */
   const desktopView = () => {
     return (
-      <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row items-center justify-center gap-[36px] mx-[8.34%]">
+      <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row items-center justify-center gap-[36px] mx-[8.06%]">
         <div className="w-[123.45%]">
           <h1 className="my-4 text-hackathone-font-rocket-red font-[700] text-[42px]">
             GLOBAL COLLABORATORS THIS YEAR
