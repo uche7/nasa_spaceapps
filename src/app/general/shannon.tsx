@@ -37,7 +37,7 @@ const Shannon = () => {
 
   const sharedView = () => (
     <>
-      <div className="px-4 sm:px-6 lg:px-10">
+      <div className="px-4 sm:px-6 lg:px-10 MobileScreen:px-[0px]">
         <motion.h1
           variants={fadeIn("right", "tween", 0.2, 0.4)}
           initial={animationComplete ? "" : "hidden"}
@@ -114,7 +114,7 @@ const Shannon = () => {
   const mobileView = () => (
     <motion.div
       style={{ backgroundSize: "21%" }}
-      className="DesktopScreen:hidden TabletScreen:hidden lg:block mt-20 py-8 mx-[1.5rem]"
+      className="DesktopScreen:hidden TabletScreen:hidden lg:block mt-20 py-8 mx-[1.2rem]"
     >
       {sharedView()}
     </motion.div>
