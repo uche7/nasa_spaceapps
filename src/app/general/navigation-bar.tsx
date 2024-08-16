@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { navigationData } from "./general.dto";
-import NasaLogo from "@/assets/images/general/landing-page/spaceapps_Logo.png";
+import NasaLogo from "@/assets/images/general/landing-page/logo2.png";
 import MenuIcon from "@/assets/images/general/landing-page/menu-icon.svg";
 
 export default function NavigationBar() {
