@@ -182,10 +182,10 @@ const HeroPage = () => {
   /** Mobile View */
   const mobileView = () => {
     return (
-      <div className="DesktopScreen:hidden TabletScreen:hidden flex items-center justify-between ">
+      <div className="DesktopScreen:hidden TabletScreen:hidden flex items-center justify-between mx-[1.2rem]">
         <div className="flex justify-center w-full">
           <div>
-            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[45.8px] leading-[56.79px] mt-[28px] px-[5.58%]">
+            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[45.8px] leading-[56.79px] mt-[28px]">
               <p>HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
               <div>
                 <p className="mt-[16.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-slate-300">

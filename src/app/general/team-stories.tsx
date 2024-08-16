@@ -124,7 +124,7 @@ const TeamStories = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 mx-[8.43%] my-[6rem]">
+    <div className="px-4 sm:px-6 lg:px-10 mx-[1.2rem] my-[6rem]">
       <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] sm:text-3xl text-[42px] MobileScreen:text-[30.99px]">
         Hackathon Unplugged: Team Stories
       </h1>
@@ -145,7 +145,7 @@ const TeamStories = () => {
                   objectFit="cover"
                 />
               </div>
-              <div className="md:w-1/2 w-full md:mt-4 text-left ml-[1rem] md:ml-[2.5rem] w-auto pt-[2rem]">
+              <div className="md:w-1/2 w-full md:mt-4 text-left ml-[1rem] md:ml-[2.5rem] w-auto pt-[2rem] text-center">
                 <p className="font-hackathoneCabinetGrotesk text-lg max-w-prose lg:pt-[2.5rem] sm:pt-[2rem]">
                   {item.text}
                 </p>
