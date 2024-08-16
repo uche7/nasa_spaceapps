@@ -40,7 +40,7 @@ export default function NavigationBar() {
     const lines = [];
     for (let i = 0; i < 3; i++) {
       lines.push(
-        <div key={i} className="w-[36px] h-[5px] bg-hackathone-font-rocket-red mt-[6px] rounded-2xl"></div>
+        <div key={i} className="w-[36px] h-[5px]  mt-[6px] rounded-2xl"></div>
       ); {/*Or fill with: bg-white */ }
     }
     return lines;
