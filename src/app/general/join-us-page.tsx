@@ -90,7 +90,7 @@ const JoinUsPage = () => {
                 }
               }}
             >
-              <p className="font-[800] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black flex ">
+              <p className="font-[700] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black">
                 Unfold The Timeline
               </p>
             </motion.a>
