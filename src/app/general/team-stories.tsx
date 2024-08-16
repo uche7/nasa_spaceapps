@@ -135,14 +135,14 @@ const TeamStories = () => {
         <Slider {...settings}>
           {Stories.map((item, index) => (
             <div key={index} className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center">
-              <div className="md:w-1/2 w-full justify-content">
+              <div className="md:w-1/2 w-full !flex md:items-center MobileScreen:justify-center max-h-[560px]">
                 <Image
                   className="cursor-pointer rounded-2xl max-w-[100%] max-h-[560px]"
                   src={item.img}
                   width={500}
                   height={450}
                   alt={"Team Image"}
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
               <div className="md:w-1/2 w-full md:mt-4 md:text-left md:ml-[2.5rem] xl:ml-[2rem] 2xl:ml-[1rem] ml-[1rem] w-auto pt-[2rem] MobileScreen:pr-[1rem] md:pt-[0px] pr-[1rem] text-center ">

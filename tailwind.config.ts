@@ -12,18 +12,6 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        'gradient-wave': `
-          repeating-linear-gradient(
-            225deg,
-            rgba(255, 255, 255, 0.8) 0%,     
-            rgba(255, 255, 204, 0.6) 20%,  
-            rgba(255, 255, 153, 0.7) 40%,         
-            rgba(255, 255, 102, 0.4) 60%,         
-            rgba(255, 255, 45, 0.3) 80%,           
-            rgba(200, 200, 200, 0.5) 100%,             
-            rgba(0, 0, 0, 1) 100% 
-          )
-        `,
       },
       fontFamily: {
         hackathoneSFProDisplay: ["var(--font-sf-pro-display)"],
@@ -60,16 +48,6 @@ const config: Config = {
         MobileScreen: { max: "480.5px" },
         TabletScreen: { min: "480.5px", max: "1024.5px" },
         DesktopScreen: { min: "1024.5px" },
-      },
-      keyframes: {
-        gradientWave: {
-          '0%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-          '100%': { backgroundPosition: '0% 50%' },
-        },
-      },
-      animation: {
-        gradientWave: 'gradientWave 7s ease-in-out infinite',
       },
     },
   },

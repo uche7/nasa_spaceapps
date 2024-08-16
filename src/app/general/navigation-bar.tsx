@@ -97,7 +97,7 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div className="flex flex-row gap-[1.5rem]">
+      <div className="flex flex-row gap-[3rem]">
         {navigationInfo.map((item, index) => (
           <div
             key={index}
@@ -108,15 +108,7 @@ export default function NavigationBar() {
             }
             onMouseLeave={() => setIsTooltipVisible(false)}
           >
-            <motion.div
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.5 },
-              }}
-              className="focus:outline-none rounded-lg px-4 py-2.5 text-center me-2 font-[600] text-slate-100 font-sefarvestCabinetGrotesk hover:text-hackathone-font-rocket-red hover:font-[700] bg-gradient-wave bg-[length:200%_200%] animate-gradientWave">
-              {item.text}
-            </motion.div>
-
+            {item.text}
             {index === navigationInfo.length - 1 && isTooltipVisible && (
               <motion.div
                 className="absolute left-[90%] transform -translate-x-[50%] bottom-[-25px] z-50"
