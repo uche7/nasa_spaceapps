@@ -97,7 +97,7 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div className="flex flex-row gap-[42px]">
+      <div className="flex flex-row gap-[1.5rem]">
         {navigationInfo.map((item, index) => (
           <div
             key={index}
