@@ -11,13 +11,13 @@ const Instagram = () => {
 
   return (
     <>
-      <motion.div className="w-full flex flex-col items-center justify-between px-1 gap-1 bg-center bg-repeat bg-cover ">
+      <motion.div className="w-full flex flex-col items-center justify-between gap-1 bg-center bg-repeat bg-cover">
         <motion.h1
           variants={fadeIn("down", "tween", 0.5, 0.4)}
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-bold text-5xl tracking-tight mb-1 text-center"
+          className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-bold text-5xl tracking-tight mb-1 text-center MobileScreen:text-[30.99px] MobileScreen:leading-[44.62px] px-[3rem]"
         >
           Discover More on Our Social Media
         </motion.h1>

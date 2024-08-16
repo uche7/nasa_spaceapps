@@ -24,86 +24,86 @@ const Timeline = () => {
 
   return (
     <div
-  id="timeline"
-  className="flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
+      id="timeline"
+      className="flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
     md:my-[124px] min-h-screen py-2 text-hackathone-font-rocket-red"
->
-  <Typography
-    variant="h3"
-    component="h1"
-    className="text-4xl font-bold mb-10 r MobileScreen:text-center"
-  >
-    Timeline
-  </Typography>
-  <MuiTimeline position="alternate-reverse">
-    {events.map((event, index) => (
-      <TimelineItem
-        key={index}
-        className="cursor-pointer"
-        onMouseEnter={() => setHoveredIndex(index)}
-        onMouseLeave={() => setHoveredIndex(null)}
+    >
+      <Typography
+        variant="h3"
+        component="h1"
+        className="text-4xl font-bold mb-10 r MobileScreen:text-center MobileScreen:text-[30.99px] MobileScreen:leading-[44.62px]"
       >
-        <TimelineOppositeContent className="hidden md:block px-4">
-          <Typography
-            variant="body2"
-            color="white"
-            className="text-base font-normal  MobileScreen:text-center"
+        Timeline
+      </Typography>
+      <MuiTimeline position="alternate-reverse">
+        {events.map((event, index) => (
+          <TimelineItem
+            key={index}
+            className="cursor-pointer"
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
-            {event.date}
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
-          {index < events.length - 1 && (
-            <TimelineConnector
-              className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
-              style={{
-                height:
-                  hoveredIndex === index ? contentHeight + 20 : "100px",
-                backgroundColor: "#52525B",
-              }}
-            />
-          )}
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper
-            elevation={3}
-            className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
-            style={{
-              maxHeight:
-                hoveredIndex === index ? contentHeight + 80 : "90px",
-              backgroundColor: "#1e1e1e",
-              border:
-                hoveredIndex === index
-                  ? "2px solid #52525B"
-                  : "2px solid transparent",
-            }}
-          >
-            <Typography
-              variant="h6"
-              component="h1"
-              className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red  MobileScreen:text-center"
-            >
-              {event.title}
-            </Typography>
-            {event.content && (
+            <TimelineOppositeContent className="hidden md:block px-4">
               <Typography
-                ref={contentRef}
-                className={`text-white transition-all duration-500 ease-in-out transform mt-2
-                  TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 -translate-y-2"
-                  } text-center MobileScreen:text-left`}
+                variant="body2"
+                color="white"
+                className="text-base font-normal  MobileScreen:text-center"
               >
-                {event.content}
+                {event.date}
               </Typography>
-            )}
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-    ))}
-  </MuiTimeline>
-</div>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
+              {index < events.length - 1 && (
+                <TimelineConnector
+                  className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
+                  style={{
+                    height:
+                      hoveredIndex === index ? contentHeight + 20 : "100px",
+                    backgroundColor: "#52525B",
+                  }}
+                />
+              )}
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper
+                elevation={3}
+                className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
+                style={{
+                  maxHeight:
+                    hoveredIndex === index ? contentHeight + 80 : "90px",
+                  backgroundColor: "#1e1e1e",
+                  border:
+                    hoveredIndex === index
+                      ? "2px solid #52525B"
+                      : "2px solid transparent",
+                }}
+              >
+                <Typography
+                  variant="h6"
+                  component="h1"
+                  className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red  MobileScreen:text-center"
+                >
+                  {event.title}
+                </Typography>
+                {event.content && (
+                  <Typography
+                    ref={contentRef}
+                    className={`text-white transition-all duration-500 ease-in-out transform mt-2
+                  TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 -translate-y-2"
+                      } text-center MobileScreen:text-left`}
+                  >
+                    {event.content}
+                  </Typography>
+                )}
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+        ))}
+      </MuiTimeline>
+    </div>
 
   );
 };

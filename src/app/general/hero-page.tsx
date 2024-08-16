@@ -94,7 +94,7 @@ const HeroPage = () => {
       <div className="DesktopScreen:hidden MobileScreen:hidden flex items-center justify-between mt-[36px] px-[6.94%]">
         <div className="flex justify-center w-full">
           <div>
-            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[56.08px] leading-[73.26px] flex flex-col items-center justify-center">
+            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[56.08px] leading-[64.26px] flex flex-col items-center justify-center">
               <p>Welcome To</p>
               <p>HackAthlone</p>
             </div>
@@ -115,7 +115,7 @@ const HeroPage = () => {
             </div>
             <div className="">
               <div>
-                <p className="mt-[28.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[22.63px] text-slate-300">
+                <p className="mt-[32.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[22.63px] text-slate-300">
                   Join Unique World Robotics for the <span className="font-bold text-[18px] text-hackathone-font-rocket-red">2024 NASA Space Apps Challenge </span>
                   on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">October 4 to 6</span> as we celebrate this year&apos;s
                   theme of <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
@@ -182,14 +182,14 @@ const HeroPage = () => {
   /** Mobile View */
   const mobileView = () => {
     return (
-      <div className="DesktopScreen:hidden TabletScreen:hidden flex items-center justify-between ">
+      <div className="DesktopScreen:hidden TabletScreen:hidden flex items-center justify-between mx-[1.2rem]">
         <div className="flex justify-center w-full">
           <div>
-            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[45.8px] leading-[56.79px] mt-[24px] px-[5.58%]">
+            <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[45.8px] leading-[56.79px] mt-[28px]">
               <p>HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
               <div>
-                <p className="mt-[28.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-slate-300">
-                  Join NASA space apps athlone from<span className="font-bold font-hackathoneCabinetGrotesk "> October 4 to 6</span>,  <span className="font-bold text-[16px] text-hackathone-font-rocket-red"> this year's theme is "The Sun Touches Everything". </span>
+                <p className="mt-[16.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-white">
+   Join NASA Space Apps Athlone from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>,  <span className="text-[16px]  text-white"> this year's theme is <span className="text-hackathone-font-rocket-red">"The Sun Touches Everything".</span></span>
                 </p>
               </div>
               <div className="flex flex-row gap-[16px]">
@@ -214,7 +214,7 @@ const HeroPage = () => {
                   title=" Register Here"
                   className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
-                  <p className="mr-[7px] font-bold text-[14px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
+                  <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-150 ease-out hover:text-hackathone-font-rocket-red">
                     Register Here
                   </p>
                 </motion.button>
@@ -236,13 +236,13 @@ const HeroPage = () => {
                   title="Hackathone 2023"
                   className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
                 >
-                  <p className="mr-[7px] font-bold text-[14px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
+                  <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-150 ease-out hover:text-hackathone-font-rocket-red">
                     Hackathone 2023
                   </p>
                 </motion.button>
               </div>
             </div>
-            <div className="flex items-center justify-center mt-[48.92px] mb-[90.79px]">
+            <div className="flex items-center justify-center mt-[48.92px]">
               <Image unoptimized src={HeroImage} alt="Hero Image" />
             </div>
           </div>

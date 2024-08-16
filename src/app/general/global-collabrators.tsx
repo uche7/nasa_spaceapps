@@ -6,7 +6,7 @@ const GlobalCollabrators = () => {
   /** Desktop View */
   const desktopView = () => {
     return (
-      <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row items-center justify-center gap-[36px] mx-[8.34%]">
+      <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row items-center justify-center gap-[36px] mx-[8.06%]">
         <div className="w-[123.45%]">
           <h1 className="my-4 text-hackathone-font-rocket-red font-[700] text-[42px]">
             GLOBAL COLLABORATORS THIS YEAR
@@ -100,9 +100,12 @@ const GlobalCollabrators = () => {
   /** Mobile View */
   const mobileView = () => {
     return (
-      <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[4.34%]">
+      <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[1.2rem]">
         <div>
-          <p className="font-hackathoneCabinetGrotesk font-[400] text-[24px] leading-[173.34%]">
+          <h1 className="text-[30.99px] leading-[44.62px] font-[800] text-hackathone-font-rocket-red font-hackathoneCabinetGrotesk pb-[2rem]">
+            GLOBAL COLLABORATORS THIS YEAR
+          </h1>
+          <p className="font-hackathoneCabinetGrotesk font-[400] text-[16px] leading-[173.34%]">
             <span className="text-hackathone-font-rocket-red font-[500]">
               This year
             </span>
@@ -130,9 +133,6 @@ const GlobalCollabrators = () => {
           </p>
         </div>
         <div>
-          <h1 className="flex flex-col items-center justify-center text-hackathone-font-rocket-red y">
-            GLOBAL COLLABORATORS THIS YEAR
-          </h1>
           <Image
             className="rounded-xl"
             src={CollabratorsIcon}

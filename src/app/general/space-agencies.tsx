@@ -7,7 +7,7 @@ const SpaceAgencies = () => {
   /** Desktop View */
   const desktopView = () => {
     return (
-      <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[36px] mx-[8.34%]">
+      <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[36px] mx-[8.06%]">
         <div className="lg:w-1/2 w-full text-center">
           <AgenciesSlider />
         </div>
@@ -71,9 +71,9 @@ const SpaceAgencies = () => {
   /** Mobile View */
   const mobileView = () => {
     return (
-      <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center mx-[4.06%]">
+      <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center mx-[1.2rem]">
         <div className="w-full mt-[3%]">
-          <h1 className="font-[700] text-[30.99px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
+          <h1 className="font-[800] text-[30.99px] leading-[44.62px] text-hackathone-font-rocket-red font-hackathoneCabinetGrotesk my-2 pb-[0.5rem]">
             SPACE AGENCIES
           </h1>
         </div>

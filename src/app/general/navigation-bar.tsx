@@ -11,6 +11,40 @@ export default function NavigationBar() {
   const navigationInfo = useMemo(() => navigationData(Router), [Router]);
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: MouseEvent) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    setTooltipPosition({ x, y });
+  };
+
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
+
+  React.useEffect(() => {
+    if (isHovered) {
+      window.addEventListener('mousemove', handleMouseMove);
+    } else {
+      window.removeEventListener('mousemove', handleMouseMove);
+    }
+
+    // Cleanup event listener on unmount or when `isHovered` changes
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, [isHovered]);
+
+  const renderLines = () => {
+    const lines = [];
+    for (let i = 0; i < 3; i++) {
+      lines.push(
+        <div key={i} className="w-[36px] h-[5px] bg-hackathone-font-rocket-red mt-[6px] rounded-2xl"></div>
+      ); {/*Or fill with: bg-white */ }
+    }
+    return lines;
+  };
 
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
@@ -63,7 +97,7 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div className="flex flex-row gap-[42px]">
+      <div className="flex flex-row gap-[3rem]">
         {navigationInfo.map((item, index) => (
           <div
             key={index}
@@ -99,7 +133,7 @@ export default function NavigationBar() {
       className="DesktopScreen:hidden MobileScreen:hidden bg-transparent border border-white px-[1.7%]
          flex flex-row justify-between py-[6px] mx-[3%] rounded-xl"
     >
-      <div onClick={() => Router.push("/")}>
+      <div onClick={() => Router.push("/")} className="px-[0.5rem] py-[0.25rem]">
         <Image
           className="cursor-pointer"
           src={NasaLogo}
@@ -107,13 +141,35 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div onClick={toggleSideNav}>
-        <Image
+      <div onClick={toggleSideNav}
+        className="px-[0.5rem] py-[0.5rem] cursor-pointer"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
+        {renderLines()}
+        {/* <Image
           className="cursor-pointer"
           src={MenuIcon}
           width={50}
           alt={"Menu Icon"}
-        ></Image>
+        ></Image> */}
+        {isHovered && (
+          <motion.div
+            className="absolute transform"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.5 }}
+            style={{
+              left: `${tooltipPosition.x - 10}px`,
+              top: `${tooltipPosition.y + 30}px`,
+              transform: "translate(-50%, 0)" // Adjust transform to center the tooltip correctly
+            }}
+          >
+            <div className="bg-gray-800 bg-opacity-80 text-white p-2 rounded-md text-sm whitespace-nowrap text-center shadow-lg border border-white">
+              Menu
+            </div>
+          </motion.div>
+        )}
       </div>
     </nav>
   );
@@ -124,21 +180,42 @@ export default function NavigationBar() {
       className="DesktopScreen:hidden TabletScreen:hidden bg-transparent border border-white px-[1.2%]
          flex flex-row items-center justify-between py-[6px] mx-[1%] rounded-md"
     >
-      <div onClick={() => Router.push("/")}>
+      <div onClick={() => Router.push("/")}
+        className="px-[0.5rem] py-[0.25rem]">
         <Image
-          className="cursor-pointer mt-2"
+          className="cursor-pointer"
           src={NasaLogo}
           width={50}
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div onClick={toggleSideNav}>
-        <Image
+      <div onClick={toggleSideNav}
+        className="px-[0.5rem] py-[0.25rem] cursor-pointer tool-to"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}>
+        {renderLines()}
+        {/* <Image
           className="cursor-pointer"
           src={MenuIcon}
           width={50}
           alt={"Menu Icon"}
-        ></Image>
+        ></Image> */}
+
+        {isHovered && (
+          <motion.div
+            className="absolute left-[85%] top-[4.5rem] transform -translate-x-[50%]"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.5 }}
+          >
+
+            <div className="bg-gray-800 bg-opacity-80 text-white p-2 rounded-md text-sm whitespace-nowrap text-center shadow-lg border border-white">
+              Menu
+            </div>
+          </motion.div>
+        )}
+
       </div>
     </nav>
   );
