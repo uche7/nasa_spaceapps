@@ -188,8 +188,8 @@ const HeroPage = () => {
             <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[45.8px] leading-[56.79px] mt-[28px]">
               <p>HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
               <div>
-                <p className="mt-[16.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-slate-300">
-                  Join NASA Space Apps Athlone from<span className="font-bold font-hackathoneCabinetGrotesk "> October 4 to 6</span>,  <span className="font-bold text-[16px] text-hackathone-font-rocket-red"> this year's theme is "The Sun Touches Everything". </span>
+                <p className="mt-[16.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-white">
+   Join NASA Space Apps Athlone from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>,  <span className="text-[16px]  text-white"> this year's theme is <span className="text-hackathone-font-rocket-red">"The Sun Touches Everything".</span></span>
                 </p>
               </div>
               <div className="flex flex-row gap-[16px]">
