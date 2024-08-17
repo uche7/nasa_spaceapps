@@ -2,10 +2,19 @@ import React, { useState, useEffect } from "react";
 import Image from 'next/image';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
-// import XIcon from "@/assets/images/general/landing-page"
+import XIcon from "@/assets/images/general/landing-page/x_logo.svg"
+import InstaIcon from "@/assets/images/general/landing-page/instagram.png"
+import InIcon from "@/assets/images/general/landing-page/linkedin.png"
+import TweetEmbed from "./xpost-embed";
+import InPostEmbed from "./linkedin-embed";
 
 const Instagram = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
@@ -43,51 +52,79 @@ const Instagram = () => {
             className="mb-8"
           >
 
+            {isClient && <TweetEmbed />}
+            <button
+              type="button"
+              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[0.5rem] text-center inline-flex items-center me-2 mb-2"
+            >
+              Follow us on
+              <Image
+                className="cursor-pointer w-6 h-6 ms-2"
+                src={XIcon}
+                height={80}
+                width={80}
+                alt={"XIcon"}
+              ></Image>
+
+            </button>
+          </motion.div>
+
+          <motion.div
+            variants={fadeIn("down", "tween", 1.0, 0.5)}
+            initial="hidden"
+            animate={animationComplete ? "show" : "hidden"}
+            onAnimationComplete={handleAnimationComplete}
+            className="mb-8"
+          >
             <iframe
-              src="https://www.instagram.com/p/CyBirTTxKgP/embed/"
-              width={450}
+              src="https://www.instagram.com/p/C-dJTQhhL-I/embed/"
+              width={300}
               height={400}
               className="rounded-md"
               frameBorder="0"
               scrolling="no"
-              allowTransparency={true}
               allow="encrypted-media"
             />
             <button
               type="button"
-              className="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm my-[0.5rem] px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 mb-2"
+              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[0.5rem] text-center inline-flex items-center me-2 mb-2"
             >
-              {/* <Image
-                className="cursor-pointer"
-                src={MenuIcon}
-                width={50}
-                alt={"Menu Icon"}
-              ></Image> */}
               Follow us on
+              <Image
+                className="cursor-pointer w-6 h-6 ms-2"
+                src={InstaIcon}
+                height={80}
+                width={80}
+                alt={"InstaIcon"}
+              ></Image>
+
             </button>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("down", "tween", 1.0, 0.5)}
+            initial="hidden"
+            animate={animationComplete ? "show" : "hidden"}
+            onAnimationComplete={handleAnimationComplete}
+            className="mb-8"
+          >
+            <InPostEmbed />
+            <button
+              type="button"
+              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[0.5rem] text-center inline-flex items-center me-2 mb-2"
+            >
+              Follow us on
+              <Image
+                className="cursor-pointer w-6 h-6 ms-2"
+                src={InIcon}
+                height={80}
+                width={80}
+                alt={"InIcon"}
+              ></Image>
+            </button>
+
           </motion.div>
 
 
-          <iframe
-            src="https://www.instagram.com/p/C-dJTQhhL-I/embed/"
-            width={300}
-            height={400}
-            className="rounded-md"
-            frameBorder="0"
-            scrolling="no"
-            allowTransparency={true}
-            allow="encrypted-media"
-          />
-          <iframe
-            src="https://www.instagram.com/p/CxdsGb7hnqK/embed/"
-            width={450}
-            height={400}
-            className="rounded-md"
-            frameBorder="0"
-            scrolling="no"
-            allowTransparency={true}
-            allow="encrypted-media"
-          />
         </motion.div>
       </motion.div>
     </>

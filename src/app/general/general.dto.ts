@@ -310,3 +310,4 @@ export const events = [
      on the back for making it through the hackathon. What an achievement!`,
   },
 ];
+
