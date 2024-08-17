@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { navigationData } from "./general.dto";
-import NasaLogo from "@/assets/images/general/landing-page/spaceapps_Logo.png";
+import NasaLogo from "@/assets/images/general/landing-page/logo2.png";
 import MenuIcon from "@/assets/images/general/landing-page/menu-icon.svg";
 
 export default function NavigationBar() {
@@ -40,7 +40,7 @@ export default function NavigationBar() {
     const lines = [];
     for (let i = 0; i < 3; i++) {
       lines.push(
-        <div key={i} className="w-[36px] h-[5px] bg-hackathone-font-rocket-red mt-[6px] rounded-2xl"></div>
+        <div key={i} className="w-[36px] h-[5px] bg-white  mt-[6px] rounded-2xl"></div>
       ); {/*Or fill with: bg-white */ }
     }
     return lines;

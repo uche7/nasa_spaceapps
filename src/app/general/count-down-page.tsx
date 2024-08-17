@@ -47,12 +47,12 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     timeLeft[interval] ? (
       <div
         key={interval}
-        className="flex flex-col items-center justify-center bg-hackathone-background-grey text-hackathone-font-rocket-red rounded-lg mx-1 p-2 min-w-[60px] md:min-w-[80px]"
+        className="flex flex-col items-center justify-center text-center bg-transparent border rounded text-hackathone-font-rocket-red mx-1 p-2 min-w-[60px] md:min-w-[80px]"
       >
         <span className="text-2xl md:text-4xl font-bold">
           {timeLeft[interval]}
         </span>
-        <span className="text-xs md:text-sm uppercase">{interval}</span>
+        <span className="text-xs md:text-lg capitalize text-slate-50 font-[500]">{interval}</span>
       </div>
     ) : null
   );
@@ -62,13 +62,7 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center  mb-[139.04px]">
-      <h2 className="font-hackathoneCabinetGrotesk font-[800] text-hackathone-font-rocket-red text-[24px] md:text-[32px]">
-        Joins Us Now
-      </h2>
-      <p className="font-hackathoneSFProDisplay font-[400] text-[12px] md:text-[15px] text-wrap mx-4 mt-[16px] md:mt-[32px] mb-[24px] md:mb-[48px]">
-        GLOBAL NUMBERS FROM OUR PREVIOUS EVENT
-      </p>
+    <div className="flex flex-col items-center justify-center mb-[3rem]">
       <div className="flex flex-wrap items-center justify-center space-x-2 md:space-x-4">
         {timerComponents.length ? timerComponents : <span>Time's up!</span>}
       </div>
