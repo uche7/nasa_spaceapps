@@ -3,24 +3,35 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import HeroImage from "@/assets/images/general/landing-page/spaceapps_Logo.png";
+import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
+import CountDownPage from "./count-down-page";
 
 const HeroPage = () => {
   /** Desktop View */
   const desktopView = () => {
+    const targetDate = "2024-10-04T18:00:00";
     return (
-      <div className="TabletScreen:hidden MobileScreen:hidden flex items-center justify-between px-[6.94%] mt-[59.62px] mb-[81.79px] ">
-        <div className="w-[35.46%]">
+      <div className="TabletScreen:hidden MobileScreen:hidden flex flex-col justify-center items-center text-center mx-[8.06%] mt-[8rem] mb-[6rem] ">
+        <div className="w-full mb-[10%]">
+          <motion.button
+            className="mb-[2rem]"
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.5 },
+            }}
+          >
+            <Image unoptimized width={250} src={HeroImage} alt="Hero Image" />
+          </motion.button>
+          <CountDownPage targetDate={targetDate} />
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
-            <p className="text-white">Welcome To</p>
-            <p>HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
+            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
           </div>
-          <div>
-            <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal text-[18px] leading-[22.63px] text-white">
-              Join NASA Space Apps Athlone from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>,  <span className="text-[18px]  text-white"> this year's theme is <span className="text-hackathone-font-rocket-red">"The Sun Touches Everything".</span></span>
+          <div className="mx-[10rem] px-[4.5rem] text-[24px] leading-[36.57px]">
+            <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal  text-white">
+              Join <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span> from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>, this year we celebrate the theme <span className="font-extrabold text-hackathone-font-rocket-red">"The Sun Touches Everything".</span>
             </p>
           </div>
-          <div className="flex flex-row gap-[16px]">
+          <div className="flex flex-row justify-center gap-[32px]">
             <motion.button
               whileHover={{
                 scale: 1.1,
@@ -40,9 +51,9 @@ const HeroPage = () => {
                 )
               }
               title="Register Here"
-              className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+              className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[18.7%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >{/* Orignal bg :  bg-hackathone-background-dark-blue */}
-              <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
+              <p className="mr-[7px] font-extrabold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                 Register Here
               </p> {/*Original: text-[13.13px] leading-[16.28px]  text-hackathone-font-rocket-red */}
             </motion.button>
@@ -66,25 +77,15 @@ const HeroPage = () => {
                 )
               }
               title="Hackathone 2023"
-              className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40.36%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+              className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[18.7%]  h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >
-              <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
+              <p className="mr-[7px] font-extrabold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                 Hackathlone 2023
               </p>
             </motion.button>
           </div>
         </div>
-        <div className="w-[50.49%]">
-          <motion.button
-            whileHover={{
-              scale: 1.1,
-              transition: { duration: 0.5 },
-            }}
-          >
-            <Image unoptimized width={500} src={HeroImage} alt="Hero Image" />
-          </motion.button>
-        </div>
-      </div>
+      </div >
     );
   };
 
@@ -189,7 +190,7 @@ const HeroPage = () => {
               <p>HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
               <div>
                 <p className="mt-[16.3px] font-hackathoneSFProDisplay font-normal text-[16px] leading-[20.63px] text-white">
-   Join NASA Space Apps Athlone from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>,  <span className="text-[16px]  text-white"> this year's theme is <span className="text-hackathone-font-rocket-red">"The Sun Touches Everything".</span></span>
+                  Join NASA Space Apps Athlone from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>,  <span className="text-[16px]  text-white"> this year's theme is <span className="text-hackathone-font-rocket-red">"The Sun Touches Everything".</span></span>
                 </p>
               </div>
               <div className="flex flex-row gap-[16px]">
