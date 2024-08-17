@@ -20,7 +20,7 @@ const InPostEmbed = () => {
                     LinkedIn Post
                 </a>
             </blockquote>
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7228299909630730240" height="941" width="504" frameBorder="0" allowFullScreen={false} title="Embedded post"></iframe>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7228299909630730240/" height="941" width="504" frameBorder="0" allowFullScreen={false} title="Embedded post"></iframe>
         </div>
     );
 };
