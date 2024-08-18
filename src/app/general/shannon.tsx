@@ -55,20 +55,19 @@ const Shannon = () => {
           onAnimationComplete={handleAnimationComplete}
           className="MobileScreen:my-4 my-8 text-base sm:text-lg md:text-lg md:mb-[1rem] sm:mb-[1rem] font-hackathoneCabinetGrotesk font-[500] text-white leading-relaxed MobileScreen:leading-[30.57px] pr-[20%]"
         >
-          <span className="font-semibold text-hackathone-font-rocket-red">
-            NASA Spaceapps Challenge 2024
-          </span>{" "}
-          is being held at the heart of Ireland, Athlone.{" "}
-          <span className="font-semibold text-hackathone-font-rocket-red">
-            Technology University of the Shannon
-          </span>{" "}
-          is being presented as the host location for this massive in-person
-          hackathon. The university needs no introduction for its merits in
-          innovation and technology, preaching knowledge and excellence to over{" "}
-          <span className="font-semibold text-hackathone-font-rocket-red">
-            7000+ students.
-          </span>{" "}
+          The NASA SpaceApps Challenge 2024 is happening in the heart of Ireland, Athlone, with the Technological University of the Shannon proudly hosting this massive in-person hackathon. Renowned for its innovation and technological excellence, the university educates and inspires over <span className="font-semibold text-hackathone-font-rocket-red">7,000 students</span>, making it the perfect venue for this prestigious event.
         </motion.p>
+        <motion.p
+          variants={fadeIn("down", "tween", 1.2, 0.4)}
+          initial={animationComplete ? "" : "hidden"}
+          whileInView="show"
+          onAnimationComplete={handleAnimationComplete}
+          className="MobileScreen:my-4 my-8 text-base sm:text-lg md:text-lg md:mb-[1rem] sm:mb-[1rem] font-hackathoneCabinetGrotesk font-[500] text-white leading-relaxed MobileScreen:leading-[30.57px] pr-[20%]"
+        >
+          As the venue partner, the university also offers resources like Hack Shops, Hack Labs equipped with hardware and software tools, 3D printers, VR headsets, and more to support your creative projects.
+
+        </motion.p>
+
       </div>
       <div className="px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-6">
         <div className="lg:w-1/2 w-full mt-[1.5rem] mr-[1.5rem] MobileScreen:mt-[0.5rem]">

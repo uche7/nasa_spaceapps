@@ -12,30 +12,9 @@ const GlobalCollabrators = () => {
             Global Collaborators This Year
           </h1>
           <p className="font-hackathoneCabinetGrotesk font-[400] text-[18px] leading-[160%]">
-            <span className="text-hackathone-font-rocket-red font-[500]">
-              This year
-            </span>
-            , the NASA International Space Apps Challenge{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              Global Organizing Team
-            </span>
-            collaborates with{" "}
-            <span className="text-hackathone-font-rocket-red font-[500]">
-              organizations
-            </span>{" "}
-            from around the world to provide{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              participants
-            </span>{" "}
-            and/or
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              Local Leads
-            </span>{" "}
-            with tools and resources that enable the creation of{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              solutions
-            </span>
-            . These tools and resources can be used for free during the event.
+
+            This year, the <span className="text-hackathone-font-rocket-red font-[500]">NASA International Space Apps Challenge Global Organizing Team </span>is partnering with organizations worldwide to provide participants and Local Leads with <span className="text-hackathone-font-rocket-red font-[500]">free tools and resources</span> to help you create the most innovative and creative solutions during the event.
+
           </p>
         </div>
         <div>
@@ -56,30 +35,7 @@ const GlobalCollabrators = () => {
       <div className="DesktopScreen:hidden MobileScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[4.34%]">
         <div className="">
           <p className="font-hackathoneCabinetGrotesk font-[400] text-[26px] leading-[223.34%]">
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              This year
-            </span>
-            , the NASA International Space Apps Challenge{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              Global Organizing Team
-            </span>
-            collaborates with{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              organizations
-            </span>{" "}
-            from around the world to provide{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              participants
-            </span>{" "}
-            and/or
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              Local Leads
-            </span>{" "}
-            with tools and resources that enable the creation of{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              solutions
-            </span>
-            . These tools and resources can be used for free during the event.
+            This year, the <span className="text-hackathone-font-rocket-red font-[500]">NASA International Space Apps Challenge Global Organizing Team </span>is partnering with organizations worldwide to provide participants and Local Leads with <span className="text-hackathone-font-rocket-red font-[500]">free tools and resources</span> to help you create the most innovative and creative solutions during the event.
           </p>
         </div>
         <div>
@@ -106,30 +62,7 @@ const GlobalCollabrators = () => {
             Global Collaborators This Year
           </h1>
           <p className="font-hackathoneCabinetGrotesk font-[400] text-[16px] leading-[173.34%]">
-            <span className="text-hackathone-font-rocket-red font-[500]">
-              This year
-            </span>
-            , the NASA International Space Apps Challenge{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              Global Organizing Team
-            </span>
-            collaborates with{" "}
-            <span className="text-hackathone-font-rocket-red font-[500]">
-              organizations
-            </span>{" "}
-            from around the world to provide{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              participants
-            </span>{" "}
-            and/or
-            <span className="text-hackathone-font-rocket-red font-[500]">
-              Local Leads
-            </span>{" "}
-            with tools and resources that enable the creation of{" "}
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              solutions
-            </span>
-            . These tools and resources can be used for free during the event.
+            This year, the <span className="text-hackathone-font-rocket-red font-[500]">NASA International Space Apps Challenge Global Organizing Team </span>is partnering with organizations worldwide to provide participants and Local Leads with <span className="text-hackathone-font-rocket-red font-[500]">free tools and resources</span> to help you create the most innovative and creative solutions during the event.
           </p>
         </div>
         <div>
