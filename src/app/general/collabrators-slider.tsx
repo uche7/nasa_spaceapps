@@ -21,7 +21,7 @@ export const CollabratorsSlider = () => {
         {sliderItems.map((item, index) => (
           <div key={index} className="flex-shrink-0 px-2">
             <Image
-              className="cursor-pointer"
+              className="cursor-pointer MobileScreen:px-[1.5rem] TabletScreen:px-[0.5rem]"
               src={item.img}
               width={120}
               height={120}

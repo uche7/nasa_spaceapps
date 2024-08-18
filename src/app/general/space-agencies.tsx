@@ -13,7 +13,7 @@ const SpaceAgencies = () => {
         </div>
         <div className="lg:w-1/2 w-full mb-[20%] mt-[3%] ml-[2rem]">
           <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
-            SPACE AGENCIES
+            Space Agencies
           </h1>
           <div className="mr-[3rem]">
             <p className="font-hackathoneCabinetGrotesk text-[18px] leading-[1.8rem] text-left">
@@ -34,7 +34,7 @@ const SpaceAgencies = () => {
       <div className="DesktopScreen:hidden MobileScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[4.06%]">
         <div className="w-full mt-[3%]">
           <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2">
-            SPACE AGENCIES
+            Space Agencies
           </h1>
           <p className="font-hackathoneCabinetGrotesk font-[600] text-[18px] leading-[30.57px] pr-[12.7%]">
             In{" "}
@@ -74,7 +74,7 @@ const SpaceAgencies = () => {
       <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center mx-[1.2rem]">
         <div className="w-full mt-[3%]">
           <h1 className="font-[800] text-[30.99px] leading-[44.62px] text-hackathone-font-rocket-red font-hackathoneCabinetGrotesk my-2 pb-[0.5rem]">
-            SPACE AGENCIES
+            Space Agencies
           </h1>
         </div>
         <p className="font-hackathoneCabinetGrotesk text-slate-50 font-[500] text-[16px] leading-[30.57px] pr-[8.7%]">

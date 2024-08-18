@@ -14,7 +14,7 @@ const TweetEmbed = () => {
     }, []);
 
     return (
-        <>
+        <div className='MobileScreen:mx-[2rem]'>
             <blockquote className="twitter-tweet" data-theme="dark">
                 <p lang="en" dir="ltr">
                     We are back again, 4th to 6th October, 2024.
@@ -34,7 +34,7 @@ const TweetEmbed = () => {
                     August 13, 2024
                 </a>
             </blockquote>
-        </>
+        </div>
     );
 };
 
