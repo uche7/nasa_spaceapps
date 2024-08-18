@@ -28,12 +28,12 @@ const Instagram = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="font-hackathoneCabinetGrotesk text-white font-[700] text-5xl tracking-tight mb-[1rem] text-center MobileScreen:text-[30.99px] MobileScreen:leading-[44.62px] px-[3rem]"
+          className="font-hackathoneCabinetGrotesk text-white font-[700] text-5xl tracking-tight mb-[1rem] text-center MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px] px-[3rem]"
         >
           Discover more on Our <span className="font-extrabold text-hackathone-font-rocket-red ">Socials</span>
         </motion.h1>
         <div className="mb-[2rem]">
-          <p className="font-hackathoneCabinetGrotesk text-[22px] text-white">
+          <p className="font-hackathoneCabinetGrotesk text-[22px] leading-tight text-white">
             Keep your self updated by{" "}<span className="font-extrabold text-hackathone-font-rocket-red ">following us on social media</span>
           </p>
         </div>
@@ -42,7 +42,7 @@ const Instagram = () => {
           initial="hidden"
           animate={animationComplete ? "show" : "hidden"}
           onAnimationComplete={handleAnimationComplete}
-          className="flex flex-row flex-wrap items-start justify-center gap-8 my-3"
+          className="flex flex-row flex-wrap items-start justify-center gap-8 my-3 MobileScreen:mx-[2rem] TabletScreen:mx-[2rem]"
         >
           <motion.div
             variants={fadeIn("down", "tween", 1.0, 0.5)}
@@ -51,22 +51,21 @@ const Instagram = () => {
             onAnimationComplete={handleAnimationComplete}
             className="mb-8"
           >
-
             {isClient && <TweetEmbed />}
-            <button
-              type="button"
+            <a
+              href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
               className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[0.5rem] text-center inline-flex items-center me-2 mb-2"
             >
               Follow us on
               <Image
-                className="cursor-pointer w-6 h-6 ms-2"
+                className="cursor-pointer w-6 h-6 ms-2 MobileScreen:w-4"
                 src={XIcon}
                 height={80}
                 width={80}
                 alt={"XIcon"}
               ></Image>
+            </a>
 
-            </button>
           </motion.div>
 
           <motion.div
@@ -85,42 +84,42 @@ const Instagram = () => {
               scrolling="no"
               allow="encrypted-media"
             />
-            <button
-              type="button"
-              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[0.5rem] text-center inline-flex items-center me-2 mb-2"
+            <a
+              href="https://www.instagram.com/spaceappsathlone/"
+              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[1rem] text-center inline-flex items-center me-2 mb-2"
             >
               Follow us on
               <Image
-                className="cursor-pointer w-6 h-6 ms-2"
+                className="cursor-pointer w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
                 src={InstaIcon}
                 height={80}
                 width={80}
                 alt={"InstaIcon"}
               ></Image>
 
-            </button>
+            </a>
           </motion.div>
           <motion.div
             variants={fadeIn("down", "tween", 1.0, 0.5)}
             initial="hidden"
             animate={animationComplete ? "show" : "hidden"}
             onAnimationComplete={handleAnimationComplete}
-            className="mb-8"
+            className="mb-8 "
           >
             <InPostEmbed />
-            <button
-              type="button"
-              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[0.5rem] text-center inline-flex items-center me-2 mb-2"
+            <a
+              href="https://www.linkedin.com/company/spaceapps-hackathlone/"
+              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[1rem] text-center inline-flex items-center me-2 mb-2"
             >
               Follow us on
               <Image
-                className="cursor-pointer w-6 h-6 ms-2"
+                className="cursor-pointer w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
                 src={InIcon}
                 height={80}
                 width={80}
                 alt={"InIcon"}
               ></Image>
-            </button>
+            </a>
 
           </motion.div>
 

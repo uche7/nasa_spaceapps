@@ -125,7 +125,7 @@ const TeamStories = () => {
 
   return (
     <div className="px-4 sm:px-6 lg:px-10 MobileScreen:mx-[1.2rem] mx-[8.06%] my-[6rem]">
-      <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] sm:text-3xl text-[42px] MobileScreen:text-[30.99px]">
+      <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] sm:text-3xl text-[42px] MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]">
         Hackathon Unplugged: Team Stories
       </h1>
       <p className="font-hackathoneSFProDisplay lg:text-xl sm:text-lg text-base mt-4">
@@ -137,7 +137,7 @@ const TeamStories = () => {
             <div key={index} className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center">
               <div className="md:w-1/2 w-full !flex md:items-center MobileScreen:justify-center max-h-[560px]">
                 <Image
-                  className="cursor-pointer rounded-2xl max-w-[100%] max-h-[560px]"
+                  className="cursor-pointer rounded-2xl max-w-[100%] max-h-[560px] MobileScreen:max-h-[320px]"
                   src={item.img}
                   width={500}
                   height={450}
