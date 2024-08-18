@@ -25,11 +25,11 @@ const HeroPage = () => {
           </motion.button>
           <CountDownPage targetDate={targetDate} />
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
-            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
+            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span> '24</p>
           </div>
           <div className="mx-[10rem] text-[24px] leading-[36.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal  text-white">
-              Join <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span><br /> from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>, this year we celebrate the theme<br /> <span className="font-extrabold text-hackathone-font-rocket-red">"The Sun Touches Everything".</span>
+              The <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span> is here. <br /> Join the marathon of problem-solving from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6, 2024</span>
             </p>
           </div>
           <div className="flex flex-row justify-center gap-[32px]">
@@ -106,11 +106,11 @@ const HeroPage = () => {
           </motion.button>
           <CountDownPage targetDate={targetDate} />
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[3.5rem] leading-[4rem]">
-            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
+            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span> '24</p>
           </div>
           <div className="px-[10%] text-[20px] leading-[28.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal  text-white">
-              Join <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span><br /> from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>, this year we celebrate the theme<br /> <span className="font-extrabold text-hackathone-font-rocket-red">"The Sun Touches Everything".</span>
+              The <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span> is here.<br /> Join the marathon of problem-solving from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6, 2024</span>
             </p>
           </div>
           <div className="flex flex-row justify-center gap-[16px]">
@@ -177,11 +177,11 @@ const HeroPage = () => {
             <CountDownPage targetDate={targetDate} />
           </div>
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[3rem] leading-[51.26px]">
-            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span></p>
+            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span> '24</p>
           </div>
           <div className="text-[1rem] leading-[24.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-[500] text-white">
-              Join <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span><br /> from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6</span>, this year we celebrate the theme <span className="font-extrabold text-hackathone-font-rocket-red">"The Sun Touches Everything".</span>
+              The <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span><br /> is here. Join the marathon of problem-solving from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6, 2024</span>
             </p>
           </div>
           <div className="flex flex-col justify-center items-center w-full">
