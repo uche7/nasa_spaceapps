@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Canvas } from "@react-three/fiber";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
-import { motion } from "framer-motion";
 import { faqData } from "./components/faq.dto";
 import NavigationBar from "../general/navigation-bar";
 import Footer from "../general/footer";
@@ -23,9 +22,10 @@ const Faq = () => {
       setExpanded(isExpanded ? panel : false);
     };
 
-  return (
-    <>
-      <div className="relative min-h-screen bg-black text-white">
+  /** DeskTop View */
+  const desktopView = () => {
+    return (
+      <div className="TabletScreen:hidden MobileScreen:hidden relative min-h-screen bg-black text-white">
         <div className="fixed inset-0 z-0">
           <Canvas camera={{ position: [0, 0, 1] }}>
             <CloudParticleBg />
@@ -87,7 +87,79 @@ const Faq = () => {
           <Footer />
         </div>
       </div>
-    </>
+    );
+  };
+
+  /** Tablet and Mobile View */
+  const tabletMobileView = () => {
+    return (
+      <div className="DesktopScreen:hidden relative min-h-screen bg-black text-white">
+        <div className="fixed inset-0 z-0">
+          <Canvas camera={{ position: [0, 0, 1] }}>
+            <CloudParticleBg />
+          </Canvas>
+        </div>
+
+        <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
+          <NavigationBar />
+          <div className="m-4">
+            <Typography
+              variant="h4"
+              gutterBottom
+              className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
+            >
+              Frequently Asked Questions (FAQS)
+            </Typography>
+            <section>
+              <div>
+                {faqData.map((item, index) => (
+                  <Accordion
+                    key={index}
+                    expanded={expanded === index}
+                    onChange={handleChange(index)}
+                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded"
+                    disableGutters
+                  >
+                    <AccordionSummary
+                      expandIcon={
+                        <ExpandMoreIcon
+                          style={{
+                            color: "yellow",
+                          }}
+                        />
+                      }
+                      aria-controls={`panel${index}-content`}
+                      id={`panel${index}-header`}
+                    >
+                      <h1
+                        className="font-hackathoneSFProDisplay font-[300] text-[18px]"
+                        style={{
+                          color: expanded === index ? "yellow" : "white",
+                        }}
+                      >
+                        {item.header}
+                      </h1>
+                    </AccordionSummary>
+                    <AccordionDetails className="">
+                      <Typography>{item.text}</Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                ))}
+              </div>
+            </section>
+          </div>
+
+          <Footer />
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <section>
+      {desktopView()}
+      {tabletMobileView()}
+    </section>
   );
 };
 
