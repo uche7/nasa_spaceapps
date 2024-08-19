@@ -11,6 +11,8 @@ import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
 import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa.png";
 import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
 import Turkey from "@/assets/images/general/landing-page/space-agencies/turkey.svg";
+import Cst from "@/assets/images/general/landing-page/space-agencies/cst.png";
+import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png";
 import Microsoft from "@/assets/images/general/landing-page/collabrators/microsoft.png";
 import Teams from "@/assets/images/general/landing-page/collabrators/teams.png";
@@ -24,6 +26,12 @@ import Tus1 from "@/assets/images/general/landing-page/mapping-images/tus1.jpg";
 import Tus2 from "@/assets/images/general/landing-page/mapping-images/tus2.jpg";
 import Tus3 from "@/assets/images/general/landing-page/mapping-images/tus3.jpg";
 import Tus4 from "@/assets/images/general/landing-page/mapping-images/tus4.jpg";
+import Antriksh from "@/assets/images/general/landing-page/team_section/antriksh.jpeg"
+import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis_go.jpg"
+import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.jpg"
+import HelpKelp from "@/assets/images/general/landing-page/team_section/helpkelp.jpg"
+import IDontThink from "@/assets/images/general/landing-page/team_section/idonthink.jpg"
+
 
 export const navigationData = (Router: any) => [
   {
@@ -141,6 +149,14 @@ export const agenciesSlider = [
     img: Turkey,
     route: () => window.open("https://tua.gov.tr/en", "_blank"),
   },
+  {
+    img: Cst,
+    route: () => window.open("https://www.cst.gov.sa", "_blank"),
+  },
+  {
+    img: Ssa,
+    route: () => window.open("https://www.aee.gob.es/", "_blank"),
+  },
 ];
 
 export const collabratorsSlider = [
@@ -196,6 +212,7 @@ export const MapLogos = [
 
 export const Stories = [
   {
+    img: HelpKelp,
     text: `“I teamed up with people from different backgrounds, 
     but we all had the same interests, which are sharing experiences 
     and ideas. It was a good experience to hear different perspectives
@@ -211,31 +228,35 @@ export const Stories = [
   },
 
   {
+    img: Cococrunch,
     text: `“We were positively challenged by the SpaceApps hackathon and were
      very warmly supported throughout the whole event! The organizing team did 
      an incredible job by providing food and shelter to everybody. Everyone was
      nice and helpful to the maximum with all kinds of technical or comfort requests.
      The pizzas and coffee again proved to be invaluable resources for brain
      activity :) Last but not least, the mentors had made an incredible impact
-     on our project and others, too. Fermi Paradox team is grateful for this
+     on our project and others, too. Cococrunch team is grateful for this
      opportunity, we hope that next year there will be more attendees,
      more fun and more great ideas!”`,
-    author: "Fermi Paradox",
+    author: "Cococrunch",
   },
   {
+    img: Arthemis,
     text: `“It was a wonderful experience, 3 days of brain storming, networking,
      and hacking. I would definitely want to be a part of the next one and more to come.
      The tutors and instructors were very helpful and worked hard too as well.
      Happy to be a part of it”`,
-    author: "Athermis GO!",
+    author: "Artemis Go",
   },
   {
+    img: IDontThink,
     text: `“Great Event, run very well with lots of opportunities to gain experience
      and make connections. Great experience for similar events in the future.
      Provided food and drinks and made sure everyone was satisfied!”`,
     author: "IdontThink",
   },
   {
+    img: Antriksh,
     text: `“Great Experience, kudos to the organizers & looking forward to next year's event.”`,
     author: "Team Antriksh",
   },
@@ -289,3 +310,4 @@ export const events = [
      on the back for making it through the hackathon. What an achievement!`,
   },
 ];
+
