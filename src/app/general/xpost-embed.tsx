@@ -14,8 +14,8 @@ const TweetEmbed = () => {
     }, []);
 
     return (
-        <div className='MobileScreen:mx-[2rem]'>
-            <blockquote className="twitter-tweet" data-theme="dark">
+        <div className='MobileScreen:mx-[2rem]' style={{ height: '400px', overflow: 'auto' }}>
+            <blockquote className="twitter-tweet" data-theme="dark" data-width="300" >
                 <p lang="en" dir="ltr">
                     We are back again, 4th to 6th October, 2024.
                     <br />

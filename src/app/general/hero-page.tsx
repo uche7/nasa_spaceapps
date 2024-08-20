@@ -21,7 +21,7 @@ const HeroPage = () => {
               transition: { duration: 0.5 },
             }}
           >
-            <Image unoptimized width={250} src={HeroImage} alt="Hero Image" />
+            <Image  width={250} src={HeroImage} alt="Hero Image" />
           </motion.button>
           <CountDownPage targetDate={targetDate} />
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">

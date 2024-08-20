@@ -22,7 +22,7 @@ const Instagram = () => {
 
   return (
     <>
-      <motion.div className="w-full flex flex-col items-center text-center justify-center bg-center bg-repeat bg-cover">
+      <motion.div className="w-full flex flex-col items-center text-center justify-center bg-center bg-repeat bg-cover ">
         <motion.h1
           variants={fadeIn("down", "tween", 0.5, 0.4)}
           initial={animationComplete ? "" : "hidden"}
@@ -42,7 +42,7 @@ const Instagram = () => {
           initial="hidden"
           animate={animationComplete ? "show" : "hidden"}
           onAnimationComplete={handleAnimationComplete}
-          className="flex flex-row flex-wrap items-start justify-center gap-8 my-3 MobileScreen:mx-[2rem] TabletScreen:mx-[2rem]"
+          className="flex flex-row flex-wrap items-start justify-center gap-8 my-3 MobileScreen:mx-[2rem] TabletScreen:mx-[2rem] "
         >
           <motion.div
             variants={fadeIn("down", "tween", 1.0, 0.5)}
