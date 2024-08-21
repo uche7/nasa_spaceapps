@@ -31,7 +31,7 @@ const LandingPage = () => {
         <JoinUsPage />
         <SpaceAgencies />
         <GlobalCollabrators />
-        <CollabratorsSlider />
+        {/* <CollabratorsSlider /> */}
         <Shannon />
         <TeamStories />
         <HackathoneTimeline />
