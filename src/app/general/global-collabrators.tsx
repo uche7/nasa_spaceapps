@@ -16,7 +16,7 @@ const GlobalCollabrators = () => {
       //       <span className="text-hackathone-font-rocket-red font-[500]">
       //         This year
       //       </span>
-      //       , the NASA International Space Apps Challenge{" "}
+      //       , the NASA International Space Apps Challenge
       //       <span className="text-hackathone-font-rocket-red  font-[500]">
       //         Global Organizing Team
       //       </span>
@@ -59,23 +59,23 @@ const GlobalCollabrators = () => {
        <span className="text-hackathone-font-rocket-red font-[500]">
            This year
              </span>
-             , the NASA International Space Apps Challenge{" "}
+             , the NASA International Space Apps Challenge   &nbsp;
              <span className="text-hackathone-font-rocket-red  font-[500]">
                Global Organizing Team
-             </span>
-             collaborates with{" "}
+             </span> &nbsp;
+             collaborates with   &nbsp;
              <span className="text-hackathone-font-rocket-red font-[500]">
                organizations
-             </span>{" "}
-             from around the world to provide{" "}
+             </span>   &nbsp;
+             from around the world to provide   &nbsp;
              <span className="text-hackathone-font-rocket-red  font-[500]">
                participants
-             </span>{" "}
-             and/or
+             </span>   &nbsp;
+             and/or&nbsp;
              <span className="text-hackathone-font-rocket-red  font-[500]">
                Local Leads
-             </span>{" "}
-             with tools and resources that enable the creation of{" "}
+             </span>   &nbsp;
+             with tools and resources that enable the creation of   &nbsp;
              <span className="text-hackathone-font-rocket-red  font-[500]">
                solutions
              </span>
@@ -100,23 +100,28 @@ const GlobalCollabrators = () => {
             <span className="text-hackathone-font-rocket-red  font-[500]">
               This year
             </span>
-            , the NASA International Space Apps Challenge{" "}
+            <span>
+            , the NASA International Space Apps Challenge</span>
             <span className="text-hackathone-font-rocket-red  font-[500]">
-              Global Organizing Team
+              Global Organizing Team 
             </span>
-            collaborates with{" "}
+        
+            <span>  collaborates with</span>
+           
             <span className="text-hackathone-font-rocket-red  font-[500]">
               organizations
-            </span>{" "}
-            from around the world to provide{" "}
+            </span>
+            from around the world to provide
             <span className="text-hackathone-font-rocket-red  font-[500]">
               participants
-            </span>{" "}
-            and/or
+              </span>
+             
+              <span>
+            and /or</span>
             <span className="text-hackathone-font-rocket-red  font-[500]">
-              Local Leads {" "}
+              Local Leads 
             </span>
-            with tools and resources that enable the creation of{" "}
+            with tools and resources that enable the creation of
             <span className="text-hackathone-font-rocket-red  font-[500]">
               solutions
             </span>
@@ -124,9 +129,7 @@ const GlobalCollabrators = () => {
           </p>
         </div>
         <div>
-          <h1 className="flex flex-col items-center justify-center text-hackathone-font-rocket-red">
-            Global Collaborators This Year
-          </h1>
+          
           <CollabratorsSlider />
         </div>
       </div>
@@ -145,23 +148,23 @@ const GlobalCollabrators = () => {
             <span className="text-hackathone-font-rocket-red font-[500]">
               This year
             </span>
-            , the NASA International Space Apps Challenge{" "}
+            , the NASA International Space Apps Challenge  &nbsp;
             <span className="text-hackathone-font-rocket-red  font-[500]">
               Global Organizing Team
             </span>
-            collaborates with{" "}
+            collaborates with  &nbsp;
             <span className="text-hackathone-font-rocket-red font-[500]">
               organizations
-            </span>{" "}
-            from around the world to provide{" "}
+            </span>  &nbsp;
+            from around the world to provide
             <span className="text-hackathone-font-rocket-red  font-[500]">
               participants
-            </span>{" "}
+            </span>  &nbsp;
             and/or
             <span className="text-hackathone-font-rocket-red font-[500]">
               Local Leads
-            </span>{" "}
-            with tools and resources that enable the creation of{" "}
+            </span>  &nbsp;
+            with tools and resources that enable the creation of  &nbsp;
             <span className="text-hackathone-font-rocket-red  font-[500]">
               solutions
             </span>
