@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description,slug }) => (
  
     <div className="rounded-lg shadow-lg flex flex-row overflow-hidden flex justify-between ">
       <div className="card_image">
-        <img src={imageSrc} alt={title} />
+        <img src={imageSrc} alt={title} width={400} height={400} />
       </div>
       <div className="p-4  bg-transparent flex flex-col flex justify-around w-1/3">
      
