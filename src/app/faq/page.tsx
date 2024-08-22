@@ -4,9 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Canvas } from "@react-three/fiber";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
-import Sun from "@/assets/images/general/landing-page/faq_sun.png"
-import { motion } from "framer-motion";
-import { FAQ } from "../general/general.dto";
+import { faqData } from "./components/faq.dto";
 import NavigationBar from "../general/navigation-bar";
 import Footer from "../general/footer";
 import Accordion from "@mui/material/Accordion";
@@ -14,6 +12,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Sun from "@/assets/images/faq-page/sun.png";
 
 const Faq = () => {
   const [expanded, setExpanded] = useState<number | false>(false);
@@ -26,26 +25,26 @@ const Faq = () => {
   /** DeskTop View */
   const desktopView = () => {
     return (
-      <div className="TabletScreen:hidden MobileScreen:hidden relative z-10 min-h-screen bg-black text-white">
+      <div className="TabletScreen:hidden MobileScreen:hidden relative min-h-screen bg-black text-white">
         <div className="fixed inset-0 z-0">
           <Canvas camera={{ position: [0, 0, 1] }}>
             <CloudParticleBg />
           </Canvas>
         </div>
 
-        <div className="relative py-[24px] MobileScreen:py-[12px]">
+        <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
           <NavigationBar />
-          <div className="w-full flex flex-row">
-            <div className="ml-12 w-[100%]">
-              <Typography
-                variant="h4"
-                gutterBottom
-                className="lg:px-[3.8%] md:my-[42px] mx-16 my-8 font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-[800] text-[42px] leading-[44.62px]"
-              >
-                Frequently Asked Questions (FAQs)
-              </Typography>
+          <div className="m-4">
+            <Typography
+              variant="h4"
+              gutterBottom
+              className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
+            >
+              Frequently Asked Questions (FAQS)
+            </Typography>
+            <section className="flex flex-row item-center justify-between">
               <div>
-                {FAQ.map((item, index) => (
+                {faqData.map((item, index) => (
                   <Accordion
                     key={index}
                     expanded={expanded === index}
@@ -70,23 +69,23 @@ const Faq = () => {
                           color: expanded === index ? "yellow" : "white",
                         }}
                       >
-                        {item.question}
+                        {item.header}
                       </h1>
                     </AccordionSummary>
                     <AccordionDetails className="">
-                      <Typography>{item.answer}</Typography>
+                      <Typography>{item.text}</Typography>
                     </AccordionDetails>
                   </Accordion>
                 ))}
               </div>
-            </div>
-            <div className="w-[90%]">
-              <Image
-                src={Sun}
-                alt="Sun"
-                className="translate-x-[30%] translate-y-[3%]"
-              />
-            </div>
+              <div className="w-[120%] -mt-[100px]">
+                <Image
+                  src={Sun}
+                  alt={"Sun Image"}
+                  className="translate-x-[20%] translate-y-[3%]"
+                ></Image>
+              </div>
+            </section>
           </div>
 
           <Footer />
@@ -117,7 +116,7 @@ const Faq = () => {
             </Typography>
             <section>
               <div>
-                {FAQ.map((item, index) => (
+                {faqData.map((item, index) => (
                   <Accordion
                     key={index}
                     expanded={expanded === index}
@@ -142,11 +141,11 @@ const Faq = () => {
                           color: expanded === index ? "yellow" : "white",
                         }}
                       >
-                        {item.question}
+                        {item.header}
                       </h1>
                     </AccordionSummary>
                     <AccordionDetails className="">
-                      <Typography>{item.answer}</Typography>
+                      <Typography>{item.text}</Typography>
                     </AccordionDetails>
                   </Accordion>
                 ))}
