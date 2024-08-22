@@ -32,6 +32,7 @@ const Faq = () => {
             <CloudParticleBg />
           </Canvas>
         </div>
+
         <div className="relative py-[24px] MobileScreen:py-[12px]">
           <NavigationBar />
           <div className="w-full flex flex-row">
@@ -44,7 +45,7 @@ const Faq = () => {
                 Frequently Asked Questions (FAQs)
               </Typography>
               <div>
-                {FAQ.map((quote, index) => (
+                {FAQ.map((item, index) => (
                   <Accordion
                     key={index}
                     expanded={expanded === index}
@@ -69,11 +70,11 @@ const Faq = () => {
                           color: expanded === index ? "yellow" : "white",
                         }}
                       >
-                        {quote.question}
+                        {item.question}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>{quote.answer}</Typography>
+                    <AccordionDetails className="">
+                      <Typography>{item.answer}</Typography>
                     </AccordionDetails>
                   </Accordion>
                 ))}
@@ -87,6 +88,7 @@ const Faq = () => {
               />
             </div>
           </div>
+
           <Footer />
         </div>
       </div>
@@ -143,7 +145,7 @@ const Faq = () => {
                         {item.question}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails className="">
                       <Typography>{item.answer}</Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -151,6 +153,7 @@ const Faq = () => {
               </div>
             </section>
           </div>
+
           <Footer />
         </div>
       </div>
