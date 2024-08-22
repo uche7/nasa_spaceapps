@@ -55,6 +55,63 @@ const BlogPage: React.FC = () => {
       author: "Mitrashi Das",
       date: "Aug 04, 2023",
       slug: "card-grid-layout-1",
+    }, {
+      image: "https://i.imgur.com/HVoh2n4.png",
+      tags: [{ name: "Technology" }],
+      title: "Here\'s How to Register for SpaceApps 2023!",
+      summary:
+        'Register for NASA\'s SpaceApps Challenge 2023 at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.',
+        points: [
+          "The NASA SpaceApps Challenge 2023 is gearing up for an exciting cosmic adventure, and you're invited! Whether you're an aspiring space scientist, a data wizard, a game developer, or a creative storyteller, this year's hackathon has something for everyone. If you're ready to join the global SpaceApps community and make your mark in space exploration, follow these simple steps to register for the event.",
+          "Step 1: Visit the SpaceApps Website ",
+          "First things first, open your web browser and head over to the official SpaceApps Challenge website. You can do this by typing 'SpaceApps Challenge' into your preferred search engine or by directly entering the URL: https://www.spaceappschallenge.org/",
+          "Step 2: Explore the Local Events ",
+          "Once you're on the SpaceApps website, take a moment to explore the available options. You'll find a variety of resources, including information about past challenges, inspirational stories, and more. But right now, we're here for SpaceApps 2023, so let's dive in!",
+          "Step 3: Search for 2023 Local Events",
+          "To participate in SpaceApps 2023, you'll want to find a local event near you. These events serve as the launchpad for your SpaceApps journey. Click on the 'Find a Local Event' or similar link to begin your search.",
+          "Step 4: Choose HackAthlone (TU Shannon, Ireland) ",
+          "As you search for local events, you'll come across various locations around the world. However, if you're looking for the Athlone event in Ireland, you're in the right place! Look for 'HackAthlone, or simply 'Athlone' in the list of events. This event is hosted at TU Shannon (Technological University Shannon) and promises an exciting experience in space innovation and collaboration.",
+          "Step 5: Sign Up ",
+          "Once you've found the Athlone event, it's time to secure your spot. Click on the event to access its dedicated page. There, you'll find all the details you need about Athlone's SpaceApps event, including dates, schedules, and more.",
+          "Step 6: Register as an Individual or Team ",
+          "Now, it's registration time! Choose whether you want to participate as an individual or as part of a team. If you're planning to collaborate with friends or fellow enthusiasts, team registration is the way to go. Otherwise, you can register as an individual and join or form a team later.",
+          "Step 7: Access Resources and Challenges ",
+          "Congratulations! You're now officially registered for SpaceApps 2023, Athlone. This means you'll have access to a wealth of resources, including datasets, tools, mentorship, and more to help you prepare for the hackathon. Additionally, you can explore the list of exciting challenges that await your innovation and problem-solving skills.",
+          'Step 8: Get Ready for the Cosmic Adventure ',
+          "With your registration complete, you're one step closer to an incredible cosmic adventure. Stay tuned for updates from the Athlone event organizers, connect with fellow participants, and start brainstorming your hackathon ideas. Remember, SpaceApps is not just a competition; it's an opportunity to learn, collaborate, and contribute to space science and exploration.",
+          "So, whether you're a seasoned space enthusiast or a newcomer with a passion for discovery, SpaceApps 2023 is your chance to shine. Register today, and get ready to reach for the stars at TU Shannon's HackAthlone event. The cosmos is waiting for your brilliant ideas and solutions!",
+          
+        ],
+      author: "Shaiv Mehrotra",
+      date: "Aug 24, 2023",
+      slug: "2",
+    }, {
+      image: "https://i.imgur.com/YqPwz7l.png",
+      tags: [{ name: "Technology" }],
+      title: "Navigating the SpaceApps Hackathon Challenges",
+      summary:
+        'Explore NASA\'s SpaceApps Challenge 2023 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.',
+        points: [
+        
+        
+          
+        ],
+      author: "Shaiv Mehrotra",
+      date: "Aug 24, 2023",
+      slug: "3",
+    },{
+      image: "https://i.imgur.com/pk4xjMf.png",
+      tags: [{ name: "Technology" }],
+      title: "Seven Reasons to Choose Space Apps Athlone",
+      summary:
+        'Space Apps Athlone promises NASA\'s Open Data, expert networking, 48-hour innovation in top-notch facilities, a hardware toolkit, sustained meals, and exciting prizes, including a NASA trip—an opportunity to elevate your career. Join the space exploration!',
+        points: [
+         
+          
+        ],
+      author: "Shaiv Mehrotra & Sneha",
+      date: "Sep 13, 2023",
+      slug: "4",
     }]
     const blog = blogs.find((b) => b.slug === slug);
 
