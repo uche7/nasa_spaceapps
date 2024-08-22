@@ -311,3 +311,25 @@ export const events = [
   },
 ];
 
+export const FAQ = [
+  {
+    question: "What is the theme of the 2024 NASA Space Apps Challenge?",
+    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
+  },
+  {
+    question: "How do I register to participate in the 2024 NASA Space Apps Challenge?",
+    answer: "To register for the 2024 NASA Space Apps Challenge, visit the official NASA Space Apps Challenge website and follow the registration instructions provided there."
+  },
+  {
+    question: "What is the theme of the 2024 NASA Space Apps Challenge over here,\nOne of my Frequently Asked Questions?",
+    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
+  },
+  {
+    question: "What is the theme of the 2024 NASA Space Apps Challenge?",
+    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
+  },
+  {
+    question: "What is the theme of the 2024 NASA Space Apps Challenge over here?",
+    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
+  },
+]

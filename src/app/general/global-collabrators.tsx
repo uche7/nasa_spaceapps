@@ -86,7 +86,6 @@ const GlobalCollabrators = () => {
       <div className="lg:w-1/2 w-full text-center">
         <CollabratorsSlider />
       </div>
-     
     </div>
     );
   };
@@ -126,6 +125,7 @@ const GlobalCollabrators = () => {
               solutions
             </span>
             . These tools and resources can be used for free during the event.
+
           </p>
         </div>
         <div>

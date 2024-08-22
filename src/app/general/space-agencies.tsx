@@ -17,10 +17,7 @@ const SpaceAgencies = () => {
           </h1>
           <div className="mr-[3rem]">
             <p className="font-hackathoneCabinetGrotesk text-[18px] leading-[1.8rem] text-left">
-              In <span className="text-hackathone-font-rocket-red font-[600]">2024</span>, NASA collaborated with even more <span className="text-hackathone-font-rocket-red font-[600]">space agency partners</span> to bring the largest annual global hackathon to communities around the world! These space agency partners, along with NASA’s engineers at the <span className="text-hackathone-font-rocket-red font-[600]">Earth Science Division</span>, came up with <span className="text-hackathone-font-rocket-red font-[600]">innovative problem statements</span> (literally out of this world).
-            </p><br />
-            <p className="font-hackathoneCabinetGrotesk text-[18px] leading-[1.8rem] text-left pt-[0.5rem]">
-              They provide access to this data and other resources around <span className="text-hackathone-font-rocket-red font-[600]">Earth Observations</span> for solving the <span className="text-hackathone-font-rocket-red font-[600]">challenges.</span>
+              In 2024, <span className="text-hackathone-font-rocket-red font-[600]">NASA</span> is teaming up with even more space agency partners to bring the largest annual global hackathon to communities worldwide! These space agencies, along with NASA’s engineers at the <span className="text-hackathone-font-rocket-red font-[600]">Earth Science Division</span>, have crafted innovative problem statements that are literally out of this world. They provide access to data and other resources related to Earth observations to help participants solve these challenges.
             </p>
           </div>
         </div>
@@ -37,28 +34,7 @@ const SpaceAgencies = () => {
             Space Agencies
           </h1>
           <p className="font-hackathoneCabinetGrotesk font-[600] text-[18px] leading-[30.57px] pr-[12.7%]">
-            In{" "}
-            <span className="text-hackathone-font-rocket-red font-[600]">
-              2024
-            </span>
-            , NASA collaborated with even more{" "}
-            <span className="text-hackathone-font-rocket-red font-[600]">
-              space agency partners
-            </span>{" "}
-            to bring the largest annual global hackathon to communities around
-            the world! These space agency partners , along with NASA’s engineers
-            at the{" "}
-            <span className="text-hackathone-font-rocket-red font-[600]">
-              Earth Science Division
-            </span>
-            , came up with{" "}
-            <span className="text-hackathone-font-rocket-red font-[600]">
-              innovative problem statements
-            </span>{" "}
-            (literally out of this world).
-          </p><br />
-          <p className="font-hackathoneCabinetGrotesk text-[18px] font-[600] leading-[1.8rem] text-left pt-[0.5rem]">
-            They provide access to this data and other resources around <span className="text-hackathone-font-rocket-red font-[600]">Earth Observations</span> for solving the <span className="text-hackathone-font-rocket-red font-[600]">challenges.</span>
+            In 2024, <span className="text-hackathone-font-rocket-red font-[600]">NASA</span> is teaming up with even more space agency partners to bring the largest annual global hackathon to communities worldwide! These space agencies, along with NASA’s engineers at the <span className="text-hackathone-font-rocket-red font-[600]">Earth Science Division</span>, have crafted innovative problem statements that are literally out of this world. They provide access to data and other resources related to Earth observations to help participants solve these challenges.
           </p>
         </div>
         <div className="w-full mb-[20%]">
@@ -78,31 +54,8 @@ const SpaceAgencies = () => {
           </h1>
         </div>
         <p className="font-hackathoneCabinetGrotesk text-slate-50 font-[500] text-[16px] leading-[30.57px] pr-[8.7%]">
-          In{" "}
-          <span className="text-hackathone-font-rocket-red font-[500]">
-            2024
-          </span>
-          , NASA collaborated with even more{" "}
-          <span className="text-hackathone-font-rocket-red font-[500]">
-            space agency partners
-          </span>{" "}
-          to bring the largest annual global hackathon to communities around
-          the world! These space agency partners , along with NASA’s engineers
-          at the{" "}
-          <span className="text-hackathone-font-rocket-red font-[500]">
-            Earth Science Division
-          </span>
-          , came up with{" "}
-          <span className="text-hackathone-font-rocket-red font-[500]">
-            innovative problem statements
-          </span>{" "}
-          (literally out of this world).
-        </p><br />
-        <p className="font-hackathoneCabinetGrotesk text-slate-50 font-[500] text-[16px] leading-[30.57px] pr-[8.7%] mb-[2rem]">They provide access to this data and
-          other resources around <span className="text-hackathone-font-rocket-red font-[500]">Earth Observations</span> for solving the{" "}
-          <span className="text-hackathone-font-rocket-red font-[500]">
-            challenges
-          </span>
+          In 2024, <span className="text-hackathone-font-rocket-red font-[500]">NASA</span> is teaming up with even more space agency partners to bring the largest annual global hackathon to communities worldwide! These space agencies, along with NASA’s engineers at the <span className="text-hackathone-font-rocket-red font-[500]">Earth Science Division</span>, have crafted innovative problem statements that are literally out of this world. They provide access to data and other resources related to Earth observations to help participants solve these challenges.
+
         </p>
         <div className="w-full mb-[20%]">
           <AgenciesSlider />
