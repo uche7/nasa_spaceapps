@@ -45,15 +45,16 @@ const Faq = () => {
               >
                 Frequently Asked Questions (FAQs)
               </Typography>
-              {FAQ.map((quote, index) => (
-                <Accordion
+              <div>
+                {FAQ.map((quote, index) => (
+                  <Accordion
                     key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
                     className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded"
                     disableGutters
                   >
-                  <AccordionSummary
+                    <AccordionSummary
                       expandIcon={
                         <ExpandMoreIcon
                           style={{
@@ -64,7 +65,7 @@ const Faq = () => {
                       aria-controls={`panel${index}-content`}
                       id={`panel${index}-header`}
                     >
-                    <h1
+                      <h1
                         className="font-hackathoneSFProDisplay font-[300] text-[18px]"
                         style={{
                           color: expanded === index ? "yellow" : "white",
@@ -72,16 +73,13 @@ const Faq = () => {
                       >
                         {quote.question}
                       </h1>
-                     </AccordionSummary>
-                    <Typography className="font-bold text-lg">{quote.question}</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails
-                    className=""
-                  >
-                    <Typography>{quote.answer}</Typography>
-                  </AccordionDetails>
-                </Accordion>
-              ))}
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography>{quote.answer}</Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                ))}
+              </div>
             </div>
             <div className="w-[60%] overflow-visible">
               <Image
@@ -122,7 +120,7 @@ const Faq = () => {
             </Typography>
             <section>
               <div>
-                {faqData.map((item, index) => (
+                {FAQ.map((item, index) => (
                   <Accordion
                     key={index}
                     expanded={expanded === index}
@@ -147,11 +145,11 @@ const Faq = () => {
                           color: expanded === index ? "yellow" : "white",
                         }}
                       >
-                        {item.header}
+                        {item.question}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails className="">
-                      <Typography>{item.text}</Typography>
+                    <AccordionDetails>
+                      <Typography>{item.answer}</Typography>
                     </AccordionDetails>
                   </Accordion>
                 ))}
