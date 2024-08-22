@@ -34,7 +34,7 @@ const BlogPage: React.FC = () => {
   }
  const blogs: Blog[] = [
     {
-      image: "./blog1.png",
+      image: "https://i.imgur.com/QpmXELP.png",
       tags: [{ name: "Technology" }],
       title: "The Importance of Diversity in Space Exploration",
       summary:
@@ -71,34 +71,42 @@ const BlogPage: React.FC = () => {
       </div>
       <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
        <NavigationBar />
+<div className="flex justify-center items-center">
+       <div className="p-4 sm:p-6 md:p-8    w-full md:w-3/5">
+  <h2 className="text-4xl md:text-5xl font-semibold text-center mb-4">
+    {blog.title}
+  </h2>
 
-        <div
-    className='mx-auto max-w-[75%]'
-    >
+  <div className=" mb-6 ">
+  <img 
+  src={blog.image} 
+  width={1200}  // Increase these values as needed
+  height={1200} 
+  className=""
+  alt="Blog Image"
+/>
+    <p className="text-base md:text-lg text-white mt-2 ">
+      {blog.author} - {blog.date}
+    </p>
+    <p className="text-lg md:text-xl text-white mt-8 ">
+      {blog.summary}
+    </p>
+  </div>
 
-      <h2 className="text-4xl xs:text-5xl lg:text-6xl font-extrabold font-firaSans tracking-wider mb-2">
-      {blog.title}
-      </h2>
-      <div className="mt-3 mb-8">
-        <p className="max-w-full text-md  leading-snug font-overpass font-bold tracking-wide text-white">
-        {blog.author} - {blog.date}
-        </p>
-        <p className="max-w-full text-md  leading-snug font-overpass font-bold tracking-wide text-white">
-        {blog.summary}
-        </p>
-      </div>
+  <ul className="list-none space-y-12  ">
+    {blog.points.map((point, index) => (
+      <li
+        key={`event-point-${index}`}
+        className="text-lg md:text-xl text-white-300  "
+      >
+        {point}
+      </li>
+    ))}
+  </ul>
+</div>
+</div>
 
-      <ul style={{ listStyleType: 'none' }} className="mt-5 space-y-10 mt-10 max-w-full text-md md:text-xl text-base leading-snug font-overpass font-normal tracking-wide text-white">
-      {blog.points.map((point, index) => (
-              <li
-                key={`event-point-${index}`}
-                className="text-white pl-1 tracking-wider my-3 text-justify"
-              >
-                {point}
-              </li>
-            ))}
-    </ul>
-    </div>
+    <Footer />
    
       </div>
     </div>
