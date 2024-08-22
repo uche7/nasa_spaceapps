@@ -14,7 +14,12 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }, []);
 
   const calculateTimeLeft = useCallback(() => {
-    const difference = +new Date(targetDate) - +new Date();
+    const currentDateInIrishTime = new Date(
+      new Date().toLocaleString("en-US", {
+        timeZone: "Europe/Dublin",
+      })
+    );
+    const difference = +new Date(targetDate) - +currentDateInIrishTime;
     let timeLeft: { [key: string]: number } = {};
 
     if (difference > 0) {
