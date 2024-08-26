@@ -30,7 +30,7 @@ const SpaceAgencies = () => {
     return (
       <div className="DesktopScreen:hidden MobileScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[4.06%]">
         <div className="w-full mt-[3%]">
-          <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2">
+          <h1 className="font-[700] text-[32.99px] text-hackathone-font-rocket-red my-2">
             Space Agencies
           </h1>
           <p className="font-hackathoneCabinetGrotesk font-[600] text-[18px] leading-[30.57px] pr-[12.7%]">
