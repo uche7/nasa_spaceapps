@@ -8,9 +8,6 @@ const SpaceAgencies = () => {
   const desktopView = () => {
     return (
       <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[36px] mx-[8.06%]">
-        <div className="lg:w-1/2 w-full text-center">
-          <AgenciesSlider />
-        </div>
         <div className="lg:w-1/2 w-full mb-[20%] mt-[3%] ml-[2rem]">
           <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
             Space Agencies
@@ -20,6 +17,9 @@ const SpaceAgencies = () => {
               In 2024, <span className="text-hackathone-font-rocket-red font-[600]">NASA</span> is teaming up with even more space agency partners to bring the largest annual global hackathon to communities worldwide! These space agencies, along with NASA’s engineers at the <span className="text-hackathone-font-rocket-red font-[600]">Earth Science Division</span>, have crafted innovative problem statements that are literally out of this world. They provide access to data and other resources related to Earth observations to help participants solve these challenges.
             </p>
           </div>
+        </div>
+        <div className="lg:w-1/2 w-full text-center">
+          <AgenciesSlider />
         </div>
       </div>
     );
