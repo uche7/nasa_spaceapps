@@ -9,7 +9,7 @@ const JoinUsPage = () => {
   /** Desktop View */
   const desktopView = () => {
     return (
-      <div className="TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[1.93%] mt-[56.77px] mx-[8.06%] mb-[179.04px]">
+      <div className="TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[1.93%] mt-[56.77px] mx-[8.06%] mb-[179.04px] text-justify">
         <div className="mt-[4rem] w-[49.11%] h-[40rem] mr-[2rem]">
           <div>
             {/* <div className="flex flex-row gap-[0.5rem]">
@@ -70,7 +70,7 @@ const JoinUsPage = () => {
               }}
             >
               <p className="font-[700] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black">
-                Unfold The Timeline
+                Unfold the Timeline
               </p>
             </motion.a>
           </div>
@@ -82,7 +82,7 @@ const JoinUsPage = () => {
   /** Tablet View */
   const tabletView = () => {
     return (
-      <div className="MobileScreen:hidden DesktopScreen:hidden flex flex-col  mt-[126.77px] mx-[4.06%] mb-[139.04px]">
+      <div className="MobileScreen:hidden DesktopScreen:hidden flex flex-col  mt-[126.77px] mx-[4.06%] mb-[139.04px] text-justify">
         <div className="mb-[24px]">
           <div>
             <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[32.99px] leading-[44.62px]">
@@ -139,7 +139,7 @@ const JoinUsPage = () => {
                 className="bg-hackathone-font-rocket-red ml-[1rem] flex items-center justify-center text-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40%] h-[40%]"
               >
                 <p className="font-[800] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black flex">
-                  Unfold The Timeline
+                  Unfold the Timeline
                 </p>
               </motion.a>
             </div>
@@ -152,7 +152,7 @@ const JoinUsPage = () => {
   /** Mobile View */
   const mobileView = () => {
     return (
-      <div className="TabletScreen:hidden DesktopScreen:hidden mt-[90.79px] mx-[1.2rem] mb-[122.68px]">
+      <div className="TabletScreen:hidden DesktopScreen:hidden mt-[90.79px] mx-[1.2rem] mb-[122.68px] text-justify">
         <div className="mb-[22.68px]">
           <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-[800] text-[30.99px] leading-[34.62px]">
             The Hackathon Challenge will be kicking off soon
@@ -210,7 +210,7 @@ const JoinUsPage = () => {
                 className="bg-hackathone-font-rocket-red mx-[3.6rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[55%] h-[355] border-2 border-transparent transition-colors duration-300 ease-in-out"
               >
                 <p className="font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-150 ease-out hover:text-hackathone-font-rocket-red">
-                  Unfold The Timeline
+                  Unfold the Timeline
                 </p>
               </motion.a>
             </div>
