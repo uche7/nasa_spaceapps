@@ -21,7 +21,7 @@ const HeroPage = () => {
               transition: { duration: 0.5 },
             }}
           >
-            <Image  width={250} src={HeroImage} alt="Hero Image" />
+            <Image width={250} src={HeroImage} alt="Hero Image" />
           </motion.button>
           <CountDownPage targetDate={targetDate} />
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
@@ -158,7 +158,7 @@ const HeroPage = () => {
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[30%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
-                Hackathone 2023
+                Hackathlone 2023
               </p>
             </motion.button>
           </div>
@@ -229,7 +229,7 @@ const HeroPage = () => {
               className="bg-transparent mt-[1rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[60%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-150 ease-out">
-                Hackathone 2023
+                Hackathlone 2023
               </p>
             </motion.button>
           </div>

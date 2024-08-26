@@ -26,12 +26,12 @@ const Timeline = () => {
     <div
       id="timeline"
       className="flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
-    md:my-[124px] min-h-screen py-2 text-hackathone-font-rocket-red"
+    md:my-[10rem] my-[8rem] min-h-screen py-2 text-hackathone-font-rocket-red"
     >
       <Typography
         variant="h3"
         component="h1"
-        className="text-4xl font-bold mb-10 r MobileScreen:text-center MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]"
+        className="text-4xl font-bold mb-10 r MobileScreen:text-center MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px] md:text-[32.99px]"
       >
         Timeline
       </Typography>
