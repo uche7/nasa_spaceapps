@@ -142,7 +142,6 @@ const TeamStories = () => {
                   width={500}
                   height={450}
                   alt={"Team Image"}
-                  objectFit="contain"
                 />
               </div>
               <div className="md:w-1/2 w-full md:mt-4 md:text-left md:ml-[2.5rem] xl:ml-[2rem] 2xl:ml-[1rem] ml-[1rem] w-auto pt-[2rem] MobileScreen:pr-[1rem] md:pt-[0px] pr-[1rem] text-center ">
