@@ -22,7 +22,7 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     const difference = +new Date(targetDate) - +currentDateInIrishTime;
     let timeLeft: { [key: string]: number } = {};
 
-    if (difference > 0) {
+    if (difference >= 0) {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),

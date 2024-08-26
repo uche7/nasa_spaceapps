@@ -48,7 +48,6 @@ const GlobalCollabrators = () => {
       //     ></Image>
       //   </div>
       // </div>
-
       <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[36px] mx-[8.06%] mt-[8rem]">
         <div className="lg:w-1/2 w-full mb-[20%] mt-[3%] ml-[2rem]">
           <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
