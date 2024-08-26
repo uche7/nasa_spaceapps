@@ -9,7 +9,7 @@ const JoinUsPage = () => {
   /** Desktop View */
   const desktopView = () => {
     return (
-      <div className="TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[1.93%] mt-[56.77px] mx-[8.06%] mb-[179.04px]">
+      <div className="TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[1.93%] mt-[56.77px] mx-[8.06%] mb-[179.04px] text-justify">
         <div className="mt-[4rem] w-[49.11%] h-[40rem] mr-[2rem]">
           <div>
             {/* <div className="flex flex-row gap-[0.5rem]">
@@ -82,7 +82,7 @@ const JoinUsPage = () => {
   /** Tablet View */
   const tabletView = () => {
     return (
-      <div className="MobileScreen:hidden DesktopScreen:hidden flex flex-col  mt-[126.77px] mx-[4.06%] mb-[139.04px]">
+      <div className="MobileScreen:hidden DesktopScreen:hidden flex flex-col  mt-[126.77px] mx-[4.06%] mb-[139.04px] text-justify">
         <div className="mb-[24px]">
           <div>
             <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red  font-[800] text-[32.99px] leading-[44.62px]">
@@ -152,7 +152,7 @@ const JoinUsPage = () => {
   /** Mobile View */
   const mobileView = () => {
     return (
-      <div className="TabletScreen:hidden DesktopScreen:hidden mt-[90.79px] mx-[1.2rem] mb-[122.68px]">
+      <div className="TabletScreen:hidden DesktopScreen:hidden mt-[90.79px] mx-[1.2rem] mb-[122.68px] text-justify">
         <div className="mb-[22.68px]">
           <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-[800] text-[30.99px] leading-[34.62px]">
             The Hackathon Challenge will be kicking off soon
