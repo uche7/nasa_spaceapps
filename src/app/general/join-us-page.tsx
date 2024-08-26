@@ -37,19 +37,19 @@ const JoinUsPage = () => {
         <div className="mt-[4rem] w-[48.95%] h-auto">
           <div className="h-auto rounded-[13.09px] p-1 border-2 ">
             <div className="pt-[1rem] pl-[1.5rem] pr-[5.48%]">
-              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px]">
+              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] text-justify">
                 We’re back! The Athlone chapter of the world’s largest annual space and science hackathon is being hosted by the <span className="text-hackathone-font-rocket-red font-[600]">Technological University of the Shannon</span>. HackAthlone is one of over 400 global locations participating in this year's NASA SpaceApps Challenge. Leveraging NASA's data HackAthlone exemplifies the values and ambitions of the competition by promoting diversity in the next generation of scientists, engineers, technologists, and designers.
               </p>
             </div>
             <div className="mt-[0.5rem] pl-[1.5rem] pr-[5.48%] ">
               <br />
-              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px] pb-[2rem]">
+              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] pb-[2rem] text-justify">
                 Compete for exciting prizes and goodies, with all the technical resources and F&B provisions you need to keep going. Plus, with guidance from skilled mentors from academia and industry, you’ll have the support to create high-quality projects. The outcomes will be documented for open-source research, contributing to global innovation.
               </p>
             </div>
           </div>
           <div className="rounded-[13.09px] p-2 mt-[16.63px] pb-[36.17px] border-2">
-            <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px] p-2 ml-[0.5rem] mt-[2.54px] mb-[1rem]">
+            <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] text-justify p-2 ml-[0.5rem] mt-[2.54px] mb-[1rem]">
               Join this 48-hour hackathon, where you'll tackle problem statements curated by NASA and other space agencies, all centred around this year’s theme, "The Sun Touches Everything," across various STEAM fields. Register now and be part of this extraordinary event!
             </p>
             <motion.a
@@ -70,7 +70,7 @@ const JoinUsPage = () => {
               }}
             >
               <p className="font-[700] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black">
-                Unfold The Timeline
+                Unfold the Timeline
               </p>
             </motion.a>
           </div>
@@ -105,12 +105,12 @@ const JoinUsPage = () => {
           <div className="TabletScreen:w-[48%] h-auto">
             <div className="h-auto rounded-[13.09px] p-1 border-2">
               <div className="pt-[1rem] pl-[1.5rem] pr-[5.48%]">
-                <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px]">
+                <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] text-justify">
                   We’re back! The Athlone chapter of the world’s largest annual space and science hackathon is being hosted by the <span className="text-hackathone-font-rocket-red font-[600]">Technological University of the Shannon</span>. HackAthlone is one of over 400 global locations participating in this year's NASA SpaceApps Challenge. Leveraging NASA's data HackAthlone exemplifies the values and ambitions of the competition by promoting diversity in the next generation of scientists, engineers, technologists, and designers.
                 </p>
               </div>
               <div className="mt-[0.5rem] pl-[1.5rem] pr-[5.48%] ">
-                <br /><p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px] pb-[2rem]">
+                <br /><p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] pb-[2rem] text-justify">
                   Compete for exciting prizes and goodies, with all the technical resources and F&B provisions you need to keep going. Plus, with guidance from skilled mentors from academia and industry, you’ll have the support to create high-quality projects. The outcomes will be documented for open-source research, contributing to global innovation.
                 </p>
               </div>
@@ -118,7 +118,7 @@ const JoinUsPage = () => {
           </div>
           <div className="TabletScreen:w-[48%] h-auto">
             <div className="rounded-[13.09px] p-2 pb-[36.17px] border-2">
-              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[30.57px] p-2 ml-[0.5rem] mt-[2.54px] mb-[1rem]">
+              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] text-justify p-2 ml-[0.5rem] mt-[2.54px] mb-[1rem]">
                 Join this 48-hour hackathon, where you'll tackle problem statements curated by NASA and other space agencies, all centred around this year’s theme, "The Sun Touches Everything," across various STEAM fields. Register now and be part of this extraordinary event!
               </p>
               <motion.a
@@ -139,7 +139,7 @@ const JoinUsPage = () => {
                 className="bg-hackathone-font-rocket-red ml-[1rem] flex items-center justify-center text-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40%] h-[40%]"
               >
                 <p className="font-[800] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black flex">
-                  Unfold The Timeline
+                  Unfold the Timeline
                 </p>
               </motion.a>
             </div>
@@ -169,20 +169,20 @@ const JoinUsPage = () => {
           ></Image>
         </div>
         <div className="mt-[2rem] ">
-          <div className="rounded-[13.09px] p-1 border-2">
+          <div className="rounded-[13.09px] p-1 border-2 text-justify">
             <div className="pt-[1rem] pl-[1.5rem] pr-[5.48%]">
-              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[30.57px]">
+              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[24.57px] ">
                 We’re back! The Athlone chapter of the world’s largest annual space and science hackathon is being hosted by the <span className="text-hackathone-font-rocket-red font-[600]">Technological University of the Shannon</span>. HackAthlone is one of over 400 global locations participating in this year's NASA SpaceApps Challenge. Leveraging NASA's data HackAthlone exemplifies the values and ambitions of the competition by promoting diversity in the next generation of scientists, engineers, technologists, and designers.
               </p>
             </div>
             <div className="pt-[1rem] pl-[1.5rem] pr-[5.48%]">
-              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[30.57px] pb-[1rem]">
+              <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[24.57px] pb-[1rem]">
                 Compete for exciting prizes and goodies, with all the technical resources and F&B provisions you need to keep going. Plus, with guidance from skilled mentors from academia and industry, you’ll have the support to create high-quality projects. The outcomes will be documented for open-source research, contributing to global innovation.
               </p>
             </div>
           </div>
           <div className="rounded-[13.09px] p-2 mt-[16.63px] pb-[28.17px] border-2">
-            <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[30.57px] p-2 ml-[0.5rem] mt-[2.54px] mb-[1rem]">
+            <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[24.57px] text-justify p-2 ml-[0.5rem] mt-[2.54px] mb-[1rem]">
               Join this 48-hour hackathon, where you'll tackle problem statements curated by NASA and other space agencies, all centred around this year’s theme, "The Sun Touches Everything," across various STEAM fields. Register now and be part of this extraordinary event!
             </p>
             <div className="w-full flex justify-center items-center">
@@ -210,7 +210,7 @@ const JoinUsPage = () => {
                 className="bg-hackathone-font-rocket-red mx-[3.6rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[55%] h-[355] border-2 border-transparent transition-colors duration-300 ease-in-out"
               >
                 <p className="font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-150 ease-out hover:text-hackathone-font-rocket-red">
-                  Unfold The Timeline
+                  Unfold the Timeline
                 </p>
               </motion.a>
             </div>
