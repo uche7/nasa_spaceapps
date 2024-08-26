@@ -130,11 +130,11 @@ const BlogPage: React.FC = () => {
        <NavigationBar />
 <div className="flex justify-center items-center">
        <div className="p-4 sm:p-6 md:p-8    w-full md:w-3/5">
-  <h2 className="text-4xl md:text-5xl font-semibold text-center mb-4">
+  <h2 className="text-4xl md:text-5xl font-semibold text-center mb-4 text-hackathone-font-rocket-red">
     {blog.title}
   </h2>
 
-  <div className=" mb-6 ">
+  <div className=" mb-6 text-hackathone-font-rocket-red">
   <img 
   src={blog.image} 
   width={1200}  // Increase these values as needed
@@ -142,7 +142,7 @@ const BlogPage: React.FC = () => {
   className=""
   alt="Blog Image"
 />
-    <p className="text-base md:text-lg text-white mt-2 ">
+    <p className="text-base md:text-2xl  mt-2 text-hackathone-font-rocket-red ">
       {blog.author} - {blog.date}
     </p>
     <p className="text-lg md:text-xl text-white mt-8 ">
