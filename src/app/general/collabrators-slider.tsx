@@ -3,34 +3,25 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { collabratorsSlider } from "./general.dto";
 
-const sliderItems = [...collabratorsSlider, ...collabratorsSlider];
+const sliderItems = [...collabratorsSlider];
 
 export const CollabratorsSlider = () => {
   return (
-    <div className="my-3 overflow-hidden">
-      <motion.div
-        className="flex flex-row items-center lg:gap-[94px] gap-4"
-        initial={{ x: 0 }}
-        animate={{ x: "-50%" }} // To Move to half the width of the duplicated items
-        transition={{
-          duration: 30,
-          ease: "linear",
-          repeat: Infinity,
-        }}
-      >
+   <div className="overflow-hidden">
+      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 lg:gap-8 md:gap-6 gap-4">
         {sliderItems.map((item, index) => (
-          <div key={index} className="flex-shrink-0 px-2">
+          <div key={index} className="flex items-center justify-center px-4 py-2">
             <Image
               className="cursor-pointer"
               src={item.img}
-              width={120}
-              height={120}
+              width={100}
+              height={100}
               alt={"Agencies Icon"}
               onClick={item.route}
             />
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };

@@ -1,8 +1,7 @@
 export const cards =[
-    { imageSrc: 'https://picsum.photos/500/300/?image=10', title: 'Card Grid Layout', description: 'Demo of pixel perfect pure CSS simple responsive card grid layout', slug: 'card-grid-layout-1' },
-    { imageSrc: 'https://picsum.photos/500/300/?image=5', title: 'Card Grid Layout', description: 'Demo of pixel perfect pure CSS simple responsive card grid layout', slug: 'card-grid-layout-2' },
-    { imageSrc: 'https://picsum.photos/500/300/?image=11', title: 'Card Grid Layout', description: 'Demo of pixel perfect pure CSS simple responsive card grid layout', slug: 'card-grid-layout-3' },
-    { imageSrc: 'https://picsum.photos/500/300/?image=14', title: 'Card Grid Layout', description: 'Demo of pixel perfect pure CSS simple responsive card grid layout', slug: 'card-grid-layout-4' },
-    { imageSrc: 'https://picsum.photos/500/300/?image=17', title: 'Card Grid Layout', description: 'Demo of pixel perfect pure CSS simple responsive card grid layout', slug: 'card-grid-layout-5' },
-    { imageSrc: 'https://picsum.photos/500/300/?image=2', title: 'Card Grid Layout', description: 'Demo of pixel perfect pure CSS simple responsive card grid layout', slug: 'card-grid-layout-6' },
+    { imageSrc: 'https://i.imgur.com/QpmXELP.png', title: 'The Importance of Diversity in Space Exploration', description: 'Valuing diverse perspectives, backgrounds, talents, and experiences amplifies our comprehension of the universe and nurtures a just and equitable future for everyone, making space exploration more successful and inclusive.', slug: 'card-grid-layout-1' },
+    { imageSrc: 'https://i.imgur.com/HVoh2n4.png', title: 'Here\'s How to Register for SpaceApps 2023!', description: 'Register for NASA\'s SpaceApps Challenge 2023 at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.', slug: '2' },
+    { imageSrc: 'https://i.imgur.com/YqPwz7l.png', title: 'Navigating the SpaceApps Hackathon Challenges', description: 'Explore NASA\'s SpaceApps Challenge 2023 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.', slug: '3' },
+    { imageSrc: 'https://i.imgur.com/pk4xjMf.png', title: 'Seven Reasons to Choose Space Apps Athlone', description: 'Space Apps Athlone promises NASA\'s Open Data, expert networking, 48-hour innovation in top-notch facilities, a hardware toolkit, sustained meals, and exciting prizes, including a NASA trip—an opportunity to elevate your career. Join the space exploration!', slug: '4' },
+  
 ];

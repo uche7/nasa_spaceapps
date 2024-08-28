@@ -61,7 +61,7 @@ const Footer = () => {
                   alt={""}
                 />
               </a>
-              <a href="https://www.instagram.com/spaceapps_athlone">
+              <a href="https://www.instagram.com/spaceappsathlone/">
                 <img
                   className="hover:scale-110 transition-transform ease-in-out duration-800"
                   width={40}

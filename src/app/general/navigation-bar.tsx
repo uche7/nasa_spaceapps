@@ -73,7 +73,7 @@ export default function NavigationBar() {
         {navigationInfo.map((item, index) => (
           <div
             key={index}
-            className="cursor-pointer font-hackathoneSFProDisplay font-[400] hover:text-[#E43700]"
+            className="cursor-pointer font-hackathoneSFProDisplay font-[400] hover:text-hackathone-font-rocket-red"
             onClick={item.route}
           >
             {item.text}
@@ -117,7 +117,7 @@ export default function NavigationBar() {
                 transition={{ duration: 0.5 }}
               >
                 <div className="bg-gray-800 bg-opacity-90 text-white p-2 rounded-md text-sm whitespace-nowrap text-center shadow-lg border border-white">
-                  2023 Challenges
+                  2024 Challenges
                 </div>
               </motion.div>
             )}

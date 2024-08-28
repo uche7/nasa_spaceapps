@@ -26,12 +26,12 @@ const Timeline = () => {
     <div
       id="timeline"
       className="flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
-    md:my-[124px] min-h-screen py-2 text-hackathone-font-rocket-red"
+    md:my-[10rem] my-[8rem] min-h-screen py-2 text-hackathone-font-rocket-red"
     >
       <Typography
         variant="h3"
         component="h1"
-        className="text-4xl font-bold mb-10 r MobileScreen:text-center MobileScreen:text-[30.99px] MobileScreen:leading-[44.62px]"
+        className="text-4xl font-bold mb-10 r MobileScreen:text-center MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px] md:text-[32.99px]"
       >
         Timeline
       </Typography>
@@ -47,7 +47,7 @@ const Timeline = () => {
               <Typography
                 variant="body2"
                 color="white"
-                className="text-base font-normal  MobileScreen:text-center"
+                className="text-base font-normal MobileScreen:text-center"
               >
                 {event.date}
               </Typography>
@@ -93,7 +93,7 @@ const Timeline = () => {
                   TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 -translate-y-2"
-                      } text-center MobileScreen:text-left`}
+                      } text-center MobileScreen:text-center`}
                   >
                     {event.content}
                   </Typography>

@@ -1,18 +1,18 @@
-import Aeb from "@/assets/images/general/landing-page/space-agencies/aeb.png";
+import Aeb from "@/assets/images/general/landing-page/space-agencies/aeb_w.png";
 import Asi from "@/assets/images/general/landing-page/space-agencies/asi.png";
-import Aem from "@/assets/images/general/landing-page/space-agencies/aem.png";
-import Aep from "@/assets/images/general/landing-page/space-agencies/aep.png";
-import Australia from "@/assets/images/general/landing-page/space-agencies/australia.png";
-import Canada from "@/assets/images/general/landing-page/space-agencies/canada.png";
+import Aem from "@/assets/images/general/landing-page/space-agencies/aem_w.png";
+import Aep from "@/assets/images/general/landing-page/space-agencies/aep1.png";
+import Australia from "@/assets/images/general/landing-page/space-agencies/australia_w.png";
+import Canada from "@/assets/images/general/landing-page/space-agencies/canada_w.png";
 import Conae from "@/assets/images/general/landing-page/space-agencies/conae.png";
 import Eesa from "@/assets/images/general/landing-page/space-agencies/eesa.png";
-import Isro from "@/assets/images/general/landing-page/space-agencies/isro.png";
+import Isro from "@/assets/images/general/landing-page/space-agencies/isro_w.png";
 import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
-import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa.png";
+import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa_w.png";
 import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
-import Turkey from "@/assets/images/general/landing-page/space-agencies/turkey.svg";
-import Cst from "@/assets/images/general/landing-page/space-agencies/cst.png";
-import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
+import Turkey from "@/assets/images/general/landing-page/space-agencies/tsa_w.png";
+import Cst from "@/assets/images/general/landing-page/space-agencies/cst_w.png";
+import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_w.png";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png";
 import Microsoft from "@/assets/images/general/landing-page/collabrators/microsoft.png";
 import Teams from "@/assets/images/general/landing-page/collabrators/teams.png";
@@ -50,7 +50,7 @@ export const navigationData = (Router: any) => [
     text: "Challenges",
     route: () =>
       window.open(
-        "https://www.spaceappschallenge.org/2023/challenges/",
+        "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
         "_blank"
       ),
   },
@@ -310,3 +310,26 @@ export const events = [
      on the back for making it through the hackathon. What an achievement!`,
   },
 ];
+
+export const FAQ = [
+  {
+    question: "What is the theme of the 2024 NASA Space Apps Challenge?",
+    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
+  },
+  {
+    question: "How do I register to participate in the 2024 NASA Space Apps Challenge?",
+    answer: "To register for the 2024 NASA Space Apps Challenge, visit the official NASA Space Apps Challenge website and follow the registration instructions provided there."
+  },
+  {
+    question: "What is the theme of the 2024 NASA Space Apps Challenge over here,\nOne of my Frequently Asked Questions?",
+    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
+  },
+  {
+    question: "What is the theme of the 2024 NASA Space Apps Challenge?",
+    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
+  },
+  {
+    question: "What is the theme of the 2024 NASA Space Apps Challenge over here?",
+    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
+  },
+]

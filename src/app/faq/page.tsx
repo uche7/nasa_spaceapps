@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Canvas } from "@react-three/fiber";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
-import { motion } from "framer-motion";
-
+import { faqData } from "./components/faq.dto";
 import NavigationBar from "../general/navigation-bar";
 import Footer from "../general/footer";
 import Accordion from "@mui/material/Accordion";
@@ -13,13 +12,20 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Sun from "@/assets/images/faq-page/sun.png";
 
-const faq = () => {
-  /** Desktop View */
+const Faq = () => {
+  const [expanded, setExpanded] = useState<number | false>(false);
 
-  return (
-    <>
-      <div className="relative min-h-screen bg-black text-white">
+  const handleChange =
+    (panel: number) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
+
+  /** DeskTop View */
+  const desktopView = () => {
+    return (
+      <div className="TabletScreen:hidden MobileScreen:hidden relative min-h-screen bg-black text-white">
         <div className="fixed inset-0 z-0">
           <Canvas camera={{ position: [0, 0, 1] }}>
             <CloudParticleBg />
@@ -32,62 +38,129 @@ const faq = () => {
             <Typography
               variant="h4"
               gutterBottom
-              className="lg:px-[6.8%] md:my-4"
+              className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
             >
-              Frequently Asked Questions
+              Frequently Asked Questions (FAQS)
             </Typography>
-            <Accordion
-              className="m-8 bg-hackathone-font-martin-red text-white lg:mx-[6.8%]"
-              disableGutters
-            >
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography>
-                  What is the theme of the 2024 NASA Space Apps Challenge?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails className="bg-hackathone-background-grey ">
-                <Typography>
-                  The 2024 NASA Space Apps Challenge theme is 'The Sun Touches
-                  Everything' in collaboration with NASA Heliophysics. This
-                  theme is in alignment with the Heliophysics Big Year, a global
-                  celebration of the Sun’s influence on Earth and the entire
-                  solar system, as declared by NASA.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion
-              className="m-8 bg-hackathone-font-martin-red text-white lg:mx-[6.8%]"
-              disableGutters
-            >
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography>
-                  How do I register to participate in the 2024 NASA Space Apps
-                  Challenge?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails className="bg-hackathone-background-grey ">
-                <Typography>
-                  To register for the 2024 NASA Space Apps Challenge, visit the
-                  official NASA Space Apps Challenge website and follow the
-                  registration instructions provided there.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
+            <section className="flex flex-row item-center justify-between">
+              <div>
+                {faqData.map((item, index) => (
+                  <Accordion
+                    key={index}
+                    expanded={expanded === index}
+                    onChange={handleChange(index)}
+                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded"
+                    disableGutters
+                  >
+                    <AccordionSummary
+                      expandIcon={
+                        <ExpandMoreIcon
+                          style={{
+                            color: "yellow",
+                          }}
+                        />
+                      }
+                      aria-controls={`panel${index}-content`}
+                      id={`panel${index}-header`}
+                    >
+                      <h1
+                        className="font-hackathoneSFProDisplay font-[300] text-[18px]"
+                        style={{
+                          color: expanded === index ? "yellow" : "white",
+                        }}
+                      >
+                        {item.header}
+                      </h1>
+                    </AccordionSummary>
+                    <AccordionDetails className="">
+                      <Typography>{item.text}</Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                ))}
+              </div>
+              <div className="w-[120%] -mt-[100px]">
+                <Image src={Sun} alt={"Sun Image"}></Image>
+              </div>
+            </section>
           </div>
 
           <Footer />
         </div>
       </div>
-    </>
+    );
+  };
+
+  /** Tablet and Mobile View */
+  const tabletMobileView = () => {
+    return (
+      <div className="DesktopScreen:hidden relative min-h-screen bg-black text-white">
+        <div className="fixed inset-0 z-0">
+          <Canvas camera={{ position: [0, 0, 1] }}>
+            <CloudParticleBg />
+          </Canvas>
+        </div>
+
+        <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
+          <NavigationBar />
+          <div className="m-4">
+            <Typography
+              variant="h4"
+              gutterBottom
+              className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
+            >
+              Frequently Asked Questions (FAQS)
+            </Typography>
+            <section>
+              <div>
+                {faqData.map((item, index) => (
+                  <Accordion
+                    key={index}
+                    expanded={expanded === index}
+                    onChange={handleChange(index)}
+                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded"
+                    disableGutters
+                  >
+                    <AccordionSummary
+                      expandIcon={
+                        <ExpandMoreIcon
+                          style={{
+                            color: "yellow",
+                          }}
+                        />
+                      }
+                      aria-controls={`panel${index}-content`}
+                      id={`panel${index}-header`}
+                    >
+                      <h1
+                        className="font-hackathoneSFProDisplay font-[300] text-[18px]"
+                        style={{
+                          color: expanded === index ? "yellow" : "white",
+                        }}
+                      >
+                        {item.header}
+                      </h1>
+                    </AccordionSummary>
+                    <AccordionDetails className="">
+                      <Typography>{item.text}</Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                ))}
+              </div>
+            </section>
+          </div>
+
+          <Footer />
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <section>
+      {desktopView()}
+      {tabletMobileView()}
+    </section>
   );
 };
 
-export default faq;
+export default Faq;
