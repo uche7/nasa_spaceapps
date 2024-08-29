@@ -101,3 +101,5 @@ const TimelinePage: React.FC = () => {
         </div>
     );
 };
+
+export default TimelinePage;
