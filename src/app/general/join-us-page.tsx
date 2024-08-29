@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import DevTeamIcon from "@/assets/images/general/landing-page/dev-team-icon.jpg";
-import HackathoneChallenge from "@/assets/images/general/landing-page/hackathlone_challenge.jpg";
+import DevTeamIcon from "@/assets/images/general/landing-page/presentation.jpg";
+import HackathoneChallenge from "@/assets/images/general/landing-page/presentation.jpg";
 import Buttons from "@/library/buttons/buttons";
 
 const JoinUsPage = () => {

@@ -152,7 +152,7 @@ const HeroPage = () => {
                 borderColor: "white",
               }}
               onClick={() =>
-                window.open("https://www.hackathlone.com/", "_blank")
+                window.open("https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/", "_blank")
               }
               title="Hackathone 2023"
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[30%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
@@ -223,7 +223,7 @@ const HeroPage = () => {
                 borderColor: "white",
               }}
               onClick={() =>
-                window.open("https://www.hackathlone.com/", "_blank")
+                window.open("https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/", "_blank")
               }
               title="Hackathone 2023"
               className="bg-transparent mt-[1rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[60%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"

@@ -1,4 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+"use client";
+import React, { useState, useRef, useEffect, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import {
   Timeline as MuiTimeline,
   TimelineItem,
@@ -11,13 +13,15 @@ import {
 import { Paper, Typography } from "@mui/material";
 import { events } from "./general.dto";
 
-const Timeline = () => {
+export default function Timeline() {
+  const Router = useRouter();
+  const timelineInfo = useMemo(() => events(Router), [Router]);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [contentHeight, setContentHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (contentRef.current) {
+    if (contentRef.current && hoveredIndex !== null) {
       setContentHeight(contentRef.current.scrollHeight);
     }
   }, [hoveredIndex]);
@@ -36,12 +40,16 @@ const Timeline = () => {
         Timeline
       </Typography>
       <MuiTimeline position="alternate-reverse">
-        {events.map((event, index) => (
+        {timelineInfo.map((event, index) => (
           <TimelineItem
             key={index}
             className="cursor-pointer"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
+            onFocus={() => setHoveredIndex(index)}
+            onBlur={() => setHoveredIndex(null)}
+            onClick={event.route}
+            tabIndex={0}
           >
             <TimelineOppositeContent className="hidden md:block px-4">
               <Typography
@@ -71,7 +79,8 @@ const Timeline = () => {
                 className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
                 style={{
                   maxHeight:
-                    hoveredIndex === index ? contentHeight + 80 : "90px",
+                    hoveredIndex === index ? contentHeight + 80 : "auto",
+                  height: hoveredIndex === index ? "auto" : "90px",
                   backgroundColor: "#1e1e1e",
                   border:
                     hoveredIndex === index
@@ -82,20 +91,20 @@ const Timeline = () => {
                 <Typography
                   variant="h6"
                   component="h1"
-                  className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red  MobileScreen:text-center"
+                  className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red MobileScreen:text-center"
                 >
                   {event.title}
                 </Typography>
-                {event.content && (
+                {event.subtitle && (
                   <Typography
                     ref={contentRef}
-                    className={`text-white transition-all duration-500 ease-in-out transform mt-2
-                  TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
+                    className={`text-white transition-all duration-500 ease-in-out transform my-2
+                    TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 -translate-y-2"
                       } text-center MobileScreen:text-center`}
                   >
-                    {event.content}
+                    {event.subtitle}
                   </Typography>
                 )}
               </Paper>
@@ -104,8 +113,7 @@ const Timeline = () => {
         ))}
       </MuiTimeline>
     </div>
-
   );
 };
 
-export default Timeline;
+// export default Timeline;
