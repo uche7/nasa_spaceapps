@@ -1,36 +1,38 @@
 export const faqData = [
   {
-    header: "What is the theme of the 2024 NASA Space Apps Challenge?",
-    text: ` The 2024 NASA Space Apps Challenge theme is 'The Sun Touches
-        Everything' in collaboration with NASA Heliophysics. This
-        theme is in alignment with the Heliophysics Big Year, a global
-        celebration of the Sun’s influence on Earth and the entire
-        solar system, as declared by NASA.`,
+    header: "Where is TU Shannon located, and how do I get there?",
+    text: `TU Shannon is situated in Athlone, making it accessible from major cities like Dublin, Limerick, Cork, and Galway. You can reach the venue via bus, train, or car. If you’re coming by bus, services from Citylink, Aircoach, and Bus Éireann are convenient options. For those taking the train, the station is about 3 kilometers from TU Shannon, so a short cab or bus ride (Route ATH1 or A1) will get you to the venue. If you’re driving, there’s ample parking available on-site.
+`,
   },
   {
-    header: "How do I register to participate in the 2024 NASA Space Apps Challenge?",
-    text: ` To register for the 2024 NASA Space Apps Challenge, visit the
-        official NASA Space Apps Challenge website and follow the
-        registration instructions provided there.`,
+    header: "Is there parking available at TU Shannon for participants?",
+    text: `Yes, participants can bring their vehicles, and parking is available behind the engineering building at TU Shannon. However, due to limited space, parking operates on a first-come, first-served basis. We recommend emailing the SpaceApps Athlone team in advance to reserve a parking spot to ensure availability.`,
   },
 
   {
-    header: "What is Hackathlone?",
+    header: "What facilities will be available for participants during the hackathon (e.g., Wi-Fi, rest areas)?",
     text: "SpaceApps Athlone, also known as HackAthlone, is one of the 384 global locations participating in this year's NASA SpaceApps Challenge. Hosted by the Technology University of the Shannon, this event brings together participants for an intensive 48-hour collaboration session, addressing 25 problem statements spanning various STEAM fields. Established in 2012, the Space Apps Challenge has evolved into the world's largest annual hackathon, emphasizing teamwork and creativity. Its mission revolves around inspiring collaboration, nurturing interest in Earth and space sciences, promoting awareness of NASA's data, and fostering growth and diversity in the upcoming generation of scientists, engineers, technologists, and designers.",
   }, {
     header: "What is the theme of the 2023 Space Apps Challenge?",
-    text: "This year's theme is 'Explore Open Science Together' in collaboration with NASA Transform to Open Science (TOPS). This theme acknowledges 2023 as A Year of Open Science - as declared by NASA, the White House, and other Federal Agencies.",
+    text: "Participants will have access to essential facilities like high-speed Wi-Fi and state-of-the-art laboratories and workspaces. Designated areas will be provided for relaxation and storage of personal belongings, such as pillows and bags. These spaces can also be used for eating and working, but participants are expected to keep them clean.",
   }, {
-    header: "Who can participate?",
-    text: "The hackathon is open to individuals of all ages, backgrounds, and skill levels. Space Apps is for everyone, including those who have never 'hacked' before. All passionate problem solvers, from students to life-long learners, are encouraged to join. While some of our challenges are technical, others ask you to use artistic skills, business acumen, or your imagination.In other words, you do not need to be a coder or data expert to be a part of the Space Apps Challenge. In fact, teams with the most diverse sets of skills are often the most successful!",
+    header: "Will there be food and beverages provided at the event?",
+    text: "=Yes, food and beverages will be provided throughout the event. Participants will receive dinner on the first day, all three meals on the second day, and breakfast and lunch on the third day. Additionally, tea, coffee, and other refreshments like snacks will be available continuously during the event.",
   }, {
-    header: "Does it cost anything to participate?",
-    text: "No, participation in the NASA Space Apps Hackathon is free of charge.",
+    header: "Are there nearby accommodations for participants coming from outside Athlone?",
+    text: "While the SpaceApps Athlone team does not provide accommodations, several nearby hotels are recommended, including Sheraton Hotel, Radisson Blu Hotel, and Glasson Lakehouse. Participants seeking accommodations can also explore other B&B options in Athlone through platforms like bookings.com.",
   }, {
-    header: "What resources will be provided at hackathlone?",
-    text: "All necessary technical components and F&B provisions will be made for participants",
+    header: "Will there be mentors available on-site to help with projects? And will there be networking opportunities?",
+    text: "Yes, there will be experienced mentors available on-site to guide and assist participants with their projects throughout the hackathon. Additionally, workshops and practice sessions will be held to help teams prepare for the final presentation. Networking opportunities will be abundant, with events like the Pitch Fest on day one, where teams can pitch their ideas and connect with others",
   }, {
-    header: "What is Virtual Bootcamp?",
-    text: "The Space Apps Virtual Bootcamp is a series of video tutorials developed by Space Apps Navigators, Global Winners, Space Agency Partners, Local Leads, Global Collaborators, and Subject Matter Experts. At the beginning of August, videos will be posted to the Space Apps website and YouTube. Video hosts will provide tips for a successful hackathon experience and guidance regarding the Space Apps Challenge Statements, resources, and open data.",
+    header: "Can participants work overnight at the venue, and are there any specific rules for overnight stays?",
+    text: "Participants are encouraged to stay overnight and continue working on their projects. If you plan to leave the venue at night or bring in/out technical equipment, please inform the organizing team. If you need to access any labs at night, the organizers must be notified. A support desk will be available 24/7 throughout the event for any queries or assistance.",
+  },{
+    header: "What should I bring with me to the event (e.g., laptops, chargers, identification)?",
+    text: "Participants should bring essential items such as laptops, chargers, and identification. Additionally, consider bringing a tent, air mattress, sleeping bag, and pillows if you plan to stay overnight at the venue.",
+  },
+  {
+    header: "Is there a place to store personal belongings securely during the event?",
+    text:   " Yes, there are designated areas for storing personal belongings securely. If you need to store anything, please inform the team in advance via email. If you require urgent storage during the event, approach the organizing team for assistance.",
   },
 ];
