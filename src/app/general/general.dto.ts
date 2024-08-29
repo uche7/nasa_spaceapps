@@ -26,12 +26,43 @@ import Tus1 from "@/assets/images/general/landing-page/mapping-images/tus1.jpg";
 import Tus2 from "@/assets/images/general/landing-page/mapping-images/tus2.jpg";
 import Tus3 from "@/assets/images/general/landing-page/mapping-images/tus3.jpg";
 import Tus4 from "@/assets/images/general/landing-page/mapping-images/tus4.jpg";
-import Antriksh from "@/assets/images/general/landing-page/team_section/antriksh.jpeg"
-import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis_go.jpg"
-import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.jpg"
-import HelpKelp from "@/assets/images/general/landing-page/team_section/helpkelp.jpg"
-import IDontThink from "@/assets/images/general/landing-page/team_section/idonthink.jpg"
+import Antriksh from "@/assets/images/general/landing-page/team_section/antriksh.png"
+import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis_go.png"
+import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.png"
+import HelpKelp from "@/assets/images/general/landing-page/team_section/help-kelp.png"
+import IDontThink from "@/assets/images/general/landing-page/team_section/idontthink.png"
 
+// Get the current date in Irish time and format it
+const currentDateInIrishTime = new Date(
+  new Date().toLocaleString("en-US", {
+    timeZone: "Europe/Dublin",
+  })
+);
+
+// Format the date as '27th August 2024'
+const options = {
+  day: "numeric" as const,   // Use 'numeric' for the day
+  month: "long" as const,    // Use 'long' for the full month name
+  year: "numeric" as const,  // Use 'numeric' for the year
+};
+const formattedDate = currentDateInIrishTime.toLocaleString("en-IE", options);
+
+const day = currentDateInIrishTime.getDate();
+const getOrdinalSuffix = (day: number) => {
+  if (day > 3 && day < 21) return "th";
+  switch (day % 10) {
+    case 1:
+      return "st";
+    case 2:
+      return "nd";
+    case 3:
+      return "rd";
+    default:
+      return "th";
+  }
+};
+const dayWithSuffix = day + getOrdinalSuffix(day);
+const currentDate = formattedDate.replace(day.toString(), dayWithSuffix);
 
 export const navigationData = (Router: any) => [
   {
@@ -257,79 +288,45 @@ export const Stories = [
   },
   {
     img: Antriksh,
-    text: `“Great Experience, kudos to the organizers & looking forward to next year's event.”`,
+    text: `“Great first hackathon. Mentors and organisers were very kind and helpful, providing key insights and suggestions to our project. I believe the lunch could’ve been improved for both the days. While dinner was great, lunch was just rolls and sandwiches. The guy who took the photographs was great as well! Shoutout to him!”`,
     author: "Team Antriksh",
   },
 ];
 
 export const events = [
   {
-    date: "18th July 2024",
-    title: "Registration opens!",
+    date: currentDate,
+    title: "2024 Challenges are out",
+    line: "Explore and choose the one",
+    line2: "That fits you the best!",
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
     registered for a Local Event or Universal Event to participate).`,
   },
   {
-    date: "4th October 2024",
-    title: "Hackathon Begins!",
+    date: "4th October 2024:",
+    title: "Day 1",
+    line: "Assemble at TU Shannon &",
+    line2: "Start problem-solving with your team",
     content: `Get ready for the NASA Space Apps Challenge!
-     Check your Space Apps Messages, review the Participant
-      Guides and challenges, and connect with your Local
-       Event Lead and teammates. Tune in to the Welcome 
-       to Space Apps kick off video at 5:00 p.m. EST, 
-       featuring messages from the GO Team and special guests`,
+     Check your Space Apps Messages, review the Participant`,
   },
   {
-    date: "5th October 2024",
-    title: "First day of the hackathon",
+    date: "5th October 2024:",
+    title: "Day 2",
+    line: "Connect with industry experts",
+    line2: "Get tips and feedback for your project",
     content: `At 9:00 a.m. (local time) teams may begin 
     working on their hackathon projects. Project submission
-    opens at 9:00 a.m. Teams will be able to edit and
-    submit their projects until 11:59 p.m. (local time)
-       on October 6. Experts from NASA, Space Agency Partners,
-        and industry will be available in Space Apps Connect
-         to answer questions about the Challenge Statements
-          and data. We know you’ll be working with your team 
-          tirelessly to create your project during the hackathon.
-           Don’t forget to take breaks, stay hydrated,
-            and balance your hard work with fun!`,
+    opens at 9:00 a.m.`,
   },
   {
-    date: "6th October 2024",
-    title: "Hackathon Ends!",
+    date: "6th October 2024:",
+    title: "Day 3",
+    line: "Get ready to present your project",
+    line2: "Get a chance to win the challenge",
     content: ` The hackathon ends at 11:59 p.m. (local time). 
  All projects must be submitted to the NASA Space
- Apps Challenge website by this deadline. Teams 
- must submit their projects in accordance with 
-  the time of the Local Event location for which
-   the team is registered. *If your team is registered 
-   for the Universal Event, your project must be submitted 
-   in accordance with the local time of the person who
-    created the team (Team Lead). You did it! Pat yourself
-     on the back for making it through the hackathon. What an achievement!`,
+ Apps Challenge website by this deadline.`,
   },
 ];
-
-export const FAQ = [
-  {
-    question: "What is the theme of the 2024 NASA Space Apps Challenge?",
-    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
-  },
-  {
-    question: "How do I register to participate in the 2024 NASA Space Apps Challenge?",
-    answer: "To register for the 2024 NASA Space Apps Challenge, visit the official NASA Space Apps Challenge website and follow the registration instructions provided there."
-  },
-  {
-    question: "What is the theme of the 2024 NASA Space Apps Challenge over here,\nOne of my Frequently Asked Questions?",
-    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
-  },
-  {
-    question: "What is the theme of the 2024 NASA Space Apps Challenge?",
-    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
-  },
-  {
-    question: "What is the theme of the 2024 NASA Space Apps Challenge over here?",
-    answer: "The 2024 NASA Space Apps Challenge theme is \'The Sun Touches Everything\' in collaboration with NASA Heliophysics. This theme is in alignment with the Heliophysics Big Year, a global celebration of the Sun’s influence on Earth and the entire solar system\, as declared by NASA."
-  },
-]
