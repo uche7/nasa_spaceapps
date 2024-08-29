@@ -31,6 +31,7 @@ import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis
 import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.png"
 import HelpKelp from "@/assets/images/general/landing-page/team_section/help-kelp.png"
 import IDontThink from "@/assets/images/general/landing-page/team_section/idontthink.png"
+import { Router } from "next/router";
 
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
@@ -285,7 +286,7 @@ export const Stories = [
   },
 ];
 
-export const events = [
+export const events = (Router: any) => [
   {
     date: currentDate,
     title: "2024 Challenges are out",
@@ -293,7 +294,7 @@ export const events = [
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
     registered for a Local Event or Universal Event to participate).`,
-    slug: '0',
+    route: () => Router.push("/timeline"),
   },
   {
     date: "4th October 2024:",
@@ -301,7 +302,7 @@ export const events = [
     subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
     content: `Get ready for the NASA Space Apps Challenge!
      Check your Space Apps Messages, review the Participant`,
-    slug: '1',
+    route: () => Router.push("/timeline#day-1"),
   },
   {
     date: "5th October 2024:",
@@ -310,7 +311,7 @@ export const events = [
     content: `At 9:00 a.m. (local time) teams may begin 
     working on their hackathon projects. Project submission
     opens at 9:00 a.m.`,
-    slug: '2',
+    route: () => Router.push("/timeline#day-2"),
   },
   {
     date: "6th October 2024:",
@@ -319,6 +320,6 @@ export const events = [
     content: ` The hackathon ends at 11:59 p.m. (local time). 
  All projects must be submitted to the NASA Space
  Apps Challenge website by this deadline.`,
-    slug: '3',
+    route: () => Router.push("/timeline#day-3"),
   },
 ];
