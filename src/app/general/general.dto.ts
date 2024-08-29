@@ -260,15 +260,7 @@ export const Stories = [
 
   {
     img: Cococrunch,
-    text: `“We were positively challenged by the SpaceApps hackathon and were
-     very warmly supported throughout the whole event! The organizing team did 
-     an incredible job by providing food and shelter to everybody. Everyone was
-     nice and helpful to the maximum with all kinds of technical or comfort requests.
-     The pizzas and coffee again proved to be invaluable resources for brain
-     activity :) Last but not least, the mentors had made an incredible impact
-     on our project and others, too. Cococrunch team is grateful for this
-     opportunity, we hope that next year there will be more attendees,
-     more fun and more great ideas!”`,
+    text: `“Initially, we struggled with hard coding from scratch, but a mentor's advice to focus on product design improved our teamwork. While the event was challenging, it offered valuable learning experiences, though better communication and more diverse food options could enhance future hackathons.”`,
     author: "Cococrunch",
   },
   {
@@ -297,36 +289,36 @@ export const events = [
   {
     date: currentDate,
     title: "2024 Challenges are out",
-    line: "Explore and choose the one",
-    line2: "That fits you the best!",
+    subtitle: "Explore and choose the one that fits you the best!",
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
     registered for a Local Event or Universal Event to participate).`,
+    slug: '0',
   },
   {
     date: "4th October 2024:",
     title: "Day 1",
-    line: "Assemble at TU Shannon &",
-    line2: "Start problem-solving with your team",
+    subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
     content: `Get ready for the NASA Space Apps Challenge!
      Check your Space Apps Messages, review the Participant`,
+    slug: '1',
   },
   {
     date: "5th October 2024:",
     title: "Day 2",
-    line: "Connect with industry experts",
-    line2: "Get tips and feedback for your project",
+    subtitle: "Connect with industry experts: Get tips and feedback for your project",
     content: `At 9:00 a.m. (local time) teams may begin 
     working on their hackathon projects. Project submission
     opens at 9:00 a.m.`,
+    slug: '2',
   },
   {
     date: "6th October 2024:",
     title: "Day 3",
-    line: "Get ready to present your project",
-    line2: "Get a chance to win the challenge",
+    subtitle: "Get ready to present your project & Get a chance to win the challenge",
     content: ` The hackathon ends at 11:59 p.m. (local time). 
  All projects must be submitted to the NASA Space
  Apps Challenge website by this deadline.`,
+    slug: '3',
   },
 ];

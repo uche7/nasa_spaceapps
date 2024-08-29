@@ -137,7 +137,7 @@ const TeamStories = () => {
             <div key={index} className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center">
               <div className="md:w-1/2 w-full !flex md:items-center MobileScreen:justify-center max-h-[560px]">
                 <Image
-                  className="cursor-pointer rounded-2xl max-w-[100%] max-h-[560px] MobileScreen:max-h-[320px]"
+                  className="cursor-pointer rounded-2xl max-w-[100%] max-h-[350px] MobileScreen:max-h-[320px]"
                   src={item.img}
                   width={500}
                   height={450}
