@@ -10,13 +10,11 @@ import NavigationBar from "../general/navigation-bar";
 import Footer from "../general/footer";
 import ItineraryHeroPage from "./hero-page";
 import ItineraryPage from "./itinerary"
+import BackToTopButton from "../general/back-to-top"
 
 const Itinerary = () => {
     /** Desktop View */
-
-
     return (
-
         <>
             <div className="relative min-h-screen bg-black text-white">
                 <div className="fixed inset-0 z-0">
@@ -28,6 +26,7 @@ const Itinerary = () => {
                     <NavigationBar />
                     <ItineraryHeroPage />
                     <ItineraryPage />
+                    <BackToTopButton />
                     <Footer />
                 </div>
             </div>

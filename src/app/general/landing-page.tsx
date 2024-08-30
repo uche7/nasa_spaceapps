@@ -13,6 +13,7 @@ import TeamStories from "./team-stories";
 import HackathoneTimeline from "./timeline";
 import Instagram from "./instagram";
 import Footer from "./footer";
+import BackToTopButton from "../general/back-to-top"
 
 /** The Landing Page */
 const LandingPage = () => {
@@ -36,6 +37,7 @@ const LandingPage = () => {
         <TeamStories />
         <HackathoneTimeline />
         <Instagram />
+        <BackToTopButton />
         <Footer />
       </div>
     </div>
