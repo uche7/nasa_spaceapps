@@ -15,6 +15,7 @@ import { events } from "./general.dto";
 
 export default function Timeline() {
   const Router = useRouter();
+
   const timelineInfo = useMemo(() => events(Router), [Router]);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [contentHeight, setContentHeight] = useState(0);
@@ -71,7 +72,7 @@ export default function Timeline() {
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
-                {index < events.length - 1 && (
+                {index < timelineInfo.length - 1 && (
                   <TimelineConnector
                     className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
                     style={{
@@ -100,7 +101,7 @@ export default function Timeline() {
                   <Typography
                     variant="h6"
                     component="h1"
-                    className={`md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red MobileScreen:text-center ${isOdd ? "text-start" : "text-end"
+                    className={`md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${isOdd ? "md:text-start" : "md:text-end"
                       }`}
                   >
                     {event.title}
@@ -108,12 +109,16 @@ export default function Timeline() {
                   {event.subtitle && (
                     <Typography
                       ref={contentRef}
-                      className={`text-white transition-all duration-500 ease-in-out transform my-2
-                    TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
+                      className={`
+                        text-white transition-all duration-500 ease-in-out transform my-4
+                        TabletScreen:text-[14px] MobileScreen:text-[12px]
+                        ${hoveredIndex === index
                           ? "opacity-100 translate-y-0"
-                          : "opacity-0 -translate-y-2"
-                        } ${isOdd ? "text-start" : "text-end"
-                        }text-center MobileScreen:text-center`}
+                          : "opacity-0 -translate-y-2"}
+                        ${isOdd ? "md:text-start" : "md:text-end"}
+                        text-center
+                        MobileScreen:opacity-100 TabletScreen:opacity-100
+                      `}
                     >
                       {event.subtitle}
                     </Typography>

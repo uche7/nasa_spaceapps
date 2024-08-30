@@ -1,4 +1,7 @@
 "use client";
+{
+    /*This is a empty structure for now, keep just in case design require changes to individual page for itinerary.*/
+}
 import React from 'react';
 import { useParams } from 'next/navigation';
 import { Canvas } from "@react-three/fiber";
