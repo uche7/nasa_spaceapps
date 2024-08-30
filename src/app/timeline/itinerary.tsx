@@ -37,28 +37,28 @@ const Itinerary: React.FC = () => {
                         return (
                             <section key={dayIndex} id={`day-${dayIndex + 1}`} className="mb-16">
                                 <div className="flex items-center mb-10">
-                                    {/* <Tooltip text="Back to Home"> */}
-                                    <IconButton
-                                        variant="contained"
-                                        size="large"
-                                        color="primary"
-                                        onClick={() => router.push("/")}
-                                        className="mr-4 text-white hover:text-hackathone-font-rocket-red"
-                                        edge="start"
-                                        sx={{
-                                            width: '3.5rem',
-                                            height: '3.5rem',
-                                            fontSize: '5rem',
-                                            transition: 'transform 0.3s ease-in-out, color 0.3s ease-in-out',
-                                            '&:hover': {
-                                                transform: 'scale(1.2)',
-                                            },
-                                        }}
-                                        aria-label="back to home"
-                                    >
-                                        <ChevronLeftIcon sx={{ fontSize: 'inherit' }} />
-                                    </IconButton>
-                                    {/* </Tooltip> */}
+                                    <Tooltip text="Back to Home">
+                                        <IconButton
+                                            variant="contained"
+                                            size="large"
+                                            color="primary"
+                                            onClick={() => router.push("/")}
+                                            className="mr-4 text-white hover:text-hackathone-font-rocket-red"
+                                            edge="start"
+                                            sx={{
+                                                width: '3.5rem',
+                                                height: '3.5rem',
+                                                fontSize: '5rem',
+                                                transition: 'transform 0.3s ease-in-out, color 0.3s ease-in-out',
+                                                '&:hover': {
+                                                    transform: 'scale(1.2)',
+                                                },
+                                            }}
+                                            aria-label="back to home"
+                                        >
+                                            <ChevronLeftIcon sx={{ fontSize: 'inherit' }} />
+                                        </IconButton>
+                                    </Tooltip>
                                     <Typography
                                         variant="h3"
                                         component="h1"

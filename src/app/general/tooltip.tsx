@@ -1,5 +1,5 @@
 // Tooltip.tsx
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 interface TooltipProps {
@@ -10,12 +10,15 @@ interface TooltipProps {
 const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+    const parentRef = useRef<HTMLDivElement>(null);
 
     const handleMouseMove = (e: MouseEvent) => {
-        const x = e.clientX;
-        const y = e.clientY;
-        setTooltipPosition({ x, y });
-        console.log(tooltipPosition);
+        if (parentRef.current) {
+            const parentRect = parentRef.current.getBoundingClientRect();
+            const x = e.clientX - parentRect.left;
+            const y = e.clientY - parentRect.top;
+            setTooltipPosition({ x, y });
+        }
     };
 
 
@@ -38,7 +41,7 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            style={{ display: "inline-block" }}
+            style={{ display: "inline-block", position: "relative" }}
         >
             {children}
             {isHovered && (
@@ -49,8 +52,8 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.5 }}
                     style={{
-                        left: `${tooltipPosition.x}px`,
-                        top: `${tooltipPosition.y + 15}px`,
+                        left: `${tooltipPosition.x - 30}px`,
+                        top: `${tooltipPosition.y + 60}px`,
                         transform: "translateX(-50%)",// Adjust transform to center the tooltip correctly
                         zIndex: 50, // Ensure tooltip is above other content
                         pointerEvents: 'none', // Prevent the tooltip from blocking mouse events
