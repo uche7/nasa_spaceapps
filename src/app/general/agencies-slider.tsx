@@ -6,13 +6,26 @@ import { agenciesSlider } from "./general.dto";
 const sliderItems = [...agenciesSlider];
 
 export const AgenciesSlider = () => {
+  const [imgSrcs, setImgSrcs] = useState(
+    sliderItems.map((item) => item.img)
+  );
+  // Handle mouse enter event to change the image
+  const handleMouseEnter = (index: number) => {
+    const newImgSrcs = [...imgSrcs];
+    newImgSrcs[index] = sliderItems[index].imgOrigin || sliderItems[index].img;
+    setImgSrcs(newImgSrcs);
+  };
+  // Handle mouse leave event to revert the image
+  const handleMouseLeave = (index: number) => {
+    const newImgSrcs = [...imgSrcs];
+    newImgSrcs[index] = sliderItems[index].img;
+    setImgSrcs(newImgSrcs);
+  };
   return (
     <div className="overflow-hidden">
       <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-4 lg:gap-8 md:gap-6 gap-4">
         {sliderItems.map((item, index) => {
           // Initialize the image source state for each item
-          const [imgSrc, setImgSrc] = useState(item.img)
-
           return (
             <div
               key={index}
@@ -23,12 +36,12 @@ export const AgenciesSlider = () => {
             >
               <Image
                 className="cursor-pointer transform transition-transform duration-300 lg:hover:scale-125 sm:w-[80px]"
-                src={imgSrc}
+                src={imgSrcs[index]}
                 width={120}
                 height={120}
                 alt={"Agencies Icon"}
-                onMouseEnter={() => setImgSrc(item.imgOrigin || item.img)}
-                onMouseLeave={() => setImgSrc(item.img)}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
               />
             </div>
           );

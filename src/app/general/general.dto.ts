@@ -323,7 +323,7 @@ export const events = (Router: any) => [
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
     registered for a Local Event or Universal Event to participate).`,
-    route: () => Router.push("/timeline"),
+    route: () => Router.push("https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/"),
   },
   {
     date: "4th October 2024:",
