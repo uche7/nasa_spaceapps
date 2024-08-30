@@ -12,7 +12,7 @@ import {
     TimelineDot,
     timelineItemClasses,
 } from "@mui/lab";
-import { Paper, Typography } from "@mui/material";
+import { Paper, Typography, Button } from "@mui/material";
 
 const formatDate = (date: Date) => {
     const options: Intl.DateTimeFormatOptions = { weekday: 'long', day: 'numeric', month: 'short' };
@@ -20,16 +20,7 @@ const formatDate = (date: Date) => {
 };
 
 const Itinerary: React.FC = () => {
-    // const [currentDay, setCurrentDay] = useState<DaySchedule | null>(null);
-    // const router = useRouter();
-    // const searchParams = useSearchParams();
-    // const daySlug = searchParams.get('day'); // Get the 'day' parameter from URL
-
-    // useEffect(() => {
-    //     // Find the current day based on the slug in URL
-    //     const foundDay = schedule.find(day => day.slug === daySlug);
-    //     setCurrentDay(foundDay || null);
-    // }, [daySlug]);
+    const router = useRouter();
     const startDate = new Date(2024, 9, 4);
 
     return (
@@ -37,18 +28,30 @@ const Itinerary: React.FC = () => {
             <div>
                 {schedule.map((day: DaySchedule, dayIndex: number) => {
                     const dayDate = new Date(startDate);
-                    dayDate.setDate(startDate.getDate() + dayIndex); // Increment day by index
+                    dayDate.setDate(startDate.getDate() + dayIndex);
 
                     return (
                         <section key={dayIndex} id={`day-${dayIndex + 1}`} className="mb-16">
-                            <Typography
-                                variant="h3"
-                                component="h1"
-                                className="text-4xl font-hackathoneCabinetGrotesk font-bold text-hackathone-font-rocket-red mb-10 text-start md:text-[3.5rem]"
-                            >
-                                {day.title}
-                                <span className='text-4xl text-white md:text-[32.99px]'> {"(" + formatDate(dayDate) + "'24)"}</span>
-                            </Typography>
+                            <div className="flex items-center mb-10">
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    onClick={() => router.push("/")} // Navigate to home
+                                    className="mr-4"
+                                >
+                                    Back
+                                </Button>
+                                <Typography
+                                    variant="h3"
+                                    component="h1"
+                                    className="text-4xl font-hackathoneCabinetGrotesk font-bold text-hackathone-font-rocket-red text-start md:text-[3.5rem]"
+                                >
+                                    {day.title}
+                                    <span className='text-4xl text-white md:text-[32.99px]'>
+                                        {" (" + formatDate(dayDate) + "'24)"}
+                                    </span>
+                                </Typography>
+                            </div>
                             <MuiTimeline
                                 position="right"
                                 sx={{

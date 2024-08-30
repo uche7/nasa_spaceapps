@@ -40,80 +40,90 @@ export default function Timeline() {
         Timeline
       </Typography>
       <MuiTimeline position="alternate-reverse">
-        {timelineInfo.map((event, index) => (
-          <TimelineItem
-            key={index}
-            className="cursor-pointer"
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            onFocus={() => setHoveredIndex(index)}
-            onBlur={() => setHoveredIndex(null)}
-            onClick={event.route}
-            tabIndex={0}
-          >
-            <TimelineOppositeContent className="hidden md:block px-4">
-              <Typography
-                variant="body2"
-                color="white"
-                className="text-base font-normal MobileScreen:text-center"
-              >
-                {event.date}
-              </Typography>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
-              {index < events.length - 1 && (
-                <TimelineConnector
-                  className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
-                  style={{
-                    height:
-                      hoveredIndex === index ? contentHeight + 20 : "100px",
-                    backgroundColor: "#52525B",
-                  }}
-                />
-              )}
-            </TimelineSeparator>
-            <TimelineContent>
-              <Paper
-                elevation={3}
-                className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
-                style={{
-                  maxHeight:
-                    hoveredIndex === index ? contentHeight + 80 : "auto",
-                  height: hoveredIndex === index ? "auto" : "90px",
-                  backgroundColor: "#1e1e1e",
-                  border:
-                    hoveredIndex === index
-                      ? "2px solid #52525B"
-                      : "2px solid transparent",
-                }}
-              >
+        {timelineInfo.map((event, index) => {
+          const isOdd = index % 2 !== 0;
+
+          return (
+            <TimelineItem
+              key={index}
+              className="cursor-pointer"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              onFocus={() => setHoveredIndex(index)}
+              onBlur={() => setHoveredIndex(null)}
+              onClick={event.route}
+              tabIndex={0}
+            >
+              <TimelineOppositeContent className={`hidden md:block px-4`}>
                 <Typography
-                  variant="h6"
-                  component="h1"
-                  className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red MobileScreen:text-center"
+                  variant="body2"
+                  color="white"
+                  className={`text-base font-bold MobileScreen:text-center transition-transform transition-colors duration-300 ease-in-out transform ${hoveredIndex === index
+                    ? `text-hackathone-font-rocket-red font-extrabold scale-110 ${isOdd ? "translate-x-[-15%]" : "translate-x-[15%]"}`
+                    : "text-white scale-100 translate-x-0"
+                    }`}
+                  style={{
+                    transformOrigin: "center",
+                  }}
                 >
-                  {event.title}
+                  {event.date}
                 </Typography>
-                {event.subtitle && (
-                  <Typography
-                    ref={contentRef}
-                    className={`text-white transition-all duration-500 ease-in-out transform my-2
-                    TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 -translate-y-2"
-                      } text-center MobileScreen:text-center`}
-                  >
-                    {event.subtitle}
-                  </Typography>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
+                {index < events.length - 1 && (
+                  <TimelineConnector
+                    className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
+                    style={{
+                      height:
+                        hoveredIndex === index ? contentHeight + 20 : "100px",
+                      backgroundColor: "#52525B",
+                    }}
+                  />
                 )}
-              </Paper>
-            </TimelineContent>
-          </TimelineItem>
-        ))}
+              </TimelineSeparator>
+              <TimelineContent>
+                <Paper
+                  elevation={3}
+                  className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
+                  style={{
+                    maxHeight:
+                      hoveredIndex === index ? contentHeight + 80 : "auto",
+                    height: hoveredIndex === index ? "auto" : "90px",
+                    backgroundColor: "#1e1e1e",
+                    border:
+                      hoveredIndex === index
+                        ? "2px solid #52525B"
+                        : "2px solid transparent",
+                  }}
+                >
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    className={`md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red MobileScreen:text-center ${isOdd ? "text-start" : "text-end"
+                      }`}
+                  >
+                    {event.title}
+                  </Typography>
+                  {event.subtitle && (
+                    <Typography
+                      ref={contentRef}
+                      className={`text-white transition-all duration-500 ease-in-out transform my-2
+                    TabletScreen:text-[14px] MobileScreen:text-[12px] ${hoveredIndex === index
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 -translate-y-2"
+                        } ${isOdd ? "text-start" : "text-end"
+                        }text-center MobileScreen:text-center`}
+                    >
+                      {event.subtitle}
+                    </Typography>
+                  )}
+                </Paper>
+              </TimelineContent>
+            </TimelineItem>
+          );
+        })}
       </MuiTimeline>
     </div>
   );
-};
-
-// export default Timeline;
+}

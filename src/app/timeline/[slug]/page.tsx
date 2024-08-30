@@ -18,11 +18,11 @@ import {
 import { Paper, Typography } from "@mui/material";
 
 const TimelinePage: React.FC = () => {
-    const { slug } = useParams(); // Use useParams to get the slug from the URL
-    const daySchedule = schedule.find((d) => d.slug === slug); // Find the correct schedule based on slug
+    const { slug } = useParams();
+    const daySchedule = schedule.find((d) => d.slug === slug);
 
     if (!daySchedule) {
-        return <div>Schedule not found</div>; // Handle case where no schedule is found
+        return <div>Schedule not found</div>;
     }
 
     return (
