@@ -1,18 +1,33 @@
 import Aeb from "@/assets/images/general/landing-page/space-agencies/aeb_w.png";
+import Aeb_O from "@/assets/images/general/landing-page/space-agencies/aeb_round.png";
 import Asi from "@/assets/images/general/landing-page/space-agencies/asi.png";
+import Asi_O from "@/assets/images/general/landing-page/space-agencies/asi_round.png";
 import Aem from "@/assets/images/general/landing-page/space-agencies/aem_w.png";
+import Aem_O from "@/assets/images/general/landing-page/space-agencies/aem_round.png";
 import Aep from "@/assets/images/general/landing-page/space-agencies/aep1.png";
+import Aep_O from "@/assets/images/general/landing-page/space-agencies/aep_round.png";
 import Australia from "@/assets/images/general/landing-page/space-agencies/australia_w.png";
+import Australia_O from "@/assets/images/general/landing-page/space-agencies/australia_round.png";
 import Canada from "@/assets/images/general/landing-page/space-agencies/canada_w.png";
+import Canada_O from "@/assets/images/general/landing-page/space-agencies/canada_round.png";
 import Conae from "@/assets/images/general/landing-page/space-agencies/conae.png";
+import Conae_O from "@/assets/images/general/landing-page/space-agencies/conae_round.png";
 import Eesa from "@/assets/images/general/landing-page/space-agencies/eesa.png";
+import Eesa_O from "@/assets/images/general/landing-page/space-agencies/eesa_round.png";
 import Isro from "@/assets/images/general/landing-page/space-agencies/isro_w.png";
+import Isro_O from "@/assets/images/general/landing-page/space-agencies/isro_round.png";
 import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
+import Jaxa_O from "@/assets/images/general/landing-page/space-agencies/jaxa_round.png";
 import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa_w.png";
+import Nssa_O from "@/assets/images/general/landing-page/space-agencies/nssa_round.png";
 import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
+import Sansa_O from "@/assets/images/general/landing-page/space-agencies/sansa_round.png";
 import Turkey from "@/assets/images/general/landing-page/space-agencies/tsa_w.png";
+import Turkey_O from "@/assets/images/general/landing-page/space-agencies/turkish_round.png";
 import Cst from "@/assets/images/general/landing-page/space-agencies/cst_w.png";
-import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_w.png";
+import Cst_O from "@/assets/images/general/landing-page/space-agencies/cst_round.png";
+import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_t_w1.png";
+import Ssa_O from "@/assets/images/general/landing-page/space-agencies/spanish_t.jpg";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png";
 import Microsoft from "@/assets/images/general/landing-page/collabrators/microsoft.png";
 import Teams from "@/assets/images/general/landing-page/collabrators/teams.png";
@@ -31,7 +46,6 @@ import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis
 import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.png"
 import HelpKelp from "@/assets/images/general/landing-page/team_section/help-kelp.png"
 import IDontThink from "@/assets/images/general/landing-page/team_section/idontthink.png"
-import { Router } from "next/router";
 
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
@@ -114,10 +128,12 @@ export const countDownData = [
 export const agenciesSlider = [
   {
     img: Asi,
+    imgOrigin: Asi_O,
     route: () => window.open("https://www.asi.it/en/", "_blank"),
   },
   {
     img: Aem,
+    imgOrigin: Aem_O,
     route: () =>
       window.open(
         "https://www.iafastro.org/membership/all-members/agencia-espacial-mexicana-aem.html",
@@ -126,10 +142,12 @@ export const agenciesSlider = [
   },
   {
     img: Aep,
+    imgOrigin: Aep_O,
     route: () => window.open("https://aep.gov.py/", "_blank"),
   },
   {
     img: Australia,
+    imgOrigin: Australia_O,
     route: () =>
       window.open(
         "https://www.industry.gov.au/australian-space-agency",
@@ -138,10 +156,12 @@ export const agenciesSlider = [
   },
   {
     img: Canada,
+    imgOrigin: Canada_O,
     route: () => window.open("https://www.asc-csa.gc.ca/eng/", "_blank"),
   },
   {
     img: Aeb,
+    imgOrigin: Aeb_O,
     route: () =>
       window.open(
         "https://www.iafastro.org/membership/all-members/brazilian-space-agency-aeb.html",
@@ -150,23 +170,28 @@ export const agenciesSlider = [
   },
   {
     img: Conae,
+    imgOrigin: Conae_O,
     route: () =>
       window.open("https://www.argentina.gob.ar/ciencia/conae", "_blank"),
   },
   {
     img: Eesa,
+    imgOrigin: Eesa_O,
     route: () => window.open("https://www.esa.int/", "_blank"),
   },
   {
     img: Isro,
+    imgOrigin: Isro_O,
     route: () => window.open("https://www.isro.gov.in/", "_blank"),
   },
   {
     img: Jaxa,
+    imgOrigin: Jaxa_O,
     route: () => window.open("https://global.jaxa.jp/", "_blank"),
   },
   {
     img: Nssa,
+    imgOrigin: Nssa_O,
     route: () =>
       window.open(
         "https://www.iafastro.org/membership/all-members/national-space-science-agency-nssa.html",
@@ -175,18 +200,22 @@ export const agenciesSlider = [
   },
   {
     img: Sansa,
+    imgOrigin: Sansa_O,
     route: () => window.open("https://www.sansa.org.za/", "_blank"),
   },
   {
     img: Turkey,
+    imgOrigin: Turkey_O,
     route: () => window.open("https://tua.gov.tr/en", "_blank"),
   },
   {
     img: Cst,
+    imgOrigin: Cst_O,
     route: () => window.open("https://www.cst.gov.sa", "_blank"),
   },
   {
     img: Ssa,
+    imgOrigin: Ssa_O,
     route: () => window.open("https://www.aee.gob.es/", "_blank"),
   },
 ];
@@ -294,7 +323,7 @@ export const events = (Router: any) => [
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
     registered for a Local Event or Universal Event to participate).`,
-    route: () => Router.push("/timeline"),
+    route: () => Router.push("https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/"),
   },
   {
     date: "4th October 2024:",
