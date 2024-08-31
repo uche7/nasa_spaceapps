@@ -101,7 +101,7 @@ export default function Timeline() {
                   <Typography
                     variant="h6"
                     component="h1"
-                    className={`md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${isOdd ? "md:text-start" : "md:text-end"
+                    className={`md:text-xl text-[16px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${isOdd ? "md:text-start" : "md:text-end"
                       }`}
                   >
                     {event.title}
@@ -110,8 +110,8 @@ export default function Timeline() {
                     <Typography
                       ref={contentRef}
                       className={`
-                        text-white transition-all duration-500 ease-in-out transform my-4
-                        TabletScreen:text-[14px] MobileScreen:text-[12px]
+                        text-white transition-all duration-500 ease-in-out transform my-4 text-[16px]
+                        TabletScreen:text-[14px] MobileScreen:text-[14px]
                         ${hoveredIndex === index
                           ? "opacity-100 translate-y-0"
                           : "opacity-0 -translate-y-2"}
