@@ -35,7 +35,7 @@ export const AgenciesSlider = () => {
 
             >
               <Image
-                className="cursor-pointer transform transition-transform duration-300 lg:hover:scale-125 sm:w-[80px]"
+                className="cursor-pointer transform transition-transform duration-300 lg:hover:scale-125 hover:scale-110 sm:w-[80px] lg:min-h-[25px]"
                 src={imgSrcs[index]}
                 width={120}
                 height={120}

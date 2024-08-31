@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 
@@ -31,10 +31,23 @@ const generateRandomSpherePoints = (
   return points;
 };
 
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowSize(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowSize;
+};
+
 /** Cloud Particle Background */
 const CloudParticleBg: React.FC = () => {
   const ref = useRef<any>();
   const [sphere] = useState(() => generateRandomSpherePoints(5000, 1.5)); // Reduce 5000 to a lower number if needed
+  const windowWidth = useWindowSize();
 
   useFrame((state, delta) => {
     if (ref.current) {
@@ -43,13 +56,21 @@ const CloudParticleBg: React.FC = () => {
     }
   });
 
+  const getParticleSize = () => {
+    if (windowWidth >= 1024) {
+      return 0.003;
+    } else {
+      return 0.002;
+    }
+  };
+
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled={false}>
         <PointMaterial
           transparent
           color="#eafe07"
-          size={0.002} // Adjust size for performance
+          size={getParticleSize()} // Adjust size for performance
           sizeAttenuation={true}
           depthWrite={false}
         />

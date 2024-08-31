@@ -26,8 +26,8 @@ import Turkey from "@/assets/images/general/landing-page/space-agencies/tsa_w.pn
 import Turkey_O from "@/assets/images/general/landing-page/space-agencies/turkish_round.png";
 import Cst from "@/assets/images/general/landing-page/space-agencies/cst_w.png";
 import Cst_O from "@/assets/images/general/landing-page/space-agencies/cst_round.png";
-import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_t_w1.png";
-import Ssa_O from "@/assets/images/general/landing-page/space-agencies/spanish_t.jpg";
+import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_w.png";
+import Ssa_O from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png";
 import Microsoft from "@/assets/images/general/landing-page/collabrators/microsoft.png";
 import Teams from "@/assets/images/general/landing-page/collabrators/teams.png";

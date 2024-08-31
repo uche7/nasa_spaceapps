@@ -72,7 +72,7 @@ const Faq = () => {
                         {item.header}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails className="">
+                    <AccordionDetails className="pr-[3rem] ">
                       <Typography>{item.text}</Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -140,7 +140,7 @@ const Faq = () => {
                         {item.header}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails className="">
+                    <AccordionDetails className="pr-[2rem]">
                       <Typography>{item.text}</Typography>
                     </AccordionDetails>
                   </Accordion>
