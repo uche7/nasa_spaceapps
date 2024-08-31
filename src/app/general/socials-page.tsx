@@ -8,7 +8,7 @@ import InIcon from "@/assets/images/general/landing-page/linkedin.png"
 import TweetEmbed from "./xpost-embed";
 import InPostEmbed from "./linkedin-embed";
 
-const Instagram = () => {
+const Socials = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
@@ -33,7 +33,7 @@ const Instagram = () => {
           Discover more on Our <span className="font-extrabold text-hackathone-font-rocket-red ">Socials</span>
         </motion.h1>
         <div className="mb-[2rem]">
-          <p className="font-hackathoneCabinetGrotesk text-[22px] leading-tight text-white">
+          <p className="font-hackathoneCabinetGrotesk text-[22px] leading-tight text-white MobileScreen:px-[1rem]">
             Keep your self updated by{" "}<span className="font-extrabold text-hackathone-font-rocket-red ">following us on social media</span>
           </p>
         </div>
@@ -130,4 +130,4 @@ const Instagram = () => {
   );
 };
 
-export default Instagram;
+export default Socials;

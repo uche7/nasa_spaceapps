@@ -11,7 +11,7 @@ import { CollabratorsSlider } from "./collabrators-slider";
 import Shannon from "./shannon";
 import TeamStories from "./team-stories";
 import HackathoneTimeline from "./timeline";
-import Instagram from "./instagram";
+import Socials from "./socials-page";
 import Footer from "./footer";
 import BackToTopButton from "../general/back-to-top"
 
@@ -36,7 +36,7 @@ const LandingPage = () => {
         <Shannon />
         <TeamStories />
         <HackathoneTimeline />
-        <Instagram />
+        <Socials />
         <BackToTopButton />
         <Footer />
       </div>

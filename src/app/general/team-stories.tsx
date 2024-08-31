@@ -166,7 +166,7 @@ const TeamStories = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 MobileScreen:mx-[1.2rem] lg:mx-[8.06%] md:mx-[2rem] my-[6rem]">
+    <div className="px-4 sm:px-6 lg:px-10 MobileScreen:mx-[1.2rem] lg:mx-[8.06%] md:mx-[2rem] my-[10rem] lg:my-[12rem]">
       <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] md:text-[32.99px] text-[42px] MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]">
         Hackathon Unplugged: Team Stories
       </h1>
