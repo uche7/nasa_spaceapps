@@ -12,7 +12,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Sun from "@/assets/images/faq-page/sun.png";
+import Sun from "@/assets/images/faq-page/sun - Copy.png";
+
 
 const Faq = () => {
   const [expanded, setExpanded] = useState<number | false>(false);
@@ -38,7 +39,7 @@ const Faq = () => {
             <Typography
               variant="h4"
               gutterBottom
-              className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
+              className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red text-5xl"
             >
               Frequently Asked Questions (FAQS)
             </Typography>
@@ -49,7 +50,7 @@ const Faq = () => {
                     key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
-                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded"
+                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded py-5 "
                     disableGutters
                   >
                     <AccordionSummary
@@ -64,7 +65,7 @@ const Faq = () => {
                       id={`panel${index}-header`}
                     >
                       <h1
-                        className="font-hackathoneSFProDisplay font-[300] text-[18px]"
+                        className="font-hackathoneSFProDisplay font-[300] text-[22px]"
                         style={{
                           color: expanded === index ? "yellow" : "white",
                         }}
@@ -78,7 +79,7 @@ const Faq = () => {
                   </Accordion>
                 ))}
               </div>
-              <div className="w-[120%] -mt-[100px]">
+              <div className="w-[230%] -mt-[100px]">
                 <Image src={Sun} alt={"Sun Image"}></Image>
               </div>
             </section>
