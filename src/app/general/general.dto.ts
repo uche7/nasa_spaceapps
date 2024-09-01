@@ -46,7 +46,7 @@ import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis
 import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.png"
 import HelpKelp from "@/assets/images/general/landing-page/team_section/help-kelp.png"
 import IDontThink from "@/assets/images/general/landing-page/team_section/idontthink.png"
-
+import Ms from "@assets/images/general/landing-page/collabrators/ms.png";
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
   new Date().toLocaleString("en-US", {
@@ -222,15 +222,6 @@ export const agenciesSlider = [
 
 export const collabratorsSlider = [
   {
-    img: Google,
-    route: () => window.open("https://about.google/", "_blank"),
-  },
-  {
-    img: Microsoft,
-    route: () =>
-      window.open("https://www.microsoft.com/en-in/about/", "_blank"),
-  },
-  {
     img: Teams,
     route: () =>
       window.open(
@@ -238,30 +229,41 @@ export const collabratorsSlider = [
         "_blank"
       ),
   },
+
   {
-    img: Tableau,
-    route: () => window.open("https://www.tableau.com/", "_blank"),
-  },
-  {
-    img: GoDaddy,
-    route: () => window.open("https://www.godaddy.com/en-in", "_blank"),
-  },
-  {
-    img: Planet,
-    route: () => window.open("https://www.planet.com/", "_blank"),
-  },
-  {
-    img: Azure,
-    route: () => window.open("https://azure.microsoft.com/en-in/", "_blank"),
-  },
-  {
-    img: Miro,
-    route: () => window.open("https://miro.com/", "_blank"),
+    img: Microsoft,
+    route: () =>
+      window.open("https://www.microsoft.com/en-in/about/", "_blank"),
   },
   {
     img: Ibm,
-    route: () => window.open("https://www.ibm.com/in-en", "_blank"),
+    route: () => window.open("https://about.google/", "_blank"),
   },
+
+  // {
+  //   img: Tableau,
+  //   route: () => window.open("https://www.tableau.com/", "_blank"),
+  // },
+  // {
+  //   img: GoDaddy,
+  //   route: () => window.open("https://www.godaddy.com/en-in", "_blank"),
+  // },
+  // {
+  //   img: Planet,
+  //   route: () => window.open("https://www.planet.com/", "_blank"),
+  // },
+  // {
+  //   img: Azure,
+  //   route: () => window.open("https://azure.microsoft.com/en-in/", "_blank"),
+  // },
+  // {
+  //   img: Miro,
+  //   route: () => window.open("https://miro.com/", "_blank"),
+  // },
+  // {
+  //   img: Ibm,
+  //   route: () => window.open("https://www.ibm.com/in-en", "_blank"),
+  // },
 ];
 
 export const MapLogos = [
