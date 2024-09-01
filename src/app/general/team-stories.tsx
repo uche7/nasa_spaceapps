@@ -21,6 +21,25 @@ const TeamStories = () => {
     cssEase: 'ease-out',
     responsive: [
       {
+        breakpoint: 1441,
+        settings: {
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0.5rem",
+                bottom: "0px",
+                marginLeft: "6vw",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
         breakpoint: 1024,
         settings: {
           appendDots: (dots: any) => (
@@ -59,7 +78,7 @@ const TeamStories = () => {
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           speed: 1500,
           appendDots: (dots: any) => (
@@ -79,19 +98,40 @@ const TeamStories = () => {
         }
       },
       {
-        breakpoint: 360,
+        breakpoint: 376,
         settings: {
           speed: 1500,
           appendDots: (dots: any) => (
             <div
               style={{
                 height: "20px",
-                bottom: "4vh  ",
-                margin: "0 22vw 0 20vw",
+                bottom: "5vh  ",
+                margin: "0 22vw 0 22vw",
                 width: "fit-content",
                 padding: "0px",
                 listStyle: "none",
-                justifyContent: "center",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
+        breakpoint: 321,
+        settings: {
+          speed: 1500,
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                bottom: "8vh  ",
+                margin: "0 22vw 0 22vw",
+                width: "fit-content",
+                padding: "0px",
+                listStyle: "none",
               }}
             >
               <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
@@ -187,10 +227,10 @@ const TeamStories = () => {
                 />
               </div>
               <div className="md:w-1/2 w-full md:mt-4 md:text-left md:ml-[2.5rem] xl:ml-[2rem] 2xl:ml-[1rem] ml-[1rem] w-auto pt-[2rem] MobileScreen:pr-[1rem] md:pt-[0px] pr-[1rem] text-center ">
-                <p className="font-hackathoneCabinetGrotesk text-lg max-w-prose md:pt-[2.5rem] sm:pt-[2rem]">
+                <p className="font-hackathoneCabinetGrotesk text-lg max-w-prose md:pt-[2.5rem] sm:pt-[2rem] MobileScreen:pb-[2rem]">
                   {item.text}
                 </p>
-                <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red pt-[3rem] text-center md:text-left">
+                <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red sm:pt-[3rem] MobileScreen:pt-[2rem] pt-[3rem] text-center md:text-left">
                   {item.author}
                 </p>
               </div>
