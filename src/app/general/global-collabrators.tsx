@@ -54,34 +54,13 @@ const GlobalCollabrators = () => {
         </div>
         <div className="lg:w-1/2 w-full mb-[20%] mt-[3%] ml-[2rem]">
           <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
-            Global Collaborators This Year
+          NASA Space Apps
           </h1>
           <div className="mr-[3rem]">
             <p className="font-hackathoneCabinetGrotesk font-[400] text-[18px] leading-[160%]">
-              <span className="text-hackathone-font-rocket-red font-[500]">
-                This year
-              </span>
-              , the NASA International Space Apps Challenge   &nbsp;
-              <span className="text-hackathone-font-rocket-red  font-[500]">
-                Global Organizing Team
-              </span> &nbsp;
-              collaborates with   &nbsp;
-              <span className="text-hackathone-font-rocket-red font-[500]">
-                organizations
-              </span>   &nbsp;
-              from around the world to provide   &nbsp;
-              <span className="text-hackathone-font-rocket-red  font-[500]">
-                participants
-              </span>   &nbsp;
-              and/or&nbsp;
-              <span className="text-hackathone-font-rocket-red  font-[500]">
-                Local Leads
-              </span>   &nbsp;
-              with tools and resources that enable the creation of   &nbsp;
-              <span className="text-hackathone-font-rocket-red  font-[500]">
-                solutions
-              </span>
-              . These tools and resources can be used for free during the event.
+              
+            <li className="text-center text-lg font-semibold text-white bg-gray-800 p-4">NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" target="_blank">Know more</a></li>
+            <li>NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" target="_blank">Know more</a></li>
             </p>
           </div>
         </div>
