@@ -191,7 +191,7 @@ const JoinUsPage = () => {
             <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[24.57px] text-justify p-4">
               Join this 48-hour hackathon, where you'll tackle problem statements curated by NASA and other space agencies, all centred around this year’s theme, "The Sun Touches Everything," across various STEAM fields. Register now and be part of this extraordinary event!
             </p>
-            <div className="w-full flex justify-center items-center">
+            <div className="w-full flex">
               <motion.a
                 whileHover={{
                   scale: 1.07,
@@ -213,7 +213,7 @@ const JoinUsPage = () => {
                   borderColor: "white",
                 }}
                 title="Unfold The Timeline"
-                className="bg-hackathone-font-rocket-red mx-[3.6rem] flex items-center justify-center text-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[55%] h-[355] border-2 border-transparent transition-colors duration-300 ease-in-out"
+                className="bg-hackathone-font-rocket-red flex items-center justify-center text-center rounded-[6.54px] mx-[1rem] px-[2.22%] py-[11.4px] w-[55%] h-[355] border-2 border-transparent transition-colors duration-300 ease-in-out"
               >
                 <p className="font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-150 ease-out hover:text-hackathone-font-rocket-red">
                   Unfold the Timeline
