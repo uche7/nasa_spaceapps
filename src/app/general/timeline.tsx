@@ -29,7 +29,6 @@ export default function Timeline() {
 
   const desktopView = () => (
     <div
-      id="timeline"
       className="MobileScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
     md:my-[5rem] my-[3rem] min-h-screen py-2 text-hackathone-font-rocket-red"
     >
@@ -132,7 +131,6 @@ export default function Timeline() {
   );
   const tabletView = () => (
     <div
-      id="timeline"
       className="DesktopScreen:hidden MobileScreen:hidden  flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
 md:my-[5rem] my-[4rem] min-h-screen py-2 text-hackathone-font-rocket-red"
     >
@@ -237,7 +235,6 @@ md:my-[5rem] my-[4rem] min-h-screen py-2 text-hackathone-font-rocket-red"
   )
   const mobileView = () => (
     <div
-      id="timeline"
       className="DesktopScreen:hidden TabletScreen:hidden  flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
 md:my-[5rem] my-[3rem] min-h-screen py-2 text-hackathone-font-rocket-red"
     >
@@ -342,7 +339,7 @@ md:my-[5rem] my-[3rem] min-h-screen py-2 text-hackathone-font-rocket-red"
   );
 
   return (
-    <section>
+    <section id="timeline">
       {desktopView()}
       {tabletView()}
       {mobileView()}

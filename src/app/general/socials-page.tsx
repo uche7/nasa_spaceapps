@@ -54,6 +54,7 @@ const Socials = () => {
             {isClient && <TweetEmbed />}
             <a
               href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
+              target="_blank"
               className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[0.5rem] text-center inline-flex items-center me-2 mb-2"
             >
               Follow us on
@@ -86,6 +87,7 @@ const Socials = () => {
             />
             <a
               href="https://www.instagram.com/spaceappsathlone/"
+              target="_blank"
               className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[1rem] text-center inline-flex items-center me-2 mb-2"
             >
               Follow us on
@@ -109,6 +111,7 @@ const Socials = () => {
             <InPostEmbed />
             <a
               href="https://www.linkedin.com/company/spaceapps-hackathlone/"
+              target="_blank"
               className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[1rem] text-center inline-flex items-center me-2 mb-2"
             >
               Follow us on

@@ -26,7 +26,7 @@ import Turkey from "@/assets/images/general/landing-page/space-agencies/tsa_w.pn
 import Turkey_O from "@/assets/images/general/landing-page/space-agencies/turkish_round.png";
 import Cst from "@/assets/images/general/landing-page/space-agencies/cst_w.png";
 import Cst_O from "@/assets/images/general/landing-page/space-agencies/cst_round.png";
-import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_w.png";
+import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_w.svg";
 import Ssa_O from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png";
 import Microsoft from "@/assets/images/general/landing-page/collabrators/microsoft.png";
@@ -325,7 +325,7 @@ export const events = (Router: any) => [
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
     registered for a Local Event or Universal Event to participate).`,
-    route: () => Router.push("https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/"),
+    route: () => window.open("https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/", "_blank"),
   },
   {
     date: "4th October 2024:",
@@ -333,7 +333,7 @@ export const events = (Router: any) => [
     subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
     content: `Get ready for the NASA Space Apps Challenge!
      Check your Space Apps Messages, review the Participant`,
-    route: () => Router.push("/timeline#day-1"),
+    route: () => window.open("/timeline#day-1", "_blank"),
   },
   {
     date: "5th October 2024:",
@@ -342,7 +342,7 @@ export const events = (Router: any) => [
     content: `At 9:00 a.m. (local time) teams may begin 
     working on their hackathon projects. Project submission
     opens at 9:00 a.m.`,
-    route: () => Router.push("/timeline#day-2"),
+    route: () => window.open("/timeline#day-2", "_blank"),
   },
   {
     date: "6th October 2024:",
@@ -351,6 +351,6 @@ export const events = (Router: any) => [
     content: ` The hackathon ends at 11:59 p.m. (local time). 
  All projects must be submitted to the NASA Space
  Apps Challenge website by this deadline.`,
-    route: () => Router.push("/timeline#day-3"),
+    route: () => window.open("/timeline#day-3", "_blank"),
   },
 ];

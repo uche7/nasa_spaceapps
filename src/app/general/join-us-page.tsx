@@ -54,12 +54,18 @@ const JoinUsPage = () => {
             </p>
             <motion.a
               whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.5 },
+                scale: 1.07,
+                transition: { duration: 0.3 },
+                backgroundColor: "rgba(255, 0, 0, 0.8)",
+                borderColor: "white",
               }}
-              whileTap={{ scale: 0.9 }}
+              whileTap={{
+                scale: 0.9,
+                borderWidth: "3px",
+                borderColor: "white",
+              }}
               title="Unfold The Timeline"
-              className="bg-hackathone-font-rocket-red ml-[2rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40%] h-[44.31px]"
+              className="bg-hackathone-font-rocket-red ml-[2rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
               href="#timeline"
               onClick={(event) => {
                 event.preventDefault();
@@ -69,7 +75,7 @@ const JoinUsPage = () => {
                 }
               }}
             >
-              <p className="font-[700] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black">
+              <p className="font-[700] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                 Unfold the Timeline
               </p>
             </motion.a>

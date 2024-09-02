@@ -39,18 +39,18 @@ const Faq = () => {
             <Typography
               variant="h4"
               gutterBottom
-              className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red text-5xl"
+              className="lg:px-[6.8%] md:mt-[3rem] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
             >
               Frequently Asked Questions (FAQS)
             </Typography>
             <section className="flex flex-row item-center justify-between">
-              <div>
+              <div className="w-2/3">
                 {faqData.map((item, index) => (
                   <Accordion
                     key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
-                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded py-5 "
+                    className="my-6 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded py-2"
                     disableGutters
                   >
                     <AccordionSummary
@@ -65,7 +65,7 @@ const Faq = () => {
                       id={`panel${index}-header`}
                     >
                       <h1
-                        className="font-hackathoneSFProDisplay font-[300] text-[22px]"
+                        className="font-hackathoneSFProDisplay font-[300] text-[18px]"
                         style={{
                           color: expanded === index ? "yellow" : "white",
                         }}
@@ -79,7 +79,7 @@ const Faq = () => {
                   </Accordion>
                 ))}
               </div>
-              <div className="w-[230%] -mt-[100px]">
+              <div className="w-1/3 mt-[100px] translate-x-[5%]">
                 <Image src={Sun} alt={"Sun Image"}></Image>
               </div>
             </section>
@@ -103,7 +103,7 @@ const Faq = () => {
 
         <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
           <NavigationBar />
-          <div className="m-4">
+          <div className="m-8 sm:m-12">
             <Typography
               variant="h4"
               gutterBottom
