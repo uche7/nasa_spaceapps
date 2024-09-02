@@ -13,14 +13,15 @@ export const faqData = [
 
   {
     header: "Are there nearby accommodations for participants coming from outside Athlone?",
-    text: "While HackAthlone doesn’t provide accommodations, we recommend you explore nearby hotels like the Sheraton, Radisson Blu, and Glasson Lakehouse. You can also explore other BnB options in Athlone on platforms like Booking.com.
-",
-  }, {
+    text: `While HackAthlone doesn’t provide accommodations, we recommend you explore nearby hotels like the Sheraton, Radisson Blu, and Glasson Lakehouse. You can also explore other BnB options in Athlone on platforms like Booking.com.
+`,
+  }, 
+  {
     header: " What should we get to the event?",
     text: "Don’t forget your essentials like a laptop, chargers, and ID. And if you're planning to stay overnight, a sleeping bag or pillows might be a good idea.",
   }, {
-    header: "Is there a place to store personal belongings securely during the event?
-",
+    header: `Is there a place to store personal belongings securely during the event?
+`,
     text: "We don’t offer storage facilities, but if you absolutely need to keep something, reach out to the organizing team in advance via email or talk to us during the event, and we’ll do our best to help you out.",
   }, {
     header: "Are there nearby accommodations for participants coming from outside Athlone?",
