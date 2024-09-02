@@ -1,23 +1,27 @@
 export const faqData = [
   {
     header: "Where is TU Shannon located, and how do I get there?",
-    text: `TU Shannon is situated in Athlone, making it accessible from major cities like Dublin, Limerick, Cork, and Galway. You can reach the venue via bus, train, or car. If you’re coming by bus, services from Citylink, Aircoach, and Bus Éireann are convenient options. For those taking the train, the station is about 3 kilometers from TU Shannon, so a short cab or bus ride (Route ATH1 or A1) will get you to the venue. If you’re driving, there’s ample parking available on-site.
+    text: `TU Shannon is in Athlone, easily accessible by bus, train, or car from major cities like Dublin, Limerick, Cork, and Galway. In case you plan to take the train, it's a 3 km ride from the station to the venue – just grab a cab or hop on a bus (Route ATH1 or A1). You're also welcome to drive to the event.
+
 `,
   },
   {
     header: "Is there parking available at TU Shannon for participants?",
-    text: `Yes, participants can bring their vehicles, and parking is available behind the engineering building at TU Shannon. However, due to limited space, parking operates on a first-come, first-served basis. We recommend emailing the SpaceApps Athlone team in advance to reserve a parking spot to ensure availability.`,
+    text: `Yes, you can park behind the engineering building at TU Shannon. However, parking is limited, so make sure to email the SpaceApps Athlone team in advance to secure your spot.
+`,
   },
 
   {
-    header: "What facilities will be available for participants during the hackathon (e.g., Wi-Fi, rest areas)?",
-    text: "SpaceApps Athlone, also known as HackAthlone, is one of the 384 global locations participating in this year's NASA SpaceApps Challenge. Hosted by the Technology University of the Shannon, this event brings together participants for an intensive 48-hour collaboration session, addressing 25 problem statements spanning various STEAM fields. Established in 2012, the Space Apps Challenge has evolved into the world's largest annual hackathon, emphasizing teamwork and creativity. Its mission revolves around inspiring collaboration, nurturing interest in Earth and space sciences, promoting awareness of NASA's data, and fostering growth and diversity in the upcoming generation of scientists, engineers, technologists, and designers.",
+    header: "Are there nearby accommodations for participants coming from outside Athlone?",
+    text: "While HackAthlone doesn’t provide accommodations, we recommend you explore nearby hotels like the Sheraton, Radisson Blu, and Glasson Lakehouse. You can also explore other BnB options in Athlone on platforms like Booking.com.
+",
   }, {
-    header: "What is the theme of the 2023 Space Apps Challenge?",
-    text: "Participants will have access to essential facilities like high-speed Wi-Fi and state-of-the-art laboratories and workspaces. Designated areas will be provided for relaxation and storage of personal belongings, such as pillows and bags. These spaces can also be used for eating and working, but participants are expected to keep them clean.",
+    header: " What should we get to the event?",
+    text: "Don’t forget your essentials like a laptop, chargers, and ID. And if you're planning to stay overnight, a sleeping bag or pillows might be a good idea.",
   }, {
-    header: "Will there be food and beverages provided at the event?",
-    text: "=Yes, food and beverages will be provided throughout the event. Participants will receive dinner on the first day, all three meals on the second day, and breakfast and lunch on the third day. Additionally, tea, coffee, and other refreshments like snacks will be available continuously during the event.",
+    header: "Is there a place to store personal belongings securely during the event?
+",
+    text: "We don’t offer storage facilities, but if you absolutely need to keep something, reach out to the organizing team in advance via email or talk to us during the event, and we’ll do our best to help you out.",
   }, {
     header: "Are there nearby accommodations for participants coming from outside Athlone?",
     text: "While the SpaceApps Athlone team does not provide accommodations, several nearby hotels are recommended, including Sheraton Hotel, Radisson Blu Hotel, and Glasson Lakehouse. Participants seeking accommodations can also explore other B&B options in Athlone through platforms like bookings.com.",
