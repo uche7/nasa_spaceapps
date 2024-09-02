@@ -59,7 +59,7 @@ const GlobalCollabrators = () => {
           <div className="mr-[3rem]">
             <p className="font-hackathoneCabinetGrotesk font-[400] text-[18px] leading-[160%]">
               
-            <li className="text-center text-lg font-semibold text-white bg-gray-800 p-4">NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" target="_blank">Know more</a></li>
+            <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" target="_blank">Know more</a></li>
             <li>NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" target="_blank">Know more</a></li>
             </p>
           </div>
@@ -78,35 +78,9 @@ const GlobalCollabrators = () => {
             Global Collaborators This Year
           </h1>
           <p className="font-hackathoneCabinetGrotesk font-[400] text-[26px] leading-[223.34%]">
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              This year
-            </span>
-            <span>
-              , the NASA International Space Apps Challenge</span>
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              Global Organizing Team
-            </span>
-
-            <span>  collaborates with</span>
-
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              organizations
-            </span>
-            from around the world to provide
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              participants
-            </span>
-
-            <span>
-              and /or</span>
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              Local Leads
-            </span>
-            with tools and resources that enable the creation of
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              solutions
-            </span>
-            . These tools and resources can be used for free during the event.
+            
+          <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" target="_blank">Know more</a></li>
+          <li>NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" target="_blank">Know more</a></li>
 
           </p>
         </div>
@@ -127,30 +101,9 @@ const GlobalCollabrators = () => {
             Global Collaborators This Year
           </h1>
           <p className="font-hackathoneCabinetGrotesk font-[400] text-[16px] leading-[173.34%]">
-            <span className="text-hackathone-font-rocket-red font-[500]">
-              This year
-            </span>
-            , the NASA International Space Apps Challenge  &nbsp;
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              Global Organizing Team
-            </span>
-            collaborates with  &nbsp;
-            <span className="text-hackathone-font-rocket-red font-[500]">
-              organizations
-            </span>  &nbsp;
-            from around the world to provide
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              participants
-            </span>  &nbsp;
-            and/or
-            <span className="text-hackathone-font-rocket-red font-[500]">
-              Local Leads
-            </span>  &nbsp;
-            with tools and resources that enable the creation of  &nbsp;
-            <span className="text-hackathone-font-rocket-red  font-[500]">
-              solutions
-            </span>
-            . These tools and resources can be used for free during the event.
+          <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" target="_blank">Know more</a></li>
+          <li>NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" target="_blank">Know more</a></li>
+           
           </p>
         </div>
         <div>
