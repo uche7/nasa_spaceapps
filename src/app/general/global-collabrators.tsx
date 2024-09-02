@@ -49,19 +49,19 @@ const GlobalCollabrators = () => {
       //   </div>
       // </div>
       <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-row gap-[36px] mx-[8.06%] mt-[8rem]">
-        <div className="lg:w-1/2 w-full text-center">
+        <div className="lg:w-1/2 w-full text-center justify-center items-center mt-[5rem] mr-[2rem]">
           <CollabratorsSlider />
         </div>
-        <div className="lg:w-1/2 w-full mb-[20%] mt-[3%] ml-[2rem]">
+        <div className="lg:w-1/2 w-full mb-[20%] mt-[3%]">
           <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
-          NASA Space Apps
+            NASA Space Apps
           </h1>
-          <div className="mr-[3rem]">
-            <p className="font-hackathoneCabinetGrotesk font-[400] text-[18px] leading-[160%]">
-              
-            <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" target="_blank">Know more</a></li>
-            <li>NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" target="_blank">Know more</a></li>
-            </p>
+          <div className="mr-[2rem] font-hackathoneCabinetGrotesk font-[400] text-[18px] leading-[160%]">
+            <p className="">The NASA Space Apps Challenge is backed by NASA's Earth Science Division through collaborations with Booz Allen Hamilton, Mindgrub, and SecondMuse. This year’s hackathon theme is funded by NASA’s Heliophysics Division in celebration of the Helio Big Year.</p>
+            <ul className="list-disc pl-[2rem] pt-[2rem]">
+              <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" className="underline text-hackathone-font-rocket-red font-[600]" target="_blank">(Know more)</a></li>
+              <li className="lg:pt-[1rem] pt-[0.5rem]">NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" className="underline text-hackathone-font-rocket-red font-[600]" target="_blank">(Know more)</a></li>
+            </ul>
           </div>
         </div>
 
@@ -75,17 +75,17 @@ const GlobalCollabrators = () => {
       <div className="DesktopScreen:hidden MobileScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[4.34%]">
         <div className="">
           <h1 className="font-[700] text-[32.99px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
-            Global Collaborators This Year
+            NASA Space Apps
           </h1>
-          <p className="font-hackathoneCabinetGrotesk font-[400] text-[26px] leading-[223.34%]">
-            
-          <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" target="_blank">Know more</a></li>
-          <li>NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" target="_blank">Know more</a></li>
-
-          </p>
+          <div className="font-hackathoneCabinetGrotesk text-slate-50 font-[500]">
+            <p className="">The NASA Space Apps Challenge is backed by NASA's Earth Science Division through collaborations with Booz Allen Hamilton, Mindgrub, and SecondMuse. This year’s hackathon theme is funded by NASA’s Heliophysics Division in celebration of the Helio Big Year.</p>
+            <ul className="list-disc px-[3rem] pt-[2rem]">
+              <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" className="underline text-hackathone-font-rocket-red font-[600]" target="_blank">(Know more)</a></li>
+              <li className="pt-[1rem]">NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" className="underline text-hackathone-font-rocket-red font-[600]" target="_blank">(Know more)</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-
+        <div className="md:w-[60%] w-[70%]">
           <CollabratorsSlider />
         </div>
       </div>
@@ -98,15 +98,17 @@ const GlobalCollabrators = () => {
       <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[1.2rem]">
         <div>
           <h1 className="text-[30.99px] leading-[34.62px] font-[800] text-hackathone-font-rocket-red font-hackathoneCabinetGrotesk pb-[2rem]">
-            Global Collaborators This Year
+            NASA Space Apps
           </h1>
-          <p className="font-hackathoneCabinetGrotesk font-[400] text-[16px] leading-[173.34%]">
-          <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" target="_blank">Know more</a></li>
-          <li>NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" target="_blank">Know more</a></li>
-           
-          </p>
+          <div>
+            <p className="">The NASA Space Apps Challenge is backed by NASA's Earth Science Division through collaborations with Booz Allen Hamilton, Mindgrub, and SecondMuse. This year’s hackathon theme is funded by NASA’s Heliophysics Division in celebration of the Helio Big Year.</p>
+            <ul className="list-disc pl-[3rem] pr-[2rem] pt-[2rem]">
+              <li>NASA's Heliophysics Division studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability. <a href="https://science.nasa.gov/heliophysics/" className="underline text-hackathone-font-rocket-red font-[600]" target="_blank">(Know more)</a></li>
+              <li className="pt-[1rem]">NASA's Earth Science Division (ESD) uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet. <a href="https://science.nasa.gov/earth-science" className="underline text-hackathone-font-rocket-red font-[600]" target="_blank">(Know more)</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
+        <div className="translate-y-[-10%]">
           <CollabratorsSlider />
         </div>
       </div>

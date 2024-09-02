@@ -35,13 +35,14 @@ export const AgenciesSlider = () => {
 
             >
               <Image
-                className="cursor-pointer transform transition-transform duration-300 lg:hover:scale-125 hover:scale-110 sm:w-[80px] lg:min-h-[25px]"
+                className="cursor-pointer transform transition-transform duration-300 lg:hover:scale-125 hover:scale-110 sm:w-[80px] lg:min-h-[20px]"
                 src={imgSrcs[index]}
                 width={120}
                 height={120}
                 alt={"Agencies Icon"}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
+                onClick={item.route}
               />
             </div>
           );

@@ -33,7 +33,7 @@ const SpaceAgencies = () => {
           <h1 className="font-[700] text-[32.99px] text-hackathone-font-rocket-red my-2">
             Space Agencies
           </h1>
-          <p className="font-hackathoneCabinetGrotesk font-[600] text-[18px] leading-[30.57px] pr-[12.7%]">
+          <p className="font-hackathoneCabinetGrotesk font-[400] text-[18px] leading-[30.57px] pr-[12.7%]">
             <span className="text-hackathone-font-rocket-red font-[600]">NASA</span> teamed up with 13 space agency partners in 2023. This year, they’ve expanded to <span className="text-hackathone-font-rocket-red font-[600]">15 agencies</span> to bring the largest global hackathon to communities worldwide! Together with <span className="text-hackathone-font-rocket-red font-[600]">NASA’s Earth Science Division</span>, these agencies have crafted unique problem statements across various domains, from agrotech and biotech to software, the arts, and more. They provide access to data and resources related to Earth observations to help participants tackle these challenges.
           </p>
         </div>
@@ -57,7 +57,7 @@ const SpaceAgencies = () => {
           <span className="text-hackathone-font-rocket-red font-[500]">NASA</span> teamed up with 13 space agency partners in 2023. This year, they’ve expanded to <span className="text-hackathone-font-rocket-red font-[500]">15 agencies</span> to bring the largest global hackathon to communities worldwide! Together with <span className="text-hackathone-font-rocket-red font-[500]">NASA’s Earth Science Division</span>, these agencies have crafted unique problem statements across various domains, from agrotech and biotech to software, the arts, and more. They provide access to data and resources related to Earth observations to help participants tackle these challenges.
 
         </p>
-        <div className="w-full mb-[20%]">
+        <div className="w-full mb-[20%] mt-[1.5rem]">
           <AgenciesSlider />
         </div>
       </div>

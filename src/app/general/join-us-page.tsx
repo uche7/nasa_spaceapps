@@ -54,12 +54,18 @@ const JoinUsPage = () => {
             </p>
             <motion.a
               whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.5 },
+                scale: 1.07,
+                transition: { duration: 0.3 },
+                backgroundColor: "rgba(255, 0, 0, 0.8)",
+                borderColor: "white",
               }}
-              whileTap={{ scale: 0.9 }}
+              whileTap={{
+                scale: 0.9,
+                borderWidth: "3px",
+                borderColor: "white",
+              }}
               title="Unfold The Timeline"
-              className="bg-hackathone-font-rocket-red ml-[2rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40%] h-[44.31px]"
+              className="bg-hackathone-font-rocket-red ml-[2rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[40%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
               href="#timeline"
               onClick={(event) => {
                 event.preventDefault();
@@ -69,7 +75,7 @@ const JoinUsPage = () => {
                 }
               }}
             >
-              <p className="font-[700] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black">
+              <p className="font-[700] text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
                 Unfold the Timeline
               </p>
             </motion.a>
@@ -152,12 +158,12 @@ const JoinUsPage = () => {
   /** Mobile View */
   const mobileView = () => {
     return (
-      <div className="TabletScreen:hidden DesktopScreen:hidden mt-[90.79px] mx-[1.2rem] mb-[122.68px] text-justify">
-        <div className="mb-[22.68px]">
+      <div className="TabletScreen:hidden DesktopScreen:hidden mt-[90.79px] mx-[1.2rem] mb-[122.68px]">
+        <div className="mb-[22.68px] text-start">
           <h3 className="mt-[0.5rem] font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-[800] text-[30.99px] leading-[34.62px]">
             The Hackathon Challenge will be kicking off soon
           </h3>
-          <p className="font-hackathoneSFProDisplay font-[500] text-slate-50 text-[16.72px] leading-[24.57px] mt-[9.81px] mb-4">
+          <p className="font-hackathoneSFProDisplay font-[500] text-slate-50 text-[16.72px] leading-[24.57px] mt-[9.81px] mb-4 text-justify">
             Join us on
             <span className="font-bold text-[18px] text-hackathone-font-rocket-red"> October 4-6, 2024</span> for the largest annual space & sciences
             hackathon in the world!
@@ -168,7 +174,7 @@ const JoinUsPage = () => {
             alt={"HackathoneChallenge"}
           ></Image>
         </div>
-        <div className="mt-[2rem] ">
+        <div className="mt-[2rem]">
           <div className="rounded-[13.09px] p-1 border-2 text-justify">
             <div className="p-2">
               <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[24.57px] p-4">
@@ -207,7 +213,7 @@ const JoinUsPage = () => {
                   borderColor: "white",
                 }}
                 title="Unfold The Timeline"
-                className="bg-hackathone-font-rocket-red mx-[3.6rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[55%] h-[355] border-2 border-transparent transition-colors duration-300 ease-in-out"
+                className="bg-hackathone-font-rocket-red mx-[3.6rem] flex items-center justify-center text-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[55%] h-[355] border-2 border-transparent transition-colors duration-300 ease-in-out"
               >
                 <p className="font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-150 ease-out hover:text-hackathone-font-rocket-red">
                   Unfold the Timeline
