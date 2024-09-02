@@ -241,7 +241,7 @@ const Itinerary: React.FC = () => {
                                                         <Typography
                                                             variant="h6"
                                                             component="h1"
-                                                            className="p-2 rounded-lg md:text-[1rem] text-[14px] font-extrabold text-black text-center"
+                                                            className="p-2 rounded-lg md:text-[1rem] text-[14px] font-extrabold text-black text-center MobileScreen:text-start MobileScreen:pl-[1rem]"
                                                             style={{
                                                                 backgroundColor: "rgb(234 254 7)",
                                                             }}
@@ -252,7 +252,7 @@ const Itinerary: React.FC = () => {
                                                     </Paper>
                                                     <Paper
                                                         elevation={3}
-                                                        className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out"
+                                                        className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-[2.5rem] MobileScreen:mb-[2.5rem] MobileScreen:mt-[1rem]"
                                                         style={{
                                                             backgroundColor: "#1e1e1e",
                                                         }}
@@ -260,13 +260,13 @@ const Itinerary: React.FC = () => {
                                                         <Typography
                                                             variant="h6"
                                                             component="h1"
-                                                            className="md:text-xl text-[18px] font-bold text-hackathone-font-rocket-red text-center lg:whitespace-nowrap"
+                                                            className="md:text-xl text-[18px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-start lg:whitespace-nowrap"
                                                         >
                                                             {item.title}
                                                         </Typography>
                                                         <Typography
                                                             variant="body1"
-                                                            className="text-center text-white pt-[0.5rem]"
+                                                            className="text-center MobileScreen:text-start text-white pt-[0.5rem]"
                                                         >
                                                             {item.content}
                                                         </Typography>

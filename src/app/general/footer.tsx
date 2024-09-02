@@ -264,9 +264,9 @@ const Footer = () => {
         <div className="w-full">
           <hr className="w-[92%] mx-auto" />
           <div className="flex flex-col sm:flex-row sm:flex items-center justify-between px-[5%]">
-            <p className="font-firaSans text-center py-3">
+            {/* <p className="font-firaSans text-center py-3">
               Copyright ©2024 NASA
-            </p>
+            </p> */}
             {/* <p className="font-overpass text-center py-3">
               Developed by{" "}
               <span>
