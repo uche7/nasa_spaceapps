@@ -1,9 +1,7 @@
 export const faqData = [
   {
     header: "Where is TU Shannon located, and how do I get there?",
-    text: `TU Shannon is in Athlone, easily accessible by bus, train, or car from major cities like Dublin, Limerick, Cork, and Galway. In case you plan to take the train, it's a 3 km ride from the station to the venue – just grab a cab or hop on a bus (Route ATH1 or A1). You're also welcome to drive to the event.
-
-`,
+    text: "TU Shannon is in Athlone, easily accessible by bus, train, or car from major cities like Dublin, Limerick, Cork, and Galway. In case you plan to take the train, it's a 3 km ride from the station to the venue – just grab a cab or hop on a bus (Route ATH1 or A1). You're also welcome to drive to the event.",
   },
   {
     header: "Is there parking available at TU Shannon for participants?",
