@@ -41,7 +41,7 @@ const Faq = () => {
               gutterBottom
               className="lg:px-[6.8%] md:mt-[3rem] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
             >
-              Frequently Asked Questions (FAQS)
+              Frequently Asked Questions (FAQs)
             </Typography>
             <section className="flex flex-row item-center justify-between">
               <div className="w-2/3">
@@ -68,6 +68,7 @@ const Faq = () => {
                         className="font-hackathoneSFProDisplay font-[300] text-[18px]"
                         style={{
                           color: expanded === index ? "yellow" : "white",
+                          fontWeight: expanded === index ? "bold" : "normal",
                         }}
                       >
                         {item.header}
@@ -136,6 +137,7 @@ const Faq = () => {
                         className="font-hackathoneSFProDisplay font-[300] text-[18px]"
                         style={{
                           color: expanded === index ? "yellow" : "white",
+                          fontWeight: expanded === index ? "bold" : "normal",
                         }}
                       >
                         {item.header}
