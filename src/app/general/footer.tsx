@@ -309,48 +309,14 @@ const Footer = () => {
   const tabletView = () => {
     return (
       <div className="h-full py-2 flex flex-col justify-evenly w-full gap-4 text-[#F6F4F4] MobileScreen:hidden DesktopScreen:hidden">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-evenly text-[14px] gap-1 px-[5%] py-[1%] ">
-          <div className="flex flex-col gap-8 lg:gap-12 items-center justify-evenly">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-evenly text-[14px] gap-1 px-[5%] py-[1%]">
+          <div className="flex flex-col gap-8 items-center">
             <div className="">
               <a className="cursor-pointer" href="/">
-                <Image width={400} src={HeroImage} alt="Hero Image" />
+                <Image width={300} src={HeroImage} alt="Hero Image" />
               </a>
-              {/* <p className="w-[80%] sm:w-[62%] lg:w-[220px] text-justify leading-snug font-overpass font-normal mt-1 mb-6">
-                Space Apps is funded by NASA&apos;s{" "}
-                <span className="font-semibold">
-                  <a
-                    className="text-[#2E96F5] no-underline"
-                    href="https://science.nasa.gov/earth-science"
-                  >
-                    Earth Science Division
-                  </a>
-                </span>{" "}
-                through a contract with{" "}
-                <a
-                  className="font-semibold text-[#2E96F5] no-underline"
-                  href="https://www.boozallen.com/"
-                >
-                  Booz Allen Hamilton
-                </a>
-                ,{" "}
-                <a
-                  className="font-semibold text-[#2E96F5] no-underline"
-                  href="https://www.mindgrub.com/"
-                >
-                  Mindgrub
-                </a>
-                , and{" "}
-                <a
-                  className="font-semibold text-[#2E96F5] no-underline"
-                  href="https://www.secondmuse.com/"
-                >
-                  SecondMuse
-                </a>
-                .
-              </p> */}
             </div>
-
-            <div className="flex gap-3 relative right-1 flex-row items-center justify-between mb-6 ">
+            <div className="flex gap-3 relative right-1 flex-row items-center justify-between">
               <a href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
                 target="_blank">
                 <Image
@@ -586,17 +552,6 @@ const Footer = () => {
                 rel="noreferrer"
               >Resources</a>
             </p>
-            {/* <p className="font-overpass text-center py-3">
-              Developed by{" "}
-              <span>
-                <a
-                  className="font-firaSans tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
-                  href="https://www.linkedin.com/in/nnajiofor-uchenna-746a1b256/"
-                >
-                  Nnajiofor Uchenna
-                </a>
-              </span>
-            </p> */}
           </div>
         </div>
       </div>
@@ -605,15 +560,14 @@ const Footer = () => {
   const mobileView = () => {
     return (
       <div className="h-full py-2 flex flex-col justify-evenly w-full gap-4 text-[#F6F4F4] TabletScreen:hidden DesktopScreen:hidden">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-evenly text-[14px] gap-1 px-[5%] py-[1%] ">
-          <div className="flex flex-col gap-8 lg:gap-12 items-center justify-evenly">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-evenly text-[14px] gap-1 px-[5%] py-[1%]">
+          <div className="flex flex-col gap-8 items-center justify-evenly">
             <div className="">
               <a className="cursor-pointer" href="/">
-                <Image width={400} src={HeroImage} alt="Hero Image" />
+                <Image width={180} src={HeroImage} alt="Hero Image" />
               </a>
             </div>
-
-            <div className="flex gap-3 relative right-1 flex-row items-center justify-between mb-6 ">
+            <div className="flex gap-3 relative right-1 flex-row items-center justify-between">
               <a href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
                 target="_blank">
                 <Image
@@ -656,7 +610,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:flex lg:flex-row lg:items-start w-full  lg:justify-evenly grid grid-cols-2">
-            <div className="mt-4 lg:mt-4">
+            <div className="mt-4">
               <h3 className="font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-4 text-hackathone-font-rocket-red">
                 Participation Kit
               </h3>
@@ -822,7 +776,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         <div className="w-full">
           <hr className="w-[92%] mx-auto" />
           <div className="flex flex-col sm:flex-row sm:flex items-center justify-between px-[5%]">
@@ -849,17 +802,6 @@ const Footer = () => {
                 rel="noreferrer"
               >Resources</a>
             </p>
-            {/* <p className="font-overpass text-center py-3">
-              Developed by{" "}
-              <span>
-                <a
-                  className="font-firaSans tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
-                  href="https://www.linkedin.com/in/nnajiofor-uchenna-746a1b256/"
-                >
-                  Nnajiofor Uchenna
-                </a>
-              </span>
-            </p> */}
           </div>
         </div>
       </div>
@@ -868,9 +810,9 @@ const Footer = () => {
 
   return (
     <section>
-      {desktopView()};
-      {tabletView()};
-      {mobileView()};
+      {desktopView()}
+      {tabletView()}
+      {mobileView()}
     </section>
   );
 };
