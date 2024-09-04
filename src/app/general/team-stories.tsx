@@ -21,6 +21,87 @@ const TeamStories = () => {
     cssEase: 'ease-out',
     responsive: [
       {
+        breakpoint: 2250,
+        settings: {
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0.5rem",
+                bottom: "0px",
+                marginLeft: "4vw",
+                listStyle: "none",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
+        breakpoint: 1900,
+        settings: {
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0.5rem",
+                bottom: "0px",
+                marginLeft: "4.5vw",
+                listStyle: "none",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
+        breakpoint: 1800,
+        settings: {
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0.5rem",
+                bottom: "0px",
+                marginLeft: "5vw",
+                listStyle: "none",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
+        breakpoint: 1540,
+        settings: {
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0.5rem",
+                bottom: "0px",
+                marginLeft: "5.5vw",
+                padding: "0px",
+                listStyle: "inside",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "inside", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
         breakpoint: 1441,
         settings: {
           appendDots: (dots: any) => (
@@ -30,6 +111,46 @@ const TeamStories = () => {
                 top: "0.5rem",
                 bottom: "0px",
                 marginLeft: "6vw",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "inside", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
+        breakpoint: 1300,
+        settings: {
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0.5rem",
+                bottom: "0px",
+                marginLeft: "7vw",
+                listStyle: "none",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
+        breakpoint: 1140,
+        settings: {
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0.5rem",
+                bottom: "0px",
+                marginLeft: "8vw",
+                listStyle: "none",
               }}
             >
               <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
@@ -153,11 +274,9 @@ const TeamStories = () => {
                 margin: "0 22vw 0 28vw",
                 width: "fit-content",
                 padding: "0px",
-                listStyle: "none",
-                justifyContent: "center",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "inside", display: "flex", justifyContent: "center" }}>
                 {dots}
               </ul>
             </div>
@@ -186,17 +305,17 @@ const TeamStories = () => {
     appendDots: (dots: any) => (
       <div
         style={{
+          //Default view for screen > 2250px
           position: "absolute",
           height: "20px",
-          top: "0",
+          top: "0.5rem",
           bottom: "0px",
-          transform: "translateX(-50%)",
-          marginLeft: "78vw",
+          marginLeft: "3vw",
           padding: "0px",
           listStyle: "none",
         }}
       >
-        <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex" }}>
+        <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
           {dots}
         </ul>
       </div>
