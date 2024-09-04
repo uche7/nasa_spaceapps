@@ -33,16 +33,15 @@ const Itinerary: React.FC = () => {
                     {schedule.map((day: DaySchedule, dayIndex: number) => {
                         const dayDate = new Date(startDate);
                         dayDate.setDate(startDate.getDate() + dayIndex);
-
                         return (
                             <section key={dayIndex} id={`day-${dayIndex + 1}`} className="mb-16">
                                 <div className="flex items-center mb-10">
-                                    <Tooltip text="Back to Home">
+                                    <Tooltip text="Back to Timeline">
                                         <IconButton
                                             variant="contained"
                                             size="large"
                                             color="primary"
-                                            onClick={() => router.push("/")}
+                                            onClick={() => router.push("/#timeline")}
                                             className="mr-4 text-white hover:text-hackathone-font-rocket-red"
                                             edge="start"
                                             sx={{
@@ -167,12 +166,12 @@ const Itinerary: React.FC = () => {
                         return (
                             <section key={dayIndex} id={`day-${dayIndex + 1}`} className="mb-16">
                                 <div className="flex flex-row items-center text-center justify-center TabletScreen:mb-10 mb-4">
-                                    <div className='TabletScreen:w-[20%] TabletScreen:text-left'>
+                                    <div className='TabletScreen:w-[20%] TabletScreen:text-left MobileScreen:flex MobileScreen:flex-row MobileScreen:w-full MobileScreen:ml-[2rem]'>
                                         <IconButton
                                             variant="contained"
-                                            size="large"
+                                            size="medium"
                                             color="primary"
-                                            onClick={() => router.push("/")}
+                                            onClick={() => router.push("/#timeline")}
                                             className="mr-4 object-left text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden"
                                             edge="start"
                                             sx={{
@@ -188,8 +187,41 @@ const Itinerary: React.FC = () => {
                                         >
                                             <ChevronLeftIcon sx={{ fontSize: 'inherit' }} />
                                         </IconButton>
+                                        {/*Button Sizing for Mobile Screen*/}
+                                        <IconButton
+                                            variant="contained"
+                                            size="small"
+                                            color="primary"
+                                            onClick={() => router.push("/#timeline")}
+                                            className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden"
+                                            edge="start"
+                                            sx={{
+                                                width: '2.5rem',
+                                                height: '2.5rem',
+                                                fontSize: '2.5rem',
+                                                position: 'relative',
+                                                top: '0',
+                                                left: '-0.5rem',
+                                            }}
+                                            aria-label="back to home"
+                                        >
+                                            <ChevronLeftIcon
+                                                sx={{
+                                                    fontSize: '2.5rem'
+                                                }} />
+                                        </IconButton>
+                                        <Typography
+                                            variant="h3"
+                                            component="h1"
+                                            className="text-3xl font-hackathoneCabinetGrotesk font-bold text-hackathone-font-rocket-red text-start TabletScreen:hidden sm:text-[3.5rem] pl-4"
+                                        >
+                                            <span className='MobileScreen:whitespace-pre'>{" "}{day.title}</span>
+                                            <span className='text-2xl text-white sm:text-[32.99px] MobileScreen:whitespace-pre'>
+                                                {"\n (" + formatDate(dayDate) + "'24)"}
+                                            </span>
+                                        </Typography>  {/*Header for Mobile Screen*/}
                                     </div>
-                                    <div className='TabletScreen:w-[90%] TabletScreen:flex TabletScreen:text-center TabletScreen:justify-center TabletScreen:items-center'>
+                                    <div className='TabletScreen:w-[90%] TabletScreen:flex TabletScreen:text-center TabletScreen:justify-center TabletScreen:items-center MobileScreen:hidden'>
                                         <Typography
                                             variant="h3"
                                             component="h1"
@@ -233,7 +265,7 @@ const Itinerary: React.FC = () => {
                                                 <TimelineContent>
                                                     <Paper
                                                         elevation={3}
-                                                        className="h-[2.5rem] TabletScreen:mx-[15%]"
+                                                        className="h-[2.5rem] TabletScreen:mx-[15%]  MobileScreen:w-[80%] MobileScreen:h-fit"
                                                         style={{
                                                             backgroundColor: "rgb(234 254 7)",
                                                         }}
