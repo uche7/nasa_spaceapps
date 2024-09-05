@@ -14,7 +14,6 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Sun from "@/assets/images/faq-page/sun - Copy.png";
 
-
 const Faq = () => {
   const [expanded, setExpanded] = useState<number | false>(false);
 
@@ -104,13 +103,13 @@ const Faq = () => {
 
         <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
           <NavigationBar />
-          <div className="m-8 sm:m-12">
+          <div className="m-8 MobileScreen:m-4">
             <Typography
               variant="h4"
               gutterBottom
               className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
             >
-              Frequently Asked Questions (FAQS)
+              Frequently Asked Questions (FAQs)
             </Typography>
             <section>
               <div>
@@ -134,7 +133,7 @@ const Faq = () => {
                       id={`panel${index}-header`}
                     >
                       <h1
-                        className="font-hackathoneSFProDisplay font-[300] text-[18px]"
+                        className="font-hackathoneSFProDisplay font-[300] text-[14px]"
                         style={{
                           color: expanded === index ? "yellow" : "white",
                           fontWeight: expanded === index ? "bold" : "normal",
@@ -144,7 +143,7 @@ const Faq = () => {
                       </h1>
                     </AccordionSummary>
                     <AccordionDetails className="pr-[2rem]">
-                      <Typography>{item.text}</Typography>
+                      <p className="text-[14px]">{item.text}</p>
                     </AccordionDetails>
                   </Accordion>
                 ))}

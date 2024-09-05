@@ -36,7 +36,7 @@ const config: Config = {
         md: "768.1px",
         // => @media (min-width: 768px) { ... }
 
-        lg: "1024px",
+        lg: "1024.5px",
         // => @media (min-width: 1024px) { ... }
 
         xl: "1280px",
