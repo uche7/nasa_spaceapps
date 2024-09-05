@@ -52,6 +52,9 @@ const HeroPage = () => {
                   stiffness: 200,
                   repeat: Infinity, 
                   repeatType: "reverse",
+                  backgroundColor: {
+                    duration: 0.1, // Faster background color transition
+                  },
                 }
               }}
               whileTap={{
