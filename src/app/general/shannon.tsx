@@ -119,7 +119,7 @@ const Shannon = () => {
                 <Image
                   className="rounded-2xl lg:h-[400px] h-[300px] w-full object-cover"
                   src={item.img}
-                  alt={"Shannon"}
+                  alt={"Shannon Image"}
                 />
               </div>
             ))}
