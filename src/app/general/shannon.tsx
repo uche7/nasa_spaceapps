@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import MapSection from "@/assets/images/general/landing-page/map_section.jpg";
+import Slider from "react-slick";
+import { shannonData } from "./general.dto";
 
 const fadeIn = (
   direction: "left" | "right" | "up" | "down",
@@ -27,6 +28,20 @@ const fadeIn = (
   },
 });
 
+const settings = {
+  dots: true,
+  fade: true,
+  infinite: true,
+  speed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
+  adaptiveHeight: true,
+  cssEase: "ease-out",
+};
+
 /** Shannon Technology University */
 const Shannon = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -37,7 +52,6 @@ const Shannon = () => {
 
   const sharedView = () => (
     <>
-
       <div className="px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-6">
         <div className="lg:w-1/2 w-full flex items-center justify-center mt-[1.5rem] mr-[1rem] MobileScreen:mt-[0.5rem]">
           <div className="MobileScreen:px-[0px]">
@@ -60,7 +74,15 @@ const Shannon = () => {
                 onAnimationComplete={handleAnimationComplete}
                 className="my-4 text-base sm:text-lg md:text-lg md:mb-[1rem] sm:mb-[1rem] font-hackathoneCabinetGrotesk font-[500] text-slate-50 leading-relaxed MobileScreen:leading-[30.57px] pr-[20%] MobileScreen:pr-[1rem]"
               >
-                The NASA SpaceApps Challenge 2024 is happening in the heart of Ireland, Athlone, with the Technological University of the Shannon hosting this in-person hackathon. Renowned for its innovation and technological excellence, the university educates and inspires over <span className="font-semibold text-hackathone-font-rocket-red">7,000 students</span>, making it the perfect venue for this prestigious event.
+                The NASA SpaceApps Challenge 2024 is happening in the heart of
+                Ireland, Athlone, with the Technological University of the
+                Shannon hosting this in-person hackathon. Renowned for its
+                innovation and technological excellence, the university educates
+                and inspires over{" "}
+                <span className="font-semibold text-hackathone-font-rocket-red">
+                  7,000 students
+                </span>
+                , making it the perfect venue for this prestigious event.
               </motion.p>
 
               <motion.div
@@ -72,10 +94,10 @@ const Shannon = () => {
               >
                 As the venue partner, the university also offers resources like:
                 <ul className="list-disc py-[1rem] pl-[2.5rem] MobileScreen:py-[0.5rem]">
-                  <li>Hack Shops</li>
-                  <li>Hack Labs equipped with hardware and software tools</li>
-                  <li>3D printers</li>
-                  <li>VR headsets</li>
+                  <li>Hackshop</li>
+                  <li>Software, mechanical and electrical labs</li>
+                  <li>PLA / Resin 3D printers</li>
+                  <li> XR headsets like Meta Quest and Hololens</li>
                 </ul>
                 and more to support your creative projects.
               </motion.div>
@@ -91,14 +113,18 @@ const Shannon = () => {
             referrerPolicy="no-referrer-when-downgrade"
             className="rounded-2xl lg:h-[400px] h-[300px] w-full mb-4" // Added mb-4 for gap
           ></iframe>
-          <Image
-            className="rounded-2xl lg:h-[400px] h-[300px] w-full object-cover"
-            src={MapSection}
-            alt={"MapSection"}
-          ></Image>
+          <Slider {...settings}>
+            {shannonData.map((item, index) => (
+              <div key={index}>
+                <Image
+                  className="rounded-2xl lg:h-[400px] h-[300px] w-full object-cover"
+                  src={item.img}
+                  alt={"Shannon"}
+                />
+              </div>
+            ))}
+          </Slider>
         </div>
-
-
       </div>
     </>
   );

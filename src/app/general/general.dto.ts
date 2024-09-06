@@ -41,12 +41,17 @@ import Tus1 from "@/assets/images/general/landing-page/mapping-images/tus1.jpg";
 import Tus2 from "@/assets/images/general/landing-page/mapping-images/tus2.jpg";
 import Tus3 from "@/assets/images/general/landing-page/mapping-images/tus3.jpg";
 import Tus4 from "@/assets/images/general/landing-page/mapping-images/tus4.jpg";
-import Antriksh from "@/assets/images/general/landing-page/team_section/antriksh.png"
-import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis_go.png"
-import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.png"
-import HelpKelp from "@/assets/images/general/landing-page/team_section/help-kelp.png"
-import IDontThink from "@/assets/images/general/landing-page/team_section/idontthink.png"
-import Ms from "@assets/images/general/landing-page/collabrators/ms.png";
+import Antriksh from "@/assets/images/general/landing-page/team_section/antriksh.png";
+import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis_go.png";
+import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.png";
+import HelpKelp from "@/assets/images/general/landing-page/team_section/help-kelp.png";
+import IDontThink from "@/assets/images/general/landing-page/team_section/idontthink.png";
+import Ms from "@/assets/images/general/landing-page/collabrators/ms.png";
+import HackathloneChallenge from "@/assets/images/general/landing-page/hackathlone_challenge.jpg";
+import Machine from "@/assets/images/general/landing-page/machine.jpg";
+import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_collab_section.jpg";
+import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
+import Office from "@/assets/images/general/landing-page/office.jpg";
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
   new Date().toLocaleString("en-US", {
@@ -56,9 +61,9 @@ const currentDateInIrishTime = new Date(
 
 // Format the date as '27th August 2024'
 const options = {
-  day: "numeric" as const,   // Use 'numeric' for the day
-  month: "long" as const,    // Use 'long' for the full month name
-  year: "numeric" as const,  // Use 'numeric' for the year
+  day: "numeric" as const, // Use 'numeric' for the day
+  month: "long" as const, // Use 'long' for the full month name
+  year: "numeric" as const, // Use 'numeric' for the year
 };
 const formattedDate = currentDateInIrishTime.toLocaleString("en-IE", options);
 
@@ -325,7 +330,11 @@ export const events = (Router: any) => [
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
     registered for a Local Event or Universal Event to participate).`,
-    route: () => window.open("https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/", "_blank"),
+    route: () =>
+      window.open(
+        "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
+        "_blank"
+      ),
   },
   {
     date: "4th October 2024:",
@@ -338,7 +347,8 @@ export const events = (Router: any) => [
   {
     date: "5th October 2024:",
     title: "Day 2",
-    subtitle: "Connect with industry experts: Get tips and feedback for your project",
+    subtitle:
+      "Connect with industry experts: Get tips and feedback for your project",
     content: `At 9:00 a.m. (local time) teams may begin 
     working on their hackathon projects. Project submission
     opens at 9:00 a.m.`,
@@ -347,10 +357,29 @@ export const events = (Router: any) => [
   {
     date: "6th October 2024:",
     title: "Day 3",
-    subtitle: "Get ready to present your project & Get a chance to win the challenge",
+    subtitle:
+      "Get ready to present your project & Get a chance to win the challenge",
     content: ` The hackathon ends at 11:59 p.m. (local time). 
  All projects must be submitted to the NASA Space
  Apps Challenge website by this deadline.`,
     route: () => window.open("/timeline#day-3", "_blank"),
+  },
+];
+
+export const shannonData = [
+  {
+    img: HackathloneChallenge,
+  },
+  {
+    img: Machine,
+  },
+  {
+    img: GloablCollabSection,
+  },
+  {
+    img: AppleEye,
+  },
+  {
+    img: Office,
   },
 ];
