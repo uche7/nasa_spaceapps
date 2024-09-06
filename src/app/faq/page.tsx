@@ -79,7 +79,7 @@ const Faq = () => {
                   </Accordion>
                 ))}
               </div>
-              <div className="w-1/3 mt-[100px] translate-x-[5%]">
+              <div className="w-1/3 -mt-[120px] translate-x-[5%]">
                 <Image src={Sun} alt={"Sun Image"}></Image>
               </div>
             </section>
