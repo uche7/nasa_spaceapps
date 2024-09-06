@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
 import CountDownPage from "./count-down-page";
 
+
 const targetDate = "2024-10-04T18:00:00";
 const HeroPage = () => {
   /** Desktop View */
@@ -34,11 +35,27 @@ const HeroPage = () => {
           </div>
           <div className="flex flex-row justify-center gap-[32px]">
             <motion.button
+              // whileHover={{
+              //   scale: 1.1,
+              //   transition: { duration: 0.3 },
+              //   backgroundColor: "rgba(255, 0, 0, 0.8)",
+              //   borderColor: "white",
+              // }}
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.3 },
                 backgroundColor: "rgba(255, 0, 0, 0.8)",
                 borderColor: "white",
+                rotate: -3,
+                transition: {
+                  duration: 0.3,
+                  type: "spring",
+                  stiffness: 200,
+                  repeat: Infinity, 
+                  repeatType: "reverse",
+                  backgroundColor: {
+                    duration: 0.1, // Faster background color transition
+                  },
+                }
               }}
               whileTap={{
                 scale: 0.9,
