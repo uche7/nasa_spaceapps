@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
 import XIcon from "@/assets/images/general/landing-page/x_logo.svg"
 import InstaIcon from "@/assets/images/general/landing-page/instagram.png"
@@ -8,6 +8,11 @@ import InIcon from "@/assets/images/general/landing-page/linkedin.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const router = useRouter();
+  const navigateToWinners = () => {
+    router.push('/winners');
+  };
+
 
   const desktopView = () => {
     return (
@@ -204,15 +209,13 @@ const Footer = () => {
                     Closing Ceremony
                   </a>
                 </li>
-                <li className="my-2">
-                  <a
-                    className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
-                    target="_blank"
-                    // href="https://www.youtube.com/watch?v=EjbDhhmpgEk"
-                    rel="noreferrer"
+                <li className="my-2 underline">
+                  <span
+                    className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red cursor-pointer"
+                    onClick={navigateToWinners}
                   >
                     Winners
-                  </a>
+                  </span>
                 </li>
               </ul>
             </div>
