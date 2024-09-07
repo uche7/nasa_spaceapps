@@ -209,7 +209,7 @@ const Footer = () => {
                     Closing Ceremony
                   </a>
                 </li>
-                <li className="my-2">
+                <li className="my-2 underline">
                   <span
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red cursor-pointer"
                     onClick={navigateToWinners}
