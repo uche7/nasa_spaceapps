@@ -33,7 +33,7 @@ export const winners: WinnerType[] = [
                 { text: "30 problem statements", highlight: true },
                 { text: " that cater to all STEAM fields.", highlight: false },
             ], [
-                { text: "HackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.", highlight: false },
+                { text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.", highlight: false },
             ]
         ],
         prize: '€ 1500',
@@ -54,7 +54,7 @@ export const winners: WinnerType[] = [
                 { text: "30 problem statements", highlight: true },
                 { text: " that cater to all STEAM fields.", highlight: false },
             ], [
-                { text: "HackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.", highlight: false },
+                { text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.", highlight: false },
             ]
         ],
         prize: '€ 750',
@@ -75,7 +75,7 @@ export const winners: WinnerType[] = [
                 { text: "30 problem statements", highlight: true },
                 { text: " that cater to all STEAM fields.", highlight: false },
             ], [
-                { text: "HackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.", highlight: false },
+                { text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.", highlight: false },
             ]
         ],
         prize: '€ 250',
