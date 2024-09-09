@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
 import XIcon from "@/assets/images/general/landing-page/x_logo.svg"
-import InstaIcon from "@/assets/images/general/landing-page/instagram.png"
-import InIcon from "@/assets/images/general/landing-page/linkedin.png"
+import InstaIcon from "@/assets/images/general/landing-page/instagram_logo.svg"
+import InIcon from "@/assets/images/general/landing-page/linkedin_logo.svg"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -470,9 +470,10 @@ const Footer = () => {
                     Closing Ceremony
                   </a>
                 </li>
-                <li className="my-2">
+                <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
+                    onClick={navigateToWinners}
                     target="_blank"
                     // href="https://www.youtube.com/watch?v=EjbDhhmpgEk"
                     rel="noreferrer"
@@ -721,11 +722,11 @@ const Footer = () => {
                     Closing Ceremony
                   </a>
                 </li>
-                <li className="my-2">
+                <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                     target="_blank"
-                    // href="https://www.youtube.com/watch?v=EjbDhhmpgEk"
+                    onClick={navigateToWinners}
                     rel="noreferrer"
                   >
                     Winners

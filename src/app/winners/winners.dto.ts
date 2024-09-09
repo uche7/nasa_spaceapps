@@ -20,7 +20,7 @@ type WinnerType = {
 export const winners: WinnerType[] = [
     {
         title: '1st',
-        name: 'Fighting Fire with Fire',
+        name: 'Fighting Fire \nwith Fire',
         details: [
             [
                 { text: "SpaceApps Athlone, also known as ", highlight: false },
@@ -62,7 +62,7 @@ export const winners: WinnerType[] = [
     },
     {
         title: '3rd',
-        name: 'Sound surfers',
+        name: 'Sound \nsurfers',
         details: [
             [
                 { text: "SpaceApps Athlone, also known as ", highlight: false },

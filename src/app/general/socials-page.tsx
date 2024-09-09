@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
 import XIcon from "@/assets/images/general/landing-page/x_logo.svg"
-import InstaIcon from "@/assets/images/general/landing-page/instagram.png"
-import InIcon from "@/assets/images/general/landing-page/linkedin.png"
+import InstaIcon from "@/assets/images/general/landing-page/instagram_logo.svg"
+import InIcon from "@/assets/images/general/landing-page/linkedin_logo.svg"
 import TweetEmbed from "./xpost-embed";
 import InPostEmbed from "./linkedin-embed";
 
@@ -22,7 +22,7 @@ const Socials = () => {
 
   return (
     <>
-      <motion.div className="w-full flex flex-col items-center text-center justify-center bg-center bg-repeat bg-cover ">
+      <motion.div className="w-full flex flex-col items-center text-center justify-center bg-center bg-repeat bg-cover md:mb-[3rem] mb-[1.5rem]">
         <motion.h1
           variants={fadeIn("down", "tween", 0.5, 0.4)}
           initial={animationComplete ? "" : "hidden"}

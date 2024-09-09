@@ -8,14 +8,24 @@ const WinnerDetails: React.FC = () => {
     return (
         <div className="flex flex-col gap-8 DesktopScreen:mx-[8.06%] TabletScreen:mx-[4.06%]">
             {/*Introductory  page*/}
-            <div className='flex flex-col TabletScreen:mt-[2rem] DesktopScreen:mt-[3rem]'>
-                <h1 className='text-[52px] font-bold leading-tight'>Cheers to the winners of <span className='text-hackathone-font-rocket-red'>Hackath</span>l<span className='text-hackathone-font-rocket-red'>on</span>e<span className='text-hackathone-font-rocket-red'>’23</span></h1>
-
+            <div className='flex flex-col TabletScreen:mt-[2rem] DesktopScreen:mt-[3rem] MobileScreen:mt-[2rem]'>
+                <h1 className='text-[32px] md:text-[52px] font-bold leading-tight MobileScreen:px-8 TabletScreen:px-4 overflow-hidden'>Cheers to the winners of <span className='text-hackathone-font-rocket-red'>Hackath</span>l<span className='text-hackathone-font-rocket-red'>on</span>e<span className='text-hackathone-font-rocket-red'>’23</span></h1>
+                {/* Image for Mobile and Tablet*/}
+                <div className="py-8 px-4 w-full flex justify-center DesktopScreen:hidden">
+                    <Image
+                        layout='responsive'
+                        className='rounded-2xl'
+                        src={Winners}
+                        alt='Winners'
+                        width={550}
+                        height={300}
+                    />
+                </div>
                 <div
                     className="border-1 rounded-lg overflow-hidden flex flex-col-reverse md:flex-row"
                 >
                     {/* Image */}
-                    <div className="py-8 w-full md:w-1/2 flex justify-center lg:justify-start lg:mt-8">
+                    <div className="py-8 w-full lg:w-1/2 flex justify-center lg:justify-start lg:mt-8 MobileScreen:hidden TabletScreen:hidden">
                         <Image
                             className='rounded-2xl'
                             src={Winners}
@@ -26,8 +36,8 @@ const WinnerDetails: React.FC = () => {
                     </div>
 
                     {/* Content */}
-                    <div className="w-full md:w-1/2 py-8  flex justify-center items-center">
-                        <div className="font-sefarvestCabinetGrotesk text-slate-50 text-lg leading-relaxed text-start pl-8 pr-8">
+                    <div className="w-full lg:w-1/2 lg:py-8  flex justify-center items-center">
+                        <div className="font-sefarvestCabinetGrotesk text-slate-50 text-lg leading-relaxed text-start px-8 MobileScreen:px-4">
                             <p
                                 className=''
                             >
@@ -49,10 +59,10 @@ const WinnerDetails: React.FC = () => {
             {winners.map((winner, index) => (
                 <div
                     key={index}
-                    className={`border-1 rounded-lg overflow-hidden flex my-8 ${index % 2 == 0 ? 'flex-col lg:flex-row-reverse' : 'flex-col-reverse md:flex-row'}`}
+                    className={`border-1 rounded-lg flex my-8 ${index % 2 == 0 ? 'flex-col lg:flex-row-reverse' : 'flex-col-reverse lg:flex-row'}`}
                 >
                     {/* Image */}
-                    <div className={`py-8 w-full md:w-1/2 flex ${index % 2 == 0 ? 'lg:justify-end justify-center' : 'lg:justify-start justify-center'}`}>
+                    <div className={`py-8 w-full lg:w-1/2 flex ${index % 2 == 0 ? 'lg:justify-end justify-center' : 'lg:justify-start justify-center'} MobileScreen:px-4`}>
                         {winner.image && (
                             <Image
                                 src={winner.image}
@@ -65,8 +75,13 @@ const WinnerDetails: React.FC = () => {
                     </div>
 
                     {/* Content */}
-                    <div className="w-full md:w-1/2 py-8">
-                        <h1 className='text-4xl font-bold'><span className='text-[88px] text-hackathone-font-rocket-red'>{winner.title}</span>  <span className=''>{winner.name}</span></h1>
+                    <div className="w-full lg:w-1/2 py-8 MobileScreen:px-4 lg:px-8 xl:px-2">
+                        <div className='text-4xl MobileScreen:text-3xl font-bold flex flex-row items-end'>
+                            <h1 ><span className='text-[88px] MobileScreen:text-[68px] text-hackathone-font-rocket-red'>{winner.title}</span></h1>
+                            <h1 className='pl-4 MobileScreen:pl-2 whitespace-pre-line'><span className=''>{winner.name}</span></h1>
+                        </div>
+
+
                         <div className={`pt-12 text-lg leading-relaxed text-start  pr-8  ${index % 2 == 0 ? 'pl-2' : 'pr-4'}`}>
                             {winner.details.map((paragraph, paragraphIndex) => (
                                 <p
