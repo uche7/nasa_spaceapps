@@ -470,9 +470,10 @@ const Footer = () => {
                     Closing Ceremony
                   </a>
                 </li>
-                <li className="my-2">
+                <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
+                    onClick={navigateToWinners}
                     target="_blank"
                     // href="https://www.youtube.com/watch?v=EjbDhhmpgEk"
                     rel="noreferrer"
@@ -721,11 +722,11 @@ const Footer = () => {
                     Closing Ceremony
                   </a>
                 </li>
-                <li className="my-2">
+                <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                     target="_blank"
-                    // href="https://www.youtube.com/watch?v=EjbDhhmpgEk"
+                    onClick={navigateToWinners}
                     rel="noreferrer"
                   >
                     Winners

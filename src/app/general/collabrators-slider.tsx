@@ -35,16 +35,16 @@ export const CollabratorsSlider = () => {
             {index === 0 ? <Image
               className={`cursor-pointer w-2/3`} // Make the first image take up 2/3 of its container width
               src={item.img}
-              width={index === 0 ? 400 : 100} // Adjust the width as needed
-              height={index === 0 ? 400 : 100} // Adjust the height as needed
+              width={index === 0 ? 400 : 100}
+              height={index === 0 ? 400 : 100}
               alt={"Agencies Icon"}
               // layout="responsive"
               onClick={item.route}
             /> : <Image
               className={`cursor-pointer`} // Make the rest of the images take up responsive sizing
               src={item.img}
-              width={100} // Adjust the width as needed
-              height={100} // Adjust the height as needed
+              width={100}
+              height={100}
               alt={"Agencies Icon"}
               layout="responsive"
               onClick={item.route}
