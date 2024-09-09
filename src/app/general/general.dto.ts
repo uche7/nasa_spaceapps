@@ -29,14 +29,14 @@ import Cst_O from "@/assets/images/general/landing-page/space-agencies/cst_round
 import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_w.svg";
 import Ssa_O from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png";
-import Microsoft from "@/assets/images/general/landing-page/collabrators/microsoft.png";
-import Teams from "@/assets/images/general/landing-page/collabrators/teams.png";
+import Mindgrub from "@/assets/images/general/landing-page/collabrators/mindgrub.png";
+import Booz from "@/assets/images/general/landing-page/collabrators/booz.png";
 import Tableau from "@/assets/images/general/landing-page/collabrators/tableau.png";
 import GoDaddy from "@/assets/images/general/landing-page/collabrators/goDaddy.png";
 import Planet from "@/assets/images/general/landing-page/collabrators/planet.png";
 import Azure from "@/assets/images/general/landing-page/collabrators/azure.png";
 import Miro from "@/assets/images/general/landing-page/collabrators/miro.png";
-import Ibm from "@/assets/images/general/landing-page/collabrators/ibm.png";
+import SecondMuse from "@/assets/images/general/landing-page/collabrators/muse.png";
 import Tus1 from "@/assets/images/general/landing-page/mapping-images/tus1.jpg";
 import Tus2 from "@/assets/images/general/landing-page/mapping-images/tus2.jpg";
 import Tus3 from "@/assets/images/general/landing-page/mapping-images/tus3.jpg";
@@ -227,22 +227,22 @@ export const agenciesSlider = [
 
 export const collabratorsSlider = [
   {
-    img: Teams,
+    img: Booz,
     route: () =>
       window.open(
-        "https://www.microsoft.com/en-US/microsoft-teams/group-chat-software",
+        "https://www.boozallen.com/",
         "_blank"
       ),
   },
 
   {
-    img: Microsoft,
+    img: Mindgrub,
     route: () =>
-      window.open("https://www.microsoft.com/en-in/about/", "_blank"),
+      window.open("https://mindgrub.com/", "_blank"),
   },
   {
-    img: Ibm,
-    route: () => window.open("https://about.google/", "_blank"),
+    img: SecondMuse,
+    route: () => window.open("https://www.secondmuse.com/", "_blank"),
   },
 
   // {
