@@ -49,7 +49,7 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }, [isClient, timeLeft, calculateTimeLeft]);
 
   const timerComponents = Object.keys(timeLeft).map((interval) =>
-    timeLeft[interval] ? (
+    timeLeft[interval] !== undefined ? (
       <div
         key={interval}
         className="flex flex-col items-center justify-center text-center bg-transparent border rounded text-hackathone-font-rocket-red mx-1 p-2 min-w-[60px] md:min-w-[80px]"
