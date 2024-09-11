@@ -33,7 +33,7 @@ export const CollabratorsSlider = () => {
             }}
           >
             {index === 0 ? <Image
-              className={`cursor-pointer w-2/3`} // Make the first image take up 2/3 of its container width
+              className={`cursor-pointer w-4/5`} // Make the first image take up 4/5 of its container width
               src={item.img}
               width={index === 0 ? 400 : 100}
               height={index === 0 ? 400 : 100}
