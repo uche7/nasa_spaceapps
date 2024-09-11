@@ -59,10 +59,10 @@ const WinnerDetails: React.FC = () => {
             {winners.map((winner, index) => (
                 <div
                     key={index}
-                    className={`border-1 rounded-lg flex my-8 ${index % 2 == 0 ? 'flex-col lg:flex-row-reverse' : 'flex-col-reverse lg:flex-row'}`}
+                    className={`border-1 rounded-lg flex my-8 MobileScreen:mt-10 ${index % 2 == 0 ? 'flex-col lg:flex-row-reverse' : 'flex-col lg:flex-row'}`}
                 >
                     {/* Image */}
-                    <div className={`py-8 w-full lg:w-1/2 flex ${index % 2 == 0 ? 'lg:justify-end justify-center' : 'lg:justify-start justify-center'} MobileScreen:px-4`}>
+                    <div className={`md:py-8 w-full lg:w-1/2 flex ${index % 2 == 0 ? 'lg:justify-end justify-center' : 'lg:justify-start justify-center'} MobileScreen:px-4`}>
                         {winner.image && (
                             <Image
                                 src={winner.image}
@@ -82,7 +82,7 @@ const WinnerDetails: React.FC = () => {
                         </div>
 
 
-                        <div className={`pt-12 text-lg leading-relaxed text-start  pr-8  ${index % 2 == 0 ? 'pl-2' : 'pr-4'}`}>
+                        <div className={`pt-6 md:pt-12 text-lg leading-relaxed text-start pr-8  ${index % 2 == 0 ? 'pl-2' : 'pr-4'}`}>
                             {winner.details.map((paragraph, paragraphIndex) => (
                                 <p
                                     className='font-sefarvestCabinetGrotesk text-slate-50'
