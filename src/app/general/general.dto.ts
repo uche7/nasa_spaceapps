@@ -342,7 +342,7 @@ export const events = (Router: any) => [
     subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
     content: `Get ready for the NASA Space Apps Challenge!
      Check your Space Apps Messages, review the Participant`,
-    route: () => window.open("/timeline#day-1", "_blank"),
+    route: () => Router.push("/timeline#day-1"),
   },
   {
     date: "5th October 2024:",
@@ -352,7 +352,7 @@ export const events = (Router: any) => [
     content: `At 9:00 a.m. (local time) teams may begin 
     working on their hackathon projects. Project submission
     opens at 9:00 a.m.`,
-    route: () => window.open("/timeline#day-2", "_blank"),
+    route: () => Router.push("/timeline#day-2"),
   },
   {
     date: "6th October 2024:",
@@ -362,7 +362,7 @@ export const events = (Router: any) => [
     content: ` The hackathon ends at 11:59 p.m. (local time). 
  All projects must be submitted to the NASA Space
  Apps Challenge website by this deadline.`,
-    route: () => window.open("/timeline#day-3", "_blank"),
+    route: () => Router.push("/timeline#day-3"),
   },
 ];
 

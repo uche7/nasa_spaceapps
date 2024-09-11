@@ -164,7 +164,7 @@ export default function NavigationBar() {
         ></Image>
       </div>
       <div onClick={toggleSideNav}
-        className="px-[0.5rem] py-[0.25rem] cursor-pointer tool-to">
+        className="px-[0.5rem] pb-[0.5rem] cursor-pointer tool-to">
         {renderLines()}
       </div>
     </nav>

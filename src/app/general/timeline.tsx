@@ -85,16 +85,16 @@ export default function Timeline() {
               <TimelineContent>
                 <Paper
                   elevation={3}
-                  className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
+                  className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-300 ease-in-out"
                   style={{
-                    maxHeight: hoveredIndex === index ? contentHeight + 130 : "auto",
-                    height: hoveredIndex === index ? "auto" : "100px",
+                    maxHeight: hoveredIndex === index ? contentHeight + 140 : "auto",
+                    height: hoveredIndex === index ? "auto" : "120px",
                     backgroundColor: "#1e1e1e",
                     border:
                       hoveredIndex === index
-                        ? "2px solid #52525B"
+                        ? "3px solid #EAFE07"
                         : "2px solid transparent",
-                  }}
+                  }} //light grey color : #52525B
                 >
                   <Typography
                     variant="h6"
@@ -111,12 +111,10 @@ export default function Timeline() {
                         text-white transition-all duration-500 ease-in-out transform my-4 text-[16px]
                         TabletScreen:text-[14px] MobileScreen:text-[14px]
                         ${hoveredIndex === index
-                          ? "opacity-100 translate-y-0"
-                          : "opacity-0 -translate-y-2"}
+                          ? "translate-y-2"
+                          : "-translate-y-0"}
                         ${isOdd ? "md:text-start" : "md:text-end"}
-                        text-center
-                        MobileScreen:opacity-100 TabletScreen:opacity-100
-                      `}
+                        text-center`}
                     >
                       {event.subtitle}
                     </Typography>
