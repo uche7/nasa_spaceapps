@@ -13,6 +13,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Sun from "@/assets/images/faq-page/sun - Copy.png";
+import BackToTopButton from "../general/back-to-top";
 
 const Faq = () => {
   const [expanded, setExpanded] = useState<number | false>(false);
@@ -84,7 +85,7 @@ const Faq = () => {
               </div>
             </section>
           </div>
-
+          <BackToTopButton />
           <Footer />
         </div>
       </div>
@@ -150,7 +151,7 @@ const Faq = () => {
               </div>
             </section>
           </div>
-
+          <BackToTopButton />
           <Footer />
         </div>
       </div>

@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import CardGrid from "./CardGrid";
 import NavigationBar from "../general/navigation-bar";
 import Footer from "../general/footer";
+import BackToTopButton from "../general/back-to-top";
+
 const Blogs = () => {
   /** Desktop View */
 
@@ -25,6 +27,7 @@ const Blogs = () => {
         <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
           <NavigationBar />
           <CardGrid />
+          <BackToTopButton />
           <Footer />
         </div>
       </div>
