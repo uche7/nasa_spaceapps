@@ -233,8 +233,7 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
   )
   const mobileView = () => (
     <div
-      className="DesktopScreen:hidden TabletScreen:hidden  flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
-mt-[3rem] min-h-screen py-2 text-hackathone-font-rocket-red"
+      className="DesktopScreen:hidden TabletScreen:hidden  flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%] min-h-screen py-2 text-hackathone-font-rocket-red mb-12"
     >
       <Typography
         variant="h3"
