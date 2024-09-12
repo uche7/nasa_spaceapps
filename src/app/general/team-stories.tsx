@@ -199,7 +199,7 @@ const TeamStories = () => {
         }
       },
       {
-        breakpoint: 769,
+        breakpoint: 768.5,
         settings: {
           speed: 1500,
           appendDots: (dots: any) => (
@@ -325,14 +325,14 @@ const TeamStories = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 MobileScreen:mx-[1.2rem] lg:mx-[8.06%] md:mx-[2rem] my-[10rem] lg:my-[12rem]">
+    <div className="px-4 sm:px-6 lg:px-10 MobileScreen:mx-[1.2rem] lg:mx-[8.06%] md:mx-[2rem] my-[10rem] mb-8 MobileScreen:mb-12 xl:mb-[8rem]">
       <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] md:text-[32.99px] text-[42px] MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]">
         Hackathon Unplugged: Team Stories
       </h1>
       <p className="font-hackathoneSFProDisplay lg:text-xl sm:text-lg text-base mt-4">
         Let's hear what the Teams have to say
       </p>
-      <div className="relative overflow-hidden rounded-lg shadow-md mt-8">
+      <div className="relative overflow-hidden rounded-lg shadow-md mt-8 MobileScreen:min-h-[650px] min-h-[600px] md:min-h-[400px]">
         <Slider {...settings}>
           {Stories.map((item, index) => (
             <div key={index} className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center">
