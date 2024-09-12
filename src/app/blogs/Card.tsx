@@ -33,8 +33,11 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description,slug }) => (
       <div className=''>
         <h2 className="text-hackathone-font-rocket-red text-2xl font-bold mb-2">{title}</h2>
         <p className="text-white text-sm mb-4">{description}</p>
-        <a href={`/blogs/${slug}`} className="btn text-white py-2 px-4 rounded bg-transparent border border-white hover:text-black">
+        {/* <a href={`/blogs/${slug}`} className="btn text-white py-2 px-4 rounded bg-transparent border border-white hover:text-black">
           Read More
+        </a> */}
+        <a href={`/blogs/${slug}`} className="btn text-white py-2 bg-transparent border-transparent hover:text-hackathone-font-rocket-red underline underline-offset-2">
+        Read More...
         </a>
         </div>
       </div>
