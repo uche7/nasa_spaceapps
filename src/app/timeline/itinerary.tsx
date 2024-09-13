@@ -322,10 +322,10 @@ const Itinerary: React.FC = () => {
                                                                         color: "white",
                                                                         alignSelf: 'flex-start', // Align button to the top
                                                                         transition: 'transform 0.5s ease-in-out', // Transition for transform property
-                                                                        transform: expandedItems.includes(index) ? 'rotate(-360deg)' : 'rotate(0deg)',
+                                                                        transform: expandedItems.includes(index) ? 'rotate(180deg)' : 'rotate(0deg)',
                                                                     }}
                                                                 >
-                                                                    {expandedItems.includes(index) ? <ExpandLess /> : <ExpandMore />}
+                                                                    {expandedItems.includes(index) ? <ExpandLess /> : <ExpandLess />}
                                                                 </IconButton>
                                                             </div>
 

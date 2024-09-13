@@ -219,6 +219,27 @@ const TeamStories = () => {
         }
       },
       {
+        breakpoint: 480,
+        settings: {
+          speed: 1500,
+          appendDots: (dots: any) => (
+            <div
+              style={{
+                height: "20px",
+                top: "0",
+                margin: "0 22vw 0 28vw",
+                width: "fit-content",
+                padding: "0px",
+              }}
+            >
+              <ul style={{ margin: "0px", padding: "0px", listStyle: "inside", display: "flex", justifyContent: "center" }}>
+                {dots}
+              </ul>
+            </div>
+          ),
+        }
+      },
+      {
         breakpoint: 376,
         settings: {
           speed: 1500,
@@ -226,7 +247,7 @@ const TeamStories = () => {
             <div
               style={{
                 height: "20px",
-                bottom: "5vh  ",
+                top: "0",
                 margin: "0 22vw 0 22vw",
                 width: "fit-content",
                 padding: "0px",
@@ -248,35 +269,14 @@ const TeamStories = () => {
             <div
               style={{
                 height: "20px",
-                bottom: "8vh  ",
-                margin: "0 22vw 0 22vw",
+                top: "0",
+                margin: "0 22vw 0 16vw",
                 width: "fit-content",
                 padding: "0px",
                 listStyle: "none",
               }}
             >
               <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
-                {dots}
-              </ul>
-            </div>
-          ),
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          speed: 1500,
-          appendDots: (dots: any) => (
-            <div
-              style={{
-                height: "20px",
-                bottom: "4vh  ",
-                margin: "0 22vw 0 28vw",
-                width: "fit-content",
-                padding: "0px",
-              }}
-            >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "inside", display: "flex", justifyContent: "center" }}>
                 {dots}
               </ul>
             </div>
@@ -336,7 +336,7 @@ const TeamStories = () => {
         <Slider {...settings}>
           {Stories.map((item, index) => (
             <div key={index} className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center">
-              <div className="md:w-1/2 w-full !flex md:items-center MobileScreen:justify-center justify-center md:justify-start max-h-[560px] TabletScreen:px-4">
+              <div className="md:w-1/2 w-full !flex md:items-center MobileScreen:justify-center justify-center md:justify-start max-h-[560px] TabletScreen:px-4 MobileScreen:mt-[2.5rem]">
                 <Image
                   className="cursor-pointer rounded-2xl max-w-[100%] max-h-[350px] MobileScreen:max-h-[320px]"
                   src={item.img}

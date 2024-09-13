@@ -52,6 +52,7 @@ import Machine from "@/assets/images/general/landing-page/machine.jpg";
 import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_collab_section.jpg";
 import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
 import Office from "@/assets/images/general/landing-page/office.jpg";
+import Robotics from "@/assets/images/general/landing-page/robotics.jpg";
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
   new Date().toLocaleString("en-US", {
@@ -375,5 +376,8 @@ export const shannonData = [
   },
   {
     img: Office,
+  },
+  {
+    img: Robotics,
   },
 ];
