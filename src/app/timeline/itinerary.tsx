@@ -13,6 +13,7 @@ import {
     timelineItemClasses,
 } from "@mui/lab";
 import { Paper, Typography, IconButton } from "@mui/material";
+import { ExpandMore, ExpandLess } from '@mui/icons-material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import Tooltip from "../general/tooltip"
 
@@ -25,6 +26,14 @@ const formatDate = (date: Date) => {
 const Itinerary: React.FC = () => {
     const router = useRouter();
     const startDate = new Date(2024, 9, 4);
+    const [expandedItems, setExpandedItems] = useState<number[]>([]);
+    const handleToggleExpand = (index: number) => {
+        if (expandedItems.includes(index)) {
+            setExpandedItems(expandedItems.filter(item => item !== index)); // Collapse
+        } else {
+            setExpandedItems([...expandedItems, index]); // Expand
+        }
+    };
 
     const sharedView = () => {
         return (
@@ -35,6 +44,7 @@ const Itinerary: React.FC = () => {
                         dayDate.setDate(startDate.getDate() + dayIndex);
                         return (
                             <section key={dayIndex} id={`day-${dayIndex + 1}`} className="mb-16">
+                                {/*Desktop Screen*/}
                                 <div className='MobileScreen:hidden TabletScreen:hidden'>
                                     <div className="flex items-center mb-10">
                                         <Tooltip text="Back to Timeline">
@@ -110,11 +120,11 @@ const Itinerary: React.FC = () => {
                                                         />
                                                     )}
                                                 </TimelineSeparator>
-                                                <div className='w-[15rem] mx-[1rem] justify-center items-center text-center'>
+                                                <div className='w-[18rem] mx-[1rem] justify-center items-center text-center'>
                                                     <TimelineContent>
                                                         <Paper
                                                             elevation={3}
-                                                            className="p-2 rounded-lg transition-all duration-500  ease-in-out w-[13rem] h-[3rem] "
+                                                            className="p-2 rounded-lg transition-all duration-500  ease-in-out w-[15rem] h-[3rem] "
                                                             style={{
                                                                 backgroundColor: "rgb(234 254 7)",
                                                             }}
@@ -145,7 +155,7 @@ const Itinerary: React.FC = () => {
                                                             <Typography
                                                                 variant="h6"
                                                                 component="h1"
-                                                                className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red text-start lg:whitespace-nowrap"
+                                                                className="md:text-xl font-bold text-hackathone-font-rocket-red text-start lg:whitespace-nowrap"
                                                             >
                                                                 {item.title}
                                                             </Typography>
@@ -163,6 +173,7 @@ const Itinerary: React.FC = () => {
                                         ))}
                                     </MuiTimeline>
                                 </div>
+                                {/*Mobile and Tablet Screen*/}
                                 <div className='DesktopScreen:hidden'>
                                     <div className="flex flex-row items-center text-center justify-center TabletScreen:mb-10 mb-4">
                                         <div className='TabletScreen:w-[20%] TabletScreen:text-left MobileScreen:flex MobileScreen:flex-row MobileScreen:w-full MobileScreen:ml-[2rem]'>
@@ -213,6 +224,7 @@ const Itinerary: React.FC = () => {
                                                     <path d="M50 76L54.5825 71.4175L36.4475 53.25L76 53.25L76 46.75L36.4475 46.75L54.5825 28.5825L50 24L24 50L50 76Z" fill="black" />
                                                 </svg>
                                             </IconButton>
+                                            {/*Header for Mobile Screen*/}
                                             <Typography
                                                 variant="h3"
                                                 component="h1"
@@ -222,7 +234,7 @@ const Itinerary: React.FC = () => {
                                                 <span className='text-2xl text-white sm:text-[32.99px] MobileScreen:whitespace-pre'>
                                                     {"\n (" + formatDate(dayDate) + "'24)"}
                                                 </span>
-                                            </Typography>  {/*Header for Mobile Screen*/}
+                                            </Typography>
                                         </div>
                                         <div className='TabletScreen:w-[90%] TabletScreen:flex TabletScreen:text-center TabletScreen:justify-center TabletScreen:items-center MobileScreen:hidden'>
                                             <Typography
@@ -287,24 +299,63 @@ const Itinerary: React.FC = () => {
                                                         </Paper>
                                                         <Paper
                                                             elevation={3}
-                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-[2.5rem] MobileScreen:mb-[2.5rem] MobileScreen:mt-[1rem]"
+                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-[2.5rem] MobileScreen:mb-[1.5rem] MobileScreen:mt-[1rem]"
                                                             style={{
                                                                 backgroundColor: "#1e1e1e",
                                                             }}
                                                         >
-                                                            <Typography
-                                                                variant="h6"
-                                                                component="h1"
-                                                                className="md:text-xl text-[18px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-start lg:whitespace-nowrap"
-                                                            >
-                                                                {item.title}
-                                                            </Typography>
+                                                            {/* Mobile View */}
+                                                            <div className='flex items-start justify-between TabletScreen:hidden'>
+                                                                <Typography
+                                                                    variant="h6"
+                                                                    component="h1"
+                                                                    className="md:text-xl text-[18px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-start lg:whitespace-nowrap"
+                                                                >
+                                                                    {item.title}
+                                                                </Typography>
+                                                                {/* Expand/Collapse Button */}
+                                                                <IconButton
+                                                                    onClick={() => handleToggleExpand(index)}
+                                                                    size="small"
+                                                                    aria-label={expandedItems.includes(index) ? "Collapse" : "Expand"}
+                                                                    sx={{
+                                                                        color: "white",
+                                                                        alignSelf: 'flex-start', // Align button to the top
+                                                                        transition: 'transform 0.5s ease-in-out', // Transition for transform property
+                                                                        transform: expandedItems.includes(index) ? 'rotate(-360deg)' : 'rotate(0deg)',
+                                                                    }}
+                                                                >
+                                                                    {expandedItems.includes(index) ? <ExpandLess /> : <ExpandMore />}
+                                                                </IconButton>
+                                                            </div>
+
+                                                            {/* Tablet View */}
+                                                            <div className='MobileScreen:hidden'>
+                                                                <Typography
+                                                                    variant="h6"
+                                                                    component="h1"
+                                                                    className="md:text-xl text-[18px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-start lg:whitespace-nowrap"
+                                                                >
+                                                                    {item.title}
+                                                                </Typography>
+                                                                {/* Expand/Collapse Button */}
+                                                            </div>
                                                             <Typography
                                                                 variant="body1"
-                                                                className="text-center MobileScreen:text-start text-white pt-[0.5rem]"
+                                                                className="text-center MobileScreen:text-start text-white pt-[0.5rem] MobileScreen:hidden"
                                                             >
                                                                 {item.content}
                                                             </Typography>
+                                                            {/* Conditional Rendering for Expanded Content */}
+                                                            <div className={`transition-all duration-500 ease-in-out ${expandedItems.includes(index) ? 'max-h-[1000px] opacity-100' : 'max-h-0 py-0 opacity-0'} TabletScreen:hidden`}>
+                                                                <Typography
+                                                                    variant="body1"
+                                                                    className="text-center MobileScreen:text-start text-white pt-[0.5rem]"
+                                                                >
+                                                                    {item.content}
+                                                                </Typography>
+                                                            </div>
+
                                                         </Paper>
                                                     </TimelineContent>
                                                 </div>
