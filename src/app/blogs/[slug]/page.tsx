@@ -146,12 +146,12 @@ const BlogPage: React.FC = () => {
               className="mr-4 text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden mb-8"
               edge="start"
               sx={{
-                width: '3.5rem',
-                height: '3.5rem',
-                fontSize: '5rem',
+                width: '4.5rem',
+                height: '4.5rem',
+                fontSize: '6rem',
                 transition: 'transform 0.3s ease-in-out, color 0.3s ease-in-out',
                 '&:hover': {
-                  transform: 'scale(1.2)',
+                  transform: 'scale(1.3)',
                 },
               }}
               aria-label="back to home"
@@ -174,7 +174,7 @@ const BlogPage: React.FC = () => {
             />
           </div>
           <div className="font-hackathoneCabinetGrotesk">
-            <h2 className="text-4xl md:text-5xl font-bold  mb-4 text-white">
+            <h2 className="text-4xl md:text-5xl font-bold  mb-4 text-white font-hackathoneSFProDisplay">
               {blog.title}
             </h2>
             <p className="text-base md:text-2xl  mt-2 text-hackathone-font-rocket-red mb-10">
@@ -183,7 +183,7 @@ const BlogPage: React.FC = () => {
             <p className="text-xl md:text-xl text-white mt-8 ">
               {blog.summary}
             </p>
-            <ul className="list-none space-y-8">
+            <ul className="list-none space-y-8 ">
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
