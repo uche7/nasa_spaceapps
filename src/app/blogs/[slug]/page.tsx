@@ -126,7 +126,7 @@ const BlogPage: React.FC = () => {
     return <div>Blog not found</div>;
   }
   return (
-    <div className="relative min-h-screen bg-black text-white">
+    <div className="relative min-h-screen bg-black text-slate-50">
       <div className="fixed inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 1] }}>
           <CloudParticleBg />
@@ -180,14 +180,15 @@ const BlogPage: React.FC = () => {
             <p className="text-base md:text-2xl  mt-2 text-hackathone-font-rocket-red mb-10">
               {blog.author} - {blog.date}
             </p>
-            <p className="text-xl md:text-xl text-white mt-8 ">
+            <p className="text-xl md:text-xl text-slate-50 mt-8 ">
               {blog.summary}
             </p>
+            <br/>
             <ul className="list-none space-y-8 ">
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
-                  className="text-xl md:text-xl text-white-300  "
+                  className="text-xl md:text-xl text-slate-50"
                 >
                   {point}
                 </li>
@@ -209,20 +210,21 @@ const BlogPage: React.FC = () => {
           />
 
           <div className="font-hackathoneCabinetGrotesk">
-            <h2 className="text-4xl md:text-5xl font-semibold  mb-4 text-white">
+            <h2 className="text-4xl md:text-5xl font-semibold  mb-4 text-slate-50">
               {blog.title}
             </h2>
             <p className="text-base md:text-2xl  mt-2 text-hackathone-font-rocket-red mb-10">
               {blog.author} - {blog.date}
             </p>
-            <p className="text-base md:text-lg text-white mt-8 ">
+            <p className="text-base md:text-lg text-slate-50 mt-8 ">
               {blog.summary}
             </p>
+            <br/>
             <ul className="list-none space-y-4">
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
-                  className="text-base md:text-lg text-white"
+                  className="text-base md:text-lg text-slate-50"
                 >
                   {point}
                 </li>
