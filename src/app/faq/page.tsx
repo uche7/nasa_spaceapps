@@ -13,6 +13,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Sun from "@/assets/images/faq-page/sun - Copy.png";
+import BackToTopButton from "../general/back-to-top";
 
 const Faq = () => {
   const [expanded, setExpanded] = useState<number | false>(false);
@@ -49,7 +50,7 @@ const Faq = () => {
                     key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
-                    className="my-6 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded py-2"
+                    className="my-6 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] !bg-transparent text-white rounded py-2"
                     disableGutters
                   >
                     <AccordionSummary
@@ -73,18 +74,18 @@ const Faq = () => {
                         {item.header}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails className="pr-[3rem] ">
+                    <AccordionDetails className="pr-[3rem] text-slate-50">
                       <Typography>{item.text}</Typography>
                     </AccordionDetails>
                   </Accordion>
                 ))}
               </div>
-              <div className="w-1/3 -mt-[120px] translate-x-[5%]">
+              <div className="w-1/3 -mt-[100px] translate-x-[5%] z-[-1]">
                 <Image src={Sun} alt={"Sun Image"}></Image>
               </div>
             </section>
           </div>
-
+          <BackToTopButton />
           <Footer />
         </div>
       </div>
@@ -118,7 +119,7 @@ const Faq = () => {
                     key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
-                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] bg-transparent text-white rounded"
+                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] !bg-transparent text-white rounded"
                     disableGutters
                   >
                     <AccordionSummary
@@ -142,7 +143,7 @@ const Faq = () => {
                         {item.header}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails className="pr-[2rem]">
+                    <AccordionDetails className="pr-[2rem] text-slate-50">
                       <p className="text-[14px]">{item.text}</p>
                     </AccordionDetails>
                   </Accordion>
@@ -150,7 +151,7 @@ const Faq = () => {
               </div>
             </section>
           </div>
-
+          <BackToTopButton />
           <Footer />
         </div>
       </div>

@@ -52,6 +52,7 @@ import Machine from "@/assets/images/general/landing-page/machine.jpg";
 import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_collab_section.jpg";
 import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
 import Office from "@/assets/images/general/landing-page/office.jpg";
+import Robotics from "@/assets/images/general/landing-page/robotics.jpg";
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
   new Date().toLocaleString("en-US", {
@@ -285,13 +286,7 @@ export const Stories = [
     but we all had the same interests, which are sharing experiences 
     and ideas. It was a good experience to hear different perspectives
     and ideas regarding our challenge 'Ocean Garden' which we focusing
-    on the seaweed kelp. The discussion around was fun and enjoyable.
-    Furthermore, one of our passionate member even cooked a kelp dish
-    to prove that it is edible and pull more attentions from public crowd.
-    However, without discussion as a team, I found that we were working
-    on collecting resources from internet and designing web application aimless.
-    I hope we could meet up before the event starts so that we could lay out 
-    our strategies and have a more solid approach towards the challenge.”`,
+    on the seaweed kelp.”`,
     author: "Help Kelp, Help Ourselves",
   },
 
@@ -381,5 +376,8 @@ export const shannonData = [
   },
   {
     img: Office,
+  },
+  {
+    img: Robotics,
   },
 ];
