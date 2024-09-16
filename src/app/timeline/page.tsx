@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 // import CardGrid from "./CardGrid";
 import NavigationBar from "../general/navigation-bar";
 import Footer from "../general/footer";
-import ItineraryHeroPage from "./hero-page";
 import ItineraryPage from "./itinerary"
 import BackToTopButton from "../general/back-to-top"
 
@@ -24,7 +23,6 @@ const Itinerary = () => {
                 </div>
                 <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
                     <NavigationBar />
-                    <ItineraryHeroPage />
                     <ItineraryPage />
                     <BackToTopButton />
                     <Footer />

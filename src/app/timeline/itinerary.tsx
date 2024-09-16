@@ -39,7 +39,7 @@ const Itinerary: React.FC = () => {
 
     const sharedView = () => {
         return (
-            <div className="relative z-10 py-[24px] TabletScreen:mx-[8.06%] DesktopScreen:mx-[8.06%]">
+            <div className="relative z-10 py-[24px] TabletScreen:mx-[8.06%] DesktopScreen:mx-[8.06%] mt-2">
                 <div>
                     {schedule.map((day: DaySchedule, dayIndex: number) => {
                         const dayDate = new Date(startDate);
@@ -58,8 +58,8 @@ const Itinerary: React.FC = () => {
                                                 className="mr-4 text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden"
                                                 edge="start"
                                                 sx={{
-                                                    width: '3.5rem',
-                                                    height: '3.5rem',
+                                                    width: '4rem',
+                                                    height: '4rem',
                                                     fontSize: '5rem',
                                                     transition: 'transform 0.3s ease-in-out, color 0.3s ease-in-out',
                                                     '&:hover': {
@@ -126,7 +126,7 @@ const Itinerary: React.FC = () => {
                                                     <TimelineContent>
                                                         <Paper
                                                             elevation={3}
-                                                            className="p-2 rounded-lg transition-all duration-500  ease-in-out w-[15rem] h-[3rem] "
+                                                            className="p-2 rounded-lg transition-all duration-500  ease-in-out w-[15rem] h-[2.75rem] "
                                                             style={{
                                                                 backgroundColor: "rgb(234 254 7)",
                                                             }}
@@ -134,7 +134,7 @@ const Itinerary: React.FC = () => {
                                                             <Typography
                                                                 variant="h6"
                                                                 component="h1"
-                                                                className="md:text-[1rem] text-[14px] font-extrabold text-black text-center whitespace-nowrap"
+                                                                className="md:!text-[1rem] text-[14px] !font-extrabold text-black text-center whitespace-nowrap"
                                                                 style={{
                                                                     backgroundColor: "rgb(234 254 7)",
                                                                 }}
@@ -148,7 +148,7 @@ const Itinerary: React.FC = () => {
                                                     <TimelineContent>
                                                         <Paper
                                                             elevation={3}
-                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-[1.5rem]"
+                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-4"
                                                             style={{
                                                                 backgroundColor: "#1e1e1e",
                                                             }}
@@ -301,7 +301,7 @@ const Itinerary: React.FC = () => {
                                                         </Paper>
                                                         <Paper
                                                             elevation={3}
-                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-[2.5rem] MobileScreen:mb-[1.5rem] MobileScreen:mt-[1rem]"
+                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-6 MobileScreen:mb-[1.5rem] MobileScreen:mt-[1rem]"
                                                             style={{
                                                                 backgroundColor: "#1e1e1e",
                                                             }}

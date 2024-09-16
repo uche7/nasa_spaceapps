@@ -17,31 +17,31 @@ const WinnerDetails: React.FC = () => {
             <div className='flex flex-col TabletScreen:mt-[2rem] DesktopScreen:mt-[3rem] MobileScreen:mt-[2rem]'>
                 {/*Back Button*/}
                 {/*Desktop*/}
-                {/* <Tooltip text="Back to Home"> */}
-                <IconButton
-                    variant="contained"
-                    size="small"
-                    color="primary"
-                    onClick={() => router.push("/")}
-                    className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden"
-                    edge="start"
-                    sx={{
-                        width: '3rem',
-                        height: '3rem',
-                        fontSize: '2.5rem',
-                        position: 'relative',
-                        top: '0',
-                        left: '0',
-                    }}
-                    aria-label="back to home">
-                    <Image
-                        width={80}
-                        height={80}
-                        src={BackButton}
-                        alt="Back to Home"
-                    />
-                </IconButton>
-                {/* </Tooltip> */}
+                <Tooltip text="Back to Home">
+                    <IconButton
+                        variant="contained"
+                        size="small"
+                        color="primary"
+                        onClick={() => router.push("/")}
+                        className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden"
+                        edge="start"
+                        sx={{
+                            width: '3rem',
+                            height: '3rem',
+                            fontSize: '2.5rem',
+                            position: 'relative',
+                            top: '0',
+                            left: '0',
+                        }}
+                        aria-label="back to home">
+                        <Image
+                            width={80}
+                            height={80}
+                            src={BackButton}
+                            alt="Back to Home"
+                        />
+                    </IconButton>
+                </Tooltip>
                 {/*Tablet*/}
                 <IconButton
                     variant="contained"

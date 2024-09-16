@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 
 interface TooltipProps {
     text: string;
+    position?: "top" | "bottom";
     children: React.ReactNode;
 }
 
-const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
+const Tooltip: React.FC<TooltipProps> = ({ text, position = "bottom", children }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
     const parentRef = useRef<HTMLDivElement>(null);
@@ -39,6 +40,7 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
 
     return (
         <div
+            ref={parentRef}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             style={{ display: "inline-block", position: "relative" }}
@@ -47,13 +49,13 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
             {isHovered && (
                 <motion.div
                     className="absolute"
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: position === "top" ? -10 : 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
+                    exit={{ opacity: 0, y: position === "top" ? -10 : 10 }}
                     transition={{ duration: 0.5 }}
                     style={{
                         left: `${tooltipPosition.x - 30}px`,
-                        top: `${tooltipPosition.y + 60}px`,
+                        top: position === "top" ? `${tooltipPosition.y - 60}px` : `${tooltipPosition.y + 40}px`,
                         transform: "translateX(-50%)",// Adjust transform to center the tooltip correctly
                         zIndex: 50, // Ensure tooltip is above other content
                         pointerEvents: 'none', // Prevent the tooltip from blocking mouse events
