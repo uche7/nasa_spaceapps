@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { schedule, DaySchedule, ScheduleItem } from "./timeline.dto";
+import Image from "next/image";
 import {
     Timeline as MuiTimeline,
     TimelineItem,
@@ -16,6 +17,7 @@ import { Paper, Typography, IconButton } from "@mui/material";
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import Tooltip from "../general/tooltip"
+import BackButton from "../general/back-to-top"
 
 
 const formatDate = (date: Date) => {
