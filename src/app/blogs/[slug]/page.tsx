@@ -200,7 +200,32 @@ const BlogPage: React.FC = () => {
         </div>
 
         {/* Mobile view */}
-        <div className="block lg:hidden mx-8 my-12 flex flex-col items-center">
+        <div className="block lg:hidden mx-8 my-12 flex flex-col ">
+        <Tooltip text="Back to Blogs">
+            <IconButton
+              variant="contained"
+              size="large"
+              color="primary"
+              onClick={() => router.back()}
+              className="mr-4 text-white hover:text-hackathone-font-rocket-red mb-8"
+              edge="start"
+              sx={{
+                width: '3.5rem',
+                height: '3.5rem',
+                fontSize: '4rem',
+                transition: 'transform 0.3s ease-in-out, color 0.3s ease-in-out',
+                '&:hover': {
+                  transform: 'scale(1.2)',
+                },
+              }}
+              aria-label="back to home"
+            >
+              <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50" fill="#EAFE07" />
+                <path d="M50 76L54.5825 71.4175L36.4475 53.25L76 53.25L76 46.75L36.4475 46.75L54.5825 28.5825L50 24L24 50L50 76Z" fill="black" />
+              </svg>
+            </IconButton>
+          </Tooltip>
           <img
             src={blog.image}
             width={1200}  // Increase these values as needed
