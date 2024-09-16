@@ -42,6 +42,7 @@ const LandingPage = () => {
                 'BLqeKzVjYZhFeAeLkoWVcqxT9vGse9-tzRZV-nh0I5sU3YVxgRzGlVVAYDsvg-Jtr3eV1IgrUrhwtxwnTJRA-Qk',
             });
             if (currentToken) {
+              await sendTokenToApi(currentToken);
               setToken(currentToken);
               
             } else {
@@ -58,6 +59,28 @@ const LandingPage = () => {
 
     retrieveToken();
   }, []);
+    // Function to send the token to the API
+    const sendTokenToApi = async (token:string) => {
+      console.log(token,"token in send Token to api")
+      try {
+        const response = await fetch('http://localhost:4001/api/save-token', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ token }),
+        });
+  
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+  
+        const data = await response.json();
+        console.log('Token sent successfully:', data);
+      } catch (error) {
+        console.error('Error sending token:', error);
+      }
+    };
   
   useEffect(() => {
     if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
