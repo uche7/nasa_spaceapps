@@ -20,21 +20,21 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
       })
     );
     const difference = +new Date(targetDate) - +currentDateInIrishTime;
-    let timeLeft: { [key: string]: number } = {};
+    let timeLeft: { [key: string]: string } = {};
 
     if (difference >= 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        days: String(Math.floor(difference / (1000 * 60 * 60 * 24))),
+        hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, "0"),
+        minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, "0"),
+        seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
       };
     }
 
     return timeLeft;
   }, [targetDate]);
 
-  const [timeLeft, setTimeLeft] = useState<{ [key: string]: number }>(
+  const [timeLeft, setTimeLeft] = useState<{ [key: string]: string }>(
     calculateTimeLeft()
   );
 
