@@ -9,6 +9,7 @@ import { CardGrid } from "@/app/teams/card-grid"
 import NavigationBar from "../general/navigation-bar";
 import Footer from "../general/footer";
 import BackToTopButton from "../general/back-to-top"
+import Tooltip from "../general/tooltip"
 import BackButton from "@/assets/images/general/landing-page/back-button.svg"
 
 
@@ -19,29 +20,31 @@ const Teams = () => {
         return (
             <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-col gap-[36px] mx-[8.06%]">
                 <div className="w-full mt-[3%]">
-                    <IconButton
-                        variant="contained"
-                        size="small"
-                        color="primary"
-                        onClick={() => router.push("/")}
-                        className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden"
-                        edge="start"
-                        sx={{
-                            width: '3rem',
-                            height: '3rem',
-                            fontSize: '2.5rem',
-                            position: 'relative',
-                            top: '0',
-                            left: '-0.5rem',
-                        }}
-                        aria-label="back to home">
-                        <Image
-                            width={40}
-                            height={40}
-                            src={BackButton}
-                            alt="Back to Home"
-                        />
-                    </IconButton>
+                    <Tooltip text="Back to Home">
+                        <IconButton
+                            variant="contained"
+                            size="small"
+                            color="primary"
+                            onClick={() => router.push("/")}
+                            className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden"
+                            edge="start"
+                            sx={{
+                                width: '3rem',
+                                height: '3rem',
+                                fontSize: '2.5rem',
+                                position: 'relative',
+                                top: '0',
+                                left: '-0.5rem',
+                            }}
+                            aria-label="back to home">
+                            <Image
+                                width={40}
+                                height={40}
+                                src={BackButton}
+                                alt="Back to Home"
+                            />
+                        </IconButton>
+                    </Tooltip>
                     <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
                         Hackathlone&apos;24 team
                     </h1>
