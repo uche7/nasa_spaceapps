@@ -1,15 +1,96 @@
 "use client";
 import React from 'react';
 import Image, { StaticImageData } from "next/image";
+import { useRouter, useSearchParams } from 'next/navigation';
 import { winners } from "./winners.dto";
+import { IconButton } from "@mui/material";
+import BackToTopButton from "../general/back-to-top"
+import BackButton from "@/assets/images/general/landing-page/back-button.svg"
 import Winners from "@/assets/images/general/landing-page/winners/winners.png";
+import Tooltip from "../general/tooltip"
 
 const WinnerDetails: React.FC = () => {
+    const router = useRouter();
     return (
         <div className="flex flex-col gap-8 DesktopScreen:mx-[8.06%] TabletScreen:mx-[4.06%]">
             {/*Introductory  page*/}
             <div className='flex flex-col TabletScreen:mt-[2rem] DesktopScreen:mt-[3rem] MobileScreen:mt-[2rem]'>
-                <h1 className='text-[32px] md:text-[52px] font-bold leading-tight MobileScreen:px-8 TabletScreen:px-4 overflow-hidden'>Cheers to the winners of <span className='text-hackathone-font-rocket-red'>Hackath</span>l<span className='text-hackathone-font-rocket-red'>on</span>e<span className='text-hackathone-font-rocket-red'>’23</span></h1>
+                {/*Back Button*/}
+                {/*Desktop*/}
+                {/* <Tooltip text="Back to Home"> */}
+                <IconButton
+                    variant="contained"
+                    size="small"
+                    color="primary"
+                    onClick={() => router.push("/")}
+                    className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden"
+                    edge="start"
+                    sx={{
+                        width: '3rem',
+                        height: '3rem',
+                        fontSize: '2.5rem',
+                        position: 'relative',
+                        top: '0',
+                        left: '0',
+                    }}
+                    aria-label="back to home">
+                    <Image
+                        width={80}
+                        height={80}
+                        src={BackButton}
+                        alt="Back to Home"
+                    />
+                </IconButton>
+                {/* </Tooltip> */}
+                {/*Tablet*/}
+                <IconButton
+                    variant="contained"
+                    size="small"
+                    color="primary"
+                    onClick={() => router.push("/")}
+                    className="object-left text-white hover:text-hackathone-font-rocket-red DesktopScreen:hidden MobileScreen:hidden"
+                    edge="start"
+                    sx={{
+                        width: '2.5rem',
+                        height: '2.5rem',
+                        fontSize: '2.5rem',
+                        position: 'relative',
+                        top: '0',
+                        left: '1rem',
+                    }}
+                    aria-label="back to home">
+                    <Image
+                        width={80}
+                        height={80}
+                        src={BackButton}
+                        alt="Back to Home"
+                    />
+                </IconButton>
+                {/*Mobile*/}
+                <IconButton
+                    variant="contained"
+                    size="small"
+                    color="primary"
+                    onClick={() => router.push("/")}
+                    className="object-left text-white hover:text-hackathone-font-rocket-red DesktopScreen:hidden    TabletScreen:hidden"
+                    edge="start"
+                    sx={{
+                        width: '2.5rem',
+                        height: '2.5rem',
+                        fontSize: '2.5rem',
+                        position: 'relative',
+                        top: '0',
+                        left: '0.5rem',
+                    }}
+                    aria-label="back to home">
+                    <Image
+                        width={80}
+                        height={80}
+                        src={BackButton}
+                        alt="Back to Home"
+                    />
+                </IconButton>
+                <h1 className='text-[32px] md:text-[52px] font-bold leading-tight MobileScreen:px-4 TabletScreen:px-4 overflow-hidden mt-2'>Cheers to the winners of <span className='text-hackathone-font-rocket-red'>Hackath</span>l<span className='text-hackathone-font-rocket-red'>on</span>e<span className='text-hackathone-font-rocket-red'>’23</span></h1>
                 {/* Image for Mobile and Tablet*/}
                 <div className="py-8 px-4 w-full flex justify-center DesktopScreen:hidden">
                     <Image

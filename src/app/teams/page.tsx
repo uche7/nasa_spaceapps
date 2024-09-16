@@ -9,7 +9,6 @@ import { CardGrid } from "@/app/teams/card-grid"
 import NavigationBar from "../general/navigation-bar";
 import Footer from "../general/footer";
 import BackToTopButton from "../general/back-to-top"
-import Asi from "@/assets/images/general/landing-page/space-agencies/asi.png";
 import BackButton from "@/assets/images/general/landing-page/back-button.svg"
 
 
@@ -28,8 +27,8 @@ const Teams = () => {
                         className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden"
                         edge="start"
                         sx={{
-                            width: '2.5rem',
-                            height: '2.5rem',
+                            width: '3rem',
+                            height: '3rem',
                             fontSize: '2.5rem',
                             position: 'relative',
                             top: '0',
@@ -52,7 +51,7 @@ const Teams = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-full text-center">
+                <div className="w-full text-center mt-12">
                     <CardGrid />
                 </div>
             </div>
