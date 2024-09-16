@@ -148,7 +148,7 @@ const Itinerary: React.FC = () => {
                                                     <TimelineContent>
                                                         <Paper
                                                             elevation={3}
-                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-[1.5rem]"
+                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-4"
                                                             style={{
                                                                 backgroundColor: "#1e1e1e",
                                                             }}
@@ -301,7 +301,7 @@ const Itinerary: React.FC = () => {
                                                         </Paper>
                                                         <Paper
                                                             elevation={3}
-                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-[2.5rem] MobileScreen:mb-[1.5rem] MobileScreen:mt-[1rem]"
+                                                            className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-6 MobileScreen:mb-[1.5rem] MobileScreen:mt-[1rem]"
                                                             style={{
                                                                 backgroundColor: "#1e1e1e",
                                                             }}
