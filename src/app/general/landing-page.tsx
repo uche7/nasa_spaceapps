@@ -63,7 +63,7 @@ const LandingPage = () => {
     const sendTokenToApi = async (token:string) => {
       console.log(token)
       try {
-        const response = await fetch('http://54.226.75.188:4001/api/save-token', {
+        const response = await fetch('https://yds-online.com/api/save-token', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
