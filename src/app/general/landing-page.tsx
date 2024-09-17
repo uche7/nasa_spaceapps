@@ -61,9 +61,9 @@ const LandingPage = () => {
   }, []);
     // Function to send the token to the API
     const sendTokenToApi = async (token:string) => {
-      console.log(token,"token in send Token to api")
+      console.log(token)
       try {
-        const response = await fetch('http://localhost:4001/api/save-token', {
+        const response = await fetch('http://54.226.75.188:4001/api/save-token', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
