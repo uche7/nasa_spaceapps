@@ -227,7 +227,7 @@ const TeamStories = () => {
               style={{
                 height: "20px",
                 top: "0",
-                margin: "0 22vw 0 28vw",
+                margin: "0 22vw 0 24vw",
                 width: "fit-content",
                 padding: "0px",
               }}
@@ -248,7 +248,7 @@ const TeamStories = () => {
               style={{
                 height: "20px",
                 top: "0",
-                margin: "0 22vw 0 22vw",
+                margin: "0 22vw 0 20vw",
                 width: "fit-content",
                 padding: "0px",
                 listStyle: "none",
