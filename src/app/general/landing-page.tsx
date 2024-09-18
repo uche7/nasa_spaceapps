@@ -13,42 +13,43 @@ import HackathoneTimeline from "./timeline";
 import Socials from "./socials-page";
 import Footer from "./footer";
 import BackToTopButton from "../general/back-to-top";
-import { getMessaging, onMessage, getToken } from 'firebase/messaging';
-import firebaseApp from '../notification/firebase';
+import { getMessaging, onMessage, getToken } from "firebase/messaging";
+import firebaseApp from "../notification/firebase";
 
 const LandingPage = () => {
-  const [token, setToken] = useState('');
-  const [notificationPermissionStatus, setNotificationPermissionStatus] = useState('');
+  const [token, setToken] = useState("");
+  const [notificationPermissionStatus, setNotificationPermissionStatus] = useState("");
 
   // Function to send the token to the API
   const sendTokenToApi = async (token: string) => {
     console.log(token);
     try {
-      const response = await fetch('https://yds-online.com/api/save-token', {
-        method: 'POST',
+      const response = await fetch("https://yds-online.com/api/save-token", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ token }),
       });
 
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error("Network response was not ok");
       }
 
       const data = await response.json();
-      console.log('Token sent successfully:', data);
+      console.log("Token sent successfully:", data);
     } catch (error) {
-      console.error('Error sending token:', error);
+      console.error("Error sending token:", error);
     }
   };
 
   useEffect(() => {
     const retrieveToken = async () => {
       try {
-        if ('serviceWorker' in navigator && typeof window !== 'undefined') {
-          // Register the service worker first
-          const registration = await navigator.serviceWorker.ready;
+        if ("serviceWorker" in navigator && typeof window !== "undefined") {
+          // Explicitly register the service worker
+          const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
+          console.log("Service Worker registered:", registration);
 
           const messaging = getMessaging(firebaseApp);
 
@@ -56,23 +57,26 @@ const LandingPage = () => {
           const permission = await Notification.requestPermission();
           setNotificationPermissionStatus(permission);
 
-          if (permission === 'granted') {
-            // Get token after service worker is ready
+          if (permission === "granted") {
+            // Get token after service worker is registered
             const currentToken = await getToken(messaging, {
-              vapidKey: 'BLqeKzVjYZhFeAeLkoWVcqxT9vGse9-tzRZV-nh0I5sU3YVxgRzGlVVAYDsvg-Jtr3eV1IgrUrhwtxwnTJRA-Qk',
-              serviceWorkerRegistration: registration, // Ensure the service worker is passed here
+              vapidKey: "BLqeKzVjYZhFeAeLkoWVcqxT9vGse9-tzRZV-nh0I5sU3YVxgRzGlVVAYDsvg-Jtr3eV1IgrUrhwtxwnTJRA-Qk",
+              serviceWorkerRegistration: registration, // Pass the service worker registration
             });
 
             if (currentToken) {
+              console.log("Token retrieved:", currentToken);
               await sendTokenToApi(currentToken);
               setToken(currentToken);
             } else {
-              console.log('No registration token available. Request permission to generate one.');
+              console.log("No registration token available. Request permission to generate one.");
             }
+          } else {
+            console.log("Notification permission denied");
           }
         }
       } catch (error) {
-        console.error('An error occurred while retrieving token:', error);
+        console.error("An error occurred while retrieving token:", error);
       }
     };
 
@@ -80,12 +84,11 @@ const LandingPage = () => {
   }, []);
 
   useEffect(() => {
-    if ('serviceWorker' in navigator && typeof window !== 'undefined') {
+    if ("serviceWorker" in navigator && typeof window !== "undefined") {
       const messaging = getMessaging(firebaseApp);
       const unsubscribe = onMessage(messaging, (payload) => {
-        console.log('Foreground push notification received:', payload);
+        console.log("Foreground push notification received:", payload);
         // Handle the received push notification while the app is in the foreground
-        // You can display a notification or update the UI based on the payload
       });
       return () => {
         unsubscribe(); // Unsubscribe from the onMessage event
