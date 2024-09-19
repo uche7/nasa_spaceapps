@@ -78,21 +78,21 @@ const HeroPage = () => {
                 </p>
               </motion.button>
 
-              {/* GIF Popup (controlled by isHovered state) */}
+              {/* GIF Popup (controlled by isHovered state) **Remove after event concludes*/}
               {isHovered && (
                 <>
                   <Image
                     src={RegisterGIF}
                     width={500}
                     alt="GIF"
-                    className="hidden 2xl:block absolute min-w-[450px] top-1/2 -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
+                    className="hidden 2xl:block absolute min-w-[385px] top-[30%] -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
                   />
 
                   <Image
                     src={RegisterGIF}
                     width={300}
                     alt="GIF"
-                    className="hidden xl:block 2xl:hidden absolute min-w-[300px] top-1/2 -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
+                    className="hidden xl:block 2xl:hidden absolute min-w-[285px] top-[30%] -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
                   />
                 </>
               )}
