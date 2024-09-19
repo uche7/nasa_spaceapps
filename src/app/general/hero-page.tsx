@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
+import RegisterGIF from "@/assets/images/general/landing-page/register.gif";
 import CountDownPage from "./count-down-page";
 
 
@@ -11,7 +12,12 @@ const targetDate = "2024-10-04T18:00:00";
 const HeroPage = () => {
   /** Desktop View */
   const desktopView = () => {
+    const [isHovered, setIsHovered] = useState(false);
 
+    // Using useEffect to monitor hover state
+    useEffect(() => {
+      console.log('Hover state:', isHovered);
+    }, [isHovered]);
     return (
       <div className="TabletScreen:hidden MobileScreen:hidden flex flex-col justify-center items-center text-center mx-[8.06%] mt-[4rem]">
         <div className="w-full mb-[10%]">
@@ -34,48 +40,65 @@ const HeroPage = () => {
             </p>
           </div>
           <div className="flex flex-row justify-center gap-[32px]">
-            <motion.button
-              // whileHover={{
-              //   scale: 1.1,
-              //   transition: { duration: 0.3 },
-              //   backgroundColor: "rgba(255, 0, 0, 0.8)",
-              //   borderColor: "white",
-              // }}
-              whileHover={{
-                scale: 1.1,
-                backgroundColor: "rgba(255, 0, 0, 0.8)",
-                borderColor: "white",
-                rotate: -3,
-                transition: {
-                  duration: 0.3,
-                  type: "spring",
-                  stiffness: 200,
-                  repeat: Infinity, 
-                  repeatType: "reverse",
-                  backgroundColor: {
-                    duration: 0.1, // Faster background color transition
+            <div className="relative w-[18.7%] inline-block">
+              {/* Button */}
+              <motion.button
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                whileHover={{
+                  scale: 1.1,
+                  backgroundColor: "rgba(255, 0, 0, 0.8)",
+                  borderColor: "white",
+                  rotate: -3,
+                  transition: {
+                    duration: 0.3,
+                    type: "spring",
+                    stiffness: 200,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                    backgroundColor: {
+                      duration: 0.1, // Faster background color transition
+                    },
                   },
+                }}
+                whileTap={{
+                  scale: 0.9,
+                  borderWidth: "4px",
+                  borderColor: "white",
+                }}
+                onClick={() =>
+                  window.open(
+                    "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
+                    "_blank"
+                  )
                 }
-              }}
-              whileTap={{
-                scale: 0.9,
-                borderWidth: "4px",
-                borderColor: "white",
-              }}
-              onClick={() =>
-                window.open(
-                  "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
-                  "_blank"
-                )
-              }
-              title="Register Here"
-              className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[18.7%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
-            >{/* Orignal bg :  bg-hackathone-background-dark-blue */}
-              <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
-                Register Here
-              </p> {/*Original: text-[13.13px] leading-[16.28px]  text-hackathone-font-rocket-red */}
-            </motion.button>
+                title="Register Here"
+                className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-full h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
+              >
+                <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
+                  Register Here
+                </p>
+              </motion.button>
 
+              {/* GIF Popup (controlled by isHovered state) */}
+              {isHovered && (
+                <>
+                  <Image
+                    src={RegisterGIF}
+                    width={500}
+                    alt="GIF"
+                    className="hidden 2xl:block absolute min-w-[450px] top-1/2 -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
+                  />
+
+                  <Image
+                    src={RegisterGIF}
+                    width={300}
+                    alt="GIF"
+                    className="hidden xl:block 2xl:hidden absolute min-w-[300px] top-1/2 -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
+                  />
+                </>
+              )}
+            </div>
             <motion.button
               whileHover={{
                 scale: 1.1,
