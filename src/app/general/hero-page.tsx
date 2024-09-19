@@ -10,14 +10,12 @@ import CountDownPage from "./count-down-page";
 
 const targetDate = "2024-10-04T18:00:00";
 const HeroPage = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  useEffect(() => {
+    console.log('Hover state:', isHovered);
+  }, [isHovered]);
   /** Desktop View */
   const desktopView = () => {
-    const [isHovered, setIsHovered] = useState(false);
-
-    // Using useEffect to monitor hover state
-    useEffect(() => {
-      console.log('Hover state:', isHovered);
-    }, [isHovered]);
     return (
       <div className="TabletScreen:hidden MobileScreen:hidden flex flex-col justify-center items-center text-center mx-[8.06%] mt-[4rem]">
         <div className="w-full mb-[10%]">
@@ -99,6 +97,7 @@ const HeroPage = () => {
                 </>
               )}
             </div>
+
             <motion.button
               whileHover={{
                 scale: 1.1,
