@@ -46,15 +46,15 @@ const Teams = () => {
                         </IconButton>
                     </Tooltip>
                     <h1 className="font-[700] text-[42px] text-hackathone-font-rocket-red my-2 pb-[0.5rem]">
-                        Hackathlone&apos;24 team
+                        Meet the team
                     </h1>
                     <div className="mr-[3rem]">
                         <p className="font-hackathoneCabinetGrotesk text-[18px] leading-[1.8rem] text-left">
-                            <span className="text-hackathone-font-rocket-red font-[600]">NASA</span> teamed up with 13 space agency partners in 2023. This year, they’ve expanded to <span className="text-hackathone-font-rocket-red font-[600]">15 agencies</span> to bring the largest global hackathon to communities worldwide! Together with <span className="text-hackathone-font-rocket-red font-[600]">NASA’s Earth Science Division</span>, these agencies have crafted unique problem statements across various domains, from agrotech and biotech to software, the arts, and more. They provide access to data and resources related to Earth observations to help participants tackle these challenges.
+                            that is making a difference!
                         </p>
                     </div>
                 </div>
-                <div className="w-full text-center mt-12">
+                <div className="w-full items-start text-center mt-2">
                     <CardGrid />
                 </div>
             </div>
