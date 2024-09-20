@@ -35,6 +35,14 @@ const BlogPage: React.FC = () => {
 
   const router = useRouter();
 
+  const handleBack = () =>{
+    if (window.history.length > 1) {
+      router.back();
+    } else {
+      router.push('/blogs');
+    }
+  }
+
   if (!card) {
     return <div>Blog not found</div>;
   }
@@ -140,25 +148,25 @@ const BlogPage: React.FC = () => {
       summary:
         'Are you ready to embark on an incredible journey of innovation and discovery at Space Apps Athlone 2024? The countdown has started, and we’re excited to reveal the amazing opportunities waiting for you at this year’s hackathon. From access to NASA’s Open Data to the chance to win a trip to witness a rocket launch, Space Apps Athlone is packed with possibilities to ignite your creativity and take your career to new heights.',
       points: [
-        "1.NASA’s Open Data: Fuel Your Imagination",
+        "1. NASA’s Open Data: Fuel Your Imagination",
         "Space Apps Athlone gives participants exclusive access to NASA’s Open Data. Imagine having the vast resources of NASA—satellite imagery, astronomical data, and a treasure trove of cosmic information—right at your fingertips. With this wealth of data, the possibilities are as limitless as the universe itself. Whether you’re creating a cutting-edge app or conducting groundbreaking research, NASA’s Open Data is your launchpad to success.",
 
-        "2.Networking and Collaboration: Connect with the Best",
+        "2. Networking and Collaboration: Connect with the Best",
         "One of the biggest advantages of participating in Space Apps Athlone is the chance to network and collaborate with industry leaders, experts, and researchers. You’ll have the opportunity to connect with some of the brightest minds in aerospace and technology, forging valuable connections that could open doors to exciting future opportunities.",
 
-        "3.State-of-the-Art Facilities: 48 Hours of Innovation",
+        "3. State-of-the-Art Facilities: 48 Hours of Innovation",
         "For 48 exhilarating hours, you’ll have access to the TU Shannon Engineering Building—a hub of innovation and creativity. Here, you can work closely with your team in an environment designed to spark inspiration and innovation. It’s the perfect setting for brainstorming, prototyping, and turning your visionary ideas into reality.",
 
-        "4.Hackshop, Hacklab, and Mentorship: Your Toolkit for Success",
+        "4. Hackshop, Hacklab, and Mentorship: Your Toolkit for Success",
         "At Space Apps Athlone, we’re committed to helping you succeed. Our Hackshop is stocked with a variety of hardware, electronics, and materials to bring your projects to life. The Hacklab offers space to tackle challenges related to hardware, electronics, mechanical engineering, and material science. Plus, you’ll have access to mentorship from experienced professionals who will guide you every step of the way.",
 
-        "5.Meals & Beverages: Stay Energized",
+        "5. Meals & Beverages: Stay Energized",
         "We know that innovation requires fuel, so we provide meals and beverages throughout the 48-hour hackathon. Stay energized and focused as you work towards your goals. Whether it’s a midnight snack or a quick coffee break, we’ve got you covered.",
 
-        "6.Prizes, Awards, and More: Reach for the Stars",
+        "6. Prizes, Awards, and More: Reach for the Stars",
         "Space Apps Athlone offers participants the chance to win cash prizes, awards, and exclusive hackathon merchandise. But the excitement doesn’t stop there. The grand prize is a fully funded trip to NASA to witness a rocket launch in person—an experience that’s truly out of this world!",
 
-        "7.Portfolio Boost: Elevate Your Career",
+        "7. Portfolio Boost: Elevate Your Career",
         "Participating in Space Apps Athlone is not just about the competition; it’s about gaining valuable experience that can set you apart in the job market. Add this prestigious hackathon to your portfolio and showcase your skills, teamwork, and problem-solving abilities to future employers and collaborators.",
 
         "Space Apps Athlone is more than just an event—it’s a launchpad for your dreams and aspirations. With NASA’s Open Data, top-notch facilities, mentorship, and incredible prizes, you have everything you need to succeed. Join us in exploring the cosmos, pushing the boundaries of technology, and making history at Space Apps Athlone 2024. Your journey to the stars begins here!"
@@ -443,7 +451,7 @@ const BlogPage: React.FC = () => {
               variant="contained"
               size="large"
               color="primary"
-              onClick={() => router.back()}
+              onClick={handleBack}
               className="mr-4 text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden mb-8"
               edge="start"
               sx={{
@@ -507,7 +515,7 @@ const BlogPage: React.FC = () => {
               variant="contained"
               size="large"
               color="primary"
-              onClick={() => router.back()}
+              onClick={handleBack}
               className="mr-4 text-white hover:text-hackathone-font-rocket-red mb-8"
               edge="start"
               sx={{
@@ -558,42 +566,6 @@ const BlogPage: React.FC = () => {
             </ul>
           </div>
         </div>
-
-
-        {/* <div className="flex justify-center items-center">
-          <div className="p-4 sm:p-6 md:p-8    w-full md:w-3/5">
-            <h2 className="text-4xl md:text-5xl font-semibold text-center mb-4 text-hackathone-font-rocket-red">
-              {blog.title}
-            </h2>
-
-            <div className=" mb-6 text-hackathone-font-rocket-red">
-              <img
-                src={blog.image}
-                width={1200}  // Increase these values as needed
-                height={1200}
-                className=""
-                alt="Blog Image"
-              />
-              <p className="text-base md:text-2xl  mt-2 text-hackathone-font-rocket-red ">
-                {blog.author} - {blog.date}
-              </p>
-              <p className="text-lg md:text-xl text-white mt-8 ">
-                {blog.summary}
-              </p>
-            </div>
-
-            <ul className="list-none space-y-12  ">
-              {blog.points.map((point, index) => (
-                <li
-                  key={`event-point-${index}`}
-                  className="text-lg md:text-xl text-white-300  "
-                >
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div> */}
 
         <Footer />
 
