@@ -66,6 +66,29 @@ const Teams = () => {
         return (
             <div className="DesktopScreen:hidden MobileScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[4.06%]">
                 <div className="w-full mt-[3%]">
+                    <IconButton
+                        variant="contained"
+                        size="small"
+                        color="primary"
+                        onClick={() => router.push("/")}
+                        className="object-left text-white hover:text-hackathone-font-rocket-red DesktopScreen:hidden MobileScreen:hidden"
+                        edge="start"
+                        sx={{
+                            width: '2.5rem',
+                            height: '2.5rem',
+                            fontSize: '2.5rem',
+                            position: 'relative',
+                            top: '0',
+                            left: '0',
+                        }}
+                        aria-label="back to home">
+                        <Image
+                            width={80}
+                            height={80}
+                            src={BackButton}
+                            alt="Back to Home"
+                        />
+                    </IconButton>
                     <h1 className="font-[700] text-[32.99px] text-hackathone-font-rocket-red my-2">
                         Hackathlone&apos;24 team
                     </h1>
@@ -84,6 +107,29 @@ const Teams = () => {
         return (
             <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center mx-[1.2rem]">
                 <div className="w-full mt-[3%]">
+                    <IconButton
+                        variant="contained"
+                        size="small"
+                        color="primary"
+                        onClick={() => router.push("/")}
+                        className="object-left text-white hover:text-hackathone-font-rocket-red DesktopScreen:hidden TabletScreen:hidden"
+                        edge="start"
+                        sx={{
+                            width: '2.5rem',
+                            height: '2.5rem',
+                            fontSize: '2.5rem',
+                            position: 'relative',
+                            top: '0',
+                            left: '-3px',
+                        }}
+                        aria-label="back to home">
+                        <Image
+                            width={80}
+                            height={80}
+                            src={BackButton}
+                            alt="Back to Home"
+                        />
+                    </IconButton>
                     <h1 className="font-[800] text-[30.99px] leading-[44.62px] text-hackathone-font-rocket-red font-hackathoneCabinetGrotesk my-2 pb-[0.5rem]">
                         Hackathlone&apos;24 team
                     </h1>
