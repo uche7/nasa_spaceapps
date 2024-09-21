@@ -22,13 +22,13 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description,slug }) => (
       </div>
       <div className="p-4  bg-transparent flex flex-col flex justify-around w-3/6">
      
-      <Image
+      {/* <Image
         src="/assets/images/general/landing-page/hero_icon.png" // Image path relative to `public`
         alt="Hero Icon"
         width={90} // specify the width
         height={90} // specify the height
         // for loading the image faster, usually used for above-the-fold images
-      />
+      /> */}
      
       <div className=''>
         <h2 className="text-hackathone-font-rocket-red text-2xl font-bold mb-2">{title}</h2>
