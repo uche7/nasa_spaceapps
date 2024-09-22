@@ -43,7 +43,7 @@ const Tooltip: React.FC<TooltipProps> = ({ text, position = "bottom", children }
             ref={parentRef}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            style={{ display: "inline-block", position: "relative" }}
+            className="inline-block relative w-fit"
         >
             {children}
             {isHovered && (
@@ -59,7 +59,6 @@ const Tooltip: React.FC<TooltipProps> = ({ text, position = "bottom", children }
                         transform: "translateX(-50%)",// Adjust transform to center the tooltip correctly
                         zIndex: 50, // Ensure tooltip is above other content
                         pointerEvents: 'none', // Prevent the tooltip from blocking mouse events
-                        position: 'absolute',
                     }}
                 >
                     <div className="bg-gray-800 bg-opacity-80 text-white p-2 rounded-md text-sm whitespace-nowrap text-center shadow-lg border border-white">

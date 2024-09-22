@@ -27,7 +27,7 @@ export const CardGrid = () => {
                             style={{ transition: "transform 0.3s ease-in-out" }} // Add smooth transition
                             onClick={() => handleCardClick(index)}
                         >
-                            <div className="rounded-xl w-80 h-80 bg-gray-800">
+                            <div className="rounded-xl w-80 h-80 bg-gray-600 z-10">
                                 {/* <Image
                                     className="cursor-pointer transform transition-transform duration-300 lg:hover:scale-125 hover:scale-110 sm:w-[80px] lg:min-h-[20px]"
                                     src={imgSrcs[index]}
