@@ -20,7 +20,8 @@ interface Blog {
 
   title: string;
   summary: string;
-  points: string[];
+  // points: string[];
+  points: React.ReactNode[];
   author: string;
   date: string;
   slug: string;
@@ -35,7 +36,7 @@ const BlogPage: React.FC = () => {
 
   const router = useRouter();
 
-  const handleBack = () =>{
+  const handleBack = () => {
     if (window.history.length > 1) {
       router.back();
     } else {
@@ -54,16 +55,11 @@ const BlogPage: React.FC = () => {
       summary:
         "Valuing diverse perspectives, backgrounds, talents, and experiences amplifies our comprehension of the universe and nurtures a just and equitable future for everyone, making space exploration more successful and inclusive.",
       points: [
-        "Space exploration is one of the most important endeavors of our time. It has the potential to transform our understanding of the universe, and help us develop new technologies that can benefit humanity as a whole. But to reach its full potential, space exploration must be inclusive and diverse.",
-        "Diversity in spatial analysis is important for many different reasons. First, it can bring a broader perspective on the challenges of spatial exploration. With teams of scientists, engineers and astronauts, we are able to think critically and solve problems in new and innovative ways.",
-        "Second, the diversity of space exploration helps us to be an inclusive and equitable society. Seeing people from all walks of life represented in the space program sends the message that everyone has a place in the future of space exploration. This can inspire young people from all walks of life to pursue careers in STEM fields, helping us build a more just and equitable world.",
-        "Ultimately, diverse spatial exploration is just the right thing to do. No one group of people has a monopoly on knowledge or skills. If we want to reach our full potential in the space, we need to attract the talents and insights of people from all walks of life.",
-        "There are many ways to increase diversity in spatial exploration. We can start by ensuring that our educational institutions provide opportunities for students from all backgrounds to study STEM subjects. We can also work to increase visibility for women and minorities in the space program, fostering a welcoming and inclusive environment.",
-        "By diversifying space exploration, we can help ensure that it is more successful, fairer, and more representative of the world in which we live.",
-        "Here are some specific examples of how diversity has helped advance space exploration:",
-        "In the early days of the space program, women were excluded from many important roles. However, many women, such as Catherine Johnson and Margaret Hamilton, were able to make important contributions. Their work contributed to the success of the Apollo mission.",
-        "In recent years, there has been a growing movement to increase the number of people of color in the space program. This group has been able to bring more diversity to the program, as well as help inspire young people of color to pursue careers in STEM fields. There is also a growing movement to increase the number of people with disabilities in the space program. This movement is important because it shows that people with disabilities can be as successful as anyone else in the space.",
-        "These are just a few examples of how diversity has helped advance space exploration. As we explore the universe, it is important to continuously increase the diversity of the spatial system. This will help us reach our full potential in the space, and help create an inclusive and equitable society.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space exploration is one of the most important endeavors of our time. It has the potential to transform our understanding of the universe, and help us develop new technologies that can benefit humanity as a whole. But to reach its full potential, space exploration must be inclusive and diverse.Diversity in spatial analysis is important for many different reasons. First, it can bring a broader perspective on the challenges of spatial exploration. With teams of scientists, engineers and astronauts, we are able to think critically and solve problems in new and innovative ways.",
+
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Second, the diversity of space exploration helps us to be an inclusive and equitable society. Seeing people from all walks of life represented in the space program sends the message that everyone has a place in the future of space exploration. This can inspire young people from all walks of life to pursue careers in STEM fields, helping us build a more just and equitable world. Ultimately, diverse spatial exploration is just the right thing to do. No one group of people has a monopoly on knowledge or skills. If we want to reach our full potential in the space, we need to attract the talents and insights of people from all walks of life. There are many ways to increase diversity in spatial exploration. We can start by ensuring that our educational institutions provide opportunities for students from all backgrounds to study STEM subjects. We can also work to increase visibility for women and minorities in the space program, fostering a welcoming and inclusive environment. By diversifying space exploration, we can help ensure that it is more successful, fairer, and more representative of the world in which we live.",
+
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Here are some specific examples of how diversity has helped advance space exploration: In the early days of the space program, women were excluded from many important roles. However, many women, such as Catherine Johnson and Margaret Hamilton, were able to make important contributions. Their work contributed to the success of the Apollo mission. In recent years, there has been a growing movement to increase the number of people of color in the space program. This group has been able to bring more diversity to the program, as well as help inspire young people of color to pursue careers in STEM fields. There is also a growing movement to increase the number of people with disabilities in the space program. This movement is important because it shows that people with disabilities can be as successful as anyone else in the space. These are just a few examples of how diversity has helped advance space exploration. As we explore the universe, it is important to continuously increase the diversity of the spatial system. This will help us reach our full potential in the space, and help create an inclusive and equitable society.",
 
       ],
       author: "Mitrashi Das",
@@ -77,22 +73,22 @@ const BlogPage: React.FC = () => {
         'Register for NASA\'s SpaceApps Challenge 2023 at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.',
       points: [
         "The NASA SpaceApps Challenge 2023 is gearing up for an exciting cosmic adventure, and you're invited! Whether you're an aspiring space scientist, a data wizard, a game developer, or a creative storyteller, this year's hackathon has something for everyone. If you're ready to join the global SpaceApps community and make your mark in space exploration, follow these simple steps to register for the event.",
-        "Step 1: Visit the SpaceApps Website ",
-        "First things first, open your web browser and head over to the official SpaceApps Challenge website. You can do this by typing 'SpaceApps Challenge' into your preferred search engine or by directly entering the URL: https://www.spaceappschallenge.org/",
-        "Step 2: Explore the Local Events ",
-        "Once you're on the SpaceApps website, take a moment to explore the available options. You'll find a variety of resources, including information about past challenges, inspirational stories, and more. But right now, we're here for SpaceApps 2023, so let's dive in!",
-        "Step 3: Search for 2023 Local Events",
-        "To participate in SpaceApps 2023, you'll want to find a local event near you. These events serve as the launchpad for your SpaceApps journey. Click on the 'Find a Local Event' or similar link to begin your search.",
-        "Step 4: Choose HackAthlone (TU Shannon, Ireland) ",
-        "As you search for local events, you'll come across various locations around the world. However, if you're looking for the Athlone event in Ireland, you're in the right place! Look for 'HackAthlone, or simply 'Athlone' in the list of events. This event is hosted at TU Shannon (Technological University Shannon) and promises an exciting experience in space innovation and collaboration.",
-        "Step 5: Sign Up ",
-        "Once you've found the Athlone event, it's time to secure your spot. Click on the event to access its dedicated page. There, you'll find all the details you need about Athlone's SpaceApps event, including dates, schedules, and more.",
-        "Step 6: Register as an Individual or Team ",
-        "Now, it's registration time! Choose whether you want to participate as an individual or as part of a team. If you're planning to collaborate with friends or fellow enthusiasts, team registration is the way to go. Otherwise, you can register as an individual and join or form a team later.",
-        "Step 7: Access Resources and Challenges ",
-        "Congratulations! You're now officially registered for SpaceApps 2023, Athlone. This means you'll have access to a wealth of resources, including datasets, tools, mentorship, and more to help you prepare for the hackathon. Additionally, you can explore the list of exciting challenges that await your innovation and problem-solving skills.",
-        'Step 8: Get Ready for the Cosmic Adventure ',
-        "With your registration complete, you're one step closer to an incredible cosmic adventure. Stay tuned for updates from the Athlone event organizers, connect with fellow participants, and start brainstorming your hackathon ideas. Remember, SpaceApps is not just a competition; it's an opportunity to learn, collaborate, and contribute to space science and exploration.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 1: Visit the SpaceApps Website </strong>,
+        <span key={'item-${index}'}>{"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}First things first, open your web browser and head over to the official SpaceApps Challenge website. You can do this by typing 'SpaceApps Challenge' into your preferred search engine or by directly entering the URL: <a className="hover:text-red-500" href="https://www.spaceappschallenge.org/" key={'item-${index}'}>https://www.spaceappschallenge.org/</a></span>,
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 2: Explore the Local Events </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once you're on the SpaceApps website, take a moment to explore the available options. You'll find a variety of resources, including information about past challenges, inspirational stories, and more. But right now, we're here for SpaceApps 2023, so let's dive in!",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 3: Search for 2023 Local Events</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0To participate in SpaceApps 2023, you'll want to find a local event near you. These events serve as the launchpad for your SpaceApps journey. Click on the 'Find a Local Event' or similar link to begin your search.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 4: Choose HackAthlone (TU Shannon, Ireland) </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As you search for local events, you'll come across various locations around the world. However, if you're looking for the Athlone event in Ireland, you're in the right place! Look for 'HackAthlone, or simply 'Athlone' in the list of events. This event is hosted at TU Shannon (Technological University Shannon) and promises an exciting experience in space innovation and collaboration.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 5: Sign Up </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once you've found the Athlone event, it's time to secure your spot. Click on the event to access its dedicated page. There, you'll find all the details you need about Athlone's SpaceApps event, including dates, schedules, and more.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 6: Register as an Individual or Team </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Now, it's registration time! Choose whether you want to participate as an individual or as part of a team. If you're planning to collaborate with friends or fellow enthusiasts, team registration is the way to go. Otherwise, you can register as an individual and join or form a team later.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 7: Access Resources and Challenges </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Congratulations! You're now officially registered for SpaceApps 2023, Athlone. This means you'll have access to a wealth of resources, including datasets, tools, mentorship, and more to help you prepare for the hackathon. Additionally, you can explore the list of exciting challenges that await your innovation and problem-solving skills.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 8: Get Ready for the Cosmic Adventure </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0With your registration complete, you're one step closer to an incredible cosmic adventure. Stay tuned for updates from the Athlone event organizers, connect with fellow participants, and start brainstorming your hackathon ideas. Remember, SpaceApps is not just a competition; it's an opportunity to learn, collaborate, and contribute to space science and exploration.",
         "So, whether you're a seasoned space enthusiast or a newcomer with a passion for discovery, SpaceApps 2023 is your chance to shine. Register today, and get ready to reach for the stars at TU Shannon's HackAthlone event. The cosmos is waiting for your brilliant ideas and solutions!",
 
       ],
@@ -109,29 +105,29 @@ const BlogPage: React.FC = () => {
         "Are you gearing up for SpaceApps Athlone 2024 and wondering how to find the perfect team to tackle NASA's latest cosmic challenges?",
         "You’re in the right place!",
         "This guide will walk you through strategies and support available at the hackathon to help you form your dream team, join an existing one, or even embark on a solo space adventure.",
-        "1. Team Size Flexibility",
-        "One of the great aspects of SpaceApps Athlone is the flexibility in team sizes. Whether you’re flying solo or collaborating with up to five others, the hackathon encourages diverse teams with fresh ideas.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>1. Team Size Flexibility</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0One of the great aspects of SpaceApps Athlone is the flexibility in team sizes. Whether you’re flying solo or collaborating with up to five others, the hackathon encourages diverse teams with fresh ideas.",
         "You can form a team of 1 to 6 participants, allowing for a wide range of collaborations.",
-        "2. Solo or Team Participation",
-        "At SpaceApps Athlone, you have the freedom to choose how you want to participate. Dive into the challenges on your own, or team up with fellow space enthusiasts to combine skills and ideas.",
-        "3. Registering Your Team",
-        "If you decide to form a team, the team leader will need to register it on the SpaceApps platform. This step will create a hub for your collective efforts, making it easier to stay organized and focused.",
-        "4. Team Joining Opportunities",
-        "Not up for leading a team? No problem! Team joining typically starts in late September, when registered teams become visible on the SpaceApps platform. Browse through the teams and join one that aligns with your interests and goals.",
-        "5. Dedicated Chat Platform",
-        "SpaceApps Athlone offers a designated chat platform, making it easy to connect with other participants. Whether you’re building a team, discussing challenges, or forming alliances, this platform is an essential resource.",
-        "6. Seek Organizers’ Assistance",
-        "If you’re feeling uncertain about how to find or create a team, don’t hesitate to reach out to the organizing team. They’re there to help you navigate the hackathon’s landscape and ensure you have a stellar experience.",
-        "7. Cross-College Collaboration",
-        "SpaceApps encourages diverse teams! Collaborate with participants from different colleges and universities, fostering cross-institutional cooperation and bringing a variety of perspectives to your team.",
-        "8. Inclusion of Online Participants",
-        "Space knows no boundaries, and neither does SpaceApps Athlone! Online participants are welcome to form or join teams, ensuring the hackathon transcends geographical limitations and brings together talent from all over the world.",
-        "9. Engage in Pitchfest",
-        "At the start of the hackathon, don’t miss the Pitchfest event. Team leaders will take the stage to share their challenge goals, project ideas, and the kind of talent they’re looking for. It’s the perfect opportunity to find like-minded individuals to join your team.",
-        "10. Icebreaking Sessions",
-        "Immediately following the Pitchfest, get ready for the icebreaking session. This is your chance to socialize, network, and meet potential teammates. Your cosmic crew could be just a conversation away!",
-        "11. Color-Coded ID Cards",
-        "To make team formation even easier, participants will receive color-coded ID cards. These stickers will represent your domain or expertise, helping others quickly identify your skills and interests. In SpaceApps Athlone 2024, forming teams, joining forces, and networking are key to your cosmic journey. Whether you’re a seasoned participant or a first-timer, there are countless opportunities to connect, collaborate, and embark on this extraordinary adventure together.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>2. Solo or Team Participation</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At SpaceApps Athlone, you have the freedom to choose how you want to participate. Dive into the challenges on your own, or team up with fellow space enthusiasts to combine skills and ideas.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>3. Registering Your Team</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you decide to form a team, the team leader will need to register it on the SpaceApps platform. This step will create a hub for your collective efforts, making it easier to stay organized and focused.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>4. Team Joining Opportunities</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Not up for leading a team? No problem! Team joining typically starts in late September, when registered teams become visible on the SpaceApps platform. Browse through the teams and join one that aligns with your interests and goals.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>5. Dedicated Chat Platform</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0SpaceApps Athlone offers a designated chat platform, making it easy to connect with other participants. Whether you’re building a team, discussing challenges, or forming alliances, this platform is an essential resource.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>6. Seek Organizers’ Assistance</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you’re feeling uncertain about how to find or create a team, don’t hesitate to reach out to the organizing team. They’re there to help you navigate the hackathon’s landscape and ensure you have a stellar experience.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>7. Cross-College Collaboration</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0SpaceApps encourages diverse teams! Collaborate with participants from different colleges and universities, fostering cross-institutional cooperation and bringing a variety of perspectives to your team.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>8. Inclusion of Online Participants</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space knows no boundaries, and neither does SpaceApps Athlone! Online participants are welcome to form or join teams, ensuring the hackathon transcends geographical limitations and brings together talent from all over the world.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>9. Engage in Pitchfest</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At the start of the hackathon, don’t miss the Pitchfest event. Team leaders will take the stage to share their challenge goals, project ideas, and the kind of talent they’re looking for. It’s the perfect opportunity to find like-minded individuals to join your team.",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>10. Icebreaking Sessions</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Immediately following the Pitchfest, get ready for the icebreaking session. This is your chance to socialize, network, and meet potential teammates. Your cosmic crew could be just a conversation away!",
+        <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>11. Color-Coded ID Cards</strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0To make team formation even easier, participants will receive color-coded ID cards. These stickers will represent your domain or expertise, helping others quickly identify your skills and interests. In SpaceApps Athlone 2024, forming teams, joining forces, and networking are key to your cosmic journey. Whether you’re a seasoned participant or a first-timer, there are countless opportunities to connect, collaborate, and embark on this extraordinary adventure together.",
         "Get ready to meet your cosmic crew and take on the universe!",
         "Join us from October 4th to 6th, 2024, at TU Shannon.",
         "Ignite your creativity, innovate with technology, and explore the cosmos.",
@@ -497,7 +493,7 @@ const BlogPage: React.FC = () => {
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
-                  className="text-xl md:text-xl text-slate-50"
+                  className="text-xl md:text-xl text-slate-50 "
                 >
                   {point}
                 </li>
@@ -554,13 +550,24 @@ const BlogPage: React.FC = () => {
               {blog.summary}
             </p>
             <br />
-            <ul className="list-none space-y-4">
+            {/* <ul className="list-none space-y-4">
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
                   className="text-base md:text-lg text-slate-50"
                 >
                   {point}
+                </li>
+              ))}
+
+            </ul> */}
+            <ul className="list-none space-y-4">
+              {blog.points.map((point, index) => (
+                <li
+                  key={`event-point-${index}`}
+                  className="text-base md:text-lg text-slate-50"
+                >
+                  {typeof point === 'string' ? point : <>{point}</>}  
                 </li>
               ))}
             </ul>
