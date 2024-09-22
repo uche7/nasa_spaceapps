@@ -1,4 +1,4 @@
-// import Fwf from "@/assets/images/general/landing-page/winners/Soundsurfers.png";
+import Fwf from "@/assets/images/general/landing-page/winners/Soundsurfers.png";
 
 export const teamMembers = [
     {
@@ -10,7 +10,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Manav Shah',
@@ -21,7 +21,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Nitish Malik',
@@ -32,7 +32,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Shean Hans',
@@ -43,7 +43,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Manav Yagnik',
@@ -54,7 +54,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Mavis',
@@ -65,7 +65,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Ucchena Nangifor',
@@ -76,7 +76,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Sudhanshu Bhamburkar',
@@ -87,7 +87,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Ishita Malik',
@@ -98,7 +98,7 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
     {
         name: 'Shaiv Mehrotra, ',
@@ -109,6 +109,6 @@ export const teamMembers = [
                 { text: "HackAthlone", highlight: true },
             ],
         ],
-        // image: Fwf,
+        image: { Fwf },
     },
 ]

@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import Fwf from "@/assets/images/general/landing-page/winners/Fwf.png";
+import Fwf from "@/assets/images/general/landing-page/winners/winners.png";
 import Idontthink from "@/assets/images/general/landing-page/winners/idontthink.png";
 import Soundsurfers from "@/assets/images/general/landing-page/winners/Soundsurfers.png";
 

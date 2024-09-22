@@ -11,6 +11,7 @@ import Footer from "../general/footer";
 import BackToTopButton from "../general/back-to-top"
 import Tooltip from "../general/tooltip"
 import BackButton from "@/assets/images/general/landing-page/back-button.svg"
+import Rocket from "@/assets/images/general/landing-page/RocketLaunch.png"
 
 
 const Teams = () => {
@@ -19,6 +20,29 @@ const Teams = () => {
     const desktopView = () => {
         return (
             <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-col gap-[36px] mx-[8.06%]">
+                {/* Circular icon placeholder*/}
+                <div className="relative w-full flex justify-center items-center">
+                    {/* Circular icon placeholder */}
+                    <div className="absolute flex justify-center items-center h-48 w-52 right-0 translate-y-44">
+                        {/* Neon-like inner circular border */}
+                        <div className="absolute rounded-full h-[20rem] w-[20rem] border-8 border-[#d6ff00] opacity-75 z-[-100]" />
+                        {/* Middle circle with medium-dark border */}
+                        <div className="absolute rounded-full h-[26rem] w-[26rem] border-[6px] border-[#EAFE0780] opacity-75 z-[-100]" />
+                        {/* Outer circle with darker border */}
+                        <div className="absolute rounded-full h-[32rem] w-[32rem] border-4 border-[#EAFE0740] opacity-95 z-[-100]" />
+                        {/* Outer fading circle with darkest border */}
+                        <div className="absolute rounded-full h-[38rem] w-[38rem] border-2 border-[#EAFE0740] opacity-75 z-[-100]" />
+                        {/* Trophy Icon */}
+                        <div className="relative z-0">
+                            <Image
+                                src={Rocket}
+                                alt="Rocket"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
+                    </div>
+                </div>
                 <div className="w-full mt-[3%]">
                     <Tooltip text="Back to Home">
                         <IconButton
