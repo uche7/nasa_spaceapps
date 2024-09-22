@@ -47,7 +47,7 @@ const WinnerDetails: React.FC = () => {
                         size="small"
                         color="primary"
                         onClick={() => router.push("/")}
-                        className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden"
+                        className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden"
                         edge="start"
                         sx={{
                             width: '3rem',
