@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion, animate } from "framer-motion";
 import Image from "next/image";
-import { data } from "./glimpse.dto";
+import { OverviewImages, RevisitImages, MomentsImages, PhotoWallImages, VolunteerImages } from "./glimpse.dto";
 import router, { useRouter } from "next/router";
 import Slider from "react-slick";
 import Code from "@/assets/images/general/landing-page/Code.png"
 import Participants from "@/assets/images/general/landing-page/189 1.png"
 
-const imageSwapper = [...data];
+const imageSwapper = [...OverviewImages];
 // navigate to old website
 interface CountUpProps {
     target: number;
@@ -51,12 +51,15 @@ export const CardGrid = () => {
                     <div className="bg-[#101010] h-fit rounded-2xl border border-transparent justify-start text-start items-start">
                         <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center">
                             <motion.button
-                                className="bg-hackathone-font-rocket-red rounded-md border justify-center hover:bg-red-600 transition duration-300 ease-in-out"
-                                initial={{ opacity: 0, scale: 0.5 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 0.5 }}
+                                className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+                                whileHover={{
+                                    scale: 1.1,
+                                }}
+                                whileTap={{
+                                    scale: 0.9,
+                                }}
                             >
-                                <span className="block text-hackathoneCabinetGrotesk text-black hover:text-hackathone-font-rocket-red text-lg font-bold px-4 py-2">Overview</span>
+                                <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Overview</span>
                             </motion.button>
                         </div>
                         <div className="flex flex-row justify-center items-start gap-4 pb-4">
@@ -87,12 +90,15 @@ export const CardGrid = () => {
                         <div className="relative z-10">
                             <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center">
                                 <motion.button
-                                    className="bg-hackathone-font-rocket-red rounded-md border justify-center hover:bg-red-600 transition duration-300 ease-in-out"
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 0.5 }}
+                                    className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+                                    whileHover={{
+                                        scale: 1.1,
+                                    }}
+                                    whileTap={{
+                                        scale: 0.9,
+                                    }}
                                 >
-                                    <span className="block text-hackathoneCabinetGrotesk text-black hover:text-hackathone-font-rocket-red text-lg font-bold px-4 py-2">Revisit</span>
+                                    <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Revisit</span>
                                 </motion.button>
                             </div>
                         </div>
@@ -129,12 +135,15 @@ export const CardGrid = () => {
                 <div className="w-3/5 bg-gray-800 h-fit rounded-2xl border border-4 border-black justify-start text-start items-start">
                     <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center">
                         <motion.button
-                            className="bg-hackathone-font-rocket-red rounded-md border justify-center hover:bg-red-600 transition duration-300 ease-in-out"
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5 }}
+                            className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
+                            whileTap={{
+                                scale: 0.9,
+                            }}
                         >
-                            <span className="block text-hackathoneCabinetGrotesk text-black hover:text-hackathone-font-rocket-red text-lg font-bold px-4 py-2">Moments to relive</span>
+                            <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Moments to relive</span>
                         </motion.button>
                     </div>
                 </div>
@@ -151,12 +160,15 @@ export const CardGrid = () => {
                     />
                     <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center relative z-10">
                         <motion.button
-                            className="bg-hackathone-font-rocket-red rounded-md border justify-center hover:bg-red-600 transition duration-300 ease-in-out"
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5 }}
+                            className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
+                            whileTap={{
+                                scale: 0.9,
+                            }}
                         >
-                            <span className="block text-hackathoneCabinetGrotesk text-black hover:text-hackathone-font-rocket-red text-lg font-bold px-4 py-2">PhotoWall</span>
+                            <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">PhotoWall</span>
                         </motion.button>
                     </div>
                 </div>
@@ -172,12 +184,15 @@ export const CardGrid = () => {
                     />
                     <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center relative z-10">
                         <motion.button
-                            className="bg-hackathone-font-rocket-red rounded-md border justify-center hover:bg-red-600 transition duration-300 ease-in-out"
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5 }}
+                            className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
+                            whileTap={{
+                                scale: 0.9,
+                            }}
                         >
-                            <span className="block text-hackathoneCabinetGrotesk text-black hover:text-hackathone-font-rocket-red text-lg font-bold px-4 py-2">Volunteer</span>
+                            <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Volunteer</span>
                         </motion.button>
                     </div>
                 </div>
