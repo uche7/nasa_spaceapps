@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion, animate } from "framer-motion";
 import Image from "next/image";
-import { data } from "./glimpse.dto";
+import { OverviewImages, RevisitImages, MomentsImages, PhotoWallImages, VolunteerImages } from "./glimpse.dto";
 import router, { useRouter } from "next/router";
 import Slider from "react-slick";
 import Code from "@/assets/images/general/landing-page/Code.png"
 import Participants from "@/assets/images/general/landing-page/189 1.png"
 
-const imageSwapper = [...data];
+const imageSwapper = [...OverviewImages];
 // navigate to old website
 interface CountUpProps {
     target: number;
