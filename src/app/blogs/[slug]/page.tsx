@@ -36,7 +36,7 @@ const BlogPage: React.FC = () => {
 
   const router = useRouter();
 
-  const handleBack = () =>{
+  const handleBack = () => {
     if (window.history.length > 1) {
       router.back();
     } else {
@@ -82,7 +82,7 @@ const BlogPage: React.FC = () => {
         <strong className='text-hackathone-font-rocket-red'>Step 4: Choose HackAthlone (TU Shannon, Ireland) </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As you search for local events, you'll come across various locations around the world. However, if you're looking for the Athlone event in Ireland, you're in the right place! Look for 'HackAthlone, or simply 'Athlone' in the list of events. This event is hosted at TU Shannon (Technological University Shannon) and promises an exciting experience in space innovation and collaboration.",
         <strong className='text-hackathone-font-rocket-red'>Step 5: Sign Up </strong>,
-        "u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once you've found the Athlone event, it's time to secure your spot. Click on the event to access its dedicated page. There, you'll find all the details you need about Athlone's SpaceApps event, including dates, schedules, and more.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once you've found the Athlone event, it's time to secure your spot. Click on the event to access its dedicated page. There, you'll find all the details you need about Athlone's SpaceApps event, including dates, schedules, and more.",
         <strong className='text-hackathone-font-rocket-red'>Step 6: Register as an Individual or Team </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Now, it's registration time! Choose whether you want to participate as an individual or as part of a team. If you're planning to collaborate with friends or fellow enthusiasts, team registration is the way to go. Otherwise, you can register as an individual and join or form a team later.",
         <strong className='text-hackathone-font-rocket-red'>Step 7: Access Resources and Challenges </strong>,
@@ -550,13 +550,24 @@ const BlogPage: React.FC = () => {
               {blog.summary}
             </p>
             <br />
-            <ul className="list-none space-y-4">
+            {/* <ul className="list-none space-y-4">
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
                   className="text-base md:text-lg text-slate-50"
                 >
                   {point}
+                </li>
+              ))}
+
+            </ul> */}
+            <ul className="list-none space-y-4">
+              {blog.points.map((point, index) => (
+                <li
+                  key={`event-point-${index}`}
+                  className="text-base md:text-lg text-slate-50"
+                >
+                  {typeof point === 'string' ? point : <>{point}</>}  {/* Handle JSX wrapping */}
                 </li>
               ))}
             </ul>
