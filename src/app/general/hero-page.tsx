@@ -112,15 +112,15 @@ const HeroPage = () => {
               }}
               onClick={() =>
                 window.open(
-                  "https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/",
+                  `${window.location.origin}/moreinfo`,
                   "_blank"
                 )
               }
-              title="Hackathone 2023"
+              title="Click Here To See More Info"
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[18.7%]  h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
-                Hackathlone 2023
+               More Info
               </p>
             </motion.button>
           </div>
@@ -193,11 +193,11 @@ const HeroPage = () => {
               onClick={() =>
                 window.open("https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/", "_blank")
               }
-              title="Hackathone 2023"
+              title="Click Here To See More Info"
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[30%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
-                Hackathlone 2023
+              More Info
               </p>
             </motion.button>
           </div>
@@ -238,7 +238,7 @@ const HeroPage = () => {
               }}
               onClick={() =>
                 window.open(
-                  "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
+                  `${window.location.origin}/moreinfo`,
                   "_blank"
                 )
               }
@@ -246,7 +246,7 @@ const HeroPage = () => {
               className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[0.5rem] w-[60%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black">
-                Register Here
+              More Info
               </p>
             </motion.button>
             <motion.button
@@ -262,13 +262,13 @@ const HeroPage = () => {
                 borderColor: "white",
               }}
               onClick={() =>
-                window.open("https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/", "_blank")
+                window.open(`${window.location.origin}/moreinfo`, "_blank")
               }
-              title="Hackathone 2023"
+              title="Click Here To See More Info"
               className="bg-transparent mt-[1rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[60%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-150 ease-out">
-                Hackathlone 2023
+               More Info
               </p>
             </motion.button>
           </div>

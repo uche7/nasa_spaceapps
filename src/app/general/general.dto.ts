@@ -63,7 +63,7 @@ const currentDateInIrishTime = new Date(
 // Format the date as '27th August 2024'
 const options = {
   day: "numeric" as const, // Use 'numeric' for the day
-  month: "long" as const, // Use 'long' for the full month name
+  month: "long" as const, // Use 'long' for the full monthH name
   year: "numeric" as const, // Use 'numeric' for the year
 };
 const formattedDate = currentDateInIrishTime.toLocaleString("en-IE", options);
