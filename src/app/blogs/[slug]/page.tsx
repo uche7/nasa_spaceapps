@@ -89,7 +89,7 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Congratulations! You're now officially registered for SpaceApps 2023, Athlone. This means you'll have access to a wealth of resources, including datasets, tools, mentorship, and more to help you prepare for the hackathon. Additionally, you can explore the list of exciting challenges that await your innovation and problem-solving skills.",
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Step 8: Get Ready for the Cosmic Adventure </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0With your registration complete, you're one step closer to an incredible cosmic adventure. Stay tuned for updates from the Athlone event organizers, connect with fellow participants, and start brainstorming your hackathon ideas. Remember, SpaceApps is not just a competition; it's an opportunity to learn, collaborate, and contribute to space science and exploration.",
-        "So, whether you're a seasoned space enthusiast or a newcomer with a passion for discovery, SpaceApps 2023 is your chance to shine. Register today, and get ready to reach for the stars at TU Shannon's HackAthlone event. The cosmos is waiting for your brilliant ideas and solutions!",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0So, whether you're a seasoned space enthusiast or a newcomer with a passion for discovery, SpaceApps 2023 is your chance to shine. Register today, and get ready to reach for the stars at TU Shannon's HackAthlone event. The cosmos is waiting for your brilliant ideas and solutions!",
 
       ],
       author: "Shaiv Mehrotra",
@@ -165,7 +165,7 @@ const BlogPage: React.FC = () => {
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>7. Portfolio Boost: Elevate Your Career</strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Participating in Space Apps Athlone is not just about the competition; it’s about gaining valuable experience that can set you apart in the job market. Add this prestigious hackathon to your portfolio and showcase your skills, teamwork, and problem-solving abilities to future employers and collaborators.",
 
-        "Space Apps Athlone is more than just an event—it’s a launchpad for your dreams and aspirations. With NASA’s Open Data, top-notch facilities, mentorship, and incredible prizes, you have everything you need to succeed. Join us in exploring the cosmos, pushing the boundaries of technology, and making history at Space Apps Athlone 2024. Your journey to the stars begins here!"
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps Athlone is more than just an event—it’s a launchpad for your dreams and aspirations. With NASA’s Open Data, top-notch facilities, mentorship, and incredible prizes, you have everything you need to succeed. Join us in exploring the cosmos, pushing the boundaries of technology, and making history at Space Apps Athlone 2024. Your journey to the stars begins here!"
 
       ],
       author: "Shaiv Mehrotra & Sneha",
@@ -416,57 +416,57 @@ const BlogPage: React.FC = () => {
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Team Up: Collaborate for Galactic Success</strong>,
 
         "• Break the Ice:",
-        " As you step into the hackathon, take the initiative to engage with your fellow participants. Use ice-breakers, pitch a small idea, or showcase your skills. It’s all about making connections and finding like-minded space enthusiasts.",
+        " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As you step into the hackathon, take the initiative to engage with your fellow participants. Use ice-breakers, pitch a small idea, or showcase your skills. It’s all about making connections and finding like-minded space enthusiasts.",
 
         "• Pre-Hackathon Team Formation:",
-        "  If you already have a team in mind or want to form one before the event, go for it! Collaborating with a diverse group can amplify your problem-solving capabilities.",
+        "  \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you already have a team in mind or want to form one before the event, go for it! Collaborating with a diverse group can amplify your problem-solving capabilities.",
 
         "• Leverage Your Proficiencies: ",
-        " Once in a team, identify your strengths and contribute accordingly. Whether it’s coding, design, research, or presentation skills, take on a role that aligns with your talents.",
+        " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once in a team, identify your strengths and contribute accordingly. Whether it’s coding, design, research, or presentation skills, take on a role that aligns with your talents.",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Network: Forge Cosmic Connections</strong>,
 
         "• Engage with Fellow Participants:",
-        "  Hackathons are more than just coding marathons; they’re opportunities to build connections that can last a lifetime. Engage with fellow participants, discuss project ideas, and share your experiences. These interactions can lead to valuable collaborations.",
+        "  \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons are more than just coding marathons; they’re opportunities to build connections that can last a lifetime. Engage with fellow participants, discuss project ideas, and share your experiences. These interactions can lead to valuable collaborations.",
 
         "• Connect with Mentors: ",
-        " Seek guidance from mentors who can offer insights, technical expertise, and advice on problem-solving. Their experience can be invaluable in steering your project in the right direction.",
+        " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Seek guidance from mentors who can offer insights, technical expertise, and advice on problem-solving. Their experience can be invaluable in steering your project in the right direction.",
 
         "• Expand Your LinkedIn Universe: ",
-        " Don’t miss the chance to grow your professional network. During the hackathon, connect with people on LinkedIn, and send personalized messages sharing your experiences and the connections you’ve forged.",
+        " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Don’t miss the chance to grow your professional network. During the hackathon, connect with people on LinkedIn, and send personalized messages sharing your experiences and the connections you’ve forged.",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Solution Demo: Shine with Your Innovation</strong>,
 
         "• Showcase Your Solution: ",
-        " When presenting your project, take the opportunity to highlight the innovation behind your solution. Whether it’s a working prototype, a practical demo, or a simulation, a visually compelling presentation can leave a lasting impression.",
+        " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0When presenting your project, take the opportunity to highlight the innovation behind your solution. Whether it’s a working prototype, a practical demo, or a simulation, a visually compelling presentation can leave a lasting impression.",
 
         "• Proof of Concept:",
-        "  Aim to develop a proof of concept. Having an institution validate the value of your proposed solution can add credibility and impact to your project.",
+        "  \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Aim to develop a proof of concept. Having an institution validate the value of your proposed solution can add credibility and impact to your project.",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Time Management: Hackathon Hours Are Precious</strong>,
 
         "• Manage Your Time Effectively: ",
-        " Time flies during a hackathon. Prioritize tasks, set realistic goals, and allocate time wisely. Stay organized to ensure you make the most of every coding minute.",
+        " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Time flies during a hackathon. Prioritize tasks, set realistic goals, and allocate time wisely. Stay organized to ensure you make the most of every coding minute.",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Final Presentations: Shine Bright on Stage</strong>,
 
         "• Perfect Your Pitch:",
-        "  As the hackathon concludes, practice your pitch rigorously. Plan the timing of your presentation carefully, and remember that not everyone on your team needs to speak. Use a structured approach to organize your thoughts early in the hack.",
+        "  \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As the hackathon concludes, practice your pitch rigorously. Plan the timing of your presentation carefully, and remember that not everyone on your team needs to speak. Use a structured approach to organize your thoughts early in the hack.",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Seek SME Validation: Tap into Mentor Resources</strong>,
 
         "• Utilize Mentor Hours: ",
-        " Don’t hesitate to leverage mentor hours to consult with experts in your project’s field. Their feedback and guidance can be instrumental in refining your solution.",
+        " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Don’t hesitate to leverage mentor hours to consult with experts in your project’s field. Their feedback and guidance can be instrumental in refining your solution.",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Hackshop: Secure Your Components Early</strong>,
 
         "• Battling for Resources:",
-        "  In a hackathon where electronic components are limited, especially those in high demand, it’s essential to secure them as soon as possible. Visit the Hackshop early to avoid potential bottlenecks.",
+        "  \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0In a hackathon where electronic components are limited, especially those in high demand, it’s essential to secure them as soon as possible. Visit the Hackshop early to avoid potential bottlenecks.",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>Ethical Considerations: The Universal Code of Conduct</strong>,
 
         "• Uphold Ethical Standards: ",
-        " Remember to maintain ethical standards throughout the hackathon. Respect your teammates, mentors, and fellow participants. Be inclusive, collaborative, and always prioritize the integrity of your work.",
+        " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Remember to maintain ethical standards throughout the hackathon. Respect your teammates, mentors, and fellow participants. Be inclusive, collaborative, and always prioritize the integrity of your work.",
 
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As you embark on your hackathon journey at SpaceApps Athlone 2024, keep these tips in mind. They’ll not only enhance your experience but also elevate the impact of your projects. Get ready to ignite your creativity, innovate with technology, and explore new horizons. We can’t wait to see your aspirations come to life!"
       ],
