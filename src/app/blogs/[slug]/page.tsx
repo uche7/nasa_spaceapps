@@ -262,19 +262,48 @@ const BlogPage: React.FC = () => {
         "There are three major ways to reach TU Shannon: by bus, train, or driving. Let’s explore these options to make your journey as smooth as possible.",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>1. Taking the Bus: Your Best Bet</strong>,
-        "• From Dublin, Limerick, Cork, or Galway: Several bus services connect these cities to Athlone, including Citylink, Aircoach, and Bus Éireann.",
-        "• Dublin to Athlone: The 763 (Timetable) and 706/706X (Timetable) routes are ideal.",
-        "• Galway to Athlone: Use the 706/706X (Timetable).",
-        "• Limerick to Athlone: The Route 72 (Timetable) is available.",
-        "• Cork to Athlone: Travel via Galway using Route 51 (Timetable) or via Dublin with Route 704X (Timetable).",
-        "• Final Steps: Buses drop you off at a central location in Athlone. From there, follow signs leading to TU Shannon’s engineering building.",
+        "From Dublin, Limerick, Cork, or Galway: Several bus services connect these cities to Athlone, including Citylink, Aircoach, and Bus Éireann.",
+        <table className="table-auto border-2 border-gray-700 border-collapse rounded-3xl bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md" key={'item-${index}'}>
+          <tbody key={'item-${index}'}>
+            <tr key={'item-${index}'}>
+              <td className="border border-gray-700 p-4 rounded-l-lg" key={'item-${index}'}>Dublin to Athlone</td>
+              <td className="border border-gray-700 p-4 rounded-r-lg" key={'item-${index}'}>The 763 (Timetable) and 706/706X (Timetable) routes are ideal.</td>
+            </tr>
+            <tr key={'item-${index}'}>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>Galway to Athlone</td>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>Use the 706/706X (Timetable).</td>
+            </tr>
+            <tr key={'item-${index}'}>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>Limerick to Athlone</td>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>The Route 72 (Timetable) is available.</td>
+            </tr>
+            <tr key={'item-${index}'}>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>Cork to Athlone</td>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>Travel via Galway using Route 51 (Timetable) or via Dublin with Route 704X (Timetable).</td>
+            </tr>
+          </tbody>
+        </table>,
+        "Final Steps: Buses drop you off at a central location in Athlone. From there, follow signs leading to TU Shannon’s engineering building.",
         "Pro tip: Book your bus tickets in advance to save both time and money, especially since it’s a weekend event!",
 
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>2. Opt for the Train: Comfortable and Budget-Friendly</strong>,
-        "• From Major Cities: Irish Rail offers train services to Athlone from cities like Dublin, Limerick, and Galway.",
-        "• Booking: Pre-book your tickets here (https://www.irishrail.ie/) for a comfortable journey.",
-        "• From the Train Station: The station is approximately 3 kilometers from TU Shannon’s engineering building. Consider taking a cab or bus (Route ATH1 or A1) from the station to the venue.",
-
+        <table className="table-auto border-2 border-gray-700 border-collapse rounded-3xl bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md" key={'item-${index}'}>
+          <tbody>
+            <tr key={'item-${index}'}>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>From Major Cities</td>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>Irish Rail offers train services to Athlone from cities like Dublin, Limerick, and Galway.</td>
+            </tr>
+            <tr key={'item-${index}'}>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>Booking</td>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>Pre-book your tickets here <a className="hover:text-red-500" href="https://www.irishrail.ie/" key={'item-${index}'}>https://www.irishrail.ie/</a> for a comfortable journey.</td>
+            </tr>
+            <tr key={'item-${index}'}>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>From the Train Station</td>
+              <td className="border border-gray-700 p-4" key={'item-${index}'}>The station is approximately 3 kilometers from TU Shannon’s engineering building. Consider taking a cab or bus (Route ATH1 or A1) from the station to the venue.</td>
+            </tr>
+          </tbody>
+        </table>,
+       
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>3. Driving: Flexibility and Convenience</strong>,
         "• Travel by Car: Enjoy the flexibility of driving to Athlone, with ample parking available at TU Shannon’s engineering building.",
         "• Navigation: Use Google Maps to find the best route to TU Shannon.",
@@ -290,7 +319,7 @@ const BlogPage: React.FC = () => {
       date: "Sep 13, 2023",
       slug: "7",
     },
-     {
+    {
       image: "https://i.imgur.com/fO5GbMO.jpeg",
       tags: [{ name: "Technology" }],
       title: "Navigating the SpaceApps Hackathon Challenges: A Guide to Choosing Your Path",
@@ -337,7 +366,7 @@ const BlogPage: React.FC = () => {
       author: "Shaiv Mehrotra",
       date: "Sep 13, 2023",
       slug: "8",
-    }, 
+    },
     {
       image: "https://i.imgur.com/PPjAUbl.jpeg",
       tags: [{ name: "Technology" }],
@@ -579,7 +608,7 @@ const BlogPage: React.FC = () => {
                   key={`event-point-${index}`}
                   className="text-base md:text-lg text-slate-50"
                 >
-                  {typeof point === 'string' ? point : <>{point}</>}  
+                  {typeof point === 'string' ? point : <>{point}</>}
                 </li>
               ))}
             </ul>
