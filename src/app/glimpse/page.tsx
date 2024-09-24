@@ -22,7 +22,6 @@ const Teams = () => {
                 <div className="w-full mt-[3%]">
                     <Tooltip text="Back to Home">
                         <IconButton
-                            variant="contained"
                             size="small"
                             color="primary"
                             onClick={() => router.push("/")}
@@ -68,7 +67,6 @@ const Teams = () => {
                 <div className="w-full mt-[3%]">
                     {/*Tablet*/}
                     <IconButton
-                        variant="contained"
                         size="small"
                         color="primary"
                         onClick={() => router.push("/")}
@@ -110,7 +108,6 @@ const Teams = () => {
                 <div className="w-full mt-[3%]">
                     {/*Mobile*/}
                     <IconButton
-                        variant="contained"
                         size="small"
                         color="primary"
                         onClick={() => router.push("/")}

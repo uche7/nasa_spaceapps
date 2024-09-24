@@ -46,7 +46,6 @@ const Teams = () => {
                 <div className="w-full mt-[3%]">
                     <Tooltip text="Back to Home">
                         <IconButton
-                            variant="contained"
                             size="small"
                             color="primary"
                             onClick={() => router.push("/")}
@@ -91,7 +90,6 @@ const Teams = () => {
             <div className="DesktopScreen:hidden MobileScreen:hidden flex flex-col items-center justify-center gap-[36px] mx-[4.06%]">
                 <div className="w-full mt-[3%]">
                     <IconButton
-                        variant="contained"
                         size="small"
                         color="primary"
                         onClick={() => router.push("/")}
@@ -132,7 +130,6 @@ const Teams = () => {
             <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-center mx-[1.2rem]">
                 <div className="w-full mt-[3%]">
                     <IconButton
-                        variant="contained"
                         size="small"
                         color="primary"
                         onClick={() => router.push("/")}
