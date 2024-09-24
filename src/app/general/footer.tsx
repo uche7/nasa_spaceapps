@@ -184,7 +184,7 @@ const Footer = () => {
                 HackAthlone'23
               </h3>
               <ul className="font-firaSans list-none  leading-relaxed">
-                <li className="my-2 underline">
+                <li className="my-2">
                   <a
                     className="cursor-pointer tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                     href="/glimpse"
@@ -445,7 +445,7 @@ const Footer = () => {
               <h3 className="font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-4 text-hackathone-font-rocket-red">
                 HackAthlone'23
               </h3>
-              <ul className="font-firaSans list-none  leading-relaxed">
+              <ul className="font-firaSans list-none leading-relaxed">
                 <li className="my-2">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
