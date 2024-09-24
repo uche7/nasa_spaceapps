@@ -187,7 +187,7 @@ const Footer = () => {
                 <li className="my-2">
                   <a
                     className="cursor-pointer tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
-                    href="/glimpse"
+                    //href="/glimpse"
                     // onClick={navigateToGlimpse}
                     rel="noreferrer"
                   >
