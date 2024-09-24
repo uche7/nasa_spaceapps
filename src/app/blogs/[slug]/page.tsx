@@ -7,7 +7,7 @@ import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import NavigationBar from "../../general/navigation-bar";
 import Footer from "../../general/footer";
 import Tooltip from "../../general/tooltip"
-import { Paper, Typography, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import { point } from 'leaflet';
 import Image from 'next/image';
 
@@ -303,7 +303,7 @@ const BlogPage: React.FC = () => {
             </tr>
           </tbody>
         </table>,
-       
+
         <strong className='text-hackathone-font-rocket-red' key={'item-${index}'}>3. Driving: Flexibility and Convenience</strong>,
         "• Travel by Car: Enjoy the flexibility of driving to Athlone, with ample parking available at TU Shannon’s engineering building.",
         "• Navigation: Use Google Maps to find the best route to TU Shannon.",
@@ -496,7 +496,6 @@ const BlogPage: React.FC = () => {
 
           <Tooltip text="Back to Blogs">
             <IconButton
-              variant="contained"
               size="large"
               color="primary"
               onClick={handleBack}
@@ -560,7 +559,6 @@ const BlogPage: React.FC = () => {
         <div className="block lg:hidden mx-8 my-12 flex flex-col ">
           <Tooltip text="Back to Blogs">
             <IconButton
-              variant="contained"
               size="large"
               color="primary"
               onClick={handleBack}

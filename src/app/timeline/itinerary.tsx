@@ -51,7 +51,6 @@ const Itinerary: React.FC = () => {
                                     <div className="flex items-center mb-10">
                                         <Tooltip text="Back to Timeline">
                                             <IconButton
-                                                variant="contained"
                                                 size="large"
                                                 color="primary"
                                                 onClick={() => router.push("/#timeline")}
@@ -181,7 +180,6 @@ const Itinerary: React.FC = () => {
                                         <div className='TabletScreen:w-[20%] TabletScreen:text-left MobileScreen:flex MobileScreen:flex-row MobileScreen:w-full MobileScreen:ml-[2rem]'>
                                             {/*Button Sizing for Tablet Screen*/}
                                             <IconButton
-                                                variant="contained"
                                                 size="medium"
                                                 color="primary"
                                                 onClick={() => router.push("/#timeline")}
@@ -205,7 +203,6 @@ const Itinerary: React.FC = () => {
                                             </IconButton>
                                             {/*Button Sizing for Mobile Screen*/}
                                             <IconButton
-                                                variant="contained"
                                                 size="small"
                                                 color="primary"
                                                 onClick={() => router.push("/#timeline")}

@@ -43,7 +43,6 @@ const WinnerDetails: React.FC = () => {
                 {/*Desktop*/}
                 <Tooltip text="Back to Home">
                     <IconButton
-                        variant="contained"
                         size="small"
                         color="primary"
                         onClick={() => router.push("/")}
@@ -70,7 +69,6 @@ const WinnerDetails: React.FC = () => {
                 {/*Tablet Button*/}
                 <div className='DesktopScreen:hidden MobileScreen:hidden'>
                     <IconButton
-                        variant="contained"
                         size="small"
                         color="primary"
                         onClick={() => router.push("/")}
@@ -97,7 +95,6 @@ const WinnerDetails: React.FC = () => {
                 {/*Mobile Button*/}
                 <div className='DesktopScreen:hidden TabletScreen:hidden'>
                     <IconButton
-                        variant="contained"
                         size="small"
                         color="primary"
                         onClick={() => router.push("/")}
