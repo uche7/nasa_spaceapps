@@ -191,7 +191,7 @@ const HeroPage = () => {
                 borderColor: "white",
               }}
               onClick={() =>
-                window.open("https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/", "_blank")
+                window.open(`${window.location.origin}/moreinfo`, "_blank")
               }
               title="Click Here To See More Info"
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[30%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
@@ -238,7 +238,7 @@ const HeroPage = () => {
               }}
               onClick={() =>
                 window.open(
-                  `${window.location.origin}/moreinfo`,
+                  "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
                   "_blank"
                 )
               }
