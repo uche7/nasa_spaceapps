@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { navigationData } from "./general.dto";
-import NasaLogo from "@/assets/images/general/landing-page/logo2.png";
+// import Google from "@/assets/images/general/landing-page/logo2.png";
 import MenuIcon from "@/assets/images/general/landing-page/menu-icon.svg";
-
+import Google from "@/assets/images/general/landing-page/collabrators/google.png"
 export default function NavigationBar() {
   const Router = useRouter();
   const navigationInfo = useMemo(() => navigationData(Router), [Router]);
@@ -92,7 +92,7 @@ export default function NavigationBar() {
       <div onClick={() => Router.push("/")}>
         <Image
           className="cursor-pointer"
-          src={NasaLogo}
+          src={Google}
           width={50}
           alt={"Deedu logo"}
         ></Image>
@@ -136,7 +136,7 @@ export default function NavigationBar() {
       <div onClick={() => Router.push("/")} className="px-[0.5rem] py-[0.25rem]">
         <Image
           className="cursor-pointer"
-          src={NasaLogo}
+          src={Google}
           width={50}
           alt={"Deedu logo"}
         ></Image>
@@ -158,7 +158,7 @@ export default function NavigationBar() {
         className="px-[0.5rem] py-[0.25rem]">
         <Image
           className="cursor-pointer"
-          src={NasaLogo}
+          src={Google}
           width={50}
           alt={"Deedu logo"}
         ></Image>

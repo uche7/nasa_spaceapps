@@ -1,4 +1,5 @@
 import Aeb from "@/assets/images/general/landing-page/space-agencies/aeb_w.png";
+
 import Aeb_O from "@/assets/images/general/landing-page/space-agencies/aeb_round.png";
 import Asi from "@/assets/images/general/landing-page/space-agencies/asi.png";
 import Asi_O from "@/assets/images/general/landing-page/space-agencies/asi_round.png";
