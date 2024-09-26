@@ -22,6 +22,7 @@ const config: Config = {
         "hackathone-background-white": "#F8FDFF",
         "hackathone-background-light-grey": "#E4E4E7",
         "hackathone-background-dark-blue": "#07173F",
+        "hackathone-background-yellow": "#EAFE07",
         "hackathone-border-grey": "#C6C6C6",
         "hackathone-border-light-green": "#77DEB2",
         "hackathone-font-rocket-red": "#eafe07",
