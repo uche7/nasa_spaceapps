@@ -7,7 +7,21 @@ import Slider from "react-slick";
 import Code from "@/assets/images/general/landing-page/Code.png"
 import Participants from "@/assets/images/general/landing-page/189 1.png"
 
-const imageSwapper = [...OverviewImages];
+const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    adaptiveHeight: true,
+    cssEase: "ease-out",
+    swipe: false,
+    draggable: false,
+};
 // navigate to old website
 interface CountUpProps {
     target: number;
@@ -48,7 +62,7 @@ export const CardGrid = () => {
             <div className="flex mb-4 gap-8">
                 <div className="flex flex-col w-2/5 gap-8">
                     {/*Overview: Block 1 */}
-                    <div className="bg-[#101010] h-fit rounded-2xl border border-transparent justify-start text-start items-start">
+                    <div className="bg-gray-800 h-fit rounded-2xl border border-transparent justify-start text-start items-start">
                         <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center">
                             <motion.button
                                 className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
@@ -132,8 +146,23 @@ export const CardGrid = () => {
                     </div>
                 </div>
                 {/* Block 3: Moments to relive */}
-                <div className="w-3/5 bg-gray-800 h-fit rounded-2xl border border-4 border-black justify-start text-start items-start">
-                    <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center">
+                <div className="w-3/5 bg-gray-800 h-[500px] rounded-2xl border border-4 border-black relative overflow-hidden">
+                    <Slider {...settings} className="absolute inset-0 z-0">
+                        {PhotoWallImages.map((item, index) => (
+                            <div key={index} className="relative w-full h-full">
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        className="rounded-2xl lg:h-[500px] h-[300px] object-cover w-full h-full"
+                                        src={item.img}
+                                        alt={"Moments"}
+                                    ></Image>
+                                    {/* Image and shadow overlay */}
+                                    <div className="absolute inset-0 bg-black opacity-0 rounded-2xl z-10"></div>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                    <div className="absolute z-10 top-6 left-6">
                         <motion.button
                             className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
                             whileHover={{
@@ -150,15 +179,27 @@ export const CardGrid = () => {
             </div>
             <div className="flex flex-row mt-8 gap-8">
                 {/* Block 4: PhotoWall */}
-                <div className="w-3/5 bg-gray-800 h-96 rounded-2xl border border-4 border-black justify-start text-start items-start relative overflow-hidden">
-                    <Image
+                <div className="w-3/5 bg-gray-800 h-96 rounded-2xl border border-4 border-black relative overflow-hidden">
+                    {/* <Image
                         src={Participants}
                         alt="Participants"
                         layout="fill"  // Ensures the image scales with the parent div size
                         objectFit="cover"    // Ensures the image covers the container without distortion
                         className="rounded-t-2xl"  // Add rounded corners to match the parent div
-                    />
-                    <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center relative z-10">
+                    /> */}
+
+                    <Slider {...settings} className="absolute inset-0 z-0">
+                        {PhotoWallImages.map((item, index) => (
+                            <div key={index} className="relative w-full h-full">
+                                <Image
+                                    className="rounded-2xl lg:h-[400px] h-[300px] w-full h-full object-cover"
+                                    src={item.img}
+                                    alt={"Participants"}
+                                ></Image>
+                            </div>
+                        ))}
+                    </Slider>
+                    <div className="absolute z-10 top-6 left-6">
                         <motion.button
                             className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
                             whileHover={{
@@ -175,14 +216,25 @@ export const CardGrid = () => {
                 {/* Block 5 : Volunteer */}
                 <div className="w-2/5 bg-gray-800 h-96 rounded-2xl border border-4  border-black justify-start text-start items-start relative overflow-hidden">
                     {/* Image as background cover */}
-                    <Image
+                    {/* <Image
                         src={Participants}
                         alt="Participants"
                         layout="fill"  // Ensures the image scales with the parent div size
                         objectFit="cover"    // Ensures the image covers the container without distortion
                         className="rounded-t-2xl"  // Add rounded corners to match the parent div
-                    />
-                    <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center relative z-10">
+                    /> */}
+                    <Slider {...settings} className="absolute inset-0 z-0">
+                        {VolunteerImages.map((item, index) => (
+                            <div key={index} className="relative w-full h-full">
+                                <Image
+                                    className="rounded-2xl lg:h-[400px] h-[300px] w-full h-full object-cover"
+                                    src={item.img}
+                                    alt={"Volunteers"}
+                                />
+                            </div>
+                        ))}
+                    </Slider>
+                    <div className="absolute z-10 top-6 left-6">
                         <motion.button
                             className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
                             whileHover={{
