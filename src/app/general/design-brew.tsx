@@ -67,8 +67,7 @@ const StarWithCircles = () => {
 
 
 const handleJoinUsClick = () => {
-    // Navigate to the specified Instagram post
-    window.open("https://www.instagram.com/p/DALAFgJStm-/", "_blank"); // Opens the Instagram post in a new tab
+    window.open("https://www.meetup.com/designbrew-design-meetup-events/events/303563168/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link", "_blank"); 
 };
 
 const DesignBrew = () => {
