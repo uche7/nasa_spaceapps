@@ -6,6 +6,7 @@ import { navigationData } from "./general.dto";
 // import Google from "@/assets/images/general/landing-page/logo2.png";
 import MenuIcon from "@/assets/images/general/landing-page/menu-icon.svg";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png"
+import RunEU from "@/assets/images/general/landing-page/collabrators/runeulogo.png"
 export default function NavigationBar() {
   const Router = useRouter();
   const navigationInfo = useMemo(() => navigationData(Router), [Router]);
@@ -92,8 +93,8 @@ export default function NavigationBar() {
       <div onClick={() => Router.push("/")}>
         <Image
           className="cursor-pointer"
-          src={Google}
-          width={52}
+          src={RunEU}
+          width={60}
           alt={"Deedu logo"}
         ></Image>
       </div>
