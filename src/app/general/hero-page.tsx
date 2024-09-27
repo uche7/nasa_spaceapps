@@ -85,14 +85,14 @@ const HeroPage = () => {
                     src={RegisterGIF}
                     width={500}
                     alt="GIF"
-                    className="hidden 2xl:block absolute min-w-[385px] top-[30%] -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
+                    className="hidden 2xl:block absolute min-w-[450px] top-[30%] -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
                   />
 
                   <Image
                     src={RegisterGIF}
                     width={300}
                     alt="GIF"
-                    className="hidden xl:block 2xl:hidden absolute min-w-[285px] top-[30%] -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
+                    className="hidden xl:block 2xl:hidden absolute min-w-[345px] top-[30%] -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
                   />
                 </>
               )}
@@ -120,7 +120,7 @@ const HeroPage = () => {
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[18.7%]  h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
-               More Info
+                More Info
               </p>
             </motion.button>
           </div>
@@ -197,7 +197,7 @@ const HeroPage = () => {
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[30%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
-              More Info
+                More Info
               </p>
             </motion.button>
           </div>
@@ -246,7 +246,7 @@ const HeroPage = () => {
               className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[0.5rem] w-[60%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black">
-              Register Here
+                Register Here
               </p>
             </motion.button>
             <motion.button
@@ -268,7 +268,7 @@ const HeroPage = () => {
               className="bg-transparent mt-[1rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[60%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-150 ease-out">
-               More Info
+                More Info
               </p>
             </motion.button>
           </div>
