@@ -96,6 +96,7 @@ const Teams = () => {
                     </p>
                 </div>
                 <div className="w-full mb-[20%]">
+                    {/* <CardGrid /> */}
                 </div>
             </div>
         );
@@ -137,6 +138,7 @@ const Teams = () => {
                     from HackAthlone&apos;23
                 </p>
                 <div className="w-full mb-[20%] mt-[1.5rem]">
+                    {/* <CardGrid /> */}
                 </div>
             </div>
         );
