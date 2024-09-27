@@ -93,7 +93,7 @@ export default function NavigationBar() {
         <Image
           className="cursor-pointer"
           src={Google}
-          width={50}
+          width={52}
           alt={"Deedu logo"}
         ></Image>
       </div>
