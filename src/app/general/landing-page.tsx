@@ -15,6 +15,7 @@ import Footer from "./footer";
 import BackToTopButton from "../general/back-to-top";
 import { getMessaging, onMessage, getToken } from "firebase/messaging";
 import firebaseApp from "../notification/firebase";
+import DesignBrew from "./design-brew";
 
 const LandingPage = () => {
   const [token, setToken] = useState("");
@@ -113,6 +114,7 @@ const LandingPage = () => {
         <GlobalCollabrators />
         <Shannon />
         <TeamStories />
+        <DesignBrew/>
         <HackathoneTimeline />
         <Socials />
         <BackToTopButton />
