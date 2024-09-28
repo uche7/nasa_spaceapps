@@ -187,7 +187,7 @@ const Footer = () => {
                 <li className="my-2">
                   <a
                     className="cursor-pointer tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
-                    //href="/glimpse"
+                    href="/glimpse"
                     // onClick={navigateToGlimpse}
                     rel="noreferrer"
                   >
@@ -450,6 +450,7 @@ const Footer = () => {
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                     target="_blank"
+                    href="/glimpse"
                     // href="https://www.youtube.com/watch?v=zFdhwgOyqho"
                     rel="noreferrer"
                   >
@@ -702,7 +703,7 @@ const Footer = () => {
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                     target="_blank"
-                    // href="https://www.youtube.com/watch?v=zFdhwgOyqho"
+                    href="/glimpse"
                     rel="noreferrer"
                   >
                     Glimpse
