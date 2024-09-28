@@ -53,7 +53,7 @@ const Teams = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-full items-start text-center mt-2">
+                <div className="w-full items-start text-center mt-2 mb-[5rem]">
                     <CardGrid />
                 </div>
             </div>
@@ -96,7 +96,7 @@ const Teams = () => {
                     </p>
                 </div>
                 <div className="w-full mb-[20%]">
-                    {/* <CardGrid /> */}
+                    <CardGrid />
                 </div>
             </div>
         );
@@ -133,12 +133,13 @@ const Teams = () => {
                     <h1 className="font-[800] text-[30.99px] leading-[44.62px] text-hackathone-font-rocket-red font-hackathoneCabinetGrotesk my-2 pb-[0.5rem]">
                         Here&apos;s a glimpse
                     </h1>
+                    <p className="font-hackathoneCabinetGrotesk text-slate-50 font-[500] text-[16px] leading-[30.57px] pr-[8.7%]">
+                        from HackAthlone&apos;23
+                    </p>
                 </div>
-                <p className="font-hackathoneCabinetGrotesk text-slate-50 font-[500] text-[16px] leading-[30.57px] pr-[8.7%]">
-                    from HackAthlone&apos;23
-                </p>
+
                 <div className="w-full mb-[20%] mt-[1.5rem]">
-                    {/* <CardGrid /> */}
+                    <CardGrid />
                 </div>
             </div>
         );

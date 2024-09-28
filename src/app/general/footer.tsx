@@ -184,11 +184,10 @@ const Footer = () => {
                 HackAthlone'23
               </h3>
               <ul className="font-firaSans list-none  leading-relaxed">
-                <li className="my-2">
+                <li className="my-2 underline">
                   <a
                     className="cursor-pointer tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
-                    //href="/glimpse"
-                    // onClick={navigateToGlimpse}
+                    href="/glimpse"
                     rel="noreferrer"
                   >
                     Glimpse
@@ -446,11 +445,10 @@ const Footer = () => {
                 HackAthlone'23
               </h3>
               <ul className="font-firaSans list-none leading-relaxed">
-                <li className="my-2">
+                <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
-                    target="_blank"
-                    // href="https://www.youtube.com/watch?v=zFdhwgOyqho"
+                    href="/glimpse"
                     rel="noreferrer"
                   >
                     Glimpse
@@ -698,11 +696,10 @@ const Footer = () => {
                 HackAthlone'23
               </h3>
               <ul className="font-firaSans list-none  leading-relaxed">
-                <li className="my-2">
+                <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
-                    target="_blank"
-                    // href="https://www.youtube.com/watch?v=zFdhwgOyqho"
+                    href="/glimpse"
                     rel="noreferrer"
                   >
                     Glimpse
