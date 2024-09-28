@@ -40,7 +40,7 @@ export const CardGrid = () => {
             const controls = animate(0, target, {
                 duration: duration,
                 onUpdate: (v) => setValue(parseFloat(v.toFixed(decimals))),
-                onComplete: () => setHasReachedTarget(true), // Stop animation when the count reaches the target
+                onComplete: () => setHasReachedTarget(true),
             });
 
             return () => controls.stop(); // Cleanup animation on unmount
@@ -58,12 +58,12 @@ export const CardGrid = () => {
         );
     };
     return (
-        <div className="overflow-hidden gap-8">
-            <div className="flex mb-4 gap-8">
-                <div className="flex flex-col w-2/5 gap-8">
+        <div className="overflow-hidden lg:gap-8 TabletScreen:gap-6 gap-4">
+            <div className="flex mb-4 lg:gap-8 TabletScreen:gap-6 gap-4 TabletScreen:flex-col MobileScreen:flex-col">
+                <div className="flex lg:flex-col lg:w-2/5 lg:gap-8 TabletScreen:gap-6 gap-4 flex-row w-full MobileScreen:flex-col">
                     {/*Overview: Block 1 */}
-                    <div className="bg-gray-800 h-fit rounded-2xl border border-transparent justify-start text-start items-start">
-                        <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center">
+                    <div className="bg-gray-800 h-fit rounded-2xl border border-transparent justify-start text-start items-start lg:w-full TabletScreen:w-1/2 MobileScreen:w-full">
+                        <div className="bg-hackathone-font-rocket-red rounded-md border w-fit lg:m-6 m-4  justify-center">
                             <motion.button
                                 className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
                                 whileHover={{
@@ -73,25 +73,26 @@ export const CardGrid = () => {
                                     scale: 0.9,
                                 }}
                             >
-                                <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Overview</span>
+                                <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">Overview</span>
                             </motion.button>
                         </div>
-                        <div className="flex flex-row justify-center items-start gap-4 pb-4">
-                            <div className="w-1/3 mx-4">
-                                <CountUp target={15} suffix="+" duration={2} className="text-[3rem] font-bold" />
-                                <p className="">Subject Matter Expert mentors</p>
+                        <div className="flex md:flex-row flex-wrap md:flex-nowrap justify-center MobileScreen:justify-start items-start gap-4 pb-4 MobileScreen:pl-4">
+                            <div className="md:w-1/3 md:mx-4">
+                                <CountUp target={15} suffix="+" duration={2} className="lg:text-[3rem] text-[2.5rem] font-bold" />
+                                <p className="">Subject Matter <span className="hidden lg:block">Expert mentors</span></p>
                             </div>
-                            <div className="w-1/3">
-                                <CountUp target={140} suffix="+" duration={5} className="text-[3rem] font-bold" />
+                            <div className="md:w-1/3">
+                                <CountUp target={140} suffix="+" duration={5} className="lg:text-[3rem] text-[2.5rem] font-bold" />
                                 <p >Participants</p>
                             </div>
-                            <div className="w-1/3">
-                                <CountUp target={2.5} suffix="k" duration={4} decimals={1} className="text-[3rem] font-bold" />                                <p>Cash Prize</p>
+                            <div className="md:w-1/3">
+                                <CountUp target={2.5} suffix="k" duration={4} decimals={1} className="lg:text-[3rem] text-[2.5rem] font-bold" />
+                                <p>Cash Prize</p>
                             </div>
                         </div>
                     </div>
                     {/*Revisit: Block 2 */}
-                    <div className="bg-gray-800 h-fit rounded-2xl border border-4  border-black justify-start text-start items-start relative overflow-hidden">
+                    <div className="bg-gray-800 h-fit rounded-2xl border border-4  border-black justify-start text-start items-start relative overflow-hidden lg:w-full TabletScreen:w-1/2 MobileScreen:w-full">
                         {/* Image as background cover */}
                         <Image
                             src={Code}
@@ -102,7 +103,7 @@ export const CardGrid = () => {
                         />
                         {/* Content */}
                         <div className="relative z-10">
-                            <div className="bg-hackathone-font-rocket-red rounded-md border w-fit m-6 justify-center">
+                            <div className="bg-hackathone-font-rocket-red rounded-md border w-fit lg:m-6 m-4 justify-center">
                                 <motion.button
                                     className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
                                     whileHover={{
@@ -111,21 +112,25 @@ export const CardGrid = () => {
                                     whileTap={{
                                         scale: 0.9,
                                     }}
+                                    onClick={() =>
+                                        window.open(
+                                            "https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/",
+                                            "_blank"
+                                        )
+                                    }
                                 >
-                                    <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Revisit</span>
+                                    <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">Revisit</span>
                                 </motion.button>
                             </div>
                         </div>
                         {/* Text */}
                         <div className="relative flex justify-between items-end z-10">
                             <div className="text-start justify-bottom text-start px-6">
-                                <p className="text-[2.5rem] leading-tight font-bold py-4"><span className="text-hackathone-font-rocket-red">Hackath</span>l<span className="text-hackathone-font-rocket-red">on</span>e <span className="block">2023</span></p>
+                                <p className="lg:text-[2.5rem] text-[2rem] leading-tight font-bold py-4"><span className="text-hackathone-font-rocket-red">Hackath</span>l<span className="text-hackathone-font-rocket-red">on</span>e <span className="block">2023</span></p>
                             </div>
-                            <div className="p-4">
+                            <div className="p-4 hidden md:block">
                                 <motion.button
-                                    initial={{ opacity: 0, scale: 0.7 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 0.5 }}
+                                    transition={{ duration: 0.1 }}
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.9 }}
                                     className="bg-white rounded-full border p-4 hover:bg-hackathone-font-rocket-red transition duration-300 ease-in-out"
@@ -146,23 +151,23 @@ export const CardGrid = () => {
                     </div>
                 </div>
                 {/* Block 3: Moments to relive */}
-                <div className="w-3/5 bg-gray-800 h-[500px] rounded-2xl border border-4 border-black relative overflow-hidden">
+                <div className="lg:w-3/5 bg-gray-800 lg:h-[500px] TabletScreen:h-[400px] MobileScreen:h-52 rounded-2xl border border-4 border-black relative overflow-hidden w-full">
                     <Slider {...settings} className="absolute inset-0 z-0">
-                        {PhotoWallImages.map((item, index) => (
+                        {MomentsImages.map((item, index) => (
                             <div key={index} className="relative w-full h-full">
                                 <div className="relative w-full h-full">
                                     <Image
-                                        className="rounded-2xl lg:h-[500px] h-[300px] object-cover w-full h-full"
+                                        className="rounded-2xl lg:h-[500px] TabletScreen:h-[400px] MobileScreen:h-52 object-cover w-full h-full"
                                         src={item.img}
                                         alt={"Moments"}
                                     ></Image>
                                     {/* Image and shadow overlay */}
-                                    <div className="absolute inset-0 bg-black opacity-50 rounded-2xl z-10"></div>
+                                    <div className="absolute inset-0 bg-black lg:opacity-40 opacity-30 rounded-2xl z-10"></div>
                                 </div>
                             </div>
                         ))}
                     </Slider>
-                    <div className="absolute z-10 top-6 left-6">
+                    <div className="absolute z-10 lg:top-6 lg:left-6 top-4 left-4">
                         <motion.button
                             className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
                             whileHover={{
@@ -172,7 +177,7 @@ export const CardGrid = () => {
                                 scale: 0.9,
                             }}
                         >
-                            <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Moments to relive</span>
+                            <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">Moments to relive</span>
                         </motion.button>
                     </div>
                     <div className="absolute inset-0 flex justify-center items-center z-5">
@@ -182,9 +187,25 @@ export const CardGrid = () => {
                             className="rounded-2xl"
                         >
                             <Image
-                                className="rounded-2xl"
+                                className="rounded-2xl TabletScreen:hidden MobileScreen:hidden"
                                 width={60}
                                 height={60}
+                                src={PlayButon}
+                                alt="Play Button"
+                            />
+                            {/* Tablet View */}
+                            <Image
+                                className="rounded-2xl DesktopScreen:hidden MobileScreen:hidden"
+                                width={50}
+                                height={50}
+                                src={PlayButon}
+                                alt="Play Button"
+                            />
+                            {/* Tablet View */}
+                            <Image
+                                className="rounded-2xl TabletScreen:hidden DesktopScreen:hidden"
+                                width={40}
+                                height={40}
                                 src={PlayButon}
                                 alt="Play Button"
                             />
@@ -193,29 +214,21 @@ export const CardGrid = () => {
 
                 </div>
             </div>
-            <div className="flex flex-row mt-8 gap-8">
+            <div className="flex sm:flex-row flex-col mt-8 MobileScreen:mt-4 lg:gap-8 TabletScreen:gap-6 gap-4">
                 {/* Block 4: PhotoWall */}
-                <div className="w-3/5 bg-gray-800 h-96 rounded-2xl border border-4 border-black relative overflow-hidden">
-                    {/* <Image
-                        src={Participants}
-                        alt="Participants"
-                        layout="fill"  // Ensures the image scales with the parent div size
-                        objectFit="cover"    // Ensures the image covers the container without distortion
-                        className="rounded-t-2xl"  // Add rounded corners to match the parent div
-                    /> */}
-
+                <div className="lg:w-3/5 sm:w-1/2 w-full bg-gray-800 lg:h-96 TabletScreen:h-72 MobileScreen:h-52 rounded-2xl border border-4 border-black relative overflow-hidden">
                     <Slider {...settings} className="absolute inset-0 z-0">
                         {PhotoWallImages.map((item, index) => (
                             <div key={index} className="relative w-full h-full">
                                 <Image
-                                    className="rounded-2xl lg:h-[400px] h-[300px] w-full h-full object-cover"
+                                    className="rounded-2xl lg:h-[400px] TabletScreen:h-[300px] h-[200px] w-full h-full object-cover"
                                     src={item.img}
                                     alt={"Participants"}
                                 ></Image>
                             </div>
                         ))}
                     </Slider>
-                    <div className="absolute z-10 top-6 left-6">
+                    <div className="absolute z-10 lg:top-6 lg:left-6 top-4 left-4">
                         <motion.button
                             className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
                             whileHover={{
@@ -225,25 +238,25 @@ export const CardGrid = () => {
                                 scale: 0.9,
                             }}
                         >
-                            <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">PhotoWall</span>
+                            <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">PhotoWall</span>
                         </motion.button>
                     </div>
                 </div>
                 {/* Block 5 : Volunteer */}
-                <div className="w-2/5 bg-gray-800 h-96 rounded-2xl border border-4  border-black justify-start text-start items-start relative overflow-hidden">
+                <div className="lg:w-2/5 sm:w-1/2 w-full bg-gray-800 lg:h-96 TabletScreen:h-72 MobileScreen:h-52 rounded-2xl border border-4  border-black justify-start text-start items-start relative overflow-hidden">
                     {/* Image as background cover */}
                     <Slider {...settings} className="absolute inset-0 z-0">
                         {VolunteerImages.map((item, index) => (
                             <div key={index} className="relative w-full h-full">
                                 <Image
-                                    className="rounded-2xl lg:h-[400px] h-[300px] w-full h-full object-cover"
+                                    className="rounded-2xl lg:h-[400px] TabletScreen:h-[300px] h-[200px] w-full h-full object-cover"
                                     src={item.img}
                                     alt={"Volunteers"}
                                 />
                             </div>
                         ))}
                     </Slider>
-                    <div className="absolute z-10 top-6 left-6">
+                    <div className="absolute z-10 lg:top-6 lg:left-6 top-4 left-4">
                         <motion.button
                             className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
                             whileHover={{
@@ -253,7 +266,7 @@ export const CardGrid = () => {
                                 scale: 0.9,
                             }}
                         >
-                            <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Volunteer</span>
+                            <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">Volunteer</span>
                         </motion.button>
                     </div>
                 </div>
