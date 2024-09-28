@@ -5,7 +5,7 @@ import { OverviewImages, RevisitImages, MomentsImages, PhotoWallImages, Voluntee
 import router, { useRouter } from "next/router";
 import Slider from "react-slick";
 import Code from "@/assets/images/general/landing-page/Code.png"
-import Participants from "@/assets/images/general/landing-page/189 1.png"
+import PlayButon from "@/assets/images/general/landing-page/glimpse/playbutton.png"
 
 const settings = {
     dots: true,
@@ -157,7 +157,7 @@ export const CardGrid = () => {
                                         alt={"Moments"}
                                     ></Image>
                                     {/* Image and shadow overlay */}
-                                    <div className="absolute inset-0 bg-black opacity-0 rounded-2xl z-10"></div>
+                                    <div className="absolute inset-0 bg-black opacity-50 rounded-2xl z-10"></div>
                                 </div>
                             </div>
                         ))}
@@ -175,6 +175,22 @@ export const CardGrid = () => {
                             <span className="block text-hackathoneCabinetGrotesk text-black text-lg font-bold px-4 py-2">Moments to relive</span>
                         </motion.button>
                     </div>
+                    <div className="absolute inset-0 flex justify-center items-center z-5">
+                        <motion.div
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="rounded-2xl"
+                        >
+                            <Image
+                                className="rounded-2xl"
+                                width={60}
+                                height={60}
+                                src={PlayButon}
+                                alt="Play Button"
+                            />
+                        </motion.div>
+                    </div>
+
                 </div>
             </div>
             <div className="flex flex-row mt-8 gap-8">
@@ -216,13 +232,6 @@ export const CardGrid = () => {
                 {/* Block 5 : Volunteer */}
                 <div className="w-2/5 bg-gray-800 h-96 rounded-2xl border border-4  border-black justify-start text-start items-start relative overflow-hidden">
                     {/* Image as background cover */}
-                    {/* <Image
-                        src={Participants}
-                        alt="Participants"
-                        layout="fill"  // Ensures the image scales with the parent div size
-                        objectFit="cover"    // Ensures the image covers the container without distortion
-                        className="rounded-t-2xl"  // Add rounded corners to match the parent div
-                    /> */}
                     <Slider {...settings} className="absolute inset-0 z-0">
                         {VolunteerImages.map((item, index) => (
                             <div key={index} className="relative w-full h-full">
