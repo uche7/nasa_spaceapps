@@ -187,7 +187,6 @@ export const CardGrid = () => {
                                     src={item.img}
                                     alt={"Participants"}
                                 ></Image>
-                                <div className="absolute inset-0 bg-black opacity-30 rounded-2xl z-10"></div>
                             </div>
                         ))}
                     </Slider>
