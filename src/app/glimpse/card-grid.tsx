@@ -1,26 +1,42 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, animate } from "framer-motion";
 import Image from "next/image";
 import { OverviewImages, RevisitImages, MomentsImages, PhotoWallImages, VolunteerImages } from "./glimpse.dto";
 import router, { useRouter } from "next/router";
 import Slider from "react-slick";
+import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 import Code from "@/assets/images/general/landing-page/Code.png"
-import PlayButon from "@/assets/images/general/landing-page/glimpse/playbutton.png"
 
-const settings = {
-    dots: true,
-    fade: true,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    adaptiveHeight: true,
-    cssEase: "ease-out",
-    swipe: false,
-    draggable: false,
+const CustomArrow = ({ direction, onClick }: { direction: "prev" | "next"; onClick: () => void }) => {
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+        setIsClicked(true);
+        onClick();
+        //reset color 
+        setTimeout(() => setIsClicked(false), 300);
+    };
+
+    return (
+        <div
+            className={`absolute top-0 ${direction === "prev" ? "left-0" : "right-0"
+                } z-20 h-full w-16 flex items-center justify-center cursor-pointer`}
+            onClick={handleClick}
+        >
+            <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={`rounded-full p-2 transition-colors duration-300 ${isClicked ? "bg-hackathone-font-rocket-red" : "bg-white bg-opacity-50"
+                    }`}
+            >
+                {direction === "prev" ? (
+                    <ChevronLeft className={`w-6 h-6 text-black`} />
+                ) : (
+                    <ChevronRight className={`w-6 h-6 text-black`} />
+                )}
+            </motion.div>
+        </div>
+    );
 };
 // navigate to old website
 interface CountUpProps {
@@ -32,6 +48,17 @@ interface CountUpProps {
 }
 
 export const CardGrid = () => {
+    const sliderRef = useRef<Slider | null>(null);
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        cssEase: "ease-out",
+        nextArrow: <CustomArrow direction="next" onClick={() => sliderRef.current?.slickNext()} />,
+        prevArrow: <CustomArrow direction="prev" onClick={() => sliderRef.current?.slickPrev()} />,
+    };
     const CountUp = ({ target, className, suffix = "", duration = 3, decimals = 0 }: CountUpProps) => {
         const [value, setValue] = useState(0);
         const [hasReachedTarget, setHasReachedTarget] = useState(false);
@@ -155,15 +182,12 @@ export const CardGrid = () => {
                     <Slider {...settings} className="absolute inset-0 z-0">
                         {MomentsImages.map((item, index) => (
                             <div key={index} className="relative w-full h-full">
-                                <div className="relative w-full h-full">
-                                    <Image
-                                        className="rounded-2xl lg:h-[500px] TabletScreen:h-[400px] MobileScreen:h-52 object-cover w-full h-full"
-                                        src={item.img}
-                                        alt={"Moments"}
-                                    ></Image>
-                                    {/* Image and shadow overlay */}
-                                    <div className="absolute inset-0 bg-black lg:opacity-40 opacity-30 rounded-2xl z-10"></div>
-                                </div>
+                                <Image
+                                    className="rounded-2xl lg:h-[600px] TabletScreen:h-[500px] h-[220px] w-full h-full object-cover"
+                                    src={item.img}
+                                    alt={"Participants"}
+                                ></Image>
+                                <div className="absolute inset-0 bg-black opacity-30 rounded-2xl z-10"></div>
                             </div>
                         ))}
                     </Slider>
@@ -180,38 +204,6 @@ export const CardGrid = () => {
                             <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">Moments to relive</span>
                         </motion.button>
                     </div>
-                    <div className="absolute inset-0 flex justify-center items-center z-5">
-                        <motion.div
-                            whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="rounded-2xl"
-                        >
-                            <Image
-                                className="rounded-2xl TabletScreen:hidden MobileScreen:hidden"
-                                width={60}
-                                height={60}
-                                src={PlayButon}
-                                alt="Play Button"
-                            />
-                            {/* Tablet View */}
-                            <Image
-                                className="rounded-2xl DesktopScreen:hidden MobileScreen:hidden"
-                                width={50}
-                                height={50}
-                                src={PlayButon}
-                                alt="Play Button"
-                            />
-                            {/* Tablet View */}
-                            <Image
-                                className="rounded-2xl TabletScreen:hidden DesktopScreen:hidden"
-                                width={40}
-                                height={40}
-                                src={PlayButon}
-                                alt="Play Button"
-                            />
-                        </motion.div>
-                    </div>
-
                 </div>
             </div>
             <div className="flex sm:flex-row flex-col mt-8 MobileScreen:mt-4 lg:gap-8 TabletScreen:gap-6 gap-4">
@@ -221,7 +213,7 @@ export const CardGrid = () => {
                         {PhotoWallImages.map((item, index) => (
                             <div key={index} className="relative w-full h-full">
                                 <Image
-                                    className="rounded-2xl lg:h-[400px] TabletScreen:h-[300px] h-[200px] w-full h-full object-cover"
+                                    className="rounded-2xl lg:h-[400px] TabletScreen:h-[300px] h-[220px] w-full h-full object-cover"
                                     src={item.img}
                                     alt={"Participants"}
                                 ></Image>
@@ -249,7 +241,7 @@ export const CardGrid = () => {
                         {VolunteerImages.map((item, index) => (
                             <div key={index} className="relative w-full h-full">
                                 <Image
-                                    className="rounded-2xl lg:h-[400px] TabletScreen:h-[300px] h-[200px] w-full h-full object-cover"
+                                    className="rounded-2xl lg:h-[400px] TabletScreen:h-[300px] h-[220px] w-full h-full object-cover"
                                     src={item.img}
                                     alt={"Volunteers"}
                                 />
