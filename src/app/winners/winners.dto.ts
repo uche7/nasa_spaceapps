@@ -39,7 +39,7 @@ export const winners: WinnerType[] = [
         ],
         prize: '€ 1500',
         image: Fwf,
-        member:['23','23','manav']
+        member:['Robert Rafanelli','Claudia Ortiz','Joe Biju','Micheál Gill','Ray Foysal','Moaz Refaei']
     },
     {
         title: '2nd',
@@ -61,7 +61,8 @@ export const winners: WinnerType[] = [
         ],
         prize: '€ 750',
         image: Idontthink,
-        member:['23','23']
+        member:['Piotr Warkocki','Victor Costello','Josh Quirke','James McNeill','Dylan Lowe','Sorin Stoleru'
+        ]
     },
     {
         title: '3rd',
@@ -83,6 +84,6 @@ export const winners: WinnerType[] = [
         ],
         prize: '€ 250',
         image: Soundsurfers,
-        member:['23','23']
+        member:['Eoghan Hynes','Dave','Aine','Diarmuid','Fabrizio']
     },
 ]
