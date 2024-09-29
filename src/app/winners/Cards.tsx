@@ -116,6 +116,20 @@ const WinnerDetails: React.FC = () => {
                     {winner.prize}
                   </span>
                 </div>
+
+                <h3 className=" text-xl text-grey-800 mb-2 italic">Team Members 
+                </h3>
+                <div className="grid grid-cols-2 gap-2">
+  {winner.member.map((member, index) => (
+    <span
+      key={index}
+      className="px-4 py-2 border border-white text-white rounded bg-transparent"
+    >
+      {member}
+    </span>
+  ))}
+</div>
+                 
               </div>
             </div>
           ))}
