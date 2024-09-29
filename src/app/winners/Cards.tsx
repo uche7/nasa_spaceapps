@@ -166,61 +166,53 @@ const WinnerDetails: React.FC = () => {
             </div>
 
             {/*Card for Winners */}
+            <div className="flex flex-col lg:grid lg:grid-cols-3 gap-4">
             {winners.map((winner, index) => (
-                <div
-                    key={index}
-                    className={`relative border-2 border-gray-700 rounded-3xl flex mt-2 ${index % 2 == 0 ? 'flex-col lg:flex-row' : 'flex-col lg:flex-row-reverse'} ${index == 2 ? 'lg:mb-12' : ''}`}
-                >
-                    {/* Background Layer with Opacity */}
-                    <div className="absolute inset-0 bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md z-0 rounded-3xl"></div>
-                    {/* Image */}
-                    <div className={`relative p-4 md:p-8 w-full lg:w-1/3 flex ${index % 2 == 0 ? 'lg:justify-start justify-center lg:pr-0' : 'lg:justify-end justify-center lg:pl-0'} z-10`}>
-                        {winner.image && (
-                            <Image
-                                src={winner.image}
-                                alt={winner.name}
-                                // layout="responsive"
-                                width={500}
-                                height={300}
-                            />
-                        )}
-                    </div>
+  <div
+    key={index}
+    className={`relative border-2 border-gray-700 rounded-3xl flex flex-col mt-2 overflow-hidden`} // Added overflow-hidden for rounded effect on image
+  >
+    {/* Background Layer with Opacity */}
+    <div className="absolute inset-0 bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md z-0 rounded-3xl"></div>
+    
+    {/* Image */}
+    <div className="relative p-4 md:p-8 w-full flex justify-center z-10">
+      {winner.image && (
+        <Image
+          src={winner.image}
+          alt={winner.name}
+          width={500}
+          height={300}
+          className="rounded-t-3xl object-cover"
+        />
+      )}
+    </div>
 
-                    {/* Content */}
-                    <div className="relative w-full lg:w-2/3 py-8 MobileScreen:px-4 TabletScreen:px-4 lg:px-8 z-10">
-                        <div className='text-4xl MobileScreen:text-3xl font-bold flex flex-row items-end'>
-                            <h1 ><span className='text-[88px] MobileScreen:text-[68px] text-hackathone-font-rocket-red'>{winner.title}</span></h1>
-                            <h1 className='pl-4 MobileScreen:pl-2 whitespace-pre-line'><span className=''>{winner.name}</span></h1>
-                        </div>
+    {/* Title, Name, and Prize */}
+    <div className="relative w-full py-2 px-4 lg:px-8 xl:px-12 z-10 text-left">
+      {/* Title */}
+      <div className="text-4xl MobileScreen:text-3xl font-bold">
+        <h1 className="text-4xl MobileScreen:text-3xl text-hackathone-font-rocket-red">
+          {winner.title}
+        </h1>
+      </div>
+
+      {/* Name */}
+      <div className="text-2xl MobileScreen:text-xl font-bold mt-2">
+        <h2>{winner.name}</h2>
+      </div>
+
+      {/* Prize */}
+      <div className="mt-4 text-lg bg-hackathone-font-rocket-red text-black font-bold py-2 px-6 rounded-full inline-block">
+        Prize: {winner.prize}
+      </div>
+    </div>
+  </div>
+))}
+
+</div>
 
 
-                        <div className={`pt-6 md:pt-8 text-lg leading-relaxed text-start pr-2  ${index % 2 == 0 ? 'pr-4 pl-4' : 'pl-2'}`}>
-                            {winner.details.map((paragraph, paragraphIndex) => (
-                                <p
-                                    className='font-sefarvestCabinetGrotesk text-slate-50 mb-8'
-                                    key={paragraphIndex}
-                                >
-                                    {paragraph.map((part, partIndex) => (
-                                        part.highlight ? (
-                                            <span key={partIndex} className="text-hackathone-font-rocket-red font-[600]">
-                                                {part.text}
-                                            </span>
-                                        ) : (
-                                            <span key={partIndex}>
-                                                {part.text}
-                                            </span>
-                                        )
-                                    ))}
-                                </p>
-                            ))}
-                            <div className="mt-4 text-lg bg-hackathone-font-rocket-red text-black font-bold py-2 px-6 rounded-full inline-block">
-                                Prize: {winner.prize}
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            ))}
         </div>
     );
 };
