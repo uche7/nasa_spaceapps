@@ -114,7 +114,6 @@ const LandingPage = () => {
         <GlobalCollabrators />
         <Shannon />
         <TeamStories />
-        <DesignBrew/>
         <HackathoneTimeline />
         <Socials />
         <BackToTopButton />
