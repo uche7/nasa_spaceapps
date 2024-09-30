@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -37,6 +37,20 @@ export default function NavigationBar() {
     };
   }, [isHovered]);
 
+
+    React.useEffect(() => {
+      if (isSideNavOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+  
+      // Cleanup: Ensure scrolling is re-enabled when the component unmounts
+      return () => {
+        document.body.style.overflow = "auto";
+      };
+    }, [isSideNavOpen]);
+
   const renderLines = () => {
     const lines = [];
     for (let i = 0; i < 3; i++) {
@@ -51,14 +65,16 @@ export default function NavigationBar() {
     setIsSideNavOpen(!isSideNavOpen);
   };
 
+   
+
   const sideNavVariants = {
-    hidden: { x: "-100%" },
+    hidden: { x: "100%" },
     visible: { x: "0%" },
   };
 
   const SideNav = () => (
     <motion.div
-      className="fixed top-0 left-0 w-[75%] h-full bg-black z-50 p-5"
+      className="fixed top-0 right-0 w-[75%] h-full bg-black z-50 p-5"
       initial="hidden"
       animate={isSideNavOpen ? "visible" : "hidden"}
       variants={sideNavVariants}
