@@ -19,7 +19,7 @@ const Teams = () => {
     /** Desktop View */
     const desktopView = () => {
         return (
-            <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-col gap-[36px] mx-[8.06%]">
+            <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-col gap-[36px] mx-[8.06%] mb-[5rem]">
                 {/* Circular icon placeholder*/}
                 <div className="relative w-full flex justify-center items-center">
                     {/* Circular icon placeholder */}
