@@ -1,5 +1,5 @@
 import Fwf from "@/assets/images/general/landing-page/winners/Soundsurfers.png";
-import Arjun from "@/assets/images/general/landing-page/teams/Arjun S Narayanan.png";
+import Arjun from "@/assets/images/general/landing-page/teams/Arjun.png";
 import Kshitij from "@/assets/images/general/landing-page/teams/Kshitij Motke.jpg";
 import Sahir from "@/assets/images/general/landing-page/teams/Sahir Sharma.jpg";
 import Sudhanshu from "@/assets/images/general/landing-page/teams/Sudhanshu Bhamburkar.jpg";
@@ -12,9 +12,10 @@ import Catherine from "@/assets/images/general/landing-page/teams/Catherine Puli
 import YuJing from "@/assets/images/general/landing-page/teams/Yujing Zhang.png";
 import Tvisha from "@/assets/images/general/landing-page/teams/Tvisha Mehta.jpg";
 import Khayati from "@/assets/images/general/landing-page/teams/Khayati Arora.jpg";
-import Manav from "@/assets/images/general/landing-page/teams/Manav.png";
+import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
-import Yagnik from "@/assets/images/general/landing-page/teams/Yagnik.jpg";
+import Yagnik from "@/assets/images/general/landing-page/teams/Manav_Yagnik.jpg";
+import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 
 
 export const teamMembers = [
@@ -85,7 +86,7 @@ export const teamMembers = [
     },
     {
         name: 'Catherine Pulickan',
-        role: 'Designer',
+        role: 'Operations',
         bio: null,
         image: Catherine,
     },
@@ -97,20 +98,32 @@ export const teamMembers = [
     },
     {
         name: 'Khayati Arora',
-        role: 'Designer',
+        role: 'Operations',
         bio: null,
         image: Khayati,
+    },
+    {
+        name: 'Kshitij Motke',
+        role: 'Operations',
+        bio: null,
+        image: Kshitij,
+    },
+    {
+        name: 'Nguyen Phung (Nora)',
+        role: 'Video Production',
+        bio: null,
+        image: Nora,
+    },
+    {
+        name: 'Liew Zi Ken',
+        role: 'Photographer',
+        bio: null,
+        image: Ken,
     },
     {
         name: 'Yujing Zhang',
         role: 'Ground Support',
         bio: null,
         image: YuJing,
-    },
-    {
-        name: 'Nguyen Phung (Nora)',
-        role: 'Video Editor',
-        bio: null,
-        image: Nora,
     },
 ]
