@@ -28,8 +28,9 @@ export const CardGrid = () => {
     };
 
     return (
-        <div className="overflow-hidden">
-            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 lg:gap-8 md:gap-6 gap-4">
+        <div className="overflow-hidden MobileScreen:flex MobileScreen:justify-center">
+            {/* Responsive grid layout */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6">
                 {gridItems.map((item, index) => {
 
                     return (
@@ -39,13 +40,15 @@ export const CardGrid = () => {
                             style={{ transition: "transform 0.3s ease-in-out" }} // Add smooth transition
                             onClick={() => handleCardClick(index)}
                         >
-                            <div className="rounded-2xl w-80 h-80 bg-gray-600 z-10 relative">
+                            {/* Container for the image */}
+                            <div className="w-80 h-60 md:h-72 lg:h-60 relative rounded-2xl overflow-hidden">
                                 <Image
-                                    className="cursor-pointer rounded-2xl"
-                                    src={item.image.Fwf}
-                                    layout="fill"
-                                    objectFit="cover"
+                                    className="cursor-pointer rounded-2xl object-contain"
+                                    src={item.image}
                                     alt={item.name}
+                                    layout="fill"  // Ensures the image fills the container
+                                    objectFit="contain"  // Keeps the aspect ratio
+                                    quality={100}
                                 />
                             </div>
                             <div className="w-80 text-center text-lg text-slate-50 py-2">
@@ -64,7 +67,7 @@ export const CardGrid = () => {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -50 }}
-                        className="bg-gray-800 p-6 rounded-2xl shadow-lg w-11/12 max-w-lg text-white relative"
+                        className="bg-gray-800 p-6 rounded-2xl shadow-lg w-11/12 sm:w-9/12 md:w-8/12 lg:w-6/12 xl:w-5/12 text-white relative"
                         ref={modalRef}
                     >
                         <button
@@ -77,7 +80,7 @@ export const CardGrid = () => {
                         {/* Image */}
                         <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4">
                             <Image
-                                src={gridItems[selectedMember].image.Fwf}
+                                src={gridItems[selectedMember].image}
                                 layout="fill"
                                 objectFit="cover"
                                 alt={gridItems[selectedMember].name}
@@ -107,7 +110,7 @@ export const CardGrid = () => {
                                     </span>
                                 ))
                             ) : (
-                                "No bio available."
+                                "Oh No! This person has yet to given their details. So - No bio available."
                             )}
                         </p>
 
