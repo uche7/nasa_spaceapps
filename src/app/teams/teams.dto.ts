@@ -16,6 +16,7 @@ import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
 import Yagnik from "@/assets/images/general/landing-page/teams/Manav_Yagnik.jpg";
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
+import Gagan from "@/assets/images/general/landing-page/teams/Gagan.jpg";
 
 
 export const teamMembers = [
@@ -218,5 +219,16 @@ export const teamMembers = [
             github: null,
         },
         image: YuJing,
+    },
+    {
+        name: 'Gagan',
+        role: 'Ground Support',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: null,
+            github: null,
+        },
+        image: Gagan,
     },
 ]
