@@ -19,7 +19,7 @@ const Teams = () => {
     /** Desktop View */
     const desktopView = () => {
         return (
-            <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-col gap-[36px] mx-[8.06%]">
+            <div className=" TabletScreen:hidden MobileScreen:hidden flex flex-col gap-[36px] mx-[8.06%] mb-[5rem]">
                 {/* Circular icon placeholder*/}
                 <div className="relative w-full flex justify-center items-center">
                     {/* Circular icon placeholder */}
@@ -112,13 +112,14 @@ const Teams = () => {
                         />
                     </IconButton>
                     <h1 className="font-[700] text-[32.99px] text-hackathone-font-rocket-red my-2">
-                        Hackathlone&apos;24 team
+                        Meet the team
                     </h1>
                     <p className="font-hackathoneCabinetGrotesk font-[400] text-[18px] leading-[30.57px] pr-[12.7%]">
-                        <span className="text-hackathone-font-rocket-red font-[600]">NASA</span> teamed up with 13 space agency partners in 2023. This year, they’ve expanded to <span className="text-hackathone-font-rocket-red font-[600]">15 agencies</span> to bring the largest global hackathon to communities worldwide! Together with <span className="text-hackathone-font-rocket-red font-[600]">NASA’s Earth Science Division</span>, these agencies have crafted unique problem statements across various domains, from agrotech and biotech to software, the arts, and more. They provide access to data and resources related to Earth observations to help participants tackle these challenges.
+                        that is making a difference!
                     </p>
                 </div>
                 <div className="w-full mb-[20%]">
+                    <CardGrid />
                 </div>
             </div>
         );
@@ -152,21 +153,22 @@ const Teams = () => {
                         />
                     </IconButton>
                     <h1 className="font-[800] text-[30.99px] leading-[44.62px] text-hackathone-font-rocket-red font-hackathoneCabinetGrotesk my-2 pb-[0.5rem]">
-                        Hackathlone&apos;24 team
+                        Meet the team
                     </h1>
+                    <p className="font-hackathoneCabinetGrotesk text-slate-50 font-[500] text-[16px] leading-[30.57px] pr-[8.7%]">
+                        that is making a difference!
+                    </p>
                 </div>
-                <p className="font-hackathoneCabinetGrotesk text-slate-50 font-[500] text-[16px] leading-[30.57px] pr-[8.7%]">
-                    <span className="text-hackathone-font-rocket-red font-[500]">NASA</span> teamed up with 13 space agency partners in 2023. This year, they’ve expanded to <span className="text-hackathone-font-rocket-red font-[500]">15 agencies</span> to bring the largest global hackathon to communities worldwide! Together with <span className="text-hackathone-font-rocket-red font-[500]">NASA’s Earth Science Division</span>, these agencies have crafted unique problem statements across various domains, from agrotech and biotech to software, the arts, and more. They provide access to data and resources related to Earth observations to help participants tackle these challenges.
 
-                </p>
                 <div className="w-full mb-[20%] mt-[1.5rem]">
+                    <CardGrid />
                 </div>
             </div>
         );
     };
     return (
         <section>
-            <div className="relative min-h-screen bg-black text-white">
+            <div className="relative min-h-screen bg-black text-white overflow-hidden">
                 <div className="fixed inset-0 z-0">
                     <Canvas camera={{ position: [0, 0, 1] }}>
                         <CloudParticleBg />

@@ -28,39 +28,6 @@ const Footer = () => {
               <a className="cursor-pointer" href="/">
                 <Image width={400} src={HeroImage} alt="Hero Image" />
               </a>
-              {/* <p className="w-[80%] sm:w-[62%] lg:w-[220px] text-justify leading-snug font-overpass font-normal mt-1 mb-6">
-                Space Apps is funded by NASA&apos;s{" "}
-                <span className="font-semibold">
-                  <a
-                    className="text-[#2E96F5] no-underline"
-                    href="https://science.nasa.gov/earth-science"
-                  >
-                    Earth Science Division
-                  </a>
-                </span>{" "}
-                through a contract with{" "}
-                <a
-                  className="font-semibold text-[#2E96F5] no-underline"
-                  href="https://www.boozallen.com/"
-                >
-                  Booz Allen Hamilton
-                </a>
-                ,{" "}
-                <a
-                  className="font-semibold text-[#2E96F5] no-underline"
-                  href="https://www.mindgrub.com/"
-                >
-                  Mindgrub
-                </a>
-                , and{" "}
-                <a
-                  className="font-semibold text-[#2E96F5] no-underline"
-                  href="https://www.secondmuse.com/"
-                >
-                  SecondMuse
-                </a>
-                .
-              </p> */}
             </div>
 
             <div className="flex gap-3 relative right-1 flex-row items-center justify-between mb-6 ">
@@ -111,6 +78,14 @@ const Footer = () => {
                 Participation Kit
               </h3>
               <ul className="font-firaSans list-none leading-relaxed">
+                <li className="my-2 underline">
+                  <a
+                    className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
+                    href="/teams"
+                  >
+                    Meet Our Team
+                  </a>
+                </li>
                 <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
@@ -375,6 +350,14 @@ const Footer = () => {
                 <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
+                    href="/teams"
+                  >
+                    Meet Our Team
+                  </a>
+                </li>
+                <li className="my-2 underline">
+                  <a
+                    className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                     target="_blank"
                     href="https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/"
                     rel="noreferrer"
@@ -623,6 +606,14 @@ const Footer = () => {
                 Participation Kit
               </h3>
               <ul className="font-firaSans list-none leading-relaxed">
+                <li className="my-2 underline">
+                  <a
+                    className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
+                    href="/teams"
+                  >
+                    Meet Our Team
+                  </a>
+                </li>
                 <li className="my-2 underline">
                   <a
                     className="tracking-wide no-underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
