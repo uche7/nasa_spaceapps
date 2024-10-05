@@ -74,7 +74,7 @@ export const teamMembers = [
         bio: null,
         socials: {
             twitter: null,
-            linkedin: null,
+            linkedin: 'https://www.linkedin.com/in/manav-yagnik-328535241/',
             github: null,
         },
         image: Yagnik,
@@ -82,7 +82,14 @@ export const teamMembers = [
     {
         name: 'Arjun S Narayanan',
         role: 'Designer',
-        bio: null,
+        bio: [
+            [
+                { text: "Hey there! I am Arjun, a passionate ", highlight: false },
+                { text: "designer ", highlight: true },
+                { text: "who focuses on giving good experience to users. Making life easy for everyone!", highlight: false },
+
+            ],
+        ],
         socials: {
             twitter: null,
             linkedin: 'https://www.linkedin.com/in/arjun-s-narayanan-006018185/',
@@ -100,17 +107,6 @@ export const teamMembers = [
             github: null,
         },
         image: Mavis,
-    },
-    {
-        name: 'Ucchena Nangifor',
-        role: 'Web Developer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: null,
-            github: null,
-        },
-        image: Nnajiofor,
     },
     {
         name: 'Sudhanshu Bhamburkar',
@@ -151,7 +147,7 @@ export const teamMembers = [
         bio: null,
         socials: {
             twitter: null,
-            linkedin: null,
+            linkedin: 'https://www.linkedin.com/in/tvisha-mehta-10b993207/',
             github: null,
         },
         image: Tvisha,
@@ -179,17 +175,6 @@ export const teamMembers = [
         image: Kshitij,
     },
     {
-        name: 'Nguyen Phung (Nora)',
-        role: 'Video Production',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: null,
-            github: null,
-        },
-        image: Nora,
-    },
-    {
         name: 'Liew Zi Ken',
         role: 'Photographer',
         bio: null,
@@ -197,8 +182,31 @@ export const teamMembers = [
             twitter: null,
             linkedin: null,
             github: null,
+            instagram: 'https://www.instagram.com/liewziken/',
         },
         image: Ken,
+    },
+    {
+        name: 'Ucchena Nangifor',
+        role: 'Web Developer',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: null,
+            github: null,
+        },
+        image: Nnajiofor,
+    },
+    {
+        name: 'Nguyen Phung (Nora)',
+        role: 'Video Production',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/mainguyenphung/',
+            github: null,
+        },
+        image: Nora,
     },
     {
         name: 'Yujing Zhang',
