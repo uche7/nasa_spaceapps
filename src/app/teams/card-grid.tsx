@@ -28,11 +28,10 @@ export const CardGrid = () => {
     };
 
     return (
-        <div className="overflow-hidden MobileScreen:flex MobileScreen:justify-center">
+        <div className="overflow-hidden flex justify-center sm:block sm:justify-start">
             {/* Responsive grid layout */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-6">
                 {gridItems.map((item, index) => {
-
                     return (
                         <div
                             key={index}
@@ -41,17 +40,18 @@ export const CardGrid = () => {
                             onClick={() => handleCardClick(index)}
                         >
                             {/* Container for the image */}
-                            <div className="w-80 h-60 md:h-72 lg:h-60 relative rounded-2xl overflow-hidden">
+                            <div className="relative w-auto sm:w-80 max-h-[280px] max-w-[300px] rounded-2xl overflow-hidden">
                                 <Image
-                                    className="cursor-pointer rounded-2xl object-contain"
+                                    className="cursor-pointer rounded-2xl object-cover w-full h-auto"
                                     src={item.image}
                                     alt={item.name}
-                                    layout="fill"  // Ensures the image fills the container
-                                    objectFit="contain"  // Keeps the aspect ratio
+                                    // layout="fill"  // Ensures the image fills the container
+                                    objectFit="cover"  // Keeps the aspect ratio
                                     quality={100}
                                 />
                             </div>
-                            <div className="w-80 text-center text-lg text-slate-50 py-2">
+                            {/* Container for the text */}
+                            <div className="w-80 text-start text-lg text-slate-50 py-4 pl-2 MobileScreen:pl-4">
                                 <p>{item.name}</p>
                                 <p>{item.role}</p>
                             </div>
@@ -60,7 +60,7 @@ export const CardGrid = () => {
                 })}
             </div>
             {/* Popup Modal */}
-            {selectedMember !== null && (
+            {selectedMember !== null && gridItems[selectedMember].bio && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
                     onClick={handleOutsideClick}>
                     <motion.div
@@ -96,15 +96,16 @@ export const CardGrid = () => {
 
                         {/* Display bio or other details */}
                         <p className="text-md mb-4">
-                            {gridItems[selectedMember].details ? (
-                                gridItems[selectedMember].details.map((detailArray, index) => (
+
+                            {gridItems[selectedMember].bio ? (
+                                gridItems[selectedMember].bio.map((bioArray, index) => (
                                     <span key={index}>
-                                        {detailArray.map((detail, subIndex) => (
+                                        {bioArray.map((bio, subIndex) => (
                                             <span
                                                 key={subIndex}
-                                                className={detail.highlight ? "font-bold text-red-500" : ""}
+                                                className={bio.highlight ? "font-bold text-red-500" : ""}
                                             >
-                                                {detail.text}
+                                                {bio.text}
                                             </span>
                                         ))}
                                     </span>
