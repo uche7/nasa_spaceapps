@@ -117,7 +117,7 @@ export const teamMembers = [
         bio: null,
         socials: {
             twitter: null,
-            linkedin: null,
+            linkedin: 'https://www.linkedin.com/in/sudhanshu-bhamburkar-061612168/',
             github: null,
         },
         image: Sudhanshu,
