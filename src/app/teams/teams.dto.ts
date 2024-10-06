@@ -19,7 +19,7 @@ import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 import Gagan from "@/assets/images/general/landing-page/teams/Gagan.jpg";
 import Raj from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
 import Ishita from "@/assets/images/general/landing-page/teams/Ishita Malik.jpg";
-
+import Shaiv from "@/assets/images/general/landing-page/teams/Shaiv Mehrotra.jpg";
 
 export const teamMembers = [
     {
@@ -205,6 +205,17 @@ export const teamMembers = [
             instagram: 'https://www.instagram.com/liewziken/',
         },
         image: Ken,
+    },
+    {
+        name: 'Shaiv Mehrotra',
+        role: 'Content Writer',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/shaiv-mehrotra-2a3135177/',
+            github: null,
+        },
+        image: Nora,
     },
     {
         name: 'Ucchena Nangifor',
