@@ -215,7 +215,7 @@ export const teamMembers = [
             linkedin: 'https://www.linkedin.com/in/shaiv-mehrotra-2a3135177/',
             github: null,
         },
-        image: Nora,
+        image: Shaiv,
     },
     {
         name: 'Ucchena Nangifor',
