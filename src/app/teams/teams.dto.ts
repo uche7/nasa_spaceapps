@@ -135,7 +135,13 @@ export const teamMembers = [
     {
         name: 'Catherine Pulickan',
         role: 'Operations',
-        bio: null,
+         
+        bio: [
+            [
+                { text: "Im Catherine Pulickan and I'm a master’s student in Human-Computer Interaction at UCD. ", highlight: false },
+                { text: "I specialise in user-centered design and research, with a passion for solving complex problems and creating accessible digital experiences.", highlight: false },
+            ],
+        ],
         socials: {
             twitter: null,
             linkedin: 'https://www.linkedin.com/in/catherine-pulickan-731342159/',
