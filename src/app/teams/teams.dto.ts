@@ -18,6 +18,7 @@ import Yagnik from "@/assets/images/general/landing-page/teams/Manav_Yagnik.jpg"
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 import Gagan from "@/assets/images/general/landing-page/teams/Gagan.jpg";
 import Raj from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
+import Ishita from "@/assets/images/general/landing-page/teams/Ishita Malik.jpg";
 
 
 export const teamMembers = [
@@ -131,6 +132,17 @@ export const teamMembers = [
             github: null,
         },
         image: Khushi,
+    },
+    {
+        name: 'Ishita Malik',
+        role: 'Content Writing & Social Media',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/ishita-malik07/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            github: null,
+        },
+        image: Ishita,
     },
     {
         name: 'Catherine Pulickan',
