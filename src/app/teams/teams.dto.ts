@@ -17,7 +17,7 @@ import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
 import Yagnik from "@/assets/images/general/landing-page/teams/Manav_Yagnik.jpg";
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 import Gagan from "@/assets/images/general/landing-page/teams/Gagan.jpg";
-import Raj from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
+import AB from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
 import Ishita from "@/assets/images/general/landing-page/teams/Ishita Malik.jpg";
 import Shaiv from "@/assets/images/general/landing-page/teams/Shaiv Mehrotra.jpg";
 
@@ -262,14 +262,14 @@ export const teamMembers = [
         image: Gagan,
     },
     {
-        name: 'Raj Bhalla',
+        name: 'Aradhya Bhalla',
         role: 'Ground Support',
         bio: null,
         socials: {
             twitter: null,
-            linkedin: null,
+            linkedin: 'https://www.linkedin.com/in/aradhya-bhalla/',
             github: null,
         },
-        image: Raj,
+        image: AB,
     },
 ]
