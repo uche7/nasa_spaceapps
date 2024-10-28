@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
 import RegisterGIF from "@/assets/images/general/landing-page/register.gif";
 import CountDownPage from "./count-down-page";
+import { winners } from "@/app/general/general.dto"
 
 
 const targetDate = "2024-10-04T18:00:00";
@@ -16,6 +17,7 @@ const HeroPage = () => {
   }, [isHovered]);
   /** Desktop View */
   const desktopView = () => {
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
       <div className="TabletScreen:hidden MobileScreen:hidden flex flex-col justify-center items-center text-center mx-[8.06%] mt-[4rem]">
         <div className="w-full mb-[10%]">
@@ -28,13 +30,59 @@ const HeroPage = () => {
           >
             <Image width={250} src={HeroImage} alt="Hero Image" />
           </motion.button>
-          <CountDownPage targetDate={targetDate} />
+          <div className="flex justify-center items-center relative my-12">
+            {winners.map((item, index) => (
+              <div
+                key={index}
+                className={`text-center group relative transition-transform duration-300 ${hoveredIndex === index || (hoveredIndex === null && item.place === "1st")
+                  ? "z-10"
+                  : "z-0"
+                  }`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                style={{
+                  transform:
+                    index === 0
+                      ? "translateX(25%)"
+                      : index === 2
+                        ? "translateX(-25%)"
+                        : index === 1
+                          ? "translateY(-15%)"
+                          : "translateX(0)",
+                }}
+              >
+                {/* Hovered place text */}
+                <div
+                  className={`text-[5rem] font-bold text-hackathone-font-rocket-red opacity-0 group-hover:opacity-100 ${item.place === "1st"
+                    ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    : item.place === "3rd"
+                      ? "absolute top-0 right-0"
+                      : "absolute top-0 left-0"
+                    }`}
+                >
+                  {item.place}
+                </div>
+
+                {/* Image container */}
+                <div className="w-80 h-80 rounded-full overflow-hidden flex justify-center items-center bg-gray-200 group-hover:bg-gray-300 transition-transform duration-300">
+                  <Image
+                    src={item.img}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Team name */}
+                <div className="mt-2 text-lg font-semibold">{item.name}</div>
+              </div>
+            ))}
+          </div>
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
-            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span> '24</p>
+            <p>Winners of HackAth<span className="text-white">l</span>on<span className="text-white">e</span>’24</p>
           </div>
           <div className="mx-[10rem] text-[24px] leading-[36.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal  text-white">
-              The <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span> is here. <br /> Join the marathon of problem-solving from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6, 2024</span>
+              NASA Space Apps Athlone was a huge success! <span className="font-extrabold text-hackathone-font-rocket-red ">210+ participations</span> with <br /> <span className="font-extrabold text-hackathone-font-rocket-red ">22 global submissions </span>and <span className="font-extrabold text-hackathone-font-rocket-red "> 3 global nominations.</span>
             </p>
           </div>
           <div className="flex flex-row justify-center gap-[32px]">
@@ -66,19 +114,19 @@ const HeroPage = () => {
                 }}
                 onClick={() =>
                   window.open(
-                    "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
+                    "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/?tab=teams",
                     "_blank"
                   )
                 }
-                title="Register Here"
+                title="View Teams & Projects"
                 className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-full h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
               >
                 <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
-                  Register Here
+                  View Teams & Projects
                 </p>
               </motion.button>
 
-              {/* GIF Popup (controlled by isHovered state) **Remove after event concludes*/}
+              {/* GIF Popup (controlled by isHovered state) **Remove after event concludes
               {isHovered && (
                 <>
                   <Image
@@ -95,7 +143,7 @@ const HeroPage = () => {
                     className="hidden xl:block 2xl:hidden absolute min-w-[345px] top-[30%] -left-[200%] -translate-y-1/2 transition-all duration-300 border-2 rounded-xl"
                   />
                 </>
-              )}
+              )} */}
             </div>
 
             <motion.button
@@ -112,15 +160,15 @@ const HeroPage = () => {
               }}
               onClick={() =>
                 window.open(
-                  `${window.location.origin}/moreinfo`,
+                  `https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/`,
                   "_blank"
                 )
               }
-              title="Click Here To See More Info"
+              title="Checkout our 2023 Event"
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[18.7%]  h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[18.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
-                More Info
+                Hackathlone 2023
               </p>
             </motion.button>
           </div>
@@ -131,6 +179,7 @@ const HeroPage = () => {
 
   /** Tablet View */
   const tabletView = () => {
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
       <div className="DesktopScreen:hidden MobileScreen:hidden flex flex-col items-center justify-center text-center mt-[2.5rem] px-[6.94%]">
         <div className="w-full mb-[10%]">
@@ -143,13 +192,59 @@ const HeroPage = () => {
           >
             <Image unoptimized width={250} src={HeroImage} alt="Hero Image" />
           </motion.button>
-          <CountDownPage targetDate={targetDate} />
+          <div className="flex justify-center items-center relative my-8">
+            {winners.map((item, index) => (
+              <div
+                key={index}
+                className={`text-center group relative transition-transform duration-300 ${hoveredIndex === index || (hoveredIndex === null && item.place === "1st")
+                  ? "z-10"
+                  : "z-0"
+                  }`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                style={{
+                  transform:
+                    index === 0
+                      ? "translateX(25%)"
+                      : index === 2
+                        ? "translateX(-25%)"
+                        : index === 1
+                          ? "translateY(-15%)"
+                          : "translateX(0)",
+                }}
+              >
+                {/* Hovered place text */}
+                <div
+                  className={`text-[3.5rem] font-bold text-hackathone-font-rocket-red ${item.place === "1st"
+                    ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    : item.place === "3rd"
+                      ? "absolute top-0 right-0"
+                      : "absolute top-0 left-0"
+                    }`}
+                >
+                  {item.place}
+                </div>
+
+                {/* Image container */}
+                <div className="w-56 h-56 rounded-full overflow-hidden flex justify-center items-center bg-gray-200 group-hover:bg-gray-300 transition-transform duration-300">
+                  <Image
+                    src={item.img}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Team name */}
+                <div className="mt-2 text-lg font-semibold">{item.name}</div>
+              </div>
+            ))}
+          </div>
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[3.5rem] leading-[4rem]">
-            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span> '24</p>
+            <p>Winners of HackAth<span className="text-white">l</span>on<span className="text-white">e</span>’24</p>
           </div>
           <div className="px-[10%] text-[20px] leading-[28.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal  text-white">
-              The <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span> is here.<br /> Join the marathon of problem-solving from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6, 2024</span>
+              NASA Space Apps Athlone was a huge success! <span className="font-extrabold text-hackathone-font-rocket-red ">210+ participations</span> with <span className="font-extrabold text-hackathone-font-rocket-red ">22 global submissions </span>and <span className="font-extrabold text-hackathone-font-rocket-red "> 3 global nominations.</span>
             </p>
           </div>
           <div className="flex flex-row justify-center gap-[16px]">
@@ -167,15 +262,15 @@ const HeroPage = () => {
               }}
               onClick={() =>
                 window.open(
-                  "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
+                  "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/?tab=teams",
                   "_blank"
                 )
               }
-              title=" Register Here"
+              title="View Teams & Projects"
               className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[30%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
-                Register Here
+                View Teams & Projects
               </p>
             </motion.button>
             <motion.button
@@ -191,13 +286,16 @@ const HeroPage = () => {
                 borderColor: "white",
               }}
               onClick={() =>
-                window.open(`${window.location.origin}/moreinfo`, "_blank")
+                window.open(
+                  `https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/`,
+                  "_blank"
+                )
               }
               title="Click Here To See More Info"
               className="bg-transparent mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[30%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16.13px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
-                More Info
+                Hackathlone 2023
               </p>
             </motion.button>
           </div>
@@ -208,19 +306,64 @@ const HeroPage = () => {
 
   /** Mobile View */
   const mobileView = () => {
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
       <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-between mx-[1.2rem] mt-[4rem]">
         <div className="flex flex-col justify-center items-center text-center w-full px-[2rem]">
           <Image unoptimized src={HeroImage} alt="Hero Image" width={180} />
-          <div className="mt-[1.5rem]">
-            <CountDownPage targetDate={targetDate} />
+          <div className="flex justify-center items-center relative my-12">
+            {winners.map((item, index) => (
+              <div
+                key={index}
+                className={`text-center group relative transition-transform duration-300 ${hoveredIndex === index || (hoveredIndex === null && item.place === "1st")
+                  ? "z-10"
+                  : "z-0"
+                  }`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                style={{
+                  transform:
+                    index === 0
+                      ? "translateX(25%)"
+                      : index === 2
+                        ? "translateX(-25%)"
+                        : index === 1
+                          ? "translateY(-15%)"
+                          : "translateX(0)",
+                }}
+              >
+                {/* Hovered place text */}
+                <div
+                  className={`text-[2rem] font-bold text-hackathone-font-rocket-red ${item.place === "1st"
+                    ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    : item.place === "3rd"
+                      ? "absolute top-0 right-0"
+                      : "absolute top-0 left-0"
+                    }`}
+                >
+                  {item.place}
+                </div>
+
+                {/* Image container */}
+                <div className="w-36 h-36 rounded-full overflow-hidden flex justify-center items-center bg-gray-200 group-hover:bg-gray-300 transition-transform duration-300">
+                  <Image
+                    src={item.img}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Team name */}
+                <div className="mt-2 text-sm font-semibold">{item.name}</div>
+              </div>
+            ))}
           </div>
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[3rem] leading-[51.26px]">
-            <p><span className="text-white">Welcome To</span> HackAth<span className="text-white">l</span>on<span className="text-white">e</span> '24</p>
+            <p>Winners of HackAth<span className="text-white">l</span>on<span className="text-white">e</span>’24</p>
           </div>
           <div className="text-[1rem] leading-[24.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-[500] text-white">
-              The <span className="font-extrabold text-hackathone-font-rocket-red ">NASA Space Apps Athlone</span><br /> is here. Join the marathon of problem-solving from<span className="font-extrabold text-hackathone-font-rocket-red "> October 4 to 6, 2024</span>
+              NASA Space Apps Athlone was a huge success! <span className="font-extrabold text-hackathone-font-rocket-red ">210+ participations</span> with <span className="font-extrabold text-hackathone-font-rocket-red ">22 global submissions </span>and <span className="font-extrabold text-hackathone-font-rocket-red "> 3 global nominations.</span>
             </p>
           </div>
           <div className="flex flex-col justify-center items-center w-full">
@@ -238,15 +381,15 @@ const HeroPage = () => {
               }}
               onClick={() =>
                 window.open(
-                  "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/",
+                  "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/?tab=teams",
                   "_blank"
                 )
               }
-              title=" Register Here"
+              title="View Teams & Projects"
               className="bg-hackathone-font-rocket-red mt-[32.82px] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[0.5rem] w-[60%] h-[44.31px] border-2 border-transparent transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-black">
-                Register Here
+                View Teams & Projects
               </p>
             </motion.button>
             <motion.button
@@ -262,13 +405,16 @@ const HeroPage = () => {
                 borderColor: "white",
               }}
               onClick={() =>
-                window.open(`${window.location.origin}/moreinfo`, "_blank")
+                window.open(
+                  `https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/`,
+                  "_blank"
+                )
               }
               title="Click Here To See More Info"
               className="bg-transparent mt-[1rem] flex items-center justify-center rounded-[6.54px] px-[2.22%] py-[11.4px] w-[60%] h-[44.31px] border-2 border-bg-hackathone-font-rocket-red transition-colors duration-300 ease-in-out"
             >
               <p className="mr-[7px] font-bold text-[16px] leading-[16.28px] font-sefarvestCabinetGrotesk text-hackathone-font-rocket-red transition-all duration-150 ease-out">
-                More Info
+                Hackathlone 2023
               </p>
             </motion.button>
           </div>
