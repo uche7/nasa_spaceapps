@@ -53,6 +53,12 @@ import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_col
 import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
 import Office from "@/assets/images/general/landing-page/office.jpg";
 import Robotics from "@/assets/images/general/landing-page/robotics.jpg";
+import CloudFlies from "@/assets/images/general/landing-page/winners/cloudfliers.jpeg"
+import ShakeItOff from "@/assets/images/general/landing-page/winners/shakeitoff.jpeg"
+import EnigmaPro from "@/assets/images/general/landing-page/winners/enigmapro.jpeg"
+
+
+
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
   new Date().toLocaleString("en-US", {
@@ -381,3 +387,23 @@ export const shannonData = [
     img: Robotics,
   },
 ];
+
+
+export const winners = [
+
+  {
+    place: "2nd",
+    img: EnigmaPro,
+    name: "EnigmaPro",
+  },
+  {
+    place: "1st",
+    img: CloudFlies,
+    name: "CloudFLIES",
+  },
+  {
+    place: "3rd",
+    img: ShakeItOff,
+    name: "ShakeItOff_Space",
+  },
+]
