@@ -11,13 +11,14 @@ import { winners } from "@/app/general/general.dto"
 
 const targetDate = "2024-10-04T18:00:00";
 const HeroPage = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
     console.log('Hover state:', isHovered);
   }, [isHovered]);
   /** Desktop View */
   const desktopView = () => {
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
     return (
       <div className="TabletScreen:hidden MobileScreen:hidden flex flex-col justify-center items-center text-center mx-[8.06%] mt-[4rem]">
         <div className="w-full mb-[10%]">
@@ -179,7 +180,6 @@ const HeroPage = () => {
 
   /** Tablet View */
   const tabletView = () => {
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
       <div className="DesktopScreen:hidden MobileScreen:hidden flex flex-col items-center justify-center text-center mt-[2.5rem] px-[6.94%]">
         <div className="w-full mb-[10%]">
@@ -306,7 +306,6 @@ const HeroPage = () => {
 
   /** Mobile View */
   const mobileView = () => {
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
       <div className="DesktopScreen:hidden TabletScreen:hidden flex flex-col items-center justify-between mx-[1.2rem] mt-[4rem]">
         <div className="flex flex-col justify-center items-center text-center w-full px-[2rem]">
