@@ -56,6 +56,7 @@ import Robotics from "@/assets/images/general/landing-page/robotics.jpg";
 import CloudFlies from "@/assets/images/general/landing-page/winners/cloudfliers.jpeg"
 import ShakeItOff from "@/assets/images/general/landing-page/winners/shakeitoff.jpeg"
 import EnigmaPro from "@/assets/images/general/landing-page/winners/enigmapro.jpeg"
+import { link } from "fs";
 
 
 
@@ -95,6 +96,10 @@ export const navigationData = (Router: any) => [
   {
     text: "Home",
     route: () => Router.push("/"),
+  },
+  {
+    text: "Teams",
+    route: () => Router.push("/teams"),
   },
   {
     text: "Blogs",
@@ -390,20 +395,22 @@ export const shannonData = [
 
 
 export const winners = [
-
   {
-    place: "2nd",
-    img: EnigmaPro,
-    name: "EnigmaPro",
+    place: "3rd",
+    img: ShakeItOff,
+    name: "ShakeItOff_Space",
+    link: "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/shakeitoff_space/",
   },
   {
     place: "1st",
     img: CloudFlies,
     name: "CloudFLIES",
+    link: "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/cloudflies/",
   },
   {
-    place: "3rd",
-    img: ShakeItOff,
-    name: "ShakeItOff_Space",
+    place: "2nd",
+    img: EnigmaPro,
+    name: "EnigmaPro",
+    link: "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/enigmapro/",
   },
 ]

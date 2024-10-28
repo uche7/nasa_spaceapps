@@ -57,19 +57,25 @@ const HeroPage = () => {
                   className={`text-[5rem] font-bold text-hackathone-font-rocket-red opacity-0 group-hover:opacity-100 ${item.place === "1st"
                     ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     : item.place === "3rd"
-                      ? "absolute top-0 right-0"
-                      : "absolute top-0 left-0"
+                      ? "absolute top-0 left-0"
+                      : "absolute top-0 right-0"
                     }`}
                 >
                   {item.place}
                 </div>
 
                 {/* Image container */}
-                <div className="w-80 h-80 rounded-full overflow-hidden flex justify-center items-center bg-gray-200 group-hover:bg-gray-300 transition-transform duration-300">
+                <div className="w-80 h-80 rounded-full overflow-hidden flex justify-center items-center transition-transform duration-300">
                   <Image
                     src={item.img}
                     alt={item.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover cursor-pointer"
+                    onClick={() => {
+                      window.open(
+                        item.link,
+                        "_blank"
+                      );
+                    }}
                   />
                 </div>
 
@@ -218,8 +224,8 @@ const HeroPage = () => {
                   className={`text-[3.5rem] font-bold text-hackathone-font-rocket-red ${item.place === "1st"
                     ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     : item.place === "3rd"
-                      ? "absolute top-0 right-0"
-                      : "absolute top-0 left-0"
+                      ? "absolute top-0 left-0"
+                      : "absolute top-0 right-0"
                     }`}
                 >
                   {item.place}
@@ -230,7 +236,13 @@ const HeroPage = () => {
                   <Image
                     src={item.img}
                     alt={item.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover cursor-pointer"
+                    onClick={() => {
+                      window.open(
+                        item.link,
+                        "_blank"
+                      );
+                    }}
                   />
                 </div>
 
@@ -336,8 +348,8 @@ const HeroPage = () => {
                   className={`text-[2rem] font-bold text-hackathone-font-rocket-red ${item.place === "1st"
                     ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     : item.place === "3rd"
-                      ? "absolute top-0 right-0"
-                      : "absolute top-0 left-0"
+                      ? "absolute top-0 left-0"
+                      : "absolute top-0 right-0"
                     }`}
                 >
                   {item.place}
@@ -348,7 +360,13 @@ const HeroPage = () => {
                   <Image
                     src={item.img}
                     alt={item.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover cursor-pointer"
+                    onClick={() => {
+                      window.open(
+                        item.link,
+                        "_blank"
+                      );
+                    }}
                   />
                 </div>
 
