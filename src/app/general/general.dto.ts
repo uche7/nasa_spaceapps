@@ -98,7 +98,7 @@ export const navigationData = (Router: any) => [
     route: () => Router.push("/"),
   },
   {
-    text: "Teams",
+    text: "About Us",
     route: () => Router.push("/teams"),
   },
   {
