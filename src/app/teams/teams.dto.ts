@@ -56,7 +56,7 @@ export const teamMembers = [
         image: Nitish,
     },
     {
-        name: 'Shean Hans',
+        name: 'Shean Hans Teoh',
         role: 'Lead Wed Developer',
         bio: [
             [
@@ -101,7 +101,7 @@ export const teamMembers = [
         image: Arjun,
     },
     {
-        name: 'Mavis',
+        name: 'Mavis Hye Xuan Chia',
         role: 'Web Developer',
         bio: null,
         socials: {
