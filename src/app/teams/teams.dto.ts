@@ -24,7 +24,7 @@ import Shaiv from "@/assets/images/general/landing-page/teams/Shaiv Mehrotra.jpg
 export const teamMembers = [
     {
         name: 'Sahir Sharma',
-        role: 'Lead',
+        role: 'Location Lead',
         bio: null,
         socials: {
             twitter: null,
@@ -57,7 +57,7 @@ export const teamMembers = [
     },
     {
         name: 'Shean Hans Teoh',
-        role: 'Lead Wed Developer',
+        role: 'Lead Full Stack Developer',
         bio: [
             [
                 { text: "Always learning, glad to be a part of ", highlight: false },
@@ -72,19 +72,19 @@ export const teamMembers = [
         image: Shean,
     },
     {
-        name: 'Manav Yagnik',
-        role: 'Web Developer',
+        name: 'Sudhanshu Bhamburkar',
+        role: 'QA & Backend Developer',
         bio: null,
         socials: {
             twitter: null,
-            linkedin: 'https://www.linkedin.com/in/manav-yagnik-328535241/',
+            linkedin: 'https://www.linkedin.com/in/sudhanshu-bhamburkar-061612168/',
             github: null,
         },
-        image: Yagnik,
+        image: Sudhanshu,
     },
     {
         name: 'Arjun Narayanan',
-        role: 'Designer',
+        role: 'UI/UX Designer',
         bio: [
             [
                 { text: "Hey there! I am Arjun, a passionate ", highlight: false },
@@ -101,53 +101,8 @@ export const teamMembers = [
         image: Arjun,
     },
     {
-        name: 'Mavis Hye Xuan Chia',
-        role: 'Web Developer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: null,
-            github: null,
-        },
-        image: Mavis,
-    },
-    {
-        name: 'Sudhanshu Bhamburkar',
-        role: 'QA & Web developer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/sudhanshu-bhamburkar-061612168/',
-            github: null,
-        },
-        image: Sudhanshu,
-    },
-    {
-        name: 'Khushi Mehta',
-        role: 'Designer ',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/khushi-bhimwal-mehta-9905101bb/',
-            github: null,
-        },
-        image: Khushi,
-    },
-    {
-        name: 'Ishita Malik',
-        role: 'Content Writing & Social Media',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/ishita-malik07/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-            github: null,
-        },
-        image: Ishita,
-    },
-    {
         name: 'Catherine Pulickan',
-        role: 'Operations',
-         
+        role: 'Operations & Communications',
         bio: [
             [
                 { text: "Im Catherine Pulickan and I'm a master’s student in Human-Computer Interaction at UCD. ", highlight: false },
@@ -161,6 +116,69 @@ export const teamMembers = [
         },
         image: Catherine,
     },
+    {
+        name: 'Kkhawaish Gulati',
+        role: 'Event Anchor',
+        bio: [
+            [
+                { text: "Im Catherine Pulickan and I'm a master’s student in Human-Computer Interaction at UCD. ", highlight: false },
+                { text: "I specialise in user-centered design and research, with a passion for solving complex problems and creating accessible digital experiences.", highlight: false },
+            ],
+        ],
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/catherine-pulickan-731342159/',
+            github: null,
+        },
+        image: Catherine,
+    },
+    {
+        name: 'Khushi Mehta',
+        role: 'Social Media Content Designer',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/khushi-bhimwal-mehta-9905101bb/',
+            github: null,
+        },
+        image: Khushi,
+    },
+    {
+        name: 'Manav Yagnik',
+        role: 'Web Developer',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/manav-yagnik-328535241/',
+            github: null,
+        },
+        image: Yagnik,
+    },
+
+    {
+        name: 'Mavis Hye Xuan Chia',
+        role: 'Web Developer',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: null,
+            github: null,
+        },
+        image: Mavis,
+    },
+
+    {
+        name: 'Ishita Malik',
+        role: 'Content Writing & Social Media',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/ishita-malik07/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            github: null,
+        },
+        image: Ishita,
+    },
+
     {
         name: 'Tvisha Mehta',
         role: 'Designer',
@@ -241,7 +259,7 @@ export const teamMembers = [
     },
     {
         name: 'Yujing Zhang',
-        role: 'Ground Support',
+        role: 'On Ground Support',
         bio: null,
         socials: {
             twitter: null,
