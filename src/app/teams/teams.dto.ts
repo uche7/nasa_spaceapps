@@ -83,7 +83,7 @@ export const teamMembers = [
         image: Yagnik,
     },
     {
-        name: 'Arjun S Narayanan',
+        name: 'Arjun Narayanan',
         role: 'Designer',
         bio: [
             [
