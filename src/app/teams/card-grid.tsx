@@ -143,8 +143,10 @@ export const CardGrid = () => {
                             </p>
 
                             {/* Display bio or other details */}
+
                             <p className="text-md mb-6">
-                                {gridItems[selectedMember].bio ? (
+                                Check for socials media below:
+                                {/* {gridItems[selectedMember].bio ? (
                                     gridItems[selectedMember].bio.map((bioArray, index) => (
                                         <span key={index}>
                                             {bioArray.map((bio, subIndex) => (
@@ -159,7 +161,7 @@ export const CardGrid = () => {
                                     ))
                                 ) : (
                                     "Check for socials media below:"
-                                )}
+                                )} */}
                             </p>
                         </div>
 

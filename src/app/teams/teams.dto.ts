@@ -20,6 +20,11 @@ import Gagan from "@/assets/images/general/landing-page/teams/Gagan.jpg";
 import AB from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
 import Ishita from "@/assets/images/general/landing-page/teams/Ishita Malik.jpg";
 import Shaiv from "@/assets/images/general/landing-page/teams/Shaiv Mehrotra.jpg";
+import Kkwaish from "@/assets/images/general/landing-page/teams/Kkhawaish Gulati.jpeg";
+import Rochelle from "@/assets/images/general/landing-page/teams/Rochelle Carvalho.jpeg";
+import Ben from "@/assets/images/general/landing-page/teams/Uchenna Nnajiofor.jpeg";
+import Josh from "@/assets/images/general/landing-page/teams/Josh Quirke.jpeg";
+import Victor from "@/assets/images/general/landing-page/teams/Victor Costello.jpeg";
 
 export const teamMembers = [
     {
@@ -119,18 +124,13 @@ export const teamMembers = [
     {
         name: 'Kkhawaish Gulati',
         role: 'Event Anchor',
-        bio: [
-            [
-                { text: "Im Catherine Pulickan and I'm a master’s student in Human-Computer Interaction at UCD. ", highlight: false },
-                { text: "I specialise in user-centered design and research, with a passion for solving complex problems and creating accessible digital experiences.", highlight: false },
-            ],
-        ],
+        bio: null,
         socials: {
             twitter: null,
-            linkedin: 'https://www.linkedin.com/in/catherine-pulickan-731342159/',
+            linkedin: 'https://www.linkedin.com/in/kkhawaish-gulati-050b511ab/',
             github: null,
         },
-        image: Catherine,
+        image: Kkwaish,
     },
     {
         name: 'Khushi Mehta',
@@ -138,14 +138,48 @@ export const teamMembers = [
         bio: null,
         socials: {
             twitter: null,
-            linkedin: 'https://www.linkedin.com/in/khushi-bhimwal-mehta-9905101bb/',
+            linkedin: 'https://www.linkedin.com/in/khushi-mehta-9905101bb/',
             github: null,
         },
         image: Khushi,
     },
     {
-        name: 'Manav Yagnik',
+        name: '⁠Rochelle Carvalho',
+        role: 'Operations & Communications',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/rochelle-carvalho-1501251b/',
+            github: null,
+        },
+        image: Rochelle,
+    },
+    {
+        name: 'Khayati Arora',
+        role: 'Operations & Communications',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/khayati-arora-99b025205/',
+            github: null,
+        },
+        image: Khayati,
+    },
+
+    {
+        name: 'Uchenna Nnajiofor',
         role: 'Web Developer',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/nnajiofor-uchenna-746a1b256/',
+            github: null,
+        },
+        image: Nnajiofor,
+    },
+    {
+        name: 'Manav Yagnik',
+        role: 'Full Stack Developer',
         bio: null,
         socials: {
             twitter: null,
@@ -157,16 +191,60 @@ export const teamMembers = [
 
     {
         name: 'Mavis Hye Xuan Chia',
-        role: 'Web Developer',
+        role: 'Frontend Developer',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/mavis-hye-xuan-chia-a763a2237/',
+            github: null,
+        },
+        image: Mavis,
+    },
+    {
+        name: 'Liew Zi Ken',
+        role: 'Event Photographer',
         bio: null,
         socials: {
             twitter: null,
             linkedin: null,
             github: null,
+            instagram: 'https://www.instagram.com/liewziken/',
         },
-        image: Mavis,
+        image: Ken,
     },
-
+    {
+        name: 'Nguyen Phung',
+        role: 'Video Editor',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/mainguyenphung/',
+            github: null,
+        },
+        image: Nora,
+    },
+    {
+        name: 'Aradhya Bhalla',
+        role: 'On-Ground Support',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/aradhya-bhalla/',
+            github: null,
+        },
+        image: AB,
+    },
+    {
+        name: 'Tvisha Mehta',
+        role: 'Event Space Physical Design',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/tvisha-mehta-10b993207/',
+            github: null,
+        },
+        image: Tvisha,
+    },
     {
         name: 'Ishita Malik',
         role: 'Content Writing & Social Media',
@@ -178,32 +256,20 @@ export const teamMembers = [
         },
         image: Ishita,
     },
-
     {
-        name: 'Tvisha Mehta',
-        role: 'Designer',
+        name: 'Gagan Manchanda',
+        role: 'On-Ground Support',
         bio: null,
         socials: {
             twitter: null,
-            linkedin: 'https://www.linkedin.com/in/tvisha-mehta-10b993207/',
+            linkedin: null,
             github: null,
         },
-        image: Tvisha,
-    },
-    {
-        name: 'Khayati Arora',
-        role: 'Operations',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/khayati-arora-99b025205/',
-            github: null,
-        },
-        image: Khayati,
+        image: Gagan,
     },
     {
         name: 'Kshitij Motke',
-        role: 'Operations',
+        role: 'On- Ground Support',
         bio: null,
         socials: {
             twitter: null,
@@ -213,16 +279,37 @@ export const teamMembers = [
         image: Kshitij,
     },
     {
-        name: 'Liew Zi Ken',
-        role: 'Photographer',
+        name: 'Yujing Zhang',
+        role: 'On Ground Support',
         bio: null,
         socials: {
             twitter: null,
-            linkedin: null,
+            linkedin: 'https://www.linkedin.com/in/yujingzhang/',
             github: null,
-            instagram: 'https://www.instagram.com/liewziken/',
         },
-        image: Ken,
+        image: YuJing,
+    },
+    {
+        name: 'Josh Quirke',
+        role: 'On Ground Support',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/josh-quirke-22068028b/',
+            github: null,
+        },
+        image: Josh
+    },
+    {
+        name: 'Victor Costello',
+        role: 'On Ground Support',
+        bio: null,
+        socials: {
+            twitter: null,
+            linkedin: 'https://www.linkedin.com/in/victor-costello/',
+            github: null,
+        },
+        image: Victor,
     },
     {
         name: 'Shaiv Mehrotra',
@@ -234,60 +321,5 @@ export const teamMembers = [
             github: null,
         },
         image: Shaiv,
-    },
-    {
-        name: 'Ucchena Nangifor',
-        role: 'Web Developer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: null,
-            github: null,
-        },
-        image: Nnajiofor,
-    },
-    {
-        name: 'Nguyen Phung (Nora)',
-        role: 'Video Production',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/mainguyenphung/',
-            github: null,
-        },
-        image: Nora,
-    },
-    {
-        name: 'Yujing Zhang',
-        role: 'On Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: null,
-            github: null,
-        },
-        image: YuJing,
-    },
-    {
-        name: 'Gagan',
-        role: 'Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: null,
-            github: null,
-        },
-        image: Gagan,
-    },
-    {
-        name: 'Aradhya Bhalla',
-        role: 'Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/aradhya-bhalla/',
-            github: null,
-        },
-        image: AB,
     },
 ]
